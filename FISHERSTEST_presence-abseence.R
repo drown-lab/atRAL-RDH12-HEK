@@ -1,3 +1,22 @@
+
+##meta table was created in HeatMap_Missingness.R script# Detection per protein x condition: 0/3, 1/3, 2/3, 3/3
+det_by_cond <- det_long |>
+group_by(protein, condition) |>
+summarise(
+n_detect = sum(detected),
+n_reps   = n(),
+.groups  = "drop"
+) |>
+mutate(
+detect_class = case_when(
+n_detect == 0 ~ "0/3",
+n_detect == 1 ~ "1/3",
+n_detect == 2 ~ "2/3",
+n_detect >= 3 ~ "3/3",
+TRUE ~ paste0(n_detect, "/", n_reps)
+)
+)
+
 n_reps_per_condition <- meta %>%
   dplyr::count(condition, name = "n_reps")
 
