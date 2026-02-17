@@ -71,3 +71,6 @@ rsconnect/
 # DIANN output
 *.speclib
 *.rar
+
+#RetinaOrganoids
+RetinaOrgnoids/*
