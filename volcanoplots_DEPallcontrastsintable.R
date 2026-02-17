@@ -17,12 +17,12 @@ library(ggrepel)  # for nice text labels
 
 
 # define your contrast and optional favorite proteins
-contrast <- "RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr"
+contrast <- "RDH12_200_atRAL5hr.24h_recvr_vs_GFP_200_atRAL5hr.24h_recvr"
 favorite_IDs <- c(
   "RDH10", "RDH11", "RDH12", "RDH13", "RDH14"
 )  # example
 ##inpute table of interest
-tableofinterest<-DEPallcontrasts_mixedimputation_v1   
+tableofinterest<-data_results   
 
 colnames(tableofinterest)
 res_longH <- tableofinterest    %>%

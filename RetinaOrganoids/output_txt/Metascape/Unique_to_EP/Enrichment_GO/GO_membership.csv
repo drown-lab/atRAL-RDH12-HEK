@@ -1,0 +1,926 @@
+_MEMBER_MyList,_LogP_MyList,GO,Description,_PATTERN_,_RANK_,GiniIndex
+1,-5.7,WP3915,Angiopoietin like protein 8 regulatory pathway,M1,1,0
+1,-6.1,GO:0031463,Cul3-RING ubiquitin ligase complex,M1,1,0
+1,-3.1,WP185,Integrin mediated cell adhesion,M1,1,0
+1,-4.2,GO:0033687,osteoblast proliferation,M1,1,0
+1,-2.4,GO:0048812,neuron projection morphogenesis,M1,1,0
+1,-2.3,GO:0022618,protein-RNA complex assembly,M1,1,0
+1,-2.2,M94,PID FAS PATHWAY,M1,1,0
+1,-5.7,GO:0009101,glycoprotein biosynthetic process,M1,1,0
+1,-8.9,R-HSA-1483257,Phospholipid metabolism,M1,1,0
+1,-3,GO:0035869,ciliary transition zone,M1,1,0
+1,-2.2,hsa04213,Longevity regulating pathway - multiple species,M1,1,0
+1,-2.1,R-HSA-9033241,Peroxisomal protein import,M1,1,0
+1,-2.1,R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,M1,1,0
+1,-2.1,GO:0001775,cell activation,M1,1,0
+1,-3.5,GO:0030992,intraciliary transport particle B,M1,1,0
+1,-3.6,GO:0071248,cellular response to metal ion,M1,1,0
+1,-6,GO:0000963,mitochondrial RNA processing,M1,1,0
+1,-4.7,GO:0035720,intraciliary anterograde transport,M1,1,0
+1,-3.3,GO:0006400,tRNA modification,M1,1,0
+1,-4.1,WP5472,Phosphoinositide 3 kinase PI3K family,M1,1,0
+1,-2.2,R-HSA-6796648,TP53 Regulates Transcription of DNA Repair Genes,M1,1,0
+1,-3.1,GO:0000077,DNA damage checkpoint signaling,M1,1,0
+1,-2.2,hsa04012,ErbB signaling pathway,M1,1,0
+1,-4.1,GO:0005769,early endosome,M1,1,0
+1,-4.5,GO:0006488,dolichol-linked oligosaccharide biosynthetic process,M1,1,0
+1,-2.8,GO:0005675,transcription factor TFIIH holo complex,M1,1,0
+1,-2.8,GO:0110154,RNA decapping,M1,1,0
+1,-2.4,M12771,SA PTEN PATHWAY,M1,1,0
+1,-3,R-HSA-6787450,tRNA modification in the mitochondrion,M1,1,0
+1,-2.1,WP4722,Glycerolipids and glycerophospholipids,M1,1,0
+1,-3.5,R-HSA-2871796,FCERI mediated MAPK activation,M1,1,0
+1,-2.8,GO:0006308,DNA catabolic process,M1,1,0
+1,-2.5,GO:0045911,positive regulation of DNA recombination,M1,1,0
+1,-2.4,GO:0005819,spindle,M1,1,0
+1,-2.4,GO:0098554,cytoplasmic side of endoplasmic reticulum membrane,M1,1,0
+1,-2.3,GO:1903530,regulation of secretion by cell,M1,1,0
+1,-2.3,R-HSA-5358351,Signaling by Hedgehog,M1,1,0
+1,-3.8,GO:0008203,cholesterol metabolic process,M1,1,0
+1,-3.7,GO:0032535,regulation of cellular component size,M1,1,0
+1,-2.4,GO:0002285,lymphocyte activation involved in immune response,M1,1,0
+1,-2.1,GO:0010257,NADH dehydrogenase complex assembly,M1,1,0
+1,-3.3,WP5304,Cholesterol metabolism,M1,1,0
+1,-2.7,GO:0031293,membrane protein intracellular domain proteolysis,M1,1,0
+1,-2,GO:0002244,hematopoietic progenitor cell differentiation,M1,1,0
+1,-3.3,hsa04722,Neurotrophin signaling pathway,M1,1,0
+1,-4.2,GO:0009150,purine ribonucleotide metabolic process,M1,1,0
+1,-5.5,GO:0005741,mitochondrial outer membrane,M1,1,0
+1,-3.7,hsa04714,Thermogenesis,M1,1,0
+1,-5.9,R-HSA-1483206,Glycerophospholipid biosynthesis,M1,1,0
+1,-7,hsa05208,Chemical carcinogenesis - reactive oxygen species,M1,1,0
+1,-5.4,GO:0000421,autophagosome membrane,M1,1,0
+1,-2.5,GO:0002253,activation of immune response,M1,1,0
+1,-5.8,GO:0051056,regulation of small GTPase mediated signal transduction,M1,1,0
+1,-2.8,GO:0042063,gliogenesis,M1,1,0
+1,-3,GO:0006639,acylglycerol metabolic process,M1,1,0
+1,-2.8,GO:0002768,immune response-regulating cell surface receptor signaling pathway,M1,1,0
+1,-4.3,GO:1904262,negative regulation of TORC1 signaling,M1,1,0
+1,-6.3,GO:0005770,late endosome,M1,1,0
+1,-11,GO:0042594,response to starvation,M1,1,0
+1,-2.6,GO:0001750,photoreceptor outer segment,M1,1,0
+1,-4.4,GO:0036064,ciliary basal body,M1,1,0
+1,-3.9,R-HSA-5688426,Deubiquitination,M1,1,0
+1,-3.6,R-HSA-166520,Signaling by NTRKs,M1,1,0
+1,-3.5,GO:0008033,tRNA processing,M1,1,0
+1,-3.3,GO:0043190,ATP-binding cassette (ABC) transporter complex,M1,1,0
+1,-2.5,hsa04136,Autophagy - other,M1,1,0
+1,-2.3,GO:0007095,mitotic G2 DNA damage checkpoint signaling,M1,1,0
+1,-2.2,GO:0000226,microtubule cytoskeleton organization,M1,1,0
+1,-2.3,GO:0014072,response to isoquinoline alkaloid,M1,1,0
+1,-13,GO:0070647,protein modification by small protein conjugation or removal,M1,1,0
+1,-2.7,M183,PID IL6 7 PATHWAY,M1,1,0
+1,-2.4,GO:0032374,regulation of cholesterol transport,M1,1,0
+1,-2.3,GO:0007616,long-term memory,M1,1,0
+1,-3.3,R-HSA-168898,Toll-like Receptor Cascades,M1,1,0
+1,-4.9,R-HSA-8951664,Neddylation,M1,1,0
+1,-2,GO:0035966,response to topologically incorrect protein,M1,1,0
+1,-3,GO:0006979,response to oxidative stress,M1,1,0
+1,-4.9,R-HSA-2262752,Cellular responses to stress,M1,1,0
+1,-2.1,R-HSA-8873719,RAB geranylgeranylation,M1,1,0
+1,-2.2,GO:0090398,cellular senescence,M1,1,0
+1,-2.9,GO:1990542,mitochondrial transmembrane transport,M1,1,0
+1,-5,GO:0009144,purine nucleoside triphosphate metabolic process,M1,1,0
+1,-15,GO:0019866,organelle inner membrane,M1,1,0
+1,-2.6,GO:0021675,nerve development,M1,1,0
+1,-2.4,GO:2001252,positive regulation of chromosome organization,M1,1,0
+1,-3.6,GO:0045444,fat cell differentiation,M1,1,0
+1,-2.9,WP5501,GNAQ p R183Q drives capillary malformation,M1,1,0
+1,-3,hsa00515,Mannose type O-glycan biosynthesis,M1,1,0
+1,-3.6,GO:0009117,nucleotide metabolic process,M1,1,0
+1,-2.3,GO:0032328,alanine transport,M1,1,0
+1,-2.8,M15,PID LYSOPHOSPHOLIPID PATHWAY,M1,1,0
+1,-2.2,WP4673,Male infertility,M1,1,0
+1,-2.1,R-HSA-165159,MTOR signalling,M1,1,0
+1,-2.3,GO:0005942,phosphatidylinositol 3-kinase complex,M1,1,0
+1,-3.9,GO:0038093,Fc receptor signaling pathway,M1,1,0
+1,-3.7,GO:0030242,autophagy of peroxisome,M1,1,0
+1,-3.6,GO:0009416,response to light stimulus,M1,1,0
+1,-2.6,GO:0031399,regulation of protein modification process,M1,1,0
+1,-2.9,hsa04931,Insulin resistance,M1,1,0
+1,-2.9,GO:0000439,transcription factor TFIIH core complex,M1,1,0
+1,-2.3,GO:0033489,cholesterol biosynthetic process via desmosterol,M1,1,0
+1,-3.7,M164,PID ERBB1 DOWNSTREAM PATHWAY,M1,1,0
+1,-3.3,hsa04622,RIG-I-like receptor signaling pathway,M1,1,0
+1,-4.2,R-HSA-9013149,RAC1 GTPase cycle,M1,1,0
+1,-4.3,GO:0044283,small molecule biosynthetic process,M1,1,0
+1,-3,GO:0002764,immune response-regulating signaling pathway,M1,1,0
+1,-2.7,hsa04930,Type II diabetes mellitus,M1,1,0
+1,-5.3,GO:0072522,purine-containing compound biosynthetic process,M1,1,0
+1,-2.1,GO:0043369,"CD4-positive or CD8-positive, alpha-beta T cell lineage commitment",M1,1,0
+1,-12,GO:1901137,carbohydrate derivative biosynthetic process,M1,1,0
+1,-2.2,R-HSA-198725,Nuclear Events (kinase and transcription factor activation),M1,1,0
+1,-2.2,GO:0045324,late endosome to vacuole transport,M1,1,0
+1,-3.2,GO:0097733,photoreceptor cell cilium,M1,1,0
+1,-9.2,GO:0005759,mitochondrial matrix,M1,1,0
+1,-4.4,R-HSA-1660517,Synthesis of PIPs at the late endosome membrane,M1,1,0
+1,-3.1,GO:0032368,regulation of lipid transport,M1,1,0
+1,-2.9,WP710,DNA damage response only ATM dependent,M1,1,0
+1,-4.5,R-HSA-975155,MyD88 dependent cascade initiated on endosome,M1,1,0
+1,-2.9,GO:0050778,positive regulation of immune response,M1,1,0
+1,-4.1,R-HSA-187037,Signaling by NTRK1 (TRKA),M1,1,0
+1,-3.3,GO:0000290,deadenylation-dependent decapping of nuclear-transcribed mRNA,M1,1,0
+1,-3.3,GO:1903830,magnesium ion transmembrane transport,M1,1,0
+1,-2,GO:0032922,circadian regulation of gene expression,M1,1,0
+1,-2.7,GO:0032585,multivesicular body membrane,M1,1,0
+1,-2.3,GO:0010874,regulation of cholesterol efflux,M1,1,0
+1,-4.2,GO:0006753,nucleoside phosphate metabolic process,M1,1,0
+1,-3.5,hsa05417,Lipid and atherosclerosis,M1,1,0
+1,-7.3,GO:0000151,ubiquitin ligase complex,M1,1,0
+1,-2.1,GO:0055092,sterol homeostasis,M1,1,0
+1,-11,GO:0046474,glycerophospholipid biosynthetic process,M1,1,0
+1,-4.5,GO:0016310,phosphorylation,M1,1,0
+1,-2.1,GO:0050810,regulation of steroid biosynthetic process,M1,1,0
+1,-2.7,GO:0010638,positive regulation of organelle organization,M1,1,0
+1,-2.5,GO:0099003,vesicle-mediated transport in synapse,M1,1,0
+1,-2.7,hsa00514,Other types of O-glycan biosynthesis,M1,1,0
+1,-3.9,GO:0032787,monocarboxylic acid metabolic process,M1,1,0
+1,-2.6,GO:0032292,peripheral nervous system axon ensheathment,M1,1,0
+1,-2.3,M273,PID EPHA2 FWD PATHWAY,M1,1,0
+1,-2.6,R-HSA-430039,mRNA decay by 5' to 3' exoribonuclease,M1,1,0
+1,-3.3,WP1449,Regulation of toll like receptor signaling,M1,1,0
+1,-2.9,GO:0002757,immune response-activating signaling pathway,M1,1,0
+1,-2.3,GO:0030575,nuclear body organization,M1,1,0
+1,-2.6,WP3873,RIOK1 and RIOK2 in EGFR and PI3K mediated tumorigenesis,M1,1,0
+1,-4.6,R-HSA-975138,TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation,M1,1,0
+1,-3.1,GO:0048753,pigment granule organization,M1,1,0
+1,-2.1,GO:0002204,somatic recombination of immunoglobulin genes involved in immune response,M1,1,0
+1,-2.5,WP3844,PI3K AKT mTOR signaling and therapeutic opportunities in prostate cancer,M1,1,0
+1,-2.3,GO:0007610,behavior,M1,1,0
+1,-2.4,GO:0045069,regulation of viral genome replication,M1,1,0
+1,-2,GO:0033162,melanosome membrane,M1,1,0
+1,-2,GO:0051298,centrosome duplication,M1,1,0
+1,-2.7,WP5124,Alzheimer 39 s disease,M1,1,0
+1,-3.4,R-HSA-448424,Interleukin-17 signaling,M1,1,0
+1,-3.1,GO:0110156,mRNA methylguanosine-cap decapping,M1,1,0
+1,-2.4,M110,PID IL1 PATHWAY,M1,1,0
+1,-3.1,R-HSA-6807047,Cholesterol biosynthesis via desmosterol (Bloch pathway),M1,1,0
+1,-7.2,GO:0006661,phosphatidylinositol biosynthetic process,M1,1,0
+1,-3.7,GO:1902775,mitochondrial large ribosomal subunit assembly,M1,1,0
+1,-2.4,GO:0006622,protein targeting to lysosome,M1,1,0
+1,-2.2,GO:0007423,sensory organ development,M1,1,0
+1,-4.8,GO:0033365,protein localization to organelle,M1,1,0
+1,-3.2,GO:0009060,aerobic respiration,M1,1,0
+1,-2.7,GO:0014037,Schwann cell differentiation,M1,1,0
+1,-2.6,WP2059,Alzheimer 39 s disease and miRNA effects,M1,1,0
+1,-2,R-HSA-8949215,Mitochondrial calcium ion transport,M1,1,0
+1,-3.4,GO:0031501,mannosyltransferase complex,M1,1,0
+1,-4.3,GO:0006892,post-Golgi vesicle-mediated transport,M1,1,0
+1,-2.3,GO:0017156,calcium-ion regulated exocytosis,M1,1,0
+1,-2.2,WP5497,Cyclin dependent kinase 4 6 inhibitors in breast cancer,M1,1,0
+1,-3.2,GO:0097731,9+0 non-motile cilium,M1,1,0
+1,-2.1,GO:0046394,carboxylic acid biosynthetic process,M1,1,0
+1,-2.7,hsa04211,Longevity regulating pathway,M1,1,0
+1,-3,WP3865,Novel intracellular components of RIG I like receptor pathway,M1,1,0
+1,-2.1,hsa04723,Retrograde endocannabinoid signaling,M1,1,0
+1,-4.6,GO:0035269,protein O-linked glycosylation via mannose,M1,1,0
+1,-2.1,M8,PID ENDOTHELIN PATHWAY,M1,1,0
+1,-2.3,hsa05162,Measles,M1,1,0
+1,-4.7,GO:0009206,purine ribonucleoside triphosphate biosynthetic process,M1,1,0
+1,-4.2,GO:0072521,purine-containing compound metabolic process,M1,1,0
+1,-4.6,GO:0015918,sterol transport,M1,1,0
+1,-4.6,R-HSA-1632852,Macroautophagy,M1,1,0
+1,-2.5,GO:0006821,chloride transport,M1,1,0
+1,-4.8,GO:0046890,regulation of lipid biosynthetic process,M1,1,0
+1,-2.3,GO:0032259,methylation,M1,1,0
+1,-5.6,GO:0032007,negative regulation of TOR signaling,M1,1,0
+1,-3.8,GO:0055086,nucleobase-containing small molecule metabolic process,M1,1,0
+1,-4.3,GO:0006468,protein phosphorylation,M1,1,0
+1,-6.1,R-HSA-5620924,Intraflagellar transport,M1,1,0
+1,-3.5,R-HSA-9609507,Protein localization,M1,1,0
+1,-2.9,GO:0016197,endosomal transport,M1,1,0
+1,-2.5,GO:0046889,positive regulation of lipid biosynthetic process,M1,1,0
+1,-3,GO:0090066,regulation of anatomical structure size,M1,1,0
+1,-3,GO:0006643,membrane lipid metabolic process,M1,1,0
+1,-4.7,GO:0007033,vacuole organization,M1,1,0
+1,-2.7,GO:0030301,cholesterol transport,M1,1,0
+1,-2.2,R-HSA-1280215,Cytokine Signaling in Immune system,M1,1,0
+1,-4.6,GO:0046034,ATP metabolic process,M1,1,0
+1,-2.8,WP4905,1q21 1 copy number variation syndrome,M1,1,0
+1,-2.7,M128,PID TNF PATHWAY,M1,1,0
+1,-9.4,GO:0010876,lipid localization,M1,1,0
+1,-2.6,GO:0044773,mitotic DNA damage checkpoint signaling,M1,1,0
+1,-2.6,GO:0015986,proton motive force-driven ATP synthesis,M1,1,0
+1,-3.2,WP722,Serotonin HTR1 group and FOS pathway,M1,1,0
+1,-6.2,WP5470,Effect of omega 3 PUFA on Huntington 39 s disease pathways,M1,1,0
+1,-4.1,GO:0098657,import into cell,M1,1,0
+1,-3.6,hsa04620,Toll-like receptor signaling pathway,M1,1,0
+1,-2.7,R-HSA-380972,Energy dependent regulation of mTOR by LKB1-AMPK,M1,1,0
+1,-11,GO:0006644,phospholipid metabolic process,M1,1,0
+1,-4.8,WP4803,Ciliopathies,M1,1,0
+1,-2.6,hsa05012,Parkinson disease,M1,1,0
+1,-2.2,GO:0006367,transcription initiation at RNA polymerase II promoter,M1,1,0
+1,-2.4,GO:0007041,lysosomal transport,M1,1,0
+1,-3.9,hsa04666,Fc gamma R-mediated phagocytosis,M1,1,0
+1,-2.5,GO:0009411,response to UV,M1,1,0
+1,-3.1,R-HSA-9716542,"Signaling by Rho GTPases, Miro GTPases and RHOBTB3",M1,1,0
+1,-2.9,GO:0021533,cell differentiation in hindbrain,M1,1,0
+1,-2.3,GO:0045930,negative regulation of mitotic cell cycle,M1,1,0
+1,-2.4,WP5526,Age related macular degeneration,M1,1,0
+1,-2.7,WP3594,Circadian rhythm genes,M1,1,0
+1,-3.7,R-HSA-450294,MAP kinase activation,M1,1,0
+1,-3.7,GO:0097730,non-motile cilium,M1,1,0
+1,-2.8,GO:0044232,organelle membrane contact site,M1,1,0
+1,-2.4,GO:0033108,mitochondrial respiratory chain complex assembly,M1,1,0
+1,-5,R-HSA-5617833,Cilium Assembly,M1,1,0
+1,-3.3,GO:0062197,cellular response to chemical stress,M1,1,0
+1,-5,GO:1900864,mitochondrial RNA modification,M1,1,0
+1,-5.9,GO:1902911,protein kinase complex,M1,1,0
+1,-2.4,GO:0030097,hemopoiesis,M1,1,0
+1,-2.1,GO:0032981,mitochondrial respiratory chain complex I assembly,M1,1,0
+1,-5.1,GO:0005776,autophagosome,M1,1,0
+1,-2.4,GO:0006906,vesicle fusion,M1,1,0
+1,-3.4,GO:0051592,response to calcium ion,M1,1,0
+1,-4,GO:0046854,phosphatidylinositol phosphate biosynthetic process,M1,1,0
+1,-3.4,WP4880,Host pathogen interaction of human coronaviruses interferon induction,M1,1,0
+1,-4.7,GO:1902115,regulation of organelle assembly,M1,1,0
+1,-2.2,GO:0048839,inner ear development,M1,1,0
+1,-4.9,GO:0032588,trans-Golgi network membrane,M1,1,0
+1,-4.1,GO:0051560,mitochondrial calcium ion homeostasis,M1,1,0
+1,-2.3,WP4324,Mitochondrial complex I assembly model OXPHOS system,M1,1,0
+1,-2.1,GO:0032806,carboxy-terminal domain protein kinase complex,M1,1,0
+1,-2,R-HSA-5696395,Formation of Incision Complex in GG-NER,M1,1,0
+1,-2.6,GO:0042255,ribosome assembly,M1,1,0
+1,-4.7,WP4787,Osteoblast differentiation and related diseases,M1,1,0
+1,-6.3,GO:0009451,RNA modification,M1,1,0
+1,-4.5,GO:0005777,peroxisome,M1,1,0
+1,-3.4,GO:0001101,response to acid chemical,M1,1,0
+1,-2.8,GO:0031641,regulation of myelination,M1,1,0
+1,-2.6,GO:0046460,neutral lipid biosynthetic process,M1,1,0
+1,-4.9,R-HSA-204998,"Cell death signalling via NRAGE, NRIF and NADE",M1,1,0
+1,-2.1,WP673,ErbB signaling,M1,1,0
+1,-3,GO:0045598,regulation of fat cell differentiation,M1,1,0
+1,-2.1,GO:0046928,regulation of neurotransmitter secretion,M1,1,0
+1,-3.6,GO:2000671,regulation of motor neuron apoptotic process,M1,1,0
+1,-2.3,GO:0030135,coated vesicle,M1,1,0
+1,-2.3,R-HSA-168638,NOD1/2 Signaling Pathway,M1,1,0
+1,-2.1,GO:1903131,mononuclear cell differentiation,M1,1,0
+1,-2.1,WP4141,PI3K AKT mTOR vitamin D3 signaling,M1,1,0
+1,-5,GO:0098655,monoatomic cation transmembrane transport,M1,1,0
+1,-4.3,GO:1990351,transporter complex,M1,1,0
+1,-3.3,hsa04380,Osteoclast differentiation,M1,1,0
+1,-2.1,WP3937,Microglia pathogen phagocytosis pathway,M1,1,0
+1,-3.1,WP5215,Targeted agents in triple negative breast cancer,M1,1,0
+1,-3.6,GO:1990778,protein localization to cell periphery,M1,1,0
+1,-2.9,R-HSA-446203,Asparagine N-linked glycosylation,M1,1,0
+1,-2.7,R-HSA-73762,RNA Polymerase I Transcription Initiation,M1,1,0
+1,-3,WP236,Adipogenesis,M1,1,0
+1,-3,GO:0070646,protein modification by small protein removal,M1,1,0
+1,-3.6,GO:0000045,autophagosome assembly,M1,1,0
+1,-3.2,GO:0009895,negative regulation of catabolic process,M1,1,0
+1,-3.1,WP2374,Oncostatin M signaling,M1,1,0
+1,-4,GO:0070936,protein K48-linked ubiquitination,M1,1,0
+1,-2.9,GO:0031929,TOR signaling,M1,1,0
+1,-2.7,GO:0042773,ATP synthesis coupled electron transport,M1,1,0
+1,-2.3,WP3529,Zinc homeostasis,M1,1,0
+1,-2.1,GO:0006887,exocytosis,M1,1,0
+1,-16,GO:0008610,lipid biosynthetic process,M1,1,0
+1,-4.1,GO:0009260,ribonucleotide biosynthetic process,M1,1,0
+1,-3.2,GO:0043523,regulation of neuron apoptotic process,M1,1,0
+1,-2.4,GO:0034497,protein localization to phagophore assembly site,M1,1,0
+1,-4.7,GO:0006605,protein targeting,M1,1,0
+1,-3.5,GO:0006623,protein targeting to vacuole,M1,1,0
+1,-2.9,WP4630,Measles virus infection,M1,1,0
+1,-3.8,R-HSA-8978868,Fatty acid metabolism,M1,1,0
+1,-3,hsa04625,C-type lectin receptor signaling pathway,M1,1,0
+1,-2.8,CORUM:2825,BRCA1-RNA polymerase II complex,M1,1,0
+1,-6,GO:0000209,protein polyubiquitination,M1,1,0
+1,-2.4,M186,PID PDGFRB PATHWAY,M1,1,0
+1,-3.4,GO:0006402,mRNA catabolic process,M1,1,0
+1,-12,GO:0031669,cellular response to nutrient levels,M1,1,0
+1,-2.9,GO:0043473,pigmentation,M1,1,0
+1,-2.1,GO:0071044,histone mRNA catabolic process,M1,1,0
+1,-3.4,hsa04664,Fc epsilon RI signaling pathway,M1,1,0
+1,-6.9,GO:0120009,intermembrane lipid transfer,M1,1,0
+1,-2.4,GO:0006779,porphyrin-containing compound biosynthetic process,M1,1,0
+1,-6.6,GO:0043632,modification-dependent macromolecule catabolic process,M1,1,0
+1,-2.4,GO:0006829,zinc ion transport,M1,1,0
+1,-2.1,M272,PID CD8 TCR DOWNSTREAM PATHWAY,M1,1,0
+1,-3,GO:0019752,carboxylic acid metabolic process,M1,1,0
+1,-2.2,R-HSA-73894,DNA Repair,M1,1,0
+1,-13,GO:0046486,glycerolipid metabolic process,M1,1,0
+1,-2.4,GO:0033014,tetrapyrrole biosynthetic process,M1,1,0
+1,-2.3,GO:0140895,cell surface toll-like receptor signaling pathway,M1,1,0
+1,-2.6,GO:0008361,regulation of cell size,M1,1,0
+1,-5,hsa05131,Shigellosis,M1,1,0
+1,-2.6,GO:0006997,nucleus organization,M1,1,0
+1,-2.3,R-HSA-5357905,Regulation of TNFR1 signaling,M1,1,0
+1,-2.9,GO:0051174,regulation of phosphorus metabolic process,M1,1,0
+1,-2.4,R-HSA-611105,Respiratory electron transport,M1,1,0
+1,-9.4,GO:0006869,lipid transport,M1,1,0
+1,-4.9,GO:1902554,serine/threonine protein kinase complex,M1,1,0
+1,-2,WP51,Regulation of actin cytoskeleton,M1,1,0
+1,-4.2,R-HSA-8953854,Metabolism of RNA,M1,1,0
+1,-2.2,GO:0002521,leukocyte differentiation,M1,1,0
+1,-3.9,GO:0005813,centrosome,M1,1,0
+1,-2.1,R-HSA-5357956,TNFR1-induced NF-kappa-B signaling pathway,M1,1,0
+1,-2.3,GO:0030001,metal ion transport,M1,1,0
+1,-2.6,R-HSA-194315,Signaling by Rho GTPases,M1,1,0
+1,-2.5,GO:0036464,cytoplasmic ribonucleoprotein granule,M1,1,0
+1,-2.9,GO:0000012,single strand break repair,M1,1,0
+1,-3.1,GO:0098771,inorganic ion homeostasis,M1,1,0
+1,-2.7,GO:0002429,immune response-activating cell surface receptor signaling pathway,M1,1,0
+1,-2,GO:0032728,positive regulation of interferon-beta production,M1,1,0
+1,-2.4,hsa05142,Chagas disease,M1,1,0
+1,-2.2,WP5083,Neuroinflammation and glutamatergic signaling,M1,1,0
+1,-3.6,hsa04142,Lysosome,M1,1,0
+1,-2.2,GO:0032204,regulation of telomere maintenance,M1,1,0
+1,-2,GO:0061564,axon development,M1,1,0
+1,-2.9,GO:1901988,negative regulation of cell cycle phase transition,M1,1,0
+1,-3,GO:1901699,cellular response to nitrogen compound,M1,1,0
+1,-2.9,WP4521,Glycosylation and related congenital defects,M1,1,0
+1,-3.5,GO:0016579,protein deubiquitination,M1,1,0
+1,-6.9,GO:0006511,ubiquitin-dependent protein catabolic process,M1,1,0
+1,-3.9,GO:0006163,purine nucleotide metabolic process,M1,1,0
+1,-3.9,R-HSA-8980692,RHOA GTPase cycle,M1,1,0
+1,-3.1,GO:0015849,organic acid transport,M1,1,0
+1,-2.3,GO:0000280,nuclear division,M1,1,0
+1,-3.1,GO:0048285,organelle fission,M1,1,0
+1,-3,GO:0030705,cytoskeleton-dependent intracellular transport,M1,1,0
+1,-15,GO:0005743,mitochondrial inner membrane,M1,1,0
+1,-3.2,GO:0071229,cellular response to acid chemical,M1,1,0
+1,-2.2,R-HSA-5696399,Global Genome Nucleotide Excision Repair (GG-NER),M1,1,0
+1,-2.7,R-HSA-5223345,Miscellaneous transport and binding events,M1,1,0
+1,-2.3,GO:1903232,melanosome assembly,M1,1,0
+1,-3.5,GO:0180046,GPI anchored protein biosynthesis,M1,1,0
+1,-3.7,R-HSA-1660516,Synthesis of PIPs at the early endosome membrane,M1,1,0
+1,-3.5,GO:0016482,cytosolic transport,M1,1,0
+1,-3.5,GO:1902652,secondary alcohol metabolic process,M1,1,0
+1,-5.6,GO:0006914,autophagy,M1,1,0
+1,-5.2,GO:0035859,Seh1-associated complex,M1,1,0
+1,-7.6,R-HSA-983169,Class I MHC mediated antigen processing & presentation,M1,1,0
+1,-2.8,GO:0060173,limb development,M1,1,0
+1,-2.5,GO:0090575,RNA polymerase II transcription regulator complex,M1,1,0
+1,-3.1,GO:0032438,melanosome organization,M1,1,0
+1,-2,hsa04935,"Growth hormone synthesis, secretion and action",M1,1,0
+1,-2.8,GO:0055080,monoatomic cation homeostasis,M1,1,0
+1,-6.4,R-HSA-1852241,Organelle biogenesis and maintenance,M1,1,0
+1,-4.6,hsa05017,Spinocerebellar ataxia,M1,1,0
+1,-3.4,GO:0016050,vesicle organization,M1,1,0
+1,-3.9,GO:1990246,uniplex complex,M1,1,0
+1,-3.5,GO:1902600,proton transmembrane transport,M1,1,0
+1,-4.5,GO:0006895,Golgi to endosome transport,M1,1,0
+1,-6.7,GO:0000139,Golgi membrane,M1,1,0
+1,-2.6,GO:0072330,monocarboxylic acid biosynthetic process,M1,1,0
+1,-4.2,CORUM:6174,Intraflagellar transport complex B peripheral subcomplex,M1,1,0
+1,-3.6,GO:0000288,"nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay",M1,1,0
+1,-2.5,GO:0010038,response to metal ion,M1,1,0
+1,-3.3,GO:0006487,protein N-linked glycosylation,M1,1,0
+1,-3.1,GO:0007272,ensheathment of neurons,M1,1,0
+1,-2.7,GO:0019218,regulation of steroid metabolic process,M1,1,0
+1,-12,GO:0009267,cellular response to starvation,M1,1,0
+1,-2.4,GO:0051403,stress-activated MAPK cascade,M1,1,0
+1,-2.1,GO:0035023,regulation of Rho protein signal transduction,M1,1,0
+1,-2.8,GO:0019646,aerobic electron transport chain,M1,1,0
+1,-2,WP3612,Photodynamic therapy induced NFE2L2 NRF2 survival signaling,M1,1,0
+1,-2.6,GO:0042149,cellular response to glucose starvation,M1,1,0
+1,-4.6,WP2533,Glycerophospholipid biosynthetic pathway,M1,1,0
+1,-2.5,WP4705,Pathways of nucleic acid metabolism and innate immune sensing,M1,1,0
+1,-2.9,GO:0045786,negative regulation of cell cycle,M1,1,0
+1,-2.6,GO:0046463,acylglycerol biosynthetic process,M1,1,0
+1,-2.9,GO:0000075,cell cycle checkpoint signaling,M1,1,0
+1,-3.5,GO:0006505,GPI anchor metabolic process,M1,1,0
+1,-2.8,GO:0032868,response to insulin,M1,1,0
+1,-2.7,GO:0046949,fatty-acyl-CoA biosynthetic process,M1,1,0
+1,-2.5,WP4396,Nonalcoholic fatty liver disease,M1,1,0
+1,-3.8,GO:0034204,lipid translocation,M1,1,0
+1,-3.4,GO:0045071,negative regulation of viral genome replication,M1,1,0
+1,-2.5,WP4928,MAPK pathway in congenital thyroid cancer,M1,1,0
+1,-2.5,GO:0044774,mitotic DNA integrity checkpoint signaling,M1,1,0
+1,-3.6,GO:0051225,spindle assembly,M1,1,0
+1,-2.2,GO:1905039,carboxylic acid transmembrane transport,M1,1,0
+1,-2.1,GO:0099643,signal release from synapse,M1,1,0
+1,-3.1,GO:0008366,axon ensheathment,M1,1,0
+1,-4.5,R-HSA-8932506,DAG1 core M1 glycosylations,M1,1,0
+1,-4.2,GO:1903725,regulation of phospholipid metabolic process,M1,1,0
+1,-2,R-HSA-6799198,Complex I biogenesis,M1,1,0
+1,-5.1,R-HSA-168138,Toll Like Receptor 9 (TLR9) Cascade,M1,1,0
+1,-3.3,GO:0000956,nuclear-transcribed mRNA catabolic process,M1,1,0
+1,-4.3,GO:0006399,tRNA metabolic process,M1,1,0
+1,-2.8,GO:0031570,DNA integrity checkpoint signaling,M1,1,0
+1,-2,GO:0061013,regulation of mRNA catabolic process,M1,1,0
+1,-6.8,GO:0005802,trans-Golgi network,M1,1,0
+1,-2.1,R-HSA-450321,JNK (c-Jun kinases) phosphorylation and  activation mediated by activated human TAK1,M1,1,0
+1,-3.3,hsa00100,Steroid biosynthesis,M1,1,0
+1,-3.8,GO:0007059,chromosome segregation,M1,1,0
+1,-2.5,hsa04070,Phosphatidylinositol signaling system,M1,1,0
+1,-5.4,hsa05161,Hepatitis B,M1,1,0
+1,-4.2,R-HSA-9612973,Autophagy,M1,1,0
+1,-5.4,GO:0031968,organelle outer membrane,M1,1,0
+1,-7,GO:1990928,response to amino acid starvation,M1,1,0
+1,-4.4,GO:0005778,peroxisomal membrane,M1,1,0
+1,-3.1,GO:0042552,myelination,M1,1,0
+1,-4.9,R-HSA-193648,NRAGE signals death through JNK,M1,1,0
+1,-2.1,WP4155,Endometrial cancer,M1,1,0
+1,-2.8,GO:0098803,respiratory chain complex,M1,1,0
+1,-2,GO:2000377,regulation of reactive oxygen species metabolic process,M1,1,0
+1,-2,GO:0018279,protein N-linked glycosylation via asparagine,M1,1,0
+1,-3.3,GO:0051561,positive regulation of mitochondrial calcium ion concentration,M1,1,0
+1,-6,R-HSA-9639288,Amino acids regulate mTORC1,M1,1,0
+1,-5.6,GO:0061919,process utilizing autophagic mechanism,M1,1,0
+1,-3.4,WP35,G protein signaling,M1,1,0
+1,-4.2,GO:0009142,nucleoside triphosphate biosynthetic process,M1,1,0
+1,-3.3,GO:0140112,extracellular vesicle biogenesis,M1,1,0
+1,-2.6,M83,PID CDC42 REG PATHWAY,M1,1,0
+1,-2.3,GO:0006352,DNA-templated transcription initiation,M1,1,0
+1,-3,R-HSA-9711097,Cellular response to starvation,M1,1,0
+1,-7,GO:0051603,proteolysis involved in protein catabolic process,M1,1,0
+1,-2,hsa04912,GnRH signaling pathway,M1,1,0
+1,-2.2,GO:0045834,positive regulation of lipid metabolic process,M1,1,0
+1,-3.3,hsa04120,Ubiquitin mediated proteolysis,M1,1,0
+1,-3.1,GO:0006641,triglyceride metabolic process,M1,1,0
+1,-3,R-HSA-168164,Toll Like Receptor 3 (TLR3) Cascade,M1,1,0
+1,-2.7,GO:0022900,electron transport chain,M1,1,0
+1,-5.1,GO:0016241,regulation of macroautophagy,M1,1,0
+1,-3.3,GO:0006886,intracellular protein transport,M1,1,0
+1,-2.1,R-HSA-425407,SLC-mediated transmembrane transport,M1,1,0
+1,-4.1,GO:0070900,mitochondrial tRNA modification,M1,1,0
+1,-2.5,M63,PID AVB3 OPN PATHWAY,M1,1,0
+1,-2.6,GO:0043434,response to peptide hormone,M1,1,0
+1,-2.2,GO:0030672,synaptic vesicle membrane,M1,1,0
+1,-7.1,GO:1903432,regulation of TORC1 signaling,M1,1,0
+1,-2.2,GO:0000902,cell morphogenesis,M1,1,0
+1,-3.4,GO:0006836,neurotransmitter transport,M1,1,0
+1,-2.4,hsa04710,Circadian rhythm,M1,1,0
+1,-19,GO:0031966,mitochondrial membrane,M1,1,0
+1,-3.8,GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,M1,1,0
+1,-6.5,GO:0032008,positive regulation of TOR signaling,M1,1,0
+1,-3.5,hsa05170,Human immunodeficiency virus 1 infection,M1,1,0
+1,-3.1,GO:0010948,negative regulation of cell cycle process,M1,1,0
+1,-2.1,GO:0051650,establishment of vesicle localization,M1,1,0
+1,-5.5,WP5531,AKT signaling and ARTD family members,M1,1,0
+1,-2.1,GO:0051259,protein complex oligomerization,M1,1,0
+1,-3.4,GO:0006351,DNA-templated transcription,M1,1,0
+1,-3.3,GO:0021692,cerebellar Purkinje cell layer morphogenesis,M1,1,0
+1,-2.8,GO:0035435,phosphate ion transmembrane transport,M1,1,0
+1,-4.4,GO:0061700,GATOR2 complex,M1,1,0
+1,-2.6,R-HSA-70268,Pyruvate metabolism,M1,1,0
+1,-2.4,R-HSA-8868766,rRNA processing in the mitochondrion,M1,1,0
+1,-2.2,GO:0031098,stress-activated protein kinase signaling cascade,M1,1,0
+1,-3,GO:0018209,peptidyl-serine modification,M1,1,0
+1,-4.4,WP111,Electron transport chain OXPHOS system in mitochondria,M1,1,0
+1,-4.2,GO:1902495,transmembrane transporter complex,M1,1,0
+1,-7.7,GO:0046488,phosphatidylinositol metabolic process,M1,1,0
+1,-2.3,M99,PID TXA2PATHWAY,M1,1,0
+1,-13,GO:0045017,glycerolipid biosynthetic process,M1,1,0
+1,-4.7,GO:1901293,nucleoside phosphate biosynthetic process,M1,1,0
+1,-4.5,R-HSA-3781860,Diseases associated with N-glycosylation of proteins,M1,1,0
+1,-2.1,GO:0031646,positive regulation of nervous system process,M1,1,0
+1,-4.1,R-HSA-168179,Toll Like Receptor TLR1:TLR2 Cascade,M1,1,0
+1,-3,GO:0120035,regulation of plasma membrane bounded cell projection organization,M1,1,0
+1,-2.7,GO:0034250,positive regulation of amide metabolic process,M1,1,0
+1,-2.6,GO:0022011,myelination in peripheral nervous system,M1,1,0
+1,-3.8,GO:0016126,sterol biosynthetic process,M1,1,0
+1,-2.1,GO:0043009,chordate embryonic development,M1,1,0
+1,-2.6,GO:0099504,synaptic vesicle cycle,M1,1,0
+1,-2.1,GO:0034045,phagophore assembly site membrane,M1,1,0
+1,-4,GO:0006839,mitochondrial transport,M1,1,0
+1,-7.8,GO:0030990,intraciliary transport particle,M1,1,0
+1,-3,GO:0070498,interleukin-1-mediated signaling pathway,M1,1,0
+1,-2.8,R-HSA-9013026,RHOB GTPase cycle,M1,1,0
+1,-2.2,GO:0010212,response to ionizing radiation,M1,1,0
+1,-5.7,GO:0016236,macroautophagy,M1,1,0
+1,-4.8,GO:0005815,microtubule organizing center,M1,1,0
+1,-4.4,GO:0006066,alcohol metabolic process,M1,1,0
+1,-3.7,R-HSA-1483255,PI Metabolism,M1,1,0
+1,-3.1,GO:0019725,cellular homeostasis,M1,1,0
+1,-3.8,GO:0043201,response to L-leucine,M1,1,0
+1,-6,hsa04140,Autophagy - animal,M1,1,0
+1,-3.8,GO:0009896,positive regulation of catabolic process,M1,1,0
+1,-2.3,GO:0007224,smoothened signaling pathway,M1,1,0
+1,-3.9,R-HSA-416482,G alpha (12/13) signalling events,M1,1,0
+1,-2.5,GO:0042770,signal transduction in response to DNA damage,M1,1,0
+1,-2.4,R-HSA-187687,Signalling to ERKs,M1,1,0
+1,-2.5,GO:0070382,exocytic vesicle,M1,1,0
+1,-5,GO:0019216,regulation of lipid metabolic process,M1,1,0
+1,-3,GO:0038203,TORC2 signaling,M1,1,0
+1,-3.2,GO:0006851,mitochondrial calcium ion transmembrane transport,M1,1,0
+1,-2.9,GO:1990253,cellular response to leucine starvation,M1,1,0
+1,-4.2,R-HSA-166058,MyD88:MAL(TIRAP) cascade initiated on plasma membrane,M1,1,0
+1,-2,GO:0099023,vesicle tethering complex,M1,1,0
+1,-7.8,GO:0005765,lysosomal membrane,M1,1,0
+1,-4.8,GO:0006281,DNA repair,M1,1,0
+1,-4.4,GO:0006754,ATP biosynthetic process,M1,1,0
+1,-4,hsa00510,N-Glycan biosynthesis,M1,1,0
+1,-3,GO:0140534,endoplasmic reticulum protein-containing complex,M1,1,0
+1,-2.3,WP4863,Host pathogen interaction of human coronaviruses autophagy,M1,1,0
+1,-7.7,R-HSA-983168,Antigen processing: Ubiquitination & Proteasome degradation,M1,1,0
+1,-2.5,GO:0010043,response to zinc ion,M1,1,0
+1,-2.4,GO:0034142,toll-like receptor 4 signaling pathway,M1,1,0
+1,-8.2,GO:0030991,intraciliary transport particle A,M1,1,0
+1,-4.2,hsa04932,Non-alcoholic fatty liver disease,M1,1,0
+1,-2.2,GO:0021696,cerebellar cortex morphogenesis,M1,1,0
+1,-2.7,WP4718,Cholesterol metabolism with Bloch and Kandutsch Russell pathways,M1,1,0
+1,-2.3,GO:0006882,intracellular zinc ion homeostasis,M1,1,0
+1,-2.7,GO:0021697,cerebellar cortex formation,M1,1,0
+1,-3.9,GO:0051054,positive regulation of DNA metabolic process,M1,1,0
+1,-2.6,GO:0006897,endocytosis,M1,1,0
+1,-3,GO:0002433,immune response-regulating cell surface receptor signaling pathway involved in phagocytosis,M1,1,0
+1,-4.8,R-HSA-168176,Toll Like Receptor 5 (TLR5) Cascade,M1,1,0
+1,-2.4,GO:0006909,phagocytosis,M1,1,0
+1,-2,GO:0045009,chitosome,M1,1,0
+1,-3.3,GO:0070383,DNA cytosine deamination,M1,1,0
+1,-8.7,GO:0031667,response to nutrient levels,M1,1,0
+1,-2.8,WP4532,Intraflagellar transport proteins binding to dynein,M1,1,0
+1,-2.1,GO:0031901,early endosome membrane,M1,1,0
+1,-2.1,GO:0010256,endomembrane system organization,M1,1,0
+1,-2.1,GO:0005758,mitochondrial intermembrane space,M1,1,0
+1,-2.6,WP75,Toll like receptor signaling,M1,1,0
+1,-2.8,GO:0006309,apoptotic DNA fragmentation,M1,1,0
+1,-2.1,GO:1903509,liposaccharide metabolic process,M1,1,0
+1,-6.2,GO:0061695,"transferase complex, transferring phosphorus-containing groups",M1,1,0
+1,-6.3,GO:0048471,perinuclear region of cytoplasm,M1,1,0
+1,-7,GO:0000959,mitochondrial RNA metabolic process,M1,1,0
+1,-7,GO:0098791,Golgi apparatus subcompartment,M1,1,0
+1,-3.5,GO:0006506,GPI anchor biosynthetic process,M1,1,0
+1,-4.2,GO:0034655,nucleobase-containing compound catabolic process,M1,1,0
+1,-3,WP2261,Glioblastoma signaling,M1,1,0
+1,-2,GO:0030262,apoptotic nuclear changes,M1,1,0
+1,-2.1,GO:0007269,neurotransmitter secretion,M1,1,0
+1,-3.1,GO:0000407,phagophore assembly site,M1,1,0
+1,-2.1,GO:0010232,vascular transport,M1,1,0
+1,-4.9,R-HSA-1428517,Aerobic respiration and respiratory electron transport,M1,1,0
+1,-2.9,GO:0061723,glycophagy,M1,1,0
+1,-3.9,GO:0072665,protein localization to vacuole,M1,1,0
+1,-4,WP5153,N glycan biosynthesis,M1,1,0
+1,-4.3,hsa05415,Diabetic cardiomyopathy,M1,1,0
+1,-3.2,GO:0070525,tRNA threonylcarbamoyladenosine metabolic process,M1,1,0
+1,-2.6,GO:0046467,membrane lipid biosynthetic process,M1,1,0
+1,-2,GO:0002218,activation of innate immune response,M1,1,0
+1,-2.2,R-HSA-9013404,RAC2 GTPase cycle,M1,1,0
+1,-6.2,GO:0031902,late endosome membrane,M1,1,0
+1,-2.1,GO:1901987,regulation of cell cycle phase transition,M1,1,0
+1,-5.2,GO:0141188,nucleic acid catabolic process,M1,1,0
+1,-2,GO:0035024,negative regulation of Rho protein signal transduction,M1,1,0
+1,-4,GO:0046390,ribose phosphate biosynthetic process,M1,1,0
+1,-2.3,GO:0045055,regulated exocytosis,M1,1,0
+1,-4.2,WP1471,Target of rapamycin signaling,M1,1,0
+1,-9.3,GO:0141124,intracellular signaling cassette,M1,1,0
+1,-2.5,WP5530,MAPK signaling and ARTD family members,M1,1,0
+1,-3.5,GO:0072594,establishment of protein localization to organelle,M1,1,0
+1,-3.1,GO:0043524,negative regulation of neuron apoptotic process,M1,1,0
+1,-2.3,GO:0033490,cholesterol biosynthetic process via lathosterol,M1,1,0
+1,-2.7,R-HSA-5218920,VEGFR2 mediated vascular permeability,M1,1,0
+1,-2.9,GO:0072666,establishment of protein localization to vacuole,M1,1,0
+1,-6.4,GO:0010008,endosome membrane,M1,1,0
+1,-2.8,GO:0080135,regulation of cellular response to stress,M1,1,0
+1,-4,GO:0006401,RNA catabolic process,M1,1,0
+1,-4.7,GO:0008202,steroid metabolic process,M1,1,0
+1,-4.2,hsa04068,FoxO signaling pathway,M1,1,0
+1,-3.6,GO:0090646,mitochondrial tRNA processing,M1,1,0
+1,-2.5,GO:0098813,nuclear chromosome segregation,M1,1,0
+1,-2.7,GO:0000027,ribosomal large subunit assembly,M1,1,0
+1,-2.2,GO:0006664,glycolipid metabolic process,M1,1,0
+1,-3.5,M136,PID FOXO PATHWAY,M1,1,0
+1,-5.7,R-HSA-193704,p75 NTR receptor-mediated signalling,M1,1,0
+1,-2.3,GO:0090174,organelle membrane fusion,M1,1,0
+1,-2.1,R-HSA-9768919,NPAS4 regulates expression of target genes,M1,1,0
+1,-2.2,hsa05210,Colorectal cancer,M1,1,0
+1,-4.4,WP2637,Interleukin 1 IL 1 structural pathway,M1,1,0
+1,-2.3,GO:0008021,synaptic vesicle,M1,1,0
+1,-3.4,GO:0035721,intraciliary retrograde transport,M1,1,0
+1,-2.7,GO:0006783,heme biosynthetic process,M1,1,0
+1,-2.1,R-HSA-5696400,Dual Incision in GG-NER,M1,1,0
+1,-2,GO:0022037,metencephalon development,M1,1,0
+1,-3.4,WP1982,Sterol regulatory element binding proteins SREBP signaling,M1,1,0
+1,-2.5,GO:0051276,chromosome organization,M1,1,0
+1,-3.2,WP4877,Host pathogen interaction of human coronaviruses MAPK signaling,M1,1,0
+1,-2.3,hsa05213,Endometrial cancer,M1,1,0
+1,-2.3,M271,PID PI3K PLC TRK PATHWAY,M1,1,0
+1,-5.3,GO:0019867,outer membrane,M1,1,0
+1,-4.4,M270,PID MAPK TRK PATHWAY,M1,1,0
+1,-2.1,GO:0071230,cellular response to amino acid stimulus,M1,1,0
+1,-2.4,WP195,IL1 signaling,M1,1,0
+1,-6,GO:0140053,mitochondrial gene expression,M1,1,0
+1,-2,GO:0044804,nucleophagy,M1,1,0
+1,-3.8,CORUM:6172,Intraflagellar transport complex B,M1,1,0
+1,-3.2,GO:0016239,positive regulation of macroautophagy,M1,1,0
+1,-4.8,R-HSA-975871,MyD88 cascade initiated on plasma membrane,M1,1,0
+1,-7.8,GO:0098852,lytic vacuole membrane,M1,1,0
+1,-2.5,GO:0000932,P-body,M1,1,0
+1,-2.7,hsa05418,Fluid shear stress and atherosclerosis,M1,1,0
+1,-2.9,GO:0017157,regulation of exocytosis,M1,1,0
+1,-2.9,GO:1902017,regulation of cilium assembly,M1,1,0
+1,-3,GO:0038096,Fc-gamma receptor signaling pathway involved in phagocytosis,M1,1,0
+1,-4.4,GO:0051668,localization within membrane,M1,1,0
+1,-3.4,hsa05020,Prion disease,M1,1,0
+1,-2.3,GO:0098553,lumenal side of endoplasmic reticulum membrane,M1,1,0
+1,-3.5,GO:0021575,hindbrain morphogenesis,M1,1,0
+1,-2.8,GO:0007622,rhythmic behavior,M1,1,0
+1,-2.1,GO:0140042,lipid droplet formation,M1,1,0
+1,-2,R-HSA-1489509,DAG and IP3 signaling,M1,1,0
+1,-4.2,GO:0072657,protein localization to membrane,M1,1,0
+1,-5.5,WP5504,Disorders of mitochondrial homeostatis dynamics protein import and quality control,M1,1,0
+1,-3.2,GO:0031344,regulation of cell projection organization,M1,1,0
+1,-3.8,hsa00564,Glycerophospholipid metabolism,M1,1,0
+1,-2.8,GO:0070536,protein K63-linked deubiquitination,M1,1,0
+1,-3.6,GO:0021587,cerebellum morphogenesis,M1,1,0
+1,-6.2,CORUM:6585,Intraflagellar transport complex A,M1,1,0
+1,-4.6,GO:0009152,purine ribonucleotide biosynthetic process,M1,1,0
+1,-2.9,GO:0006289,nucleotide-excision repair,M1,1,0
+1,-2.1,GO:0150104,transport across blood-brain barrier,M1,1,0
+1,-2.9,R-HSA-166166,MyD88-independent TLR4 cascade,M1,1,0
+1,-4.4,GO:0051640,organelle localization,M1,1,0
+1,-2.5,R-HSA-352230,Amino acid transport across the plasma membrane,M1,1,0
+1,-4.7,WP4577,Neurodegeneration with brain iron accumulation NBIA subtypes pathway,M1,1,0
+1,-3.7,GO:0032391,photoreceptor connecting cilium,M1,1,0
+1,-3.7,GO:0051604,protein maturation,M1,1,0
+1,-2.9,GO:0071233,cellular response to L-leucine,M1,1,0
+1,-2.3,GO:0030136,clathrin-coated vesicle,M1,1,0
+1,-3,R-HSA-446193,"Biosynthesis of the N-glycan precursor (dolichol lipid-linked oligosaccharide, LLO) and transfer to a nascent protein",M1,1,0
+1,-2.1,GO:0030119,AP-type membrane coat adaptor complex,M1,1,0
+1,-2.8,WP5496,Targeted therapy in breast cancer,M1,1,0
+1,-3.2,GO:0015693,magnesium ion transport,M1,1,0
+1,-2.5,GO:0009792,embryo development ending in birth or egg hatching,M1,1,0
+1,-3.3,WP5275,Ether lipid biosynthesis,M1,1,0
+1,-3.1,CORUM:1009,TFIIH transcription factor complex,M1,1,0
+1,-6.7,GO:0019941,modification-dependent protein catabolic process,M1,1,0
+1,-3.5,GO:0061462,protein localization to lysosome,M1,1,0
+1,-2.1,GO:0035264,multicellular organism growth,M1,1,0
+1,-4.1,GO:0048284,organelle fusion,M1,1,0
+1,-4.4,WP4971,Phosphoinositides metabolism,M1,1,0
+1,-2.9,GO:0071294,cellular response to zinc ion,M1,1,0
+1,-4.5,GO:0061512,protein localization to cilium,M1,1,0
+1,-10,GO:0032446,protein modification by small protein conjugation,M1,1,0
+1,-2.5,hsa03320,PPAR signaling pathway,M1,1,0
+1,-2.2,GO:0043129,surfactant homeostasis,M1,1,0
+1,-3.7,GO:0019693,ribose phosphate metabolic process,M1,1,0
+1,-3.2,GO:0046165,alcohol biosynthetic process,M1,1,0
+1,-9.5,GO:0010506,regulation of autophagy,M1,1,0
+1,-4.3,GO:0015914,phospholipid transport,M1,1,0
+1,-3.3,R-HSA-166016,Toll Like Receptor 4 (TLR4) Cascade,M1,1,0
+1,-2.5,R-HSA-449147,Signaling by Interleukins,M1,1,0
+1,-2.5,WP2435,Quercetin and Nf kB AP 1 induced apoptosis,M1,1,0
+1,-2.1,WP5521,SLC25A46 pathway,M1,1,0
+1,-2.5,R-HSA-9920951,Dengue virus modulates apoptosis,M1,1,0
+1,-2.5,GO:0120032,regulation of plasma membrane bounded cell projection assembly,M1,1,0
+1,-2.2,GO:0043583,ear development,M1,1,0
+1,-5.1,WP5234,Bardet Biedl syndrome,M1,1,0
+1,-2.8,WP4318,Mitochondrial fission and fusion,M1,1,0
+1,-2.7,GO:0048511,rhythmic process,M1,1,0
+1,-2.3,GO:0002221,pattern recognition receptor signaling pathway,M1,1,0
+1,-2.7,GO:0006119,oxidative phosphorylation,M1,1,0
+1,-5,GO:0033044,regulation of chromosome organization,M1,1,0
+1,-3,WP712,Estrogen signaling,M1,1,0
+1,-2.1,GO:1901991,negative regulation of mitotic cell cycle phase transition,M1,1,0
+1,-3,GO:0006390,mitochondrial transcription,M1,1,0
+1,-3.5,GO:0051058,negative regulation of small GTPase mediated signal transduction,M1,1,0
+1,-11,GO:0005774,vacuolar membrane,M1,1,0
+1,-2.3,WP5193,Cholesterol synthesis disorders,M1,1,0
+1,-5.1,GO:0042073,intraciliary transport,M1,1,0
+1,-3.6,hsa04010,MAPK signaling pathway,M1,1,0
+1,-3.1,R-HSA-2151209,Activation of PPARGC1A (PGC-1alpha) by phosphorylation,M1,1,0
+1,-2.3,WP5333,Enterocyte cholesterol metabolism,M1,1,0
+1,-2.2,GO:0009247,glycolipid biosynthetic process,M1,1,0
+1,-2.1,GO:0001510,RNA methylation,M1,1,0
+1,-2.1,GO:0031643,positive regulation of myelination,M1,1,0
+1,-4.8,hsa05135,Yersinia infection,M1,1,0
+1,-4,GO:0016125,sterol metabolic process,M1,1,0
+1,-2.3,R-HSA-1660514,Synthesis of PIPs at the Golgi membrane,M1,1,0
+1,-4,hsa04668,TNF signaling pathway,M1,1,0
+1,-3.5,GO:0010970,transport along microtubule,M1,1,0
+1,-3.8,GO:0045333,cellular respiration,M1,1,0
+1,-2.3,GO:0030658,transport vesicle membrane,M1,1,0
+1,-3.9,hsa04936,Alcoholic liver disease,M1,1,0
+1,-2,GO:0032580,Golgi cisterna membrane,M1,1,0
+1,-12,GO:0016567,protein ubiquitination,M1,1,0
+1,-3.2,GO:0008053,mitochondrial fusion,M1,1,0
+1,-5.3,WP4536,Genes related to primary cilium development based on CRISPR,M1,1,0
+1,-3.8,GO:0009259,ribonucleotide metabolic process,M1,1,0
+1,-2.9,GO:0022904,respiratory electron transport chain,M1,1,0
+1,-2,GO:0062012,regulation of small molecule metabolic process,M1,1,0
+1,-2.5,R-HSA-8957322,Metabolism of steroids,M1,1,0
+1,-2.7,GO:0042775,mitochondrial ATP synthesis coupled electron transport,M1,1,0
+1,-4.7,GO:0009145,purine nucleoside triphosphate biosynthetic process,M1,1,0
+1,-8.7,hsa04150,mTOR signaling pathway,M1,1,0
+1,-4.1,R-HSA-181438,Toll Like Receptor 2 (TLR2) Cascade,M1,1,0
+1,-2.2,R-HSA-5668914,Diseases of metabolism,M1,1,0
+1,-2.3,R-HSA-75105,Fatty acyl-CoA biosynthesis,M1,1,0
+1,-2.2,R-HSA-9031628,NGF-stimulated transcription,M1,1,0
+1,-3.4,R-HSA-6807062,Zymostenol biosynthesis via lathosterol (Kandutsch-Russell pathway),M1,1,0
+1,-3.1,GO:0043200,response to amino acid,M1,1,0
+1,-2.1,GO:0071375,cellular response to peptide hormone stimulus,M1,1,0
+1,-5.7,GO:0044088,regulation of vacuole organization,M1,1,0
+1,-3.7,R-HSA-6782315,tRNA modification in the nucleus and cytosol,M1,1,0
+1,-6.9,GO:0010508,positive regulation of autophagy,M1,1,0
+1,-2.9,R-HSA-194138,Signaling by VEGF,M1,1,0
+1,-4.2,WP437,EGF EGFR signaling,M1,1,0
+1,-2.2,GO:0099501,exocytic vesicle membrane,M1,1,0
+1,-11,GO:0008654,phospholipid biosynthetic process,M1,1,0
+1,-2.1,GO:0042632,cholesterol homeostasis,M1,1,0
+1,-8.2,R-HSA-73887,Death Receptor Signaling,M1,1,0
+1,-2.4,GO:0021510,spinal cord development,M1,1,0
+1,-3.3,CORUM:107,TFIIH transcription factor complex,M1,1,0
+1,-2.2,WP4659,Gastrin signaling,M1,1,0
+1,-4.9,hsa05014,Amyotrophic lateral sclerosis,M1,1,0
+1,-2.3,GO:0043278,response to morphine,M1,1,0
+1,-3.2,GO:0006695,cholesterol biosynthetic process,M1,1,0
+1,-2.3,GO:0071071,regulation of phospholipid biosynthetic process,M1,1,0
+1,-2.7,GO:0031175,neuron projection development,M1,1,0
+1,-2.2,WP4871,Kisspeptin kisspeptin receptor system in the ovary,M1,1,0
+1,-3,GO:0019432,triglyceride biosynthetic process,M1,1,0
+1,-3.2,R-HSA-4420097,VEGFA-VEGFR2 Pathway,M1,1,0
+1,-2.5,WP4674,Head and neck squamous cell carcinoma,M1,1,0
+1,-4.8,R-HSA-168142,Toll Like Receptor 10 (TLR10) Cascade,M1,1,0
+1,-3,R-HSA-5628897,TP53 Regulates Metabolic Genes,M1,1,0
+1,-4.5,GO:0009201,ribonucleoside triphosphate biosynthetic process,M1,1,0
+1,-7.8,GO:0032006,regulation of TOR signaling,M1,1,0
+1,-4.2,R-HSA-8932504,DAG1 core M2 glycosylations,M1,1,0
+1,-2.7,GO:0051607,defense response to virus,M1,1,0
+1,-2.5,GO:0030003,intracellular monoatomic cation homeostasis,M1,1,0
+1,-14,R-HSA-556833,Metabolism of lipids,M1,1,0
+1,-2.4,R-HSA-2559583,Cellular Senescence,M1,1,0
+1,-3.9,R-HSA-389599,Alpha-oxidation of phytanate,M1,1,0
+1,-2.4,GO:0003333,amino acid transmembrane transport,M1,1,0
+1,-2.1,hsa04662,B cell receptor signaling pathway,M1,1,0
+1,-2.1,GO:0032365,intracellular lipid transport,M1,1,0
+1,-3.7,GO:0021694,cerebellar Purkinje cell layer formation,M1,1,0
+1,-4.3,R-HSA-3700989,Transcriptional Regulation by TP53,M1,1,0
+1,-2.8,R-HSA-6793080,rRNA modification in the mitochondrion,M1,1,0
+1,-3.1,GO:1905515,non-motile cilium assembly,M1,1,0
+1,-2.3,R-HSA-9958863,SLC-mediated transport of amino acids,M1,1,0
+1,-4.9,R-HSA-9013148,CDC42 GTPase cycle,M1,1,0
+1,-5.5,GO:2000785,regulation of autophagosome assembly,M1,1,0
+1,-2.9,GO:0002431,Fc receptor mediated stimulatory signaling pathway,M1,1,0
+1,-3.1,CORUM:1029,TFIIH transcription factor complex,M1,1,0
+1,-4.4,GO:0007034,vacuolar transport,M1,1,0
+1,-2.4,GO:0046578,regulation of Ras protein signal transduction,M1,1,0
+1,-4.2,WP5381,Smith Magenis and Potocki Lupski syndrome copy number variation,M1,1,0
+1,-3,GO:0031965,nuclear membrane,M1,1,0
+1,-2.1,GO:0045190,isotype switching,M1,1,0
+1,-3.5,R-HSA-1369062,ABC transporters in lipid homeostasis,M1,1,0
+1,-2.7,GO:0032366,intracellular sterol transport,M1,1,0
+1,-3.8,R-HSA-9012999,RHO GTPase cycle,M1,1,0
+1,-3.4,GO:0180026,mitochondrial small ribosomal subunit assembly,M1,1,0
+1,-2.1,GO:0070977,bone maturation,M1,1,0
+1,-2.3,GO:0005975,carbohydrate metabolic process,M1,1,0
+1,-2.3,GO:0048858,cell projection morphogenesis,M1,1,0
+1,-2.7,R-HSA-390918,Peroxisomal lipid metabolism,M1,1,0
+1,-2.1,GO:0032648,regulation of interferon-beta production,M1,1,0
+1,-2.2,GO:0032479,regulation of type I interferon production,M1,1,0
+1,-2.4,GO:0006626,protein targeting to mitochondrion,M1,1,0
+1,-2.9,GO:0033059,cellular pigmentation,M1,1,0
+1,-6,GO:0009100,glycoprotein metabolic process,M1,1,0
+1,-2.4,GO:0120039,plasma membrane bounded cell projection morphogenesis,M1,1,0
+1,-5,GO:0015980,energy derivation by oxidation of organic compounds,M1,1,0
+1,-4.4,GO:0031903,microbody membrane,M1,1,0
+1,-3.4,M121,PID MTOR 4PATHWAY,M1,1,0
+1,-5.5,GO:0006091,generation of precursor metabolites and energy,M1,1,0
+1,-2.2,GO:0007623,circadian rhythm,M1,1,0
+1,-3.4,R-HSA-382556,ABC-family proteins mediated transport,M1,1,0
+1,-2.9,WP5523,HINT1 pathway,M1,1,0
+1,-2.8,GO:0042776,proton motive force-driven mitochondrial ATP synthesis,M1,1,0
+1,-3.9,WP5500,Bempedoic acid therapy in atherosclerosis and metabolic syndrome,M1,1,0
+1,-2.5,R-HSA-1660499,Synthesis of PIPs at the plasma membrane,M1,1,0
+1,-4,GO:0007264,small GTPase-mediated signal transduction,M1,1,0
+1,-2.7,GO:0033045,regulation of sister chromatid segregation,M1,1,0
+1,-2.8,GO:0033106,cis-Golgi network membrane,M1,1,0
+1,-4.1,GO:0009314,response to radiation,M1,1,0
+1,-2.9,GO:0046580,negative regulation of Ras protein signal transduction,M1,1,0
+1,-2.7,M68,PID RHOA REG PATHWAY,M1,1,0
+1,-3.1,GO:0140467,integrated stress response signaling,M1,1,0
+1,-3.2,GO:0006493,protein O-linked glycosylation,M1,1,0
+1,-6.4,GO:0055088,lipid homeostasis,M1,1,0
+1,-7.4,GO:0097542,ciliary tip,M1,1,0
+1,-3,GO:0010807,regulation of synaptic vesicle priming,M1,1,0
+1,-2.5,WP4341,Non genomic actions of 1 25 dihydroxyvitamin D3,M1,1,0
+1,-2.9,WP2571,Polycystic kidney disease pathway,M1,1,0
+1,-2.6,GO:0009615,response to virus,M1,1,0
+1,-2.4,GO:0051648,vesicle localization,M1,1,0
+1,-2.5,R-HSA-73863,RNA Polymerase I Transcription Termination,M1,1,0
+1,-5,GO:0061668,mitochondrial ribosome assembly,M1,1,0
+1,-2.4,GO:0010927,cellular component assembly involved in morphogenesis,M1,1,0
+1,-3.4,GO:0006338,chromatin remodeling,M1,1,0
+1,-5.1,GO:0140694,membraneless organelle assembly,M1,1,0
+1,-3.2,hsa04660,T cell receptor signaling pathway,M1,1,0
+1,-3.8,WP405,Eukaryotic transcription initiation,M1,1,0
+1,-3.4,M81,PID CDC42 PATHWAY,M1,1,0
+1,-7.2,GO:0034198,cellular response to amino acid starvation,M1,1,0
+1,-3,R-HSA-9937008,Mitochondrial mRNA modification,M1,1,0
+1,-2.5,GO:0060491,regulation of cell projection assembly,M1,1,0
+1,-3.4,hsa05016,Huntington disease,M1,1,0
+1,-3.1,GO:0099111,microtubule-based transport,M1,1,0
+1,-2.9,hsa05132,Salmonella infection,M1,1,0
+1,-4.4,R-HSA-168181,Toll Like Receptor 7/8 (TLR7/8) Cascade,M1,1,0
+1,-3.1,GO:0046942,carboxylic acid transport,M1,1,0
+1,-2.9,GO:0006638,neutral lipid metabolic process,M1,1,0
+1,-2.6,R-HSA-9013106,RHOC GTPase cycle,M1,1,0
+1,-2.4,R-HSA-9634815,Transcriptional Regulation by NPAS4,M1,1,0
+1,-4.8,WP481,Insulin signaling,M1,1,0
+1,-4.4,GO:0006164,purine nucleotide biosynthetic process,M1,1,0
+1,-2,GO:0016053,organic acid biosynthetic process,M1,1,0
+1,-5,GO:0010498,proteasomal protein catabolic process,M1,1,0
+1,-3.3,CORUM:1036,TFIIH transcription factor complex,M1,1,0
+1,-2.4,GO:0006873,intracellular monoatomic ion homeostasis,M1,1,0
+1,-5.7,GO:0031461,cullin-RING ubiquitin ligase complex,M1,1,0
+1,-2.2,GO:1902476,chloride transmembrane transport,M1,1,0
+1,-5.4,GO:0043161,proteasome-mediated ubiquitin-dependent protein catabolic process,M1,1,0
+1,-2.5,GO:0006820,monoatomic anion transport,M1,1,0
+1,-3.7,GO:0000425,pexophagy,M1,1,0
+1,-2.8,R-HSA-191273,Cholesterol biosynthesis,M1,1,0
+1,-2.9,M238,PID THROMBIN PAR1 PATHWAY,M1,1,0
+1,-2.3,GO:0038094,Fc-gamma receptor signaling pathway,M1,1,0
+1,-2.6,GO:0010001,glial cell differentiation,M1,1,0
+1,-2.5,GO:0021680,cerebellar Purkinje cell layer development,M1,1,0
+1,-3.3,GO:0006694,steroid biosynthetic process,M1,1,0
+1,-6.3,GO:0048193,Golgi vesicle transport,M1,1,0
+1,-2.3,WP5101,Congenital generalized lipodystrophy,M1,1,0
+1,-5.9,GO:1904263,positive regulation of TORC1 signaling,M1,1,0
+1,-4.2,R-HSA-168188,Toll Like Receptor TLR6:TLR2 Cascade,M1,1,0
+1,-4.1,GO:0036092,phosphatidylinositol-3-phosphate biosynthetic process,M1,1,0
+1,-2.3,GO:0044297,cell body,M1,1,0
+1,-2.1,WP4961,STING pathway in Kawasaki like disease and COVID 19,M1,1,0
+1,-3.1,GO:0032288,myelin assembly,M1,1,0
+1,-2.6,GO:0007346,regulation of mitotic cell cycle,M1,1,0
+1,-3.7,hsa04146,Peroxisome,M1,1,0
+1,-3.1,R-HSA-9006934,Signaling by Receptor Tyrosine Kinases,M1,1,0
+1,-3.3,GO:0030133,transport vesicle,M1,1,0
+1,-2.6,R-HSA-6811440,Retrograde transport at the Trans-Golgi-Network,M1,1,0
+1,-4.5,WP382,MAPK signaling,M1,1,0
+1,-3.7,hsa02010,ABC transporters,M1,1,0
+1,-3,GO:0051052,regulation of DNA metabolic process,M1,1,0
+1,-2.7,GO:0051983,regulation of chromosome segregation,M1,1,0
+1,-3.8,R-HSA-75893,TNF signaling,M1,1,0
+1,-2.5,GO:0001701,in utero embryonic development,M1,1,0
+1,-2.4,GO:0032989,cellular anatomical entity morphogenesis,M1,1,0
+1,-2.4,GO:0032371,regulation of sterol transport,M1,1,0
+1,-2.7,GO:0050801,monoatomic ion homeostasis,M1,1,0
+1,-2.3,GO:0006986,response to unfolded protein,M1,1,0
+1,-2.8,hsa00190,Oxidative phosphorylation,M1,1,0
+1,-2.3,WP734,Serotonin receptor 4 6 7 and NR3C signaling,M1,1,0
+1,-3.2,GO:0010507,negative regulation of autophagy,M1,1,0
+1,-3,GO:0015711,organic anion transport,M1,1,0
+1,-2.9,R-HSA-937061,TRIF (TICAM1)-mediated TLR4 signaling,M1,1,0
+1,-2.8,hsa05166,Human T-cell leukemia virus 1 infection,M1,1,0
+1,-4.7,hsa04621,NOD-like receptor signaling pathway,M1,1,0
+1,-3.3,GO:0034599,cellular response to oxidative stress,M1,1,0
+1,-7.3,GO:0007005,mitochondrion organization,M1,1,0
+1,-2.9,GO:0140861,DNA repair-dependent chromatin remodeling,M1,1,0
+1,-2.4,M12705,SIG CD40PATHWAYMAP,M1,1,0
+1,-2.6,hsa00563,Glycosylphosphatidylinositol (GPI)-anchor biosynthesis,M1,1,0
+1,-2,GO:0090741,pigment granule membrane,M1,1,0
+1,-2.8,R-HSA-2454202,Fc epsilon receptor (FCERI) signaling,M1,1,0
+1,-2.7,GO:0006304,DNA modification,M1,1,0
+1,-3.2,GO:0048525,negative regulation of viral process,M1,1,0
+1,-3,CORUM:103,RNA polymerase II holoenzyme complex,M1,1,0
+1,-2.3,GO:0016082,synaptic vesicle priming,M1,1,0
+1,-3.9,GO:0021702,cerebellar Purkinje cell differentiation,M1,1,0
+1,-2.5,R-HSA-8949664,Processing of SMDT1,M1,1,0
+1,-2.6,GO:0006282,regulation of DNA repair,M1,1,0
+1,-4.1,hsa05022,Pathways of neurodegeneration - multiple diseases,M1,1,0
+1,-6.2,R-HSA-382551,Transport of small molecules,M1,1,0
+1,-3.1,GO:0018105,peptidyl-serine phosphorylation,M1,1,0
+1,-2.3,R-HSA-5689901,Metalloprotease DUBs,M1,1,0
+1,-4.4,WP5477,Molecular pathway for oxidative stress,M1,1,0
+1,-3.5,R-HSA-8931838,DAG1 glycosylations,M1,1,0
+1,-2,GO:0014044,Schwann cell development,M1,1,0
+1,-2.8,GO:0045006,DNA deamination,M1,1,0
+1,-2.3,GO:0006817,phosphate ion transport,M1,1,0
+1,-2.2,GO:0071826,protein-RNA complex organization,M1,1,0
+1,-4.9,GO:1905037,autophagosome organization,M1,1,0
+1,-4,GO:0038095,Fc-epsilon receptor signaling pathway,M1,1,0
+1,-3.3,GO:1902882,regulation of response to oxidative stress,M1,1,0
+1,-3.4,GO:0006865,amino acid transport,M1,1,0
+1,-2.4,GO:0005635,nuclear envelope,M1,1,0
+1,-4.6,GO:0009141,nucleoside triphosphate metabolic process,M1,1,0
+1,-3.8,GO:0007051,spindle organization,M1,1,0
+1,-3,WP4352,Ciliary landscape,M1,1,0
+1,-2.6,GO:0007093,mitotic cell cycle checkpoint signaling,M1,1,0
+1,-2,GO:0120161,regulation of cold-induced thermogenesis,M1,1,0
+1,-5.8,WP4666,Hepatitis B infection,M1,1,0
+1,-2.7,R-HSA-3781865,Diseases of glycosylation,M1,1,0
+1,-4.1,GO:0036444,calcium import into the mitochondrion,M1,1,0
+1,-4.5,hsa05010,Alzheimer disease,M1,1,0
+1,-3,GO:0006631,fatty acid metabolic process,M1,1,0
+1,-3.6,GO:0009165,nucleotide biosynthetic process,M1,1,0
+1,-16,GO:0090407,organophosphate biosynthetic process,M1,1,0
+1,-5.8,GO:0006259,DNA metabolic process,M1,1,0
+1,-3.5,GO:0055082,intracellular chemical homeostasis,M1,1,0
+1,-2.3,GO:0072686,mitotic spindle,M1,1,0
+1,-4.7,WP4923,Autophagy,M1,1,0
+1,-3.8,GO:0071277,cellular response to calcium ion,M1,1,0
+1,-2.4,GO:0071347,cellular response to interleukin-1,M1,1,0
+1,-3.4,GO:0046471,phosphatidylglycerol metabolic process,M1,1,0
+1,-2.2,GO:0021549,cerebellum development,M1,1,0
+1,-12,GO:0006650,glycerophospholipid metabolic process,M1,1,0
+1,-4.5,GO:0042579,microbody,M1,1,0
+1,-2.5,GO:0071479,cellular response to ionizing radiation,M1,1,0
+1,-4.4,WP422,MAPK cascade,M1,1,0
+1,-3.3,GO:0045739,positive regulation of DNA repair,M1,1,0
+1,-2.3,GO:0002366,leukocyte activation involved in immune response,M1,1,0
+1,-3.4,GO:0015850,organic hydroxy compound transport,M1,1,0
+1,-2.8,GO:0046148,pigment biosynthetic process,M1,1,0
+1,-3.5,GO:0097035,regulation of membrane lipid distribution,M1,1,0
+1,-3.4,CORUM:6217,GATOR complex,M1,1,0
+1,-2.7,WP4566,Translation inhibitors in chronically activated PDGFRA cells,M1,1,0
+1,-2.3,WP2380,Brain derived neurotrophic factor BDNF signaling,M1,1,0
+1,-4.2,R-HSA-72306,tRNA processing,M1,1,0
+1,-5,GO:0015748,organophosphate ester transport,M1,1,0
+1,-2.4,GO:0006302,double-strand break repair,M1,1,0
+1,-5.2,GO:0009205,purine ribonucleoside triphosphate metabolic process,M1,1,0
+1,-3.1,GO:0015698,inorganic anion transport,M1,1,0
+1,-2.5,GO:0000422,autophagy of mitochondrion,M1,1,0
+1,-2.8,GO:0048736,appendage development,M1,1,0
+1,-2.3,GO:0002263,cell activation involved in immune response,M1,1,0
+1,-3.2,GO:1902653,secondary alcohol biosynthetic process,M1,1,0
+1,-2.5,GO:1905952,regulation of lipid localization,M1,1,0

@@ -9,8 +9,11 @@ library(paletteer)
 
 
 ##Get table from file
-Protmcs_HekatRALexps_v1<-read_excel("Z:/data/Projects/Rams_Collab_RDH12experiments/atRAL_experiments/proteomics/quant_data_filtered_DIANNandExcels/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.xlsx")
+#Protmcs_HekatRALexps_v1<-read_excel("Z:/data/Projects/Rams_Collab_RDH12experiments/atRAL_experiments/proteomics/quant_data_filtered_DIANNandExcels/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.xlsx")
+
+Protmcs_HekatRALexps_v1<-read_excel("quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.xlsx")
 colnames(Protmcs_HekatRALexps_v1)
+
 
 ## 0) Normalize labels: ensure exactly one "LFQ." prefix
 Hek_norm <- Protmcs_HekatRALexps_v1
@@ -49,6 +52,7 @@ abundance_table <- Hek_norm %>%
     values_from = PG.MaxLFQ
   )
 
+saveRDS(Hek_norm, file = "RData/Hekcells_Prep.rds")
 
 # sanity checks
 stopifnot(all(experimental_design$label %in% names(abundance_table)))
@@ -81,6 +85,7 @@ data_se <- DEP::make_se(data_unique, columns, experimental_design_df)
 
 data_se
 
+saveRDS(data_se, file = "RData/DEP_SEtable_initial.rds")
 
 # what metadata columns exist?
 colnames(as.data.frame(colData(data_se)))
@@ -104,8 +109,10 @@ plot_missval(data_filt)
 
 plot_normalization(data_filt)
 
-data_imp <- impute(data_filt, fun = "QRILC")
-plot_imputation(data_filt, data_imp)
+
+
+#data_imp <- impute(data_filt, fun = "QRILC")
+#plot_imputation(data_filt, data_imp)
 
 ################
 #STEP: Plot PCA
@@ -163,75 +170,4 @@ colnames(as.data.frame(colData(data_imp)))
 head(as.data.frame(colData(data_imp)))
 
 #######################
-###Plot PCA of only acute AtRAL experiments
-keep <- meta$ExpType == "atRAL5hr"
-se_atRAL5hr <- data_imp[, keep]
-
-mat <- assay(se_atRAL5hr)
-pca <- prcomp(t(mat), center = TRUE, scale. = TRUE)
-
-var_explained <- (pca$sdev^2) / sum(pca$sdev^2)
-
-scores <- as.data.frame(pca$x) |>
-  rownames_to_column("sample") |>
-  left_join(
-    as.data.frame(colData(se_atRAL5hr)) |> rownames_to_column("sample"),
-    by = "sample"
-  ) |>
-  mutate(condition = factor(condition))
-
-ggplot(scores, aes(PC1, PC2, color = condition)) +
-  geom_point(size = 3) +
-  theme_bw() +
-  labs(
-    title = "PCA: atRAL5hr only",
-    x = paste0("PC1 (", round(100 * var_explained[1], 1), "%)"),
-    y = paste0("PC2 (", round(100 * var_explained[2], 1), "%)")
-  )
-
-
-#######
-
-keep <- meta$ExpType == "atRAL5hr"
-se_atRAL5hr <- data_imp[, keep]
-
-mat <- assay(se_atRAL5hr)
-pca <- prcomp(t(mat), center = TRUE, scale. = TRUE)
-
-var_explained <- (pca$sdev^2) / sum(pca$sdev^2)
-
-scores <- as.data.frame(pca$x) |>
-  rownames_to_column("sample") |>
-  left_join(
-    as.data.frame(colData(se_atRAL5hr)) |> rownames_to_column("sample"),
-    by = "sample"
-  ) |>
-  mutate(condition = factor(condition))
-
-ggplot(scores, aes(PC1, PC2, color = condition, fill = condition)) +
-  # shaded ellipses
-  stat_ellipse(
-    geom  = "polygon",
-    type  = "t",
-    level = 0.68,        # ~1 SD (good for overlap visualization)
-    alpha = 0.2,
-    color = NA
-  ) +
-  # ellipse outlines
-  stat_ellipse(
-    geom  = "path",
-    type  = "t",
-    linewidth = 1
-  ) +
-  # points
-  geom_point(size = 3) +
-  theme_bw(base_size = 12) +
-  labs(
-    title = "PCA: atRAL5hr only",
-    x = paste0("PC1 (", round(100 * var_explained[1], 1), "%)"),
-    y = paste0("PC2 (", round(100 * var_explained[2], 1), "%)"),
-    color = "Condition",
-    fill  = "Condition"
-  )+
-  theme(plot.title = element_text(hjust = 0.5))
 

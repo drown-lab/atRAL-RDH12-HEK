@@ -1,0 +1,5 @@
+Cluster,Score,Type,Gene,Symbol,Network
+1,1.5,Clustered,55311,ZNF444,MyList_SUB2
+1,1.5,Seed,387032,ZKSCAN4,MyList_SUB2
+1,1.5,Clustered,7727,ZNF174,MyList_SUB2
+1,1.5,Clustered,55663,ZNF446,MyList_SUB2

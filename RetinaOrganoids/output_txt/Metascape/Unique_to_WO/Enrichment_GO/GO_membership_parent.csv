@@ -1,0 +1,16 @@
+_MEMBER_MyList,_LogP_MyList,GO,Description,_PATTERN_,_RANK_,CHILD_GO_MyList
+1,-10.073857868249851,GO:0032502,developmental process,M1,1,GO:0031175 neuron projection development
+1,-9.170405538887561,GO:0009987,cellular process,M1,1,GO:0006351 DNA-templated transcription
+1,-6.717408091898949,GO:0050789,regulation of biological process,M1,1,GO:0051493 regulation of cytoskeleton organization
+1,-5.943916517119394,GO:0050896,response to stimulus,M1,1,GO:0010212 response to ionizing radiation
+1,-5.934949492390722,GO:0040007,growth,M1,1,GO:0040007 growth
+1,-5.697234387665128,GO:0048518,positive regulation of biological process,M1,1,GO:2000144 positive regulation of DNA-templated transcription initiation
+1,-5.668734564258358,GO:0048519,negative regulation of biological process,M1,1,GO:0051129 negative regulation of cellular component organization
+1,-4.258591615163409,GO:0065007,biological regulation,M1,1,GO:0051345 positive regulation of hydrolase activity
+1,-3.8523072947027077,GO:0040011,locomotion,M1,1,GO:0002693 positive regulation of cellular extravasation
+1,-3.28898011950572,GO:0051179,localization,M1,1,GO:1900180 regulation of protein localization to nucleus
+1,-3.2394164179125946,GO:0002376,immune system process,M1,1,GO:0051251 positive regulation of lymphocyte activation
+1,-2.562526188073445,GO:0048511,rhythmic process,M1,1,GO:0048511 rhythmic process
+1,-2.4751883586830856,GO:0022414,reproductive process,M1,1,GO:0008406 gonad development
+1,-2.3246253585195022,GO:0032501,multicellular organismal process,M1,1,GO:0007610 behavior
+1,-2.1216695893975706,GO:0042592,homeostatic process,M1,1,GO:0048871 multicellular organismal-level homeostasis

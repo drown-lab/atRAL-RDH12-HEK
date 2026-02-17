@@ -17,7 +17,8 @@ PCAs/*
 
 # User-specific files
 .Ruserdata
-
+RData/*
+*.log
 # Example code in package build process
 *-Ex.R
 

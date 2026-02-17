@@ -1,0 +1,18 @@
+Network,Annotation
+MyList,GO:0031966|mitochondrial membrane|-19.9;GO:0008610|lipid biosynthetic process|-17.8;R-HSA-556833|Metabolism of lipids|-17.2
+MyList_MCODE_ALL,GO:0030991|intraciliary transport particle A|-14.1;GO:0030990|intraciliary transport particle|-13.7;R-HSA-2262752|Cellular responses to stress|-13.4
+MyList_SUB1_MCODE_1,R-HSA-6811440|Retrograde transport at the Trans-Golgi-Network|-7.8;R-HSA-159236|Transport of Mature mRNA derived from an Intron-Containing Transcript|-7.1;R-HSA-72202|Transport of Mature Transcript to Cytoplasm|-6.9
+MyList_SUB1_MCODE_2,GO:0031463|Cul3-RING ubiquitin ligase complex|-20.0;R-HSA-9639288|Amino acids regulate mTORC1|-18.0;GO:1903432|regulation of TORC1 signaling|-15.8
+MyList_SUB1_MCODE_3,GO:0030991|intraciliary transport particle A|-25.5;GO:0030990|intraciliary transport particle|-25.2;GO:0097542|ciliary tip|-22.4
+MyList_SUB1_MCODE_4,GO:0019646|aerobic electron transport chain|-8.7;GO:0042773|ATP synthesis coupled electron transport|-8.6;GO:0042775|mitochondrial ATP synthesis coupled electron transport|-8.6
+MyList_SUB1_MCODE_5,GO:0006352|DNA-templated transcription initiation|-14.9;WP405|Eukaryotic transcription initiation|-13.1;GO:0006367|transcription initiation at RNA polymerase II promoter|-12.6
+MyList_SUB1_MCODE_6,WP5501|GNAQ p R183Q drives capillary malformation|-11.3;WP4341|Non genomic actions of 1 25 dihydroxyvitamin D3|-9.3;WP35|G protein signaling|-8.9
+MyList_SUB1_MCODE_7,GO:0031201|SNARE complex|-10.6;GO:0030133|transport vesicle|-9.0;GO:0008021|synaptic vesicle|-7.6
+MyList_SUB1_MCODE_8,R-HSA-6785807|Interleukin-4 and Interleukin-13 signaling|-12.3;R-HSA-449147|Signaling by Interleukins|-9.1;GO:0030097|hemopoiesis|-8.1
+MyList_SUB1_MCODE_9,WP4923|Autophagy|-12.1;hsa04211|Longevity regulating pathway|-10.1;R-HSA-1632852|Macroautophagy|-9.3
+MyList_SUB1_MCODE_12,"M68|PID RHOA REG PATHWAY|-8.5;R-HSA-193648|NRAGE signals death through JNK|-8.2;R-HSA-204998|Cell death signalling via NRAGE, NRIF and NADE|-7.9"
+MyList_SUB1_MCODE_13,GO:0006303|double-strand break repair via nonhomologous end joining|-8.3;GO:0006302|double-strand break repair|-6.4;GO:0006281|DNA repair|-5.3
+MyList_SUB1_MCODE_14,R-HSA-450321|JNK (c-Jun kinases) phosphorylation and  activation mediated by activated human TAK1|-9.5;WP2637|Interleukin 1 IL 1 structural pathway|-8.4;R-HSA-450294|MAP kinase activation|-8.1
+MyList_SUB1_MCODE_15,GO:1990246|uniplex complex|-11.4;GO:0036444|calcium import into the mitochondrion|-10.2;R-HSA-8949664|Processing of SMDT1|-9.9
+MyList_SUB1_MCODE_17,hsa00510|N-Glycan biosynthesis|-8.2;GO:0006487|protein N-linked glycosylation|-7.5;GO:0009101|glycoprotein biosynthetic process|-6.1
+MyList_SUB1_MCODE_18,GO:0006401|RNA catabolic process|-6.4;GO:0141188|nucleic acid catabolic process|-6.3;GO:0034655|nucleobase-containing compound catabolic process|-5.7
