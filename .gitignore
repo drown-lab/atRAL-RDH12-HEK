@@ -73,4 +73,4 @@ rsconnect/
 *.rar
 
 #RetinaOrganoids
-RetinaOrgnoids/*
+RetinaOrgnoids/**.RData
