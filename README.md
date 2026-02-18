@@ -8,6 +8,12 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 
 Folder `Proteomic_Rscripts`- contains scripts used to generate DEP analysis
 
+Folder `Proteomic_Figs` - contains figures related to proteomic data
+
+Folder `Proteomic_output_txts` - contains key output txt-like files
+
+Folder `PCAs` - contains visualizations of proteomic data
+
 Folder `quant_DIANN_outputs`- contains the filtered excel worksheet of protein IDs and intensity
 
 #### How to utilize `Proteomic_Rscripts`in a step wise manner:
@@ -20,7 +26,11 @@ Folder `quant_DIANN_outputs`- contains the filtered excel worksheet of protein I
     -   QC Step 1c: `QC_Missingness_summarization` - creates tables that summarize the missingness in the dataset into missingness classes MNAR = 0/3, MAR= 1/3 or 2/3, or Present 3/3
     -   QC Step 1c: `QC_Missingness_AbundanceVisualization` - plots the log2 intensity distribution of the MAR and present 3/3
 
--   Step 2: mixed model imputation
+-   Step 2-a: `DEP_imputationMixedmodel` - script performs mixed model imputation on proteins based on missingness class
+
+-   Step 2-b: `DEP_performDEA` - performs DEA analysis and contains some QC visualizations of DEA analysis
+
+-   Step 2-c: `DEP_afterDEA_addbackMissingnessClass` - adds back the missingness class identification for each protein. Generates master DEP output
 
 #### How to utilize Lipidomic scripts in a step wise manner:
 

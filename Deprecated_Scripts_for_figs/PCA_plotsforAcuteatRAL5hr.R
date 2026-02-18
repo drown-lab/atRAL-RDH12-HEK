@@ -8,10 +8,9 @@ library(ggplot2)
 ##############
 #PCA plot Plane
 keep <- meta$ExpType == "atRAL5hr"
-se_atRAL5hr <- data_filt[, keep]
+se_atRAL5hr <- data_imp[, keep]
 
 mat <- assay(se_atRAL5hr)
-mat <- mat[apply(mat, 1, sd, na.rm = TRUE) > 0, ]
 pca <- prcomp(t(mat), center = TRUE, scale. = TRUE)
 
 var_explained <- (pca$sdev^2) / sum(pca$sdev^2)
