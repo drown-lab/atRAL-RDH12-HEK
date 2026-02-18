@@ -6,15 +6,17 @@ This is a working repo for proteomic and lipidomic data that was generated in th
 
 This workflow is for differential expression analysis of proteomic and lipidomic datasets.
 
-Folder `Proteomic_Rscripts`- contains scripts used to generate DEP analysis
+#### Description of Folders
 
-Folder `Proteomic_Figs` - contains figures related to proteomic data
+-   Folder `Proteomic_Rscripts`- contains scripts used to generate DEP analysis
 
-Folder `Proteomic_output_txts` - contains key output txt-like files
+-   Folder `Proteomic_Figs` - contains figures related to proteomic data
 
-Folder `PCAs` - contains visualizations of proteomic data
+-   Folder `Proteomic_output_txts` - contains key output txt-like files
 
-Folder `quant_DIANN_outputs`- contains the filtered excel worksheet of protein IDs and intensity
+-   Folder `PCAs` - contains visualizations of proteomic data
+
+-   Folder `quant_DIANN_outputs`- contains the filtered excel worksheet of protein IDs and intensity
 
 #### How to utilize `Proteomic_Rscripts`in a step wise manner:
 
