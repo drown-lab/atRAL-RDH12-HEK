@@ -93,7 +93,7 @@ ggplot(combined_proteome3, aes(x = ppm)) +
       " ppm"
     )
   ) +
-  theme_minimal()+
+  theme_bw()+
   facet_wrap(~CellType)
 
 
@@ -104,6 +104,9 @@ target_ids <- c("RDH12", "RCVRN", "CRX", "NRL", "GNAT1", "GNAT2", "ARR3",
 target_ids <- c("RDH12")
 
 targets_ppm <- combined_proteome4 |>
+  dplyr::filter(Genes %in% target_ids)
+
+targets_ppm <- combined_proteome3 |>
   dplyr::filter(Genes %in% target_ids)
 
 ggplot(combined_proteome3, aes(x = ppm)) +
@@ -275,4 +278,32 @@ ggplot(combined_proteome4, aes(x = ppm)) +
   ) +
   theme_bw(base_size = 12)+
   facet_wrap(~CellType, ncol=1)
+
+ggplot(combined_proteome3, aes(x = ppm)) +
+  geom_histogram(
+    bins = 60,
+    fill = "grey40",
+    color = "white"
+  ) +
+  scale_x_log10(
+    breaks = c(1e-3, 1e-2, 1e-1, 1, 10, 100, 1000),
+    labels = scales::label_number()
+  ) +
+  geom_vline(
+    data = targets_ppm,
+    aes(xintercept = ppm, color = Genes),
+    linewidth = 1.1,
+    linetype= "solid"
+  ) +
+  
+  scale_color_brewer(palette = "Set1") +
+  labs(
+    x = "Protein abundance (ppm, log scale)",
+    y = "Number of proteins",
+    title = "Protein abundance distribution (ppm-scaled LFQ)"
+  ) +
+  theme_bw(base_size = 12)+
+  facet_wrap(~CellType, ncol=1)
+
+
 

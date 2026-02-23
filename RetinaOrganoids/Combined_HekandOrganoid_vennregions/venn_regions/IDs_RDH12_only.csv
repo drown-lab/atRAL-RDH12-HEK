@@ -1,0 +1,9 @@
+ID,,,,,,
+P52736,,,,UniProt ID,Gene Symbol,Protein Name
+Q2NKQ1,,,,P52736,DNM1L,Dynamin-1-like protein (DRP1)
+Q658L1,,,,Q2NKQ1,TMEM214,Transmembrane protein 214
+Q68CQ1,,,,Q658L1,KIF25,Kinesin-like protein KIF25
+Q7Z7B1,,,,Q68CQ1,CCDC88A,Coiled-coil domain-containing protein 88A (Girdin)
+Q86YF9,,,,Q7Z7B1,MAP7D3,MAP7 domain-containing protein 3
+Q9UBE8,,,,Q86YF9,DIP2C,Disco-interacting protein 2 homolog C
+,,,,Q9UBE8,DIP2B,Disco-interacting protein 2 homolog B
