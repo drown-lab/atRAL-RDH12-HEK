@@ -66,3 +66,6 @@ ggplot(scores, aes(PC1, PC2, color = Treatment, fill = Treatment)) +
     y = paste0("PC2 (", round(100 * var_explained[2], 1), "%)")
   ) +
   theme(plot.title = element_text(hjust = 0.5))
+
+ggsave(filename = file.path(path_figures,"PCA_AcuteRDH12.png"), width = 5, height = 5)
+

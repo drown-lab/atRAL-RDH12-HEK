@@ -85,17 +85,18 @@ data_se <- DEP::make_se(data_unique, columns, experimental_design_df)
 
 data_se
 
-saveRDS(data_se, file = "RData/DEP_SEtable_initial.rds")
+#saveRDS(data_se, file = "RData/DEP_SEtable_initial.rds")
 
 # what metadata columns exist?
 colnames(as.data.frame(colData(data_se)))
 
 # look at the first rows
-head(as.data.frame(colData(data_imp)))
+#head(as.data.frame(colData(data_imp)))
 
 #print(as.data.frame(colData(data_imp)))
 
 plot_frequency(data_se)
+ggsave(filename = file.path(path_figures,"ProteinFrequency_acrossSamps.png"), width = 6, height = 5)
 
 # Filter for proteins that are identified in all replicates of at least one condition
 #data_filt <- filter_missval(data_se, thr = 0)
@@ -111,9 +112,3 @@ plot_normalization(data_filt)
 
 
 
-#data_imp <- impute(data_filt, fun = "QRILC")
-#plot_imputation(data_filt, data_imp)
-
-head(as.data.frame(colData(meta)))
-
-head(meta)

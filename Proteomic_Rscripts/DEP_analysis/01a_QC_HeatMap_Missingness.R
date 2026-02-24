@@ -68,20 +68,32 @@ col_labels <- meta_ord$replicate
 # ---- 6) Heatmap with clustering on rows (proteins)
 ht <- Heatmap(
   miss_num,
-  name = "Missing",
+  name = "Missing Proteins",
   col = c("0" = "#FFFFF0", "1" = "deepskyblue4"),
   top_annotation = ha,
   
   cluster_rows = TRUE,        # dendrogram "bracket" on left
   cluster_columns = FALSE,    # keep your Genetype->ExpType->Treatment->rep order
-  show_row_dend = FALSE,
+  show_row_dend = TRUE,
   show_row_names = FALSE,     # do NOT print protein names
   show_column_names = TRUE,   # keep x labels (short!)
   column_labels = col_labels,
   column_names_rot = 0,
   
-  column_title = "Missingness (Detected=white, Missing=grey)",
+  column_title = "Top 750 Missing Proteins Across Samples",
   heatmap_legend_param = list(at = c(0, 1), labels = c("Detected", "Missing"))
 )
 
 draw(ht)
+
+png(
+  filename = file.path(path_figures, "HeatMap_missingness.png"),
+  width = 8,
+  height = 6,
+  units = "in",
+  res = 900   # <-- DPI here
+)
+
+draw(ht, merge_legend = TRUE)
+
+dev.off()

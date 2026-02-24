@@ -19,6 +19,9 @@ PCAs/*
 .Ruserdata
 RData/*
 *.log
+*.RDS
+Proteomic_Rscripts/Depracated*
+
 # Example code in package build process
 *-Ex.R
 
@@ -67,6 +70,7 @@ rsconnect/
 # Raw Data
 *.raw
 *.d/
+*.xlsx
 
 # DIANN output
 *.speclib

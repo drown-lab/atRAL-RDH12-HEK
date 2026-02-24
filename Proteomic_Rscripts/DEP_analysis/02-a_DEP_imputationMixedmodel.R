@@ -98,7 +98,7 @@ mixed_impute_se <- function(se, condition_col = "condition", seed = 1) {
 out <- mixed_impute_se(data_filt, condition_col = "condition", seed = 1)
 data_imp_mixed <- out$se_mixed
 status <- out$status_tbl 
-
+status_all<-status
 
 # Quick summaries
 table(status$imputation_used)
@@ -140,11 +140,11 @@ mar2_imp
 ## Plot intensity density distributions before and after imputation
 plot_imputation(data_filt, data_imp_mixed) 
   labs(title = " Imputation")
-#ggsave("figures_separate_DEP/HeavyChannel_Imputation.png", width = 6, height = 5)
-
-#ggsave("figures_separate_DEP/LightChannel_Imputation.png", width = 6, height = 5)
+ggsave(filename = file.path(path_figures,"ImputationIntensityDistribution.png"), width = 7, height = 5)
+  
 
 
 # Visualize distribution of intensities by boxplots for all samples 
 plot_normalization(data_filt, data_imp_mixed)
+ggsave(filename = file.path(path_figures,"ImputationIntensityDistribution_Boxplot.png"), width = 10, height = 5)
 

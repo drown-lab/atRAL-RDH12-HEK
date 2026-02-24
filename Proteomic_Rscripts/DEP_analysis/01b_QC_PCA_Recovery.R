@@ -139,3 +139,5 @@ ggplot(scores_clean, aes(PC1, PC2, color = condition, fill = condition)) +
   scale_color_paletteer_d("ggsci::category10_d3") +
   scale_fill_paletteer_d("ggsci::category10_d3")
 
+ggsave(filename = file.path(path_figures,"PCA_Recovery.png"), width = 7, height = 5)
+

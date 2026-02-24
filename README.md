@@ -18,29 +18,16 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 
 -   Folder `quant_DIANN_outputs`- contains the filtered excel worksheet of protein IDs and intensity
 
-#### How to utilize `Proteomic_Rscripts`in a step wise manner:
+#### Differential Expression Analysis:
 
--   Step 1: `Datasetup_for_DEPanalysis`- takes an already filtered excel worksheet and puts data into summarized experiment table for compatibility with DEP bioconductor package; There are initial plots in this script that will look at QC visualizations of the data (currently these plots will not save to a path)
+-   Differential expression of proteins workflow (DEP): is found in `Proteomic_Rscripts/DEP_analysis`: comes with own Readme file for detailed explanation
+-   Differential Expression of lipids: TBA
 
-    -   QC Step 1a: `QC_HeatMap_Missingness`- plots presence/absence heatmap based on missingness per sample
-    -   QC Step 1b: `QC_PCA_RDH12_actueAtRAL`- plots PCA before imputation for Acute atRAL treatment on RDH12 cells
-    -   QC Step 1b: `QC_PCA_Recovery` - plots PCA before imputation for Recovery on RDH12 and Control cells
-    -   QC Step 1c: `QC_Missingness_summarization` - creates tables that summarize the missingness in the dataset into missingness classes MNAR = 0/3, MAR= 1/3 or 2/3, or Present 3/3
-    -   QC Step 1c: `QC_Missingness_AbundanceVisualization` - plots the log2 intensity distribution of the MAR and present 3/3
-
--   Step 2-a: `DEP_imputationMixedmodel` - script performs mixed model imputation on proteins based on missingness class
-
--   Step 2-b: `DEP_performDEA` - performs DEA analysis and contains some QC visualizations of DEA analysis
-
--   Step 2-c: `DEP_afterDEA_addbackMissingnessClass` - adds back the missingness class identification for each protein. Generates master DEP output
-
-#### How to utilize Lipidomic scripts in a step wise manner:
-
-To be added
+#### More Lipid scripts To be added
 
 ## Updates
 
--   As of 2/2/26: this repo only contains R scripts for proteomics analysis
+-   As of 2/24/26: this repo only contains R scripts for proteomics analysis
 
 ## Version, Dependencies, Packages
 
