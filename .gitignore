@@ -21,6 +21,7 @@ RData/*
 *.log
 *.RDS
 Proteomic_Rscripts/Depracated*
+Depracated_items/*
 
 # Example code in package build process
 *-Ex.R
