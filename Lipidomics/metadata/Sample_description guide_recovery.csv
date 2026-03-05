@@ -1,0 +1,19 @@
+﻿sample,Genetype,Treatment,Rep
+s1,Control,Veh,1
+s2,Control,Veh,2
+s3,Control,Veh,3
+s4,Control,100,1
+s5,Control,100,2
+s6,Control,100,3
+s7,Control,200,1
+s8,Control,200,2
+s9,Control,200,3
+s10,RDH12 ,Veh,1
+s11,RDH12 ,Veh,2
+s12,RDH12 ,Veh,3
+s13,RDH12 ,100,1
+s14,RDH12 ,100,2
+s15,RDH12 ,100,3
+s16,RDH12 ,200,1
+s17,RDH12 ,200,2
+s18,RDH12 ,200,3
