@@ -154,12 +154,9 @@ Recovery_lipidsall_v6<- Recovery_lipidsall_v6|>
 Recovery_lipidsall_v6 <- Recovery_lipidsall_v6  |>
   mutate(mrm1 = str_replace(mrm, "(\\d+)\\.\\d+ -> (\\d+)\\.\\d+", "\\1 -> \\2"))
 
-#remove duplicate values due to repeat technical inject but with higher max/blank
-Recovery_lipidsall_v7 <- Recovery_lipidsall_v6 |>
-  arrange(desc(max_divid_blank))|>
-  distinct(mrm1, .keep_all = TRUE)
 
-Recovery_lipidsall_v7 <- Recovery_lipidsall_v7 |>
+
+Recovery_lipidsall_v7 <- Recovery_lipidsall_v6 |>
   filter(!NL_chain %in% c("15:0"))
 
 ##Plot Distribution of Lipids
@@ -181,43 +178,70 @@ dups <- Recovery_lipidsall_v6 %>%
   filter(n() > 1) %>%        # keep only duplicated groups
   arrange(mrm1)
 
+dups2 <- Recovery_lipidsall_v7 %>%
+  group_by(mrm1) %>%
+  filter(n() > 1) %>%        # keep only duplicated groups
+  arrange(mrm1)
+
+#remove duplicate values due to repeat technical inject but group by lipid_class to keep most info but with higher max/blank
+Recovery_lipidsall_v7v2 <- Recovery_lipidsall_v7 |>
+  group_by(lipid_class, mrm1) |>
+  slice_max(max_divid_blank, n = 1, with_ties = FALSE) |>
+  ungroup()
 #========================================================================
 ###STEP 4: FIND # of IDs per lipid class or other filter
 # Group the data by the desired variables and count the number of distinct MRMs
 
-Recovery_lipidsall_v7 <- Recovery_lipidsall_v7 %>%
+Recovery_lipidsall_v7v2 <- Recovery_lipidsall_v7v2 %>%
   mutate(
     precursor = as.numeric(str_split_fixed(mrm1, "\\s*->\\s*", 2)[,1]),
     product   = as.numeric(str_split_fixed(mrm1, "\\s*->\\s*", 2)[,2])
   )
 
+dups3 <- Recovery_lipidsall_v7v2 %>%
+  group_by(mrm1) %>%
+  filter(n() > 1) %>%        # keep only duplicated groups
+  arrange(mrm1)
 
 #============
 #add more filtering to remove odd chain, and other non-sense identifications
 
 
+df <- Recovery_lipidsall_v7v2
 
+#run script 1a_Filtering_Score_script.R
+source("1a_Filtering_Score_script.R")
 
+#this will output a parsed table: has a scoring value for lipid candidates when multiple options are present in lipid_name cell
+#output-also separately break out cer_parsed table
+#ouput-the "df_with_unsat_updated": final table output with the most likely candidate picked
+#=============================
+#Manual Filter
+
+#Rename or manual filter out more based on score ouput
+#First remove odd chains from chosen lipid classes
+df_with_unsat_filtered <- df_with_unsat_updated %>%
+  filter(!(lipid_class %in% c("CE", "Cer", "SM") & C_total %% 2 == 1))
 
 
 #===============
 ##Look at Summarization across data
-Recovery_lipidsall_v7_summaryDGTG <- Recovery_lipidsall_v7  %>%
+Recovery_lipidsall_v7_summaryDGTG <- Recovery_lipidsall_v7v2  %>%
   group_by( NL_chain,lipid_class) %>%
   summarise(distinct_mrms = n_distinct(mrm1))
 
-Recovery_lipidsall_v7_summary <- Recovery_lipidsall_v7  %>%
+Recovery_lipidsall_v7_summary <- Recovery_lipidsall_v7v2  %>%
   group_by( lipid_class) %>%
   summarise(distinct_mrms = n_distinct(mrm1))
 
-Recovery_lipidsall_v7_summary2 <- Recovery_lipidsall_v7  %>%
+Recovery_lipidsall_v7_summary2 <- Recovery_lipidsall_v7v2  %>%
   group_by( lipid_class) %>%
   summarise(distinct_precursor = n_distinct(precursor))
 
 #=====================
 ##Step 4B:
 #pivot
-Recovery_lipidsall_v8<-Recovery_lipidsall_v7|>
+Recovery_lipidsall_v8<-Recovery_lipidsall_v7v2|>
   select(c(lipid_name, mrm,mrm1, precursor, product,lipid_class1, lipid_class, NL_chain,s10:s9))|>
   pivot_longer(
     cols = c(s10:s9),

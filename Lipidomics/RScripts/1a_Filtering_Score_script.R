@@ -2,7 +2,6 @@ library(dplyr)
 library(stringr)
 library(tidyr)
 
-df <- Recovery_lipidsall_v7
 
 df<-df
 
@@ -24,105 +23,49 @@ df<-df
 #   numeric score used to rank competing lipid candidates
 # -----------------------------------------------------------------------------
 
+
 score_candidate <- function(C_total, DB_total, text) {
   
   # Initialize score accumulator
   score <- 0
   
-  # ---------------------------------------------------------------------------
-  # 1) Carbon parity rule
-  # Most mammalian lipids have even total carbons due to fatty acid synthesis
-  # occurring via 2-carbon elongation steps (acetyl-CoA).
-  #
-  # +2 points if even carbon total
-  # -1 point if odd carbon total or missing
-  # ---------------------------------------------------------------------------
+  # 1) Prefer even total carbons
   score <- score + ifelse(!is.na(C_total) & C_total %% 2 == 0, 2, -1)
   
-  
-  # ---------------------------------------------------------------------------
   # 2) Plausible carbon total range
-  # Ensures the lipid total carbon count falls within a realistic biological
-  # range for most phospholipids measured in typical lipidomics panels.
-  #
-  # Range chosen: 14–60 carbons
-  #
-  # +1 if within range
-  # -1 if outside range or missing
-  # ---------------------------------------------------------------------------
   score <- score + ifelse(!is.na(C_total) & C_total >= 14 & C_total <= 60, 1, -1)
   
-  
-  # ---------------------------------------------------------------------------
   # 3) Plausible double bond range
-  # Double bonds in phospholipids typically fall within 0–20 total DB.
-  # This rule just ensures the parsed value isn't unrealistic.
-  #
-  # +1 if DB_total within range
-  # -1 if outside range or missing
-  # ---------------------------------------------------------------------------
   score <- score + ifelse(!is.na(DB_total) & DB_total >= 0 & DB_total <= 20, 1, -1)
   
+  # 4) Detect lipid classes / prefixes
+  is_pc <- str_detect(text, "\\bPC\\b")
+  is_pe <- str_detect(text, "\\bPE\\b")
+  is_pi <- str_detect(text, "\\bPI\\b")
+  is_dO <- str_detect(text, "\\bPC\\s+dO-")
   
-  # ---------------------------------------------------------------------------
-  # 4) Detect lipid class or special prefixes from annotation string
-  #
-  # These flags allow class-specific scoring rules later in the function.
-  # ---------------------------------------------------------------------------
-  is_pc <- stringr::str_detect(text, "\\bPC\\b")        # Phosphatidylcholine
-  is_pe <- stringr::str_detect(text, "\\bPE\\b")        # Phosphatidylethanolamine
-  is_dO <- stringr::str_detect(text, "\\bPC\\s+dO-")    # unusual "dO-" PC notation
-  is_pi <- stringr::str_detect(text, "\\bPE\\b")        # Phosphatidylethanolamine
+  # 5) PC-specific unsaturation logic
+  # High DB PCs can be real, especially at higher total carbons,
+  # so use milder penalties than before.
+  score <- score + ifelse(is_pc & !is.na(DB_total) & DB_total >= 8, -1, 0)
   
+  # Small bonus for large, highly unsaturated even-carbon PCs
+  score <- score + ifelse(
+    is_pc & !is.na(C_total) & !is.na(DB_total) &
+      C_total >= 42 & DB_total >= 7 & C_total %% 2 == 0,
+    2, 0
+  )
   
-  # ---------------------------------------------------------------------------
-  # 5) Penalize extreme unsaturation for PCs
-  #
-  # HG-only transitions (e.g., m/z 184 for PC) cannot distinguish many species,
-  # so highly unsaturated PCs (≥6 DB) are less likely and often artifacts of
-  # ambiguous naming. These are penalized.
-  #
-  # ≥6 DB → moderate penalty
-  # ≥8 DB → stronger penalty
-  # ---------------------------------------------------------------------------
-  score <- score + ifelse(is_pc & !is.na(DB_total) & DB_total >= 7, -3, 0)
-  score <- score + ifelse(is_pc & !is.na(DB_total) & DB_total >= 8, -2, 0)
+  # 6) PE / PI extreme unsaturation penalties
+  score <- score + ifelse(is_pe & !is.na(DB_total) & DB_total >= 8, -2, 0)
+  score <- score + ifelse(is_pi & !is.na(DB_total) & DB_total >= 7, -2, 0)
   
-  
-  # ---------------------------------------------------------------------------
-  # 6) Penalize extreme unsaturation for PE
-  #
-  # Similar logic as PC but slightly relaxed. Extremely high unsaturation in
-  # PE species can occur but is less common; thus a mild penalty is applied
-  # only at ≥8 DB.
-  # ---------------------------------------------------------------------------
-  score <- score + ifelse(is_pe & !is.na(DB_total) & DB_total >= 8, -3, 0)
-  score <- score + ifelse(is_pi & !is.na(DB_total) & DB_total >= 7, -3, 0)
-  
-  
-  
-  # ---------------------------------------------------------------------------
-  # 7) Penalize unusual PC dO- prefixes
-  #
-  # The "dO-" prefix is uncommon for PC annotations and often appears due to
-  # naming inconsistencies or mis-parsing. These are discouraged.
-  # ---------------------------------------------------------------------------
+  # 7) Penalize unusual PC dO- prefix
   score <- score + ifelse(is_dO, -3, 0)
   
+  # 8) Penalize internal standards
+  score <- score + ifelse(str_detect(text, "\\bSTD\\b"), -10, 0)
   
-  # ---------------------------------------------------------------------------
-  # 8) Strong penalty for internal standards
-  #
-  # Candidates containing "STD" likely represent internal standards rather
-  # than endogenous lipids, so they are strongly penalized.
-  # ---------------------------------------------------------------------------
-  score <- score + ifelse(stringr::str_detect(text, "\\bSTD\\b"), -10, 0)
-  
-  
-  # ---------------------------------------------------------------------------
-  # Return final score
-  # Higher score = more plausible candidate
-  # ---------------------------------------------------------------------------
   score
 }
 
@@ -192,8 +135,7 @@ df_with_unsat <- df %>%
 df_with_unsat %>% select(lipid_name, mrm, picked_candidate, C_total, DB_total, NL_C, NL_DB, cand_score) %>% head(20)
 
 #===================================================
-library(dplyr)
-library(stringr)
+
 
 df <- df
 
@@ -223,3 +165,16 @@ cer_parsed %>%
   select(lipid_name, sn1_C, sn1_DB, sn2_C, sn2_DB, sn2_OH, Cer_C_total, Cer_DB_total) %>%
   head(20)
 
+
+##merge tables
+df_with_unsat_updated <- df_with_unsat %>%
+  left_join(
+    cer_parsed %>%
+      select(lipid_name, mrm1, Cer_C_total, Cer_DB_total),
+    by = c("lipid_name", "mrm1")
+  ) %>%
+  mutate(
+    C_total  = ifelse(lipid_class == "Cer" & !is.na(Cer_C_total), Cer_C_total, C_total),
+    DB_total = ifelse(lipid_class == "Cer" & !is.na(Cer_DB_total), Cer_DB_total, DB_total)
+  ) %>%
+  select(-Cer_C_total, -Cer_DB_total)
