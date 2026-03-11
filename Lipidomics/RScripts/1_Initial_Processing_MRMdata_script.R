@@ -223,25 +223,129 @@ source("1a_Filtering_Score_script.R")
 df_with_unsat_filtered <- df_with_unsat_updated %>%
   filter(!(lipid_class %in% c("CE", "Cer", "SM") & C_total %% 2 == 1))
 
+##manually checked odd numbered lipids for false IDs
+#found and remove or replace
+#lipid_name
+#remove DG 31:3 NL 20:0
+#replace DG 33:0 NL 16:0 with TG 32:0 NL 16:0
+#remove DG 33:2 NL 20:0
+#replace DG 35:1 NL 16:1 with TG 34:1 NL 16:1
+#remove 	DG 35:1 NL 20:0
+#replace DG 37:7 NL 16:0 with DG 36:0 NL 16:0
+#replace DG 37:7 NL 18:0 with DG 36:0 NL 18:0
+#remove DG 39:6 NL 20:0
+#remove DG 41:6 NL 16:1
+#remove DG 41:6 NL 20:0
+#remove DG 41:6 NL 22:6
+#remove DG 41:5 NL 16:0
+#remove DG 41:5 NL 22:5
+#replace [TG37:0] NL 20:0 with DG 38:0 NL 20:0
+#remove [TG37:0] NL 18:0
+#remove [TG45:3] NL 16:0
+#remove [TG50:9_TG49:2] NL 20:0
+#remove [TG52:9_TG51:2] NL 16:0
+#remove [TG52:9_TG51:2] NL 18:1
+#remove DG 40:7 NL 20:0
+
+df_with_unsat_filtered2 <- df_with_unsat_filtered %>%
+  filter(
+    !(lipid_name == "DG 31:3 NL 20:0"),
+    !(lipid_name == "DG 33:1 NL 14:1"),
+    
+    !(lipid_name == "DG 33:2 NL 20:0"),
+    !(lipid_name == "DG 35:1 NL 20:0"),
+    !(lipid_name == "DG 39:6 NL 20:0"),
+    !(lipid_name == "DG 41:6 NL 16:1"),
+    !(lipid_name == "DG 41:6 NL 20:0"),
+    !(lipid_name == "DG 41:6 NL 22:6"),
+    !(lipid_name == "DG 41:5 NL 16:0"),
+    !(lipid_name == "DG 41:5 NL 22:5"),
+    !(lipid_name == "DG 40:7 NL 20:0"),
+    !(lipid_name == "[TG37:0] NL 18:0"),
+    !(lipid_name == "[TG45:3] NL 16:0"),
+    !(lipid_name == "[TG50:9_TG49:2] NL 20:0"),
+    !(lipid_name == "[TG52:9_TG51:2] NL 16:0"),
+    !(lipid_name == "[TG52:9_TG51:2] NL 18:1")
+  )
+
+df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
+  mutate(
+    lipid_name = case_when(
+      lipid_name == "DG 33:0 NL 16:0" ~ "TG 32:0 NL 16:0",
+      lipid_name == "DG 35:1 NL 16:1" ~ "TG 34:1 NL 16:1",
+      lipid_name == "DG 37:7 NL 16:0" ~ "DG 36:0 NL 16:0",
+      lipid_name == "DG 37:7 NL 18:0" ~ "DG 36:0 NL 18:0",
+      lipid_name == "[TG37:0] NL 20:0" ~ "DG 38:0 NL 20:0",
+      TRUE ~ lipid_name
+    )
+  )
+
+
+#look aat SM and PCs identifiy isobars
+SMandPCs <- df_with_unsat_updated %>%
+  filter(lipid_class1 %in% c("PC", "SM"))
+#Ids that need to be replace due to PC naming
+#replace PC O-25:1;O2 with PC(16:0/8:0(COOH))
+#replace PC(26:0)shift16 with PC 28:6_PC34:2OEP
+#replace PC(27:0)_PC(O-28:0)shift16 with PC O-30:6_PC36:2OEP
+#replace PC(29:0)_PC(O-30:0)shift16 with PC O-32:6_PC 38:2OEP
+#replace PC(31:0)_PC(O-32:0)shift16 PC O-24:6_PC(22:0/8:0(COOH))
+#replace PE(33:0)_PE(O-34:0)shift32 with PE 36:5
+#replace PC 43:6 with PC O-44:6
+#replace PC 43:2 with PC O-44:2_PC 44:9
+#replace PC(30:0)_PC(O-31:0)shift32 with PC O-34:5
+#replace PC(30:0)_PC(O-31:0)shift16 with PC 32:6
+#replace LPC(16:0)_PC(O-16:0)_LPC(O-17:0)shift32 with LPC O-20:5
+#replace PC(28:0)_PC(O-29:0)shift16 with PC(20:0/8:0(COOH))_PC(18:0/Aze)
+
+df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
+  mutate(
+    lipid_name = case_when(
+      lipid_name == " PC O-25:1;O2 " ~ "PC(16:0/8:0(COOH))",
+      lipid_name == "PC(26:0)shift16" ~ "PC 28:6_PC34:2OEP",
+      lipid_name == "PC(27:0)_PC(O-28:0)shift16" ~ "PC O-30:6_PC36:2OEP",
+      lipid_name == "PC(29:0)_PC(O-30:0)shift16" ~ "PC O-32:6_PC 38:2OEP",
+      lipid_name == "PC(31:0)_PC(O-32:0)shift16" ~ "PC O-24:6_PC(22:0/8:0(COOH))",
+      lipid_name == "PE(33:0)_PE(O-34:0)shift32" ~ "PE 36:5",
+      lipid_name == "PC 43:6" ~ "PC O-44:6",
+      lipid_name == "PC 43:2" ~ "PC O-44:2_PC 44:9",
+      lipid_name == "PC(30:0)_PC(O-31:0)shift32" ~ "PC O-34:5",
+      lipid_name == "PC(30:0)_PC(O-31:0)shift16" ~ "PC 32:6",
+      lipid_name == "LPC(16:0)_PC(O-16:0)_LPC(O-17:0)shift32" ~ "LPC O-20:5",
+      lipid_name == "PC(28:0)_PC(O-29:0)shift16" ~ "PC(20:0/8:0(COOH))_PC(18:0/Aze)",
+      
+        TRUE ~ lipid_name
+    )
+  )
+
+df<-df_with_unsat_filtered2
+df<-df|>
+  select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
+
+#run script 1a_Filtering_Score_script.R
+source("1a_Filtering_Score_script.R")
+#this reupdates the columns after replacement of likely IDs
+#current table is titled df_with_unsat_updated
+
 
 #===============
 ##Look at Summarization across data
-Recovery_lipidsall_v7_summaryDGTG <- Recovery_lipidsall_v7v2  %>%
+Recovery_filtered_summaryDGTG <- df_with_unsat_updated  %>%
   group_by( NL_chain,lipid_class) %>%
   summarise(distinct_mrms = n_distinct(mrm1))
 
-Recovery_lipidsall_v7_summary <- Recovery_lipidsall_v7v2  %>%
+Recovery_filtered_summary <- df_with_unsat_updated  %>%
   group_by( lipid_class) %>%
   summarise(distinct_mrms = n_distinct(mrm1))
 
-Recovery_lipidsall_v7_summary2 <- Recovery_lipidsall_v7v2  %>%
+Recovery_filtered_summary2 <- df_with_unsat_updated  %>%
   group_by( lipid_class) %>%
   summarise(distinct_precursor = n_distinct(precursor))
 
 #=====================
 ##Step 4B:
 #pivot
-Recovery_lipidsall_v8<-Recovery_lipidsall_v7v2|>
+Recovery_lipidsall_v8<-df_with_unsat_updated|>
   select(c(lipid_name, mrm,mrm1, precursor, product,lipid_class1, lipid_class, NL_chain,s10:s9))|>
   pivot_longer(
     cols = c(s10:s9),
