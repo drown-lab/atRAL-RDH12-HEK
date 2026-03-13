@@ -57,7 +57,6 @@ meanSdPlot(data_imp)
 
 table(colData(data_normvsn)$condition)
 colData(data_normvsn)$condition
-
 #get correlation between mean and std dev
 mat <- assay(data_se)
 

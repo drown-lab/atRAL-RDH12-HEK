@@ -1,10 +1,88 @@
+#Load metadata
+acute_expdesign<-read.csv("Lipidomics/metadata/Sample_description guide_5hratral.csv")
 
-library(dplyr)
-library(readxl)
-library(tidyverse)
-library(writexl)
-library(ggplot2)
-library(stringr)
+###Quick Processing Script for Finding Candidates of Lipids Analysis
+##STEP 1: Take .csv ouputs from script, and change headers in each one so they are the same before running this script. 
+######for doing the combining of all data folders from MRM QqQ MPF data
+# Define the initial folder path
+#need to define where the output of the Perl script that produces the .csv files of the MRM data files
+#his script will look in the first folder for sub folders called "Absolute_intensity.csv" which is the compiled output of the Perl script
+#This script will take that csv file and add each csv into one bit data table called "combined_data"
+#==============
+#Step 1:  Define the initial folder path
+initial_folder <- "C:/Users/LabUser/Desktop/StemCells/lipidomic/20250702_HekCells_atRALtreated_rams/Life Sciences Native LIpids"
+
+###run the next set of code togeter
+# Create a list of all subfolders within the initial folder
+subfolders <- dir(initial_folder, recursive = TRUE, full.names = TRUE)
+
+# Filter out files and only keep directories
+subfolders <- subfolders[file.info(subfolders)$isdir == FALSE]
+
+# Remove the initial folder from the list
+subfolders <- subfolders[subfolders != initial_folder]
+
+# Initialize an empty data frame to store the combined data
+combined_data <- data.frame()
+
+# Loop through each subfolder
+for (subfolder in subfolders) {
+  # Check if the subfolder contains the "Absolute_intensity.csv" file
+  file_path <- file.path(dirname(subfolder), "Absolute_intensity.csv")
+  
+  # Check if the file exists
+  if (file.exists(file_path)) {
+    print(paste("File found:", file_path))
+    # Read the CSV file into a data frame
+    data_frame <- read.csv(file_path)
+    
+    # Check if combined_data is empty
+    if (nrow(combined_data) == 0) {
+      combined_data <- data_frame
+    } else {
+      # Bind the data frame to the combined data
+      combined_data <- rbind(combined_data, data_frame)
+    }
+  } else {
+    print(paste("File not found:", file_path))
+  }
+}
+
+##############################################
+##STEP 2: Clean up naming
+Acute_lipidsall_v1 <- combined_data |> 
+  janitor::clean_names() 
+
+Acute_lipidsall_v2 <- Acute_lipidsall_v1 |>
+  mutate(lipid_name = str_replace_all(lipid_name, ",", "_"))|> ##replace commas with underscore in Lipid name
+  mutate(lipid_class1 = str_extract(lipid_name, "PC|TG|PE|PS|PI|PG|CAR|CE|Cer|DG|FA|SM|STD")) |> # add all desired abbreviations
+  mutate(lipid_class = str_extract(lipid_name, "LPC|LPE|PC|TG|PE|PS|PI|PG|CAR|CE|Cer|DG|FA|SM|STD")) |>
+  filter(!str_detect(lipid_class, "STD"))
+
+Acute_lipidsall_v3 <- Acute_lipidsall_v2 |>
+  filter(!str_detect(lipid_name, "_QUAL"))|>
+  filter(!str_detect(lipid_class, "STD"))|>
+  filter(!str_detect(lipid_class, "FA"))
+
+Acute_lipidsall_v3<- Acute_lipidsall_v3|>
+  unique()
+
+
+
+
+
+##Mutate table further with TGs
+Acute_lipidsall_v4 <-Acute_lipidsall_v3 |>
+  mutate(DG_TG_acyl_chains = str_extract(lipid_name, "C\\d{1,2}:\\d")) ##adds column for acyl chain number for DGs and TGs
+
+Acute_lipidsall_v4 <- Acute_lipidsall_v4 |>
+  mutate(
+    NL_chain = case_when(
+      str_detect(lipid_name, "NL\\s*\\d{1,2}:\\d") ~ str_extract(lipid_name, "NL\\s*\\d{1,2}:\\d"),      # e.g. "NL 18:0"
+      str_detect(lipid_name, "]_\\d{1,2}:\\d")     ~ str_extract(lipid_name, "(?<=]_)(\\d{1,2}:\\d)"),    # e.g. "]_22:6"
+      TRUE ~ NA_character_
+    )
+  )
 
 #Load metadata
 recovery_expdesign<-read.csv("Lipidomics/metadata/Sample_description guide_recovery.csv")
@@ -99,36 +177,56 @@ Recovery_lipidsall_v4 <- Recovery_lipidsall_v4 |>
   )
 
 
+#================================================================
+#Get collated table of the two data sets
 
-#######################################################
-##Step 2: Calculate Intensity/Blank and Filter
-#calc the Intensity /Blank
-
-#do max value across all samples so with downstream analysis we retain intensity values
-Recovery_lipidsall_v5 <- Recovery_lipidsall_v4 |>
-  rowwise() |>
-  mutate(maxvalue = max(c(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18)))
-
-Recovery_lipidsall_v5<-Recovery_lipidsall_v5|>
-  mutate(
-    max_divid_blank = maxvalue/blank
+Acute_long <- Acute_lipidsall_v4 %>%
+  mutate(Timepoint = "Acute") %>%
+  pivot_longer(
+    cols = c(blank, starts_with("s")),
+    names_to = "sample",
+    values_to = "Intensity"
   )
 
+Recovery_long <- Recovery_lipidsall_v4 %>%
+  mutate(Timepoint = "Recovery") %>%
+  pivot_longer(
+    cols = c(blank, starts_with("s")),
+    names_to = "sample",
+    values_to = "Intensity"
+  )
 
-##Plot Distribution of Lipids
-ggplot(Recovery_lipidsall_v5, aes(x= max_divid_blank, fill = lipid_class1))+
+Lipidsall_long <- bind_rows(Acute_long, Recovery_long)
+
+
+Lipidsall_long_v1 <- Lipidsall_long %>%
+  group_by(
+    lipid_name, mrm, lipid_class1, lipid_class,
+    Timepoint
+  ) %>%
+  mutate(
+    blank_value = Intensity[sample == "blank"][1],
+    maxvalue = max(Intensity[sample != "blank"], na.rm = TRUE),
+    max_divid_blank = maxvalue / blank_value
+  ) %>%
+  ungroup()
+
+Lipidsall_long_v1<-Lipidsall_long_v1|>
+  unique()
+
+ggplot(Lipidsall_long_v1, aes(x= max_divid_blank, fill = lipid_class1))+
   geom_histogram(bins = 40)+
   geom_vline(xintercept = 1.3, linetype = "dashed")+
   theme_bw(base_size=12)+
   scale_x_continuous(trans = "log2")+
   labs(
-    title = "Recovery: Distribution of MRMs with Signal-to-Blank",
+    title = "All: Distribution of MRMs with Signal-to-Blank",
     subtitle = "Dashed line: 1.3x "
   )+
   scale_y_continuous(trans = "log10")
-  
+
 ##Plot Distribution of Lipids
-ggplot(Recovery_lipidsall_v5, aes(x= max_divid_blank, y= lipid_class1, fill = lipid_class1))+
+ggplot(Lipidsall_long_v1, aes(x= max_divid_blank, y= lipid_class1, fill = lipid_class1))+
   geom_boxplot()+
   geom_vline(xintercept = 1.3, linetype = "dashed")+
   theme_bw(base_size=12)+
@@ -137,30 +235,29 @@ ggplot(Recovery_lipidsall_v5, aes(x= max_divid_blank, y= lipid_class1, fill = li
     title = "Recovery: Distribution of MRMs with Signal-to-Blank",
     subtitle = "Dashed line: 1.3x "
   )
-  
+
 
 
 #Filter by 30% higher than the blank
 #Standard cut-off 
-Recovery_lipidsall_v6 <- Recovery_lipidsall_v5 |>
+Lipidsall_long_v2 <- Lipidsall_long_v1 |>
   filter(max_divid_blank >= 1.3)
 
-Recovery_lipidsall_v6<- Recovery_lipidsall_v6|>
+Lipidsall_long_v2<- Lipidsall_long_v2|>
   unique()
 
-#============================================================
 ###STEP 3: Clean up MRM name
 #this will add a column called mrm1 which will only keep 760->184 values and removes all decimal places 
-Recovery_lipidsall_v6 <- Recovery_lipidsall_v6  |>
+Lipidsall_long_v2 <- Lipidsall_long_v2  |>
   mutate(mrm1 = str_replace(mrm, "(\\d+)\\.\\d+ -> (\\d+)\\.\\d+", "\\1 -> \\2"))
 
 
 
-Recovery_lipidsall_v7 <- Recovery_lipidsall_v6 |>
+Lipidsall_long_v3 <- Lipidsall_long_v2 |>
   filter(!NL_chain %in% c("15:0"))
 
 ##Plot Distribution of Lipids
-ggplot(Recovery_lipidsall_v7, aes(x= max_divid_blank, y= lipid_class1, fill = lipid_class1))+
+ggplot(Lipidsall_long_v3, aes(x= max_divid_blank, y= lipid_class1, fill = lipid_class1))+
   geom_boxplot()+
   geom_vline(xintercept = 1.3, linetype = "dashed")+
   theme_bw(base_size=12)+
@@ -173,41 +270,94 @@ ggplot(Recovery_lipidsall_v7, aes(x= max_divid_blank, y= lipid_class1, fill = li
 
 # Find rows where 'mrm1' is duplicated
 #should be all PC and PE because ran PEOx and PCOx methods
-dups <- Recovery_lipidsall_v6 %>%
+dups <- Lipidsall_long_v3 %>%
   group_by(mrm1) %>%
   filter(n() > 1) %>%        # keep only duplicated groups
   arrange(mrm1)
 
-dups2 <- Recovery_lipidsall_v7 %>%
-  group_by(mrm1) %>%
-  filter(n() > 1) %>%        # keep only duplicated groups
-  arrange(mrm1)
 
 #remove duplicate values due to repeat technical inject but group by lipid_class to keep most info but with higher max/blank
-Recovery_lipidsall_v7v2 <- Recovery_lipidsall_v7 |>
-  group_by(lipid_class, mrm1) |>
+Lipidsall_long_v3v2 <- Lipidsall_long_v3 |>
+  group_by(lipid_class, mrm1, Timepoint, sample) |>
   slice_max(max_divid_blank, n = 1, with_ties = FALSE) |>
   ungroup()
-#========================================================================
+
+
 ###STEP 4: FIND # of IDs per lipid class or other filter
 # Group the data by the desired variables and count the number of distinct MRMs
 
-Recovery_lipidsall_v7v2 <- Recovery_lipidsall_v7v2 %>%
+Lipidsall_long_v3v2 <- Lipidsall_long_v3v2 %>%
   mutate(
     precursor = as.numeric(str_split_fixed(mrm1, "\\s*->\\s*", 2)[,1]),
     product   = as.numeric(str_split_fixed(mrm1, "\\s*->\\s*", 2)[,2])
   )
 
-dups3 <- Recovery_lipidsall_v7v2 %>%
+
+
+Lipidsall_long_v3v3 <- Lipidsall_long_v3v2 %>%
+  mutate(
+    samplename = paste(sample, Timepoint, sep = "_")
+  ) %>%
+  pivot_wider(
+    id_cols = c(lipid_name, mrm1, mrm, lipid_class1, lipid_class, DG_TG_acyl_chains, NL_chain),
+    names_from = samplename,
+    values_from = Intensity
+  ) %>%
+  select(-any_of("blank_value"))
+
+dups2 <- Lipidsall_long_v3v3 %>%
   group_by(mrm1) %>%
   filter(n() > 1) %>%        # keep only duplicated groups
   arrange(mrm1)
+
+#remove duplicate values due to repeat technical inject but group by lipid_class to keep most info but with higher max/blank
+#do max value across all samples so with downstream analysis we retain intensity values
+Lipidsall_long_v3v3 <- Lipidsall_long_v3v3 |>
+  rowwise() |>
+  mutate(
+    maxvalue = max(
+      c(
+        s1_Acute, s1_Recovery,
+        s2_Acute, s2_Recovery,
+        s3_Acute, s3_Recovery,
+        s4_Acute, s4_Recovery,
+        s5_Acute, s5_Recovery,
+        s6_Acute, s6_Recovery,
+        s7_Acute, s7_Recovery,
+        s8_Acute, s8_Recovery,
+        s9_Acute, s9_Recovery,
+        s10_Recovery, s11_Recovery,
+        s12_Recovery, s13_Recovery,
+        s14_Recovery, s15_Recovery,
+        s16_Recovery, s17_Recovery,
+        s18_Recovery
+      ),
+      na.rm = TRUE
+    )
+  ) |>
+  ungroup()
+
+
+Lipidsall_long_v3v3 <- Lipidsall_long_v3v3 |>
+  mutate(
+    max_divid_blank = maxvalue / coalesce(blank_Recovery, blank_Acute)
+  )
+Lipidsall_long_v3v4 <- Lipidsall_long_v3v3 |>
+  group_by(lipid_class, mrm1,) |>
+  slice_max(max_divid_blank, n = 1, with_ties = FALSE) |>
+  ungroup()
+
+dups3 <- Lipidsall_long_v3v4 %>%
+  group_by(mrm1) %>%
+  filter(n() > 1) %>%        # keep only duplicated groups
+  arrange(mrm1)
+
 
 #============
 #add more filtering to remove odd chain, and other non-sense identifications
 
 
-df <- Recovery_lipidsall_v7v2
+df <- Lipidsall_long_v3v4
 
 #run script 1a_Filtering_Score_script.R
 source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
@@ -215,7 +365,6 @@ source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 #this will output a parsed table: has a scoring value for lipid candidates when multiple options are present in lipid_name cell
 #output-also separately break out cer_parsed table
 #ouput-the "df_with_unsat_updated": final table output with the most likely candidate picked
-#=============================
 #Manual Filter
 
 #Rename or manual filter out more based on score ouput
@@ -281,6 +430,7 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
   )
 
 
+
 #look aat SM and PCs identifiy isobars
 SMandPCs <- df_with_unsat_updated %>%
   filter(lipid_class1 %in% c("PC", "SM"))
@@ -314,7 +464,7 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
       lipid_name == "LPC(16:0)_PC(O-16:0)_LPC(O-17:0)shift32" ~ "LPC O-20:5",
       lipid_name == "PC(28:0)_PC(O-29:0)shift16" ~ "PC(20:0/8:0(COOH))_PC(18:0/Aze)",
       
-        TRUE ~ lipid_name
+      TRUE ~ lipid_name
     )
   )
 
@@ -323,71 +473,122 @@ df<-df|>
   select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
 
 #run script 1a_Filtering_Score_script.R
-source("1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 #this reupdates the columns after replacement of likely IDs
 #current table is titled df_with_unsat_updated
 
+dups4 <- df_with_unsat_updated %>%
+  group_by(mrm1) %>%
+  filter(n() > 1) %>%        # keep only duplicated groups
+  arrange(mrm1)
 
-#===============
+#still fix:
+#DG 29:1 NL 18:1 542-243 542.47847 remove
+#DG 37:7 NL 16:1 642*371 642.50977 remove 
+#DG 39:7 NL 20:0 670-341 670.54107 remove because duplicate
+#DG 39:0 NL 20:0 684-355  remove because duplicate
+
+df_with_unsat_updated <- df_with_unsat_updated %>%
+  filter(
+    !(picked_candidate == "DG 29:1 NL 18:1"),
+    !(picked_candidate == "DG 37:7 NL 16:1"),
+    !(picked_candidate == "DG 39:7 NL 20:0"),
+    !(picked_candidate == "DG 39:0 NL 20:0"))
+dups6 <- df_with_unsat_updated %>%
+  group_by(mrm1) %>%
+  filter(n() > 1) %>%        # keep only duplicated groups
+  arrange(mrm1)
+
+dups5 <- df_with_unsat_updated %>%
+  group_by(picked_candidate) %>%
+  filter(n() > 1) %>%        # keep only duplicated groups
+  arrange(picked_candidate)
+
+
+df_with_unsat_updated <- df_with_unsat_updated %>%
+  mutate(
+    precursor = as.numeric(str_split_fixed(mrm1, "\\s*->\\s*", 2)[,1]),
+    product   = as.numeric(str_split_fixed(mrm1, "\\s*->\\s*", 2)[,2])
+  )
+df_with_unsat_updated <- df_with_unsat_updated |>
+  mutate(lipid_name = str_replace_all(picked_candidate, ",", "_"))|> ##replace commas with underscore in Lipid name
+  mutate(lipid_class1 = str_extract(picked_candidate, "PC|TG|PE|PS|PI|PG|CAR|CE|Cer|DG|FA|SM|STD")) |> # add all desired abbreviations
+  mutate(lipid_class = str_extract(picked_candidate, "LPC|LPE|PC|TG|PE|PS|PI|PG|CAR|CE|Cer|DG|FA|SM|STD"))
 ##Look at Summarization across data
-Recovery_filtered_summaryDGTG <- df_with_unsat_updated  %>%
+Combined_filtered_summaryDGTG <- df_with_unsat_updated  %>%
   group_by( NL_chain,lipid_class) %>%
   summarise(distinct_mrms = n_distinct(mrm1))
 
-Recovery_filtered_summary <- df_with_unsat_updated  %>%
+Combined_filtered_summary <- df_with_unsat_updated  %>%
   group_by( lipid_class) %>%
   summarise(distinct_mrms = n_distinct(mrm1))
 
-Recovery_filtered_summary2 <- df_with_unsat_updated  %>%
+Combined_filtered_summary2 <- df_with_unsat_updated  %>%
   group_by( lipid_class) %>%
   summarise(distinct_precursor = n_distinct(precursor))
 
 #=====================
 ##Step 4B:
 #pivot
-Recovery_lipidsall_v8<-df_with_unsat_updated|>
-  select(c(picked_candidate, mrm,mrm1, precursor, product,lipid_class1, lipid_class, NL_chain,s10:s9))|>
+colnames(df_with_unsat_updated)
+
+df_with_unsat_updated2<-df_with_unsat_updated|>
+  select(-blank_Acute, -blank_Recovery)
+  
+Lipidsall_long_v4<-df_with_unsat_updated2|>
+  select(c(picked_candidate, mrm,mrm1, precursor, product,lipid_class1, lipid_class, NL_chain,s1_Acute:s9_Recovery))|>
   pivot_longer(
-    cols = c(s10:s9),
+    cols = c(s1_Acute:s9_Recovery),
     values_to = "absint",
     names_to = "sample"
   )
+combined_degisn<-read.csv("Lipidomics/metadata/Sample_description guide_combined.csv")
+Lipidsall_long_v5 <- Lipidsall_long_v4 %>%
+  left_join(combined_degisn, by = "sample")
 
-
-Recovery_lipidsall_v9 <- Recovery_lipidsall_v8 %>%
-  left_join(recovery_expdesign, by = "sample")
-
-Recovery_lipidsall_v9<-Recovery_lipidsall_v9|>
+Lipidsall_long_v6<-Lipidsall_long_v5|>
   mutate(
     samplename = paste(Genetype, Treatment, Rep, sep = "_")
   )
 
+Lipidsall_long_v6<-Lipidsall_long_v6|>
+  mutate(
+    samplename2 = paste(Experiment, samplename, sep = "_")
+  )
+colnames(Lipidsall_long_v6)
+
+Lipidsall_long_v7<-Lipidsall_long_v6|>
+  filter(!mrm1 == "850 -> 503")
+
 ##Plot Distribution of Lipids
-ggplot(Recovery_lipidsall_v9, aes(x= log2(absint), y= lipid_class1, fill = lipid_class1))+
+ggplot(Lipidsall_long_v7, aes(x= log2(absint), y= lipid_class1, fill = lipid_class1))+
   geom_boxplot()+
   theme_bw(base_size=12)+
   labs(
-    title = "Recovery: Distribution of Intensity across Lipid Classes",
-  )
+    title = "Distribution of Intensity across Lipid Classes",
+  )+
+  facet_wrap(~Experiment)
 
-ggplot(Recovery_lipidsall_v9, aes(x= log2(absint), y= samplename, fill = samplename))+
+ggplot(Lipidsall_long_v7, aes(x= log2(absint), y= samplename2, fill = samplename2))+
   geom_boxplot()+
   theme_bw(base_size=12)+
   labs(
-    title = "Recovery: Distribution of Intensity across Samples",
-  )
+    title = "Distribution of Intensity across Samples",
+  )+
+  facet_wrap(~Experiment, nrow=2, scales = "free_y")
 
 
-ggplot(Recovery_lipidsall_v9, aes(x= log2(absint), y= samplename, fill = samplename))+
+
+ggplot(Lipidsall_long_v7, aes(x= log2(absint), y= samplename2, fill = samplename2))+
   geom_boxplot()+
   theme_bw(base_size=12)+
   labs(
-    title = "Recovery: Distribution of Intensity across Samples",
+    title = "Distribution of Intensity across Samples",
   )+
   facet_wrap(~lipid_class1, nrow= 5)
 
 
-colnames(Recovery_lipidsall_v9)
+colnames(Lipidsall_long_v7)
 
 #====================================
 #PCA
@@ -395,15 +596,15 @@ colnames(Recovery_lipidsall_v9)
 # library(paletteer)
 
 # 1) Wide matrix
-dat_wide <- Recovery_lipidsall_v9 %>%
-  mutate(feature = paste(lipid_name, mrm, sep = " | ")) %>%
-  select(sample, Genetype, Treatment, Rep, feature, absint) %>%
+dat_wide <- Lipidsall_long_v7 %>%
+  mutate(feature = paste(picked_candidate, mrm, sep = " | ")) %>%
+  select(samplename2, Genetype, Treatment,Experiment, Rep, feature, absint) %>%
   summarise(absint = sum(absint, na.rm = TRUE),
-            .by = c(sample, Genetype, Treatment, Rep, feature)) %>%
+            .by = c(samplename2, Genetype, Treatment, Rep, feature,Experiment)) %>%
   pivot_wider(names_from = feature, values_from = absint)
 
-meta <- dat_wide %>% select(sample, Genetype, Treatment, Rep)
-X <- dat_wide %>% select(-sample, -Genetype, -Treatment, -Rep)
+meta <- dat_wide %>% select(samplename2, Genetype, Treatment, Rep,Experiment)
+X <- dat_wide %>% select(-samplename2, -Genetype, -Treatment, -Rep,-Experiment)
 
 X_log <- log1p(as.matrix(X))
 X_log[is.na(X_log)] <- 0
@@ -413,7 +614,7 @@ pca <- prcomp(X_log, center = TRUE, scale. = TRUE)
 
 scores <- as.data.frame(pca$x) %>%
   bind_cols(meta) %>%
-  mutate(group = interaction(Treatment, Genetype, drop = TRUE))
+  mutate(group = interaction(Treatment, Genetype,Experiment, drop = TRUE))
 
 # variance explained
 var_explained <- (pca$sdev^2) / sum(pca$sdev^2)
@@ -438,7 +639,7 @@ make_ellipse <- function(df, level = 0.68, n = 150, ridge = 1e-6) {
 }
 
 ellipse_df <- scores %>%
-  group_by(group, Treatment, Genetype) %>%
+  group_by(group, Treatment, Genetype,Experiment ) %>%
   group_modify(~ {
     e <- make_ellipse(.x, level = 0.68, n = 150, ridge = 1e-6)
     if (is.null(e)) return(tibble())
@@ -465,11 +666,37 @@ ggplot(scores, aes(PC1, PC2, color = Treatment, shape = Genetype)) +
     title = "PCA",
     x = paste0("PC1 (", round(100 * var_explained[1], 1), "%)"),
     y = paste0("PC2 (", round(100 * var_explained[2], 1), "%)"),
-    color = "Treatment",
-    fill  = "Treatment",
-    shape = "Genetype"
+    color = "Treament",
+    fill  = "Treament",
+    shape = "GeneType"
   ) +
   theme(plot.title = element_text(hjust = 0.5))
 # If you want these palettes and have paletteer installed:
 # + scale_color_paletteer_d("ggsci::category10_d3")
 # + scale_fill_paletteer_d("ggsci::category10_d3")
+
+
+ggplot(scores, aes(PC1, PC2, color = Treatment, shape = Experiment)) +
+  geom_polygon(
+    data = ellipse_df,
+    aes(group = group, fill = Treatment),
+    alpha = 0.18,
+    color = NA
+  ) +
+  geom_path(
+    data = ellipse_df,
+    aes(group = group, color = Treatment),
+    linewidth = 0.6
+  ) +
+  geom_point(size = 3, alpha = 0.9) +
+  theme_bw(base_size = 12) +
+  labs(
+    title = "PCA",
+    x = paste0("PC1 (", round(100 * var_explained[1], 1), "%)"),
+    y = paste0("PC2 (", round(100 * var_explained[2], 1), "%)"),
+    color = "Treatment",
+    fill  = "Treatment",
+    shape = "Experiment"
+  ) +
+  theme(plot.title = element_text(hjust = 0.5))
+
