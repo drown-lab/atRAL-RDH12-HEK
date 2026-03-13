@@ -27,7 +27,8 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 
 ## Updates
 
--   As of 2/24/26: this repo only contains R scripts for proteomics analysis
+-   As of 3/13/26: this repo only contains R scripts for proteomics and lipidomics analysis
+    -   Currently assessing if can perform lipidomics DEA on the combined datasets-as there could be batch effect from both instrument collection date and a experiment-type
 
 ## Version, Dependencies, Packages
 
