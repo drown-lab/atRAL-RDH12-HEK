@@ -18,6 +18,8 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 
 -   Folder `quant_DIANN_outputs`- contains the filtered excel worksheet of protein IDs and intensity
 
+-   Folder `Lipidomics`- contains scripts, figures, output_txts from lipidomics datasets
+
 #### Differential Expression Analysis:
 
 -   Differential expression of proteins workflow (DEP): is found in `Proteomic_Rscripts/DEP_analysis`: comes with own Readme file for detailed explanation
