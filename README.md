@@ -23,7 +23,7 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 #### Differential Expression Analysis:
 
 -   Differential expression of proteins workflow (DEP): is found in `Proteomic_Rscripts/DEP_analysis`: comes with own Readme file for detailed explanation
--   Differential Expression of lipids: TBA
+-   Differential Expression of lipids: scripts to perform this is found in `Lipidomics/RScripts`
 
 #### More Lipid scripts To be added
 
