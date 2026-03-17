@@ -344,6 +344,7 @@ dups5 <- df_with_unsat_updated %>%
   filter(n() > 1) %>%        # keep only duplicated groups
   arrange(picked_candidate)
 
+
 #===============
 df_with_unsat_updated <- df_with_unsat_updated |>
   mutate(lipid_name = str_replace_all(picked_candidate, ",", "_"))|> ##replace commas with underscore in Lipid name
@@ -361,6 +362,15 @@ Acute_filtered_summary <- df_with_unsat_updated  %>%
 Acute_filtered_summary2 <- df_with_unsat_updated  %>%
   group_by( lipid_class) %>%
   summarise(distinct_precursor = n_distinct(precursor))
+Acute_filtered_summary2 <- Acute_filtered_summary2 %>%
+  mutate(
+    percent = distinct_precursor / sum(distinct_precursor),
+    label = paste0(lipid_class, " (", scales::percent(percent, accuracy = 1), ")")
+  )
+
+write.csv(df_with_unsat_updated, "Lipidomics/output_txts/Acute_filteredlipidtable.csv")
+write.csv(Acute_filtered_summary2,"Lipidomics/output_txts/Acute_lipidclass_summary.csv")
+
 
 #=====================
 ##Step 4B:
