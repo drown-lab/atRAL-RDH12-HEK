@@ -267,10 +267,9 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered %>%
     !(lipid_name == "[TG52:9_TG51:2] NL 16:0"),
     !(lipid_name == "[TG52:9_TG51:2] NL 18:1"),
     !(lipid_name == "[TG49:3] NL 20:0"),
-    !(lipid_name == "PC 43:2"),
-    !(lipid_name == "PC 43:6"),
-    
-    
+    !(lipid_name == "LPS O-20:0;O"),
+    !(lipid_name == "[TG51:8]_22:5")
+  
   )
 
 
@@ -282,6 +281,9 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
       lipid_name == "DG 37:7 NL 16:0" ~ "DG 36:0 NL 16:0",
       lipid_name == "DG 37:7 NL 18:0" ~ "DG 36:0 NL 18:0",
       lipid_name == "[TG37:0] NL 20:0" ~ "DG 38:0 NL 20:0",
+      lipid_name == "PS 37:7_PS O-38:7_PS 36:0_PS O-37:0" ~ "PS 36:0",
+      lipid_name == "PG O-38:8_PG 36:1_PG O-37:1_PG O-37:1" ~ "PG 36:1",
+      
       TRUE ~ lipid_name
     )
   )
@@ -338,6 +340,8 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
     )
   )
 #PC 43:2 
+
+
 
 df<-df_with_unsat_filtered2
 df<-df|>
