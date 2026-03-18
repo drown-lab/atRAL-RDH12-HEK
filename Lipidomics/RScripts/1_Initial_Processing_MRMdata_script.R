@@ -265,8 +265,14 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered %>%
     !(lipid_name == "[TG45:3] NL 16:0"),
     !(lipid_name == "[TG50:9_TG49:2] NL 20:0"),
     !(lipid_name == "[TG52:9_TG51:2] NL 16:0"),
-    !(lipid_name == "[TG52:9_TG51:2] NL 18:1")
+    !(lipid_name == "[TG52:9_TG51:2] NL 18:1"),
+    !(lipid_name == "[TG49:3] NL 20:0"),
+    !(lipid_name == "PC 43:2"),
+    !(lipid_name == "PC 43:6"),
+    
+    
   )
+
 
 df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
   mutate(
@@ -307,8 +313,8 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
       lipid_name == "PC(29:0)_PC(O-30:0)shift16" ~ "PC O-32:6_PC 38:2OEP",
       lipid_name == "PC(31:0)_PC(O-32:0)shift16" ~ "PC O-24:6_PC(22:0/8:0(COOH))",
       lipid_name == "PE(33:0)_PE(O-34:0)shift32" ~ "PE 36:5",
-      lipid_name == "PC 43:6" ~ "PC O-44:6",
-      lipid_name == "PC 43:2" ~ "PC O-44:2_PC 44:9",
+      lipid_name == "PC 43:6 " ~ "PC O-44:6",
+      lipid_name == "PC 43:2 " ~ "PC O-44:2",
       lipid_name == "PC(30:0)_PC(O-31:0)shift32" ~ "PC O-34:5",
       lipid_name == "PC(30:0)_PC(O-31:0)shift16" ~ "PC 32:6",
       lipid_name == "LPC(16:0)_PC(O-16:0)_LPC(O-17:0)shift32" ~ "LPC O-20:5",
@@ -318,16 +324,31 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
     )
   )
 
+df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
+  mutate(
+    lipid_name = str_trim(lipid_name)
+  )
+
+df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
+  mutate(
+    lipid_name = case_when(
+      lipid_name == "PC 43:6" ~ "PC O-44:6",
+      lipid_name == "PC 43:2" ~ "PC O-44:2",
+      TRUE ~ lipid_name
+    )
+  )
+#PC 43:2 
+
 df<-df_with_unsat_filtered2
 df<-df|>
   select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
 
 #run script 1a_Filtering_Score_script.R
-source("1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 #this reupdates the columns after replacement of likely IDs
 #current table is titled df_with_unsat_updated
 
-
+write.csv(df_with_unsat_updated, "Lipidomics/output_txts/Recovery_filteredlipidtable.csv")
 #===============
 ##Look at Summarization across data
 Recovery_filtered_summaryDGTG <- df_with_unsat_updated  %>%
@@ -341,6 +362,8 @@ Recovery_filtered_summary <- df_with_unsat_updated  %>%
 Recovery_filtered_summary2 <- df_with_unsat_updated  %>%
   group_by( lipid_class) %>%
   summarise(distinct_precursor = n_distinct(precursor))
+
+write.csv(Recovery_filtered_summary2, "Lipidomics/output_txts/Recovery_LipidClass_summary.csv")
 
 #=====================
 ##Step 4B:
