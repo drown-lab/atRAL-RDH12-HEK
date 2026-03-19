@@ -98,6 +98,18 @@ ggplot(df, aes(x = C_total, y = DB_total, color = maxvalue)) +
   theme_bw(base_size = 12) +
   facet_wrap(~lipid_class1)
 
+df_plot <- df %>%
+  group_by(lipid_class1) %>%
+  mutate(maxvalue_scaled = scales::rescale(maxvalue)) %>%
+  ungroup()
+
+ggplot(df_plot, aes(x = C_total, y = DB_total, color = maxvalue_scaled)) +
+  geom_point(alpha = 0.9, size = 2) +
+  scale_color_viridis_c(option = "plasma") +
+  theme_bw(base_size = 12) +
+  facet_wrap(~lipid_class1) +
+  labs(color = "Scaled intensity\n(per class)")
+
 ggplot(df, aes(x = C_total, y = DB_total, color = max_divid_blank)) +
   geom_point(alpha = 0.9, size = 2) +
   scale_color_viridis_c(trans = "log10", option = "plasma") +

@@ -124,7 +124,7 @@ ggplot(scores_clean, aes(PC1, PC2, color = condition, fill = condition)) +
   geom_point(size = 3) +
   theme_bw(base_size = 12) +
   labs(
-    title = "PCA (Post-norm): Control and RDH12 Recovery",
+    title = "PCA (Post-norm): Control and RDH12 Acute",
     x = paste0("PC1 (", round(100 * var_explained[1], 1), "%)"),
     y = paste0("PC2 (", round(100 * var_explained[2], 1), "%)"),
     color = "Condition",

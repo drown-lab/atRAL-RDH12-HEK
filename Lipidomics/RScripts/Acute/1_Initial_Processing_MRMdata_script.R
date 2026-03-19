@@ -203,7 +203,7 @@ dups3 <- Acute_lipidsall_v7v2 %>%
 df <- Acute_lipidsall_v7v2
 
 #run script 1a_Filtering_Score_script.R
-source("1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
 
 #this will output a parsed table: has a scoring value for lipid candidates when multiple options are present in lipid_name cell
 #output-also separately break out cer_parsed table
@@ -307,17 +307,19 @@ df_with_unsat_filtered2 <- df_with_unsat_filtered2 %>%
       lipid_name == "PC(30:0)_PC(O-31:0)shift16" ~ "PC 32:6",
       lipid_name == "LPC(16:0)_PC(O-16:0)_LPC(O-17:0)shift32" ~ "LPC O-20:5",
       lipid_name == "PC(28:0)_PC(O-29:0)shift16" ~ "PC(20:0/8:0(COOH))_PC(18:0/Aze)",
+     
       
         TRUE ~ lipid_name
     )
   )
 
 df<-df_with_unsat_filtered2
+
 df<-df|>
   select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
 
 #run script 1a_Filtering_Score_script.R
-source("1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
 #this reupdates the columns after replacement of likely IDs
 #current table is titled df_with_unsat_updated
 
@@ -337,7 +339,32 @@ df_with_unsat_updated <- df_with_unsat_updated %>%
     !(picked_candidate == "DG 29:1 NL 18:1"),
     !(picked_candidate == "DG 37:7 NL 16:1"),
     !(picked_candidate == "DG 39:7 NL 20:0"),
-    !(picked_candidate == "DG 39:0 NL 20:0"))
+    !(picked_candidate == "DG 39:0 NL 20:0"),
+    !(lipid_name == "LPS O-20:0;O"),
+    
+    
+    )
+
+df_with_unsat_updated <- df_with_unsat_updated %>%
+  mutate(
+    lipid_name = case_when(
+  lipid_name == "PC O-40:7" ~ "PC 38:0",
+  lipid_name == "PC O-38:7" ~ "PC 36:0",
+  lipid_name == "PC O-42:7" ~ "PC 40:0",
+  lipid_name == "DG O-38:9 NL 18:1" ~ "DG 36:2 NL 18:1",
+  lipid_name == "DG O-38:8 NL 18:0" ~ "DG 36:1 NL 18:0",
+  lipid_name == "DG O-38:8 NL 16:1" ~ "DG 36:1 NL 16:1",
+  lipid_name == "DG O-38:8 NL 16:1" ~ "DG 36:1 NL 16:1",
+  lipid_name == "DG O-40:9 NL 18:2" ~ "DG 38:2 NL 16:1",
+
+  TRUE ~ lipid_name
+    ))
+
+df<-df_with_unsat_updated
+df<-df|>
+  select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
+source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
+
 
 dups5 <- df_with_unsat_updated %>%
   group_by(picked_candidate) %>%

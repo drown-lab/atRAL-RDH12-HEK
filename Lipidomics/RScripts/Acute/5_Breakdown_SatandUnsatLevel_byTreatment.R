@@ -9,6 +9,15 @@ library(ggsci)
 
 df<-read.csv("Lipidomics/output_txts/Acute_filteredlipidtable.csv")
 
+df <- df %>%
+  mutate(
+    unsat_class = case_when(
+      DB_total == 0 ~ "SFA",
+      DB_total == 1 ~ "MUFA",
+      DB_total >= 2 ~ "PUFA",
+      TRUE ~ NA_character_
+    )
+  )
 Acute100_v1<-df|>
   rowwise() |>
   mutate(maxvalue = max(c(s4, s5, s6)))

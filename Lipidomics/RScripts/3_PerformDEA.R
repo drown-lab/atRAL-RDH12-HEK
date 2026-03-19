@@ -21,7 +21,7 @@ data_diff <- test_diff(
 
 dea <- add_rejections(data_diff, alpha = 0.1, lfc = log2(1.5))
 
-plot_pca(dea, x=1, y=2, n=363, point_size = 4)
+plot_pca(dea, x=1, y=2, n=360, point_size = 4)
 
 ##Plot initial volcano plots
 plot_volcano(dea, contrast = "RDH12._200_vs_RDH12._Veh", label_size = 3, add_names = TRUE) +
@@ -46,6 +46,7 @@ data_results <- get_results(dea)
 data_results_long<- get_df_long(dea)
 
 data_results_wide<- get_df_wide(dea)
+write.csv(data_results, "Lipidomics/output_txts/Recovery_DEA_results_v1.csv")
 
 # Plot the Pearson correlation matrix
 plot_cor(dea, significant = TRUE, lower = 0, upper = 1, pal = "Reds")
