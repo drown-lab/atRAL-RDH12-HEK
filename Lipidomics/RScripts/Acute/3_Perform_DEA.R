@@ -12,7 +12,7 @@ data_diff <- test_diff(
 
 dea <- add_rejections(data_diff, alpha = 0.1, lfc = log2(1.5))
 
-plot_pca(dea, x=1, y=2, n=248, point_size = 4)
+plot_pca(dea, x=1, y=2, n=247, point_size = 4)
 
 ##Plot initial volcano plots
 plot_volcano(dea, contrast = "RDH12_100_vs_RDH12_Veh", label_size = 3, add_names = TRUE) +
