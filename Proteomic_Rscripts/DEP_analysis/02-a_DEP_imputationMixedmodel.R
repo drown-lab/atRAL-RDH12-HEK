@@ -148,3 +148,7 @@ ggsave(filename = file.path(path_figures,"ImputationIntensityDistribution.png"),
 plot_normalization(data_filt, data_imp_mixed)
 ggsave(filename = file.path(path_figures,"ImputationIntensityDistribution_Boxplot.png"), width = 10, height = 5)
 
+df_wide<-get_df_wide(data_imp_mixed)
+df_long<-get_df_long(data_imp_mixed)
+
+write.csv(df_long, "Proteomic_output_txts/Data_imputed_results.csv")
