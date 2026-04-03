@@ -9,7 +9,6 @@ library(paletteer)
 
 
 ##Get table from file
-#Protmcs_HekatRALexps_v1<-read_excel("Z:/data/Projects/Rams_Collab_RDH12experiments/atRAL_experiments/proteomics/quant_data_filtered_DIANNandExcels/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.xlsx")
 
 #Protmcs_HekatRALexps_v1<-read_csv("quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv")
 colnames(Protmcs_HekatRALexps_v1)
@@ -83,7 +82,7 @@ contam_protein_list <- c(
 )
 
 abundance_table <- abundance_table %>%
-  filter(!Protein.Group %in% contamgenes)
+  filter(!Protein.Group %in% contam_protein_list)
 saveRDS(Hek_norm, file = "RData/Hekcells_Prep.rds")
 write.csv(abundance_table, "Proteomic_output_txts/RawData_filtered_results.csv")
 

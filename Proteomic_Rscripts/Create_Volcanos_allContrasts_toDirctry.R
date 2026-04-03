@@ -1,5 +1,5 @@
 #File Needed
-#DEPresults_v2 <- read.csv("Proteomic_output_txts/DEPresults_v2.csv")
+#DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
 
 # =========================================================
 # Batch standard volcano plots
@@ -116,11 +116,11 @@ make_volcano_df_standard <- function(df,
       ratio_display = format_ratio_display(ratio),
       padj_display  = format_padj_display(padj),
       
-      sig = !is.na(padj) & padj < padj_cutoff,
+      sig = !is.na(padj) & padj <= padj_cutoff,
       
       direction = case_when(
-        !is.na(ratio) & ratio >  lfc_cutoff & sig ~ "Up",
-        !is.na(ratio) & ratio < -lfc_cutoff & sig ~ "Down",
+        !is.na(ratio) & ratio >=  lfc_cutoff & sig ~ "Up",
+        !is.na(ratio) & ratio <= -lfc_cutoff & sig ~ "Down",
         TRUE ~ "NS"
       )
     )

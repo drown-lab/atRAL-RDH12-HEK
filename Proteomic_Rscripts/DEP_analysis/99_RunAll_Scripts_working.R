@@ -16,14 +16,15 @@ stopifnot(dir.exists(base_dir))
 scripts <- c(
   "00_Setup_Input_Files_and_Output_paths.R",
   "01_Datasetup_for_DEPanalysis.R",
-  "01a_QC_HeatMap_Missingness.R",
-  "01b_QC_PCA_RDH12_acuteAtRAL.R",
-  "01b_QC_PCA_Recovery.R",
+  #"01a_QC_HeatMap_Missingness.R",
+  #"01b_QC_PCA_RDH12_acuteAtRAL.R",
+  #"01b_QC_PCA_Recovery.R",
   "02-a_DEP_imputationMixedmodel.R",
   "02-b_Missingnesssummarization.R",
   "02-c_MissingnessAbundance.R",
   "03_DEP_performDEA.R",
-  "04_Data_results_with_missing_class_output.R"
+  "04_Data_results_with_missing_class_output.R",
+  "04_WriteCsv_DEP_missingclass_BHadjusment.R"
 )
 
 start_time <- Sys.time()

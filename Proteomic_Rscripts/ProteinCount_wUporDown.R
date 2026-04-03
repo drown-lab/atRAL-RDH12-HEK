@@ -12,7 +12,7 @@ library(tidyr)
 # 1. USER INPUTS
 # ---------------------------------------------------------
 
-# DEPresults_v2 <- read.csv("Proteomic_output_txts/DEPresults_v2.csv")
+ DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
 
 padj_cutoff <- 0.055
 lfc_cutoff  <- log2(1.45)
@@ -89,8 +89,8 @@ count_sig_by_contrast <- function(df, contrast, padj_cutoff = 0.05, lfc_cutoff =
     ) %>%
     mutate(
       direction = case_when(
-        !is.na(padj) & !is.na(ratio) & padj < padj_cutoff & ratio >  lfc_cutoff ~ "Upregulated",
-        !is.na(padj) & !is.na(ratio) & padj < padj_cutoff & ratio < -lfc_cutoff ~ "Downregulated",
+        !is.na(padj) & !is.na(ratio) & padj <= padj_cutoff & ratio >=  lfc_cutoff ~ "Upregulated",
+        !is.na(padj) & !is.na(ratio) & padj <= padj_cutoff & ratio <= -lfc_cutoff ~ "Downregulated",
         TRUE ~ "NS"
       )
     )

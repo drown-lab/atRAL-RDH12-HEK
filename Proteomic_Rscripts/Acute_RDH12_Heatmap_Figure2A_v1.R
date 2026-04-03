@@ -4,7 +4,7 @@
 # and clusters similar-behaving proteins WITHIN each pathway
 # =========================================================
 
-# DEPresults_v2 <- read.csv("Proteomic_output_txts/DEPresults_v2.csv")
+# DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
 
 library(dplyr)
 library(tidyr)
@@ -33,9 +33,9 @@ acute_col_labels <- c(
 )
 
 # Output files
-out_file_pdf <- "acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.pdf"
-out_file_svg <- "acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.svg"
-out_file_csv <- "acute_pathway_heatmap_input_table_allLists_clusteredWithinPathway.csv"
+out_file_pdf <- "Proteomic_Figs/acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.pdf"
+out_file_svg <- "Proteomic_Figs/acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.svg"
+out_file_csv <- "Proteomic_Figs/acute_pathway_heatmap_input_table_allLists_clusteredWithinPathway.csv"
 
 # Cluster columns?
 cluster_cols <- FALSE
@@ -117,7 +117,7 @@ jnk1_genes <- c(
 pathway_tbl <- bind_rows(
   tibble(Gene = er_genes,         Pathway = "ER-associated"),
   tibble(Gene = hsp_genes,        Pathway = "HSP/chaperones"),
-  tibble(Gene = DUB_genes,        Pathway = "DUB"),
+  tibble(Gene = Ubi_genes,        Pathway = "DUB"),
   tibble(Gene = ERAD_genes,       Pathway = "ERAD"),
   tibble(Gene = er_stress_genes,  Pathway = "ER stress"),
   tibble(Gene = upr_genes,        Pathway = "UPR"),
@@ -328,11 +328,11 @@ draw_heatmap()
 # 14. SAVE HEATMAP
 # ---------------------------------------------------------
 
-pdf(out_file_pdf, width = 8, height = 14)
+pdf(out_file_pdf, width = 7, height = 14)
 draw_heatmap()
 dev.off()
 
-svg(out_file_svg, width = 8, height = 14)
+svg(out_file_svg, width = 7, height = 14)
 draw_heatmap()
 dev.off()
 
