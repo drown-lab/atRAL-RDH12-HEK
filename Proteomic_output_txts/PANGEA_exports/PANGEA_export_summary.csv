@@ -1,0 +1,16 @@
+"contrast","n_all","n_up","n_down"
+"GFP_100_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr",8049,32,69
+"GFP_200_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr",8049,491,729
+"GFP_200_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr",8049,692,1291
+"RDH12_100_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr",8049,82,55
+"RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr",8049,1299,567
+"RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr",8049,35,42
+"RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr",8049,1144,3000
+"RDH12_200_atRAL5hr.24h_recvr_vs_GFP_200_atRAL5hr.24h_recvr",8049,1710,477
+"RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr.24h_recvr",8049,42,72
+"RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_200_atRAL5hr",8049,1176,1086
+"RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr",8049,49,87
+"RDH12_200_atRAL5hr_vs_RDH12_100_atRAL5hr",8049,447,142
+"RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr",8049,1217,1845
+"RDH12_control_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr",8049,130,70
+"RDH12_control_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr",8049,1554,2073

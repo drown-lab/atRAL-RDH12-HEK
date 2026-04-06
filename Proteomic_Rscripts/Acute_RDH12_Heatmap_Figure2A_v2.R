@@ -6,7 +6,7 @@
 # ADDS ROW ANNOTATIONS FOR WHICH CONTRAST(S) EACH PROTEIN IS SIGNIFICANT IN
 # =========================================================
 
-# DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
+ #DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
 
 library(dplyr)
 library(tidyr)
