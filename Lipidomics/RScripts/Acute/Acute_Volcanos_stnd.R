@@ -1,5 +1,5 @@
 #File Needed
-DEPresults_v2 <- read.csv("Lipidomics/output_txts/Acute_DEA_v2_corrected.csv")
+DEPresults_v2 <- read.csv("Lipidomics/output_txts/Acute_DEA_results_v1_corrected.csv")
 
 # =========================================================
 # Batch standard volcano plots

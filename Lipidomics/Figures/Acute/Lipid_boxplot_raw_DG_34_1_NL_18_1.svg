@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='576.00pt' height='432.00pt' viewBox='0 0 576.00 432.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1NzYuMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='576.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.00' y='0.00' width='576.00' height='432.00' style='stroke-width: 1.55; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTcuODl8NTY4LjAzfDMzLjcyfDM2Mi4wMg=='>
+    <rect x='57.89' y='33.72' width='510.14' height='328.31' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTcuODl8NTY4LjAzfDMzLjcyfDM2Mi4wMg==)'>
+<rect x='57.89' y='33.72' width='510.14' height='328.31' style='stroke-width: 1.55; stroke: none; fill: #FFFFFF;' />
+<line x1='153.54' y1='73.76' x2='153.54' y2='48.64' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<line x1='153.54' y1='131.02' x2='153.54' y2='163.15' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polygon points='101.73,73.76 101.73,131.02 205.35,131.02 205.35,73.76 101.73,73.76 ' style='stroke-width: 1.55; stroke-linecap: butt; stroke-linejoin: miter; fill: #BDBDBD;' />
+<line x1='101.73' y1='98.89' x2='205.35' y2='98.89' style='stroke-width: 3.10; stroke-linecap: butt; stroke-linejoin: miter;' />
+<line x1='312.96' y1='235.07' x2='312.96' y2='225.32' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<line x1='312.96' y1='292.90' x2='312.96' y2='340.98' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polygon points='261.15,235.07 261.15,292.90 364.77,292.90 364.77,235.07 261.15,235.07 ' style='stroke-width: 1.55; stroke-linecap: butt; stroke-linejoin: miter; fill: #E08A5F;' />
+<line x1='261.15' y1='244.82' x2='364.77' y2='244.82' style='stroke-width: 3.10; stroke-linecap: butt; stroke-linejoin: miter;' />
+<line x1='472.38' y1='285.25' x2='472.38' y2='264.23' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<line x1='472.38' y1='326.69' x2='472.38' y2='347.10' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polygon points='420.57,285.25 420.57,326.69 524.19,326.69 524.19,285.25 420.57,285.25 ' style='stroke-width: 1.55; stroke-linecap: butt; stroke-linejoin: miter; fill: #E6CDB9;' />
+<line x1='420.57' y1='306.27' x2='524.19' y2='306.27' style='stroke-width: 3.10; stroke-linecap: butt; stroke-linejoin: miter;' />
+<circle cx='143.22' cy='98.89' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='143.98' cy='48.64' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='148.53' cy='163.15' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='316.02' cy='244.82' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='307.59' cy='225.32' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='320.73' cy='340.98' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='473.22' cy='306.27' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='477.46' cy='264.23' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+<circle cx='477.76' cy='347.10' r='3.18' style='stroke-width: 1.03; fill: #000000;' />
+</g>
+<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHw0MzIuMDA=)'>
+<polyline points='57.89,362.02 57.89,33.72 ' style='stroke-width: 1.55; stroke-linecap: square;' />
+<text x='50.72' y='297.99' text-anchor='end' style='font-size: 12.80px; font-family: "Arial";' textLength='23.94px' lengthAdjust='spacingAndGlyphs'>11.5</text>
+<text x='50.72' y='210.44' text-anchor='end' style='font-size: 12.80px; font-family: "Arial";' textLength='23.94px' lengthAdjust='spacingAndGlyphs'>11.7</text>
+<text x='50.72' y='122.89' text-anchor='end' style='font-size: 12.80px; font-family: "Arial";' textLength='23.94px' lengthAdjust='spacingAndGlyphs'>11.9</text>
+<polyline points='53.91,293.41 57.89,293.41 ' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polyline points='53.91,205.86 57.89,205.86 ' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polyline points='53.91,118.31 57.89,118.31 ' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polyline points='57.89,362.02 568.03,362.02 ' style='stroke-width: 1.55; stroke-linecap: square;' />
+<polyline points='153.54,366.01 153.54,362.02 ' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polyline points='312.96,366.01 312.96,362.02 ' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<polyline points='472.38,366.01 472.38,362.02 ' style='stroke-width: 1.55; stroke-linecap: butt;' />
+<text transform='translate(160.02,375.67) rotate(-45)' text-anchor='end' style='font-size: 12.80px; font-family: "Arial";' textLength='22.05px' lengthAdjust='spacingAndGlyphs'>Veh</text>
+<text transform='translate(319.44,375.67) rotate(-45)' text-anchor='end' style='font-size: 12.80px; font-family: "Arial";' textLength='39.09px' lengthAdjust='spacingAndGlyphs'>100uM</text>
+<text transform='translate(478.85,375.67) rotate(-45)' text-anchor='end' style='font-size: 12.80px; font-family: "Arial";' textLength='39.09px' lengthAdjust='spacingAndGlyphs'>200uM</text>
+<text x='312.96' y='420.66' text-anchor='middle' style='font-size: 16.00px; font-family: "Arial";' textLength='67.67px' lengthAdjust='spacingAndGlyphs'>Condition</text>
+<text transform='translate(19.43,197.87) rotate(-90)' text-anchor='middle' style='font-size: 16.00px; font-family: "Arial";' textLength='59.64px' lengthAdjust='spacingAndGlyphs'>Intensity</text>
+<text x='57.89' y='21.71' style='font-size: 19.20px; font-family: "Arial";' textLength='441.88px' lengthAdjust='spacingAndGlyphs'>DG 34:1 NL 18:1 distribution across acute treatment</text>
+</g>
+</g>
+</svg>

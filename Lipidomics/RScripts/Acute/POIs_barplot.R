@@ -37,7 +37,7 @@ df_long <- df_long[, colnames(df_long) != ""]
 df_long <- df_long |> select(-blank)
 
 # lipid to plot
-lipid_to_plot <- "PE 34:1"
+lipid_to_plot <- "DG 38:0 NL 20:0"
 mrm_to_plot <- NULL
 
 plot_points <- TRUE

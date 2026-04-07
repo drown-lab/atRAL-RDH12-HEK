@@ -48,7 +48,7 @@ plot_normalization(data_se,data_normvsn)
 plot_imputation(data_se, data_normvsn)
 
 plot_missval(data_normvsn)
-data_imp <- impute(data_normvsn, fun = "QRILC")
+data_imp <- impute(data_normvsn, fun = "knn")
 
 plot_imputation(data_se, data_normvsn, data_imp)
 plot_normalization(data_se,data_normvsn, data_imp)

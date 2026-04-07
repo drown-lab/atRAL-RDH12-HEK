@@ -4,7 +4,7 @@ library(dplyr)
 # user-defined thresholds
 # --------------------------------------------
 
-data_results_w_missingclass<-read.csv("Lipidomics/output_txts/Recovery_DEA_results_v1_corrected.csv")
+data_results_w_missingclass<-read.csv("Lipidomics/output_txts/Acute_DEA_output_v1.csv")
 alpha_cutoff <- 0.05
 lfc_cutoff   <- log2(1.5)
 
@@ -67,6 +67,6 @@ grep("_p.adj$", colnames(data_results_w_missingclass), value = TRUE)
 # --------------------------------------------
 write.csv(
   data_results_w_missingclass,
-  "Lipidomics/output_txts/Recovery_DEA_results_v1_corrected.csv",
+  "Lipidomics/output_txts/Acute_DEA_results_v1_corrected.csv",
   row.names = FALSE
 )

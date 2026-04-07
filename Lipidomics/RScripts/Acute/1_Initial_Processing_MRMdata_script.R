@@ -5,7 +5,7 @@ library(tidyverse)
 library(writexl)
 library(ggplot2)
 library(stringr)
-
+path_figures<- "Lipidomics/Figures/Acute/"
 #Load metadata
 acute_expdesign<-read.csv("Lipidomics/metadata/Sample_description guide_5hratral.csv")
 

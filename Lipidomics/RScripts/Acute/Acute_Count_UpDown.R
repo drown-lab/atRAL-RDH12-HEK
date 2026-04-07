@@ -12,7 +12,7 @@ library(tidyr)
 # 1. USER INPUTS
 # ---------------------------------------------------------
 #Recovery_DEA_results_v1_corrected.csv
-DEPresults_v2 <- read.csv("Lipidomics/output_txts/Acute_DEA_v2_corrected.csv")
+DEPresults_v2 <- read.csv("Lipidomics/output_txts/Acute_DEA_results_v1_corrected.csv")
 colnames(DEPresults_v2)
 padj_cutoff <- 0.1
 lfc_cutoff  <- log2(1.3)

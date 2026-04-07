@@ -35,7 +35,7 @@ plot_single(dea, proteins = "DG 34:1 NL 20:0", type = "centered") +
 
 # Generate a results table
 data_results <- get_results(dea)
-write.csv(data_results,"Lipidomics/output_txts/DEA_output_v1.csv")
+write.csv(data_results,"Lipidomics/output_txts/Acute_DEA_output_v1.csv")
 
 data_results_long<- get_df_long(dea)
 
@@ -106,3 +106,6 @@ pheatmap(
   cluster_cols = FALSE,
   border_color = NA
 )
+
+write.csv(data_results_long,"Lipidomics/output_txts/Acute_DEA_long.csv")
+write.csv(data_results_wide,"Lipidomics/output_txts/Acute_DEA_wide.csv")
