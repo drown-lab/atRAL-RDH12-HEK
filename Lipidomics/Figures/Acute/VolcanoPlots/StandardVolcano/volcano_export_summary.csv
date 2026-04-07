@@ -1,0 +1,4 @@
+"contrast","status","output_svg","output_table"
+"RDH12_100_vs_RDH12_Veh","saved","Lipidomics/Figures/Acute/VolcanoPlots/StandardVolcano//volcano_RDH12_100_vs_RDH12_Veh.svg","Lipidomics/Figures/Acute/VolcanoPlots/StandardVolcano//volcano_RDH12_100_vs_RDH12_Veh_table.csv"
+"RDH12_200_vs_RDH12_100","saved","Lipidomics/Figures/Acute/VolcanoPlots/StandardVolcano//volcano_RDH12_200_vs_RDH12_100.svg","Lipidomics/Figures/Acute/VolcanoPlots/StandardVolcano//volcano_RDH12_200_vs_RDH12_100_table.csv"
+"RDH12_200_vs_RDH12_Veh","saved","Lipidomics/Figures/Acute/VolcanoPlots/StandardVolcano//volcano_RDH12_200_vs_RDH12_Veh.svg","Lipidomics/Figures/Acute/VolcanoPlots/StandardVolcano//volcano_RDH12_200_vs_RDH12_Veh_table.csv"
