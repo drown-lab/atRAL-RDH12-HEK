@@ -10,9 +10,9 @@ library(stringr)
 # ---------------------------------------------------------
 # 1. USER INPUTS
 # ---------------------------------------------------------
-#df_long<-read.csv("Proteomic_output_txts/Data_imputed_results.csv")
+df_long<-read.csv("Proteomic_output_txts/Data_imputed_results.csv")
 
-protein_gene   <- "GPX4"     # gene symbol to plot
+protein_gene   <- "TFRC"     # gene symbol to plot
 protein_uniprot <- NULL      # optional, e.g. "P36969"
 plot_points    <- TRUE       # show replicate points
 use_sd         <- TRUE       # TRUE = SD, FALSE = SEM
@@ -57,7 +57,7 @@ condition_fill <- c(
 )
 
 # output file
-out_file <- paste0("Intensity_barplot_", protein_gene, ".svg")
+out_file <- paste0("Proteomic_Figs/Intensity_barplot_", protein_gene, ".svg")
 
 # ---------------------------------------------------------
 # 2. FILTER TO PROTEIN OF INTEREST
@@ -142,7 +142,7 @@ subtitle_text <- if (!is.na(id_for_title)) {
 # 6. PLOT
 # ---------------------------------------------------------
 
-baseline <- 20
+baseline <- 23
 
 summary_df2 <- summary_df %>%
   mutate(
