@@ -12,7 +12,7 @@ library(stringr)
 # ---------------------------------------------------------
 df_long<-read.csv("Proteomic_output_txts/Data_imputed_results.csv")
 
-protein_gene   <- "TFRC"     # gene symbol to plot
+protein_gene   <- "PER1"     # gene symbol to plot
 protein_uniprot <- NULL      # optional, e.g. "P36969"
 plot_points    <- TRUE       # show replicate points
 use_sd         <- TRUE       # TRUE = SD, FALSE = SEM
@@ -142,7 +142,7 @@ subtitle_text <- if (!is.na(id_for_title)) {
 # 6. PLOT
 # ---------------------------------------------------------
 
-baseline <- 23
+baseline <- 15
 
 summary_df2 <- summary_df %>%
   mutate(

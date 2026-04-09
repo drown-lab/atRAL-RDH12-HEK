@@ -4,8 +4,8 @@
 # and clusters similar-behaving proteins WITHIN each pathway
 # =========================================================
 
-# DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
-
+ DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
+colnames(DEPresults_v2)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -33,9 +33,9 @@ acute_col_labels <- c(
 )
 
 # Output files
-out_file_pdf <- "Proteomic_Figs/acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.pdf"
-out_file_svg <- "Proteomic_Figs/acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.svg"
-out_file_csv <- "Proteomic_Figs/acute_pathway_heatmap_input_table_allLists_clusteredWithinPathway.csv"
+out_file_pdf <- "Proteomic_Figs/ER_acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.pdf"
+out_file_svg <- "Proteomic_Figs/ER_acute_pathway_heatmap_centered_allLists_clusteredWithinPathway.svg"
+out_file_csv <- "Proteomic_Figs/ER_acute_pathway_heatmap_input_table_allLists_clusteredWithinPathway.csv"
 
 # Cluster columns?
 cluster_cols <- FALSE
@@ -297,6 +297,19 @@ pathway_colors <- list(
     "JNK1 pathway"   = "#0072B2"
   )
 )
+
+# ------------------------------------------
+# FORCE SYMMETRIC COLOR SCALE AROUND 0
+# ------------------------------------------
+
+# Get max absolute value
+max_abs <- max(abs(heat_mat), na.rm = TRUE)
+
+# Create symmetric breaks
+breaks <- seq(-max_abs, max_abs, length.out = 100)
+
+# Define diverging colors (blue → white → red)
+colors <- colorRampPalette(c("blue", "yellow", "red"))(length(breaks) - 1)
 
 # ---------------------------------------------------------
 # 13. DRAW HEATMAP

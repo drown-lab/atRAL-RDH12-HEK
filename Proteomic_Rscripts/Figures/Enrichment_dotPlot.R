@@ -8,13 +8,13 @@ library(forcats)
 # 1. INPUT
 # ---------------------------------------------------------
 
-enrich_df <- read.csv("Proteomic_output_txts/PANGEA_results/Acute_200vsVeh_Vehenrichment_2026-04-06.csv",
+enrich_df <- read.csv("Proteomic_output_txts/PANGEA_results/Acute_100vsVeh_100uMenrichment_2026-04-06 135232.csv",
                       check.names = FALSE)
 
-outdir <- "Proteomic_Figs/PANGEA_top_terms_plots/Acute_200vsVeh_Vehenriched/dotplots/"
+outdir <- "Proteomic_Figs/PANGEA_top_terms_plots/Acute_100vsVeh_100uMenrichment/dotplots/"
 dir.create(outdir, recursive = TRUE, showWarnings = FALSE)
 
-bh_cutoff <- 0.1
+bh_cutoff <- 0.5
 colnames(enrich_df)
 # ---------------------------------------------------------
 # 2. CLEAN COLUMN TYPES
@@ -129,6 +129,7 @@ top_pathways <- make_enrichment_plot(
   n_terms = 20,
   title_text = "Top 20 Enriched Pathways (BH <= 0.1)",
   out_file = "top20_pathways_BH0.1.pdf"
+
 )
 
 top_bp <- make_enrichment_plot(
@@ -136,6 +137,7 @@ top_bp <- make_enrichment_plot(
   n_terms = 20,
   title_text = "Top 20 Enriched Biological Processes (BH <= 0.1)",
   out_file = "top20_biological_processes_BH0.1.pdf"
+
 )
 
 top_cc <- make_enrichment_plot(
@@ -143,6 +145,7 @@ top_cc <- make_enrichment_plot(
   n_terms = 10,
   title_text = "Top 10 Enriched Cellular Components (BH <= 0.1)",
   out_file = "top10_cellular_components_BH0.1.pdf"
+ 
 )
 
 # ---------------------------------------------------------
