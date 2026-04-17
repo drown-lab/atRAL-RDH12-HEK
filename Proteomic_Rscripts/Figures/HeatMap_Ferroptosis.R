@@ -42,8 +42,8 @@ acute_contrast_labels <- c(
 )
 
 # Thresholds for filtering proteins
-padj_cutoff <- 0.05
-lfc_cutoff  <- log2(1.5)
+padj_cutoff <- 0.1
+lfc_cutoff  <- log2(1.45)
 
 # Pretty labels for heatmap columns
 acute_col_labels <- c(
@@ -53,9 +53,9 @@ acute_col_labels <- c(
 )
 
 # Output files
-out_file_pdf <- "Proteomic_Figs/enriched/acute_pathway_heatmap_centered_sigOnly_Lists_clusteredWithinPathway_wContrastAnnoferrp.pdf"
-out_file_svg <- "Proteomic_Figs/enriched/acute_pathway_heatmap_centered_sigOnly_Lists_clusteredWithinPathway_wContrastAnnoFerrop.svg"
-out_file_csv <- "Proteomic_Figs/enriched/acute_pathway_heatmap_input_table_sigOnly_clusteredWithinPathway_wContrastAnnoferro.csv"
+out_file_pdf <- "Proteomic_Figs/enriched/acute_pathway_heatmap_centered_sigOnly_Lists_clusteredWithinPathway_wContrastAnnoferrp2.pdf"
+out_file_svg <- "Proteomic_Figs/enriched/acute_pathway_heatmap_centered_sigOnly_Lists_clusteredWithinPathway_wContrastAnnoFerrop2.svg"
+out_file_csv <- "Proteomic_Figs/enriched/acute_pathway_heatmap_input_table_sigOnly_clusteredWithinPathway_wContrastAnnoferro2.csv"
 
 # Cluster columns?
 cluster_cols <- FALSE
