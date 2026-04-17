@@ -12,7 +12,7 @@ library(stringr)
 # ---------------------------------------------------------
 df_long<-read.csv("Proteomic_output_txts/Data_imputed_results.csv")
 
-protein_gene   <- "TUBA4A"     # gene symbol to plot
+protein_gene   <- "CERS6"     # gene symbol to plot
 protein_uniprot <- NULL      # optional, e.g. "P36969"
 plot_points    <- TRUE       # show replicate points
 use_sd         <- TRUE       # TRUE = SD, FALSE = SEM
