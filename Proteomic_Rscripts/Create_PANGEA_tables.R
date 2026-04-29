@@ -26,8 +26,8 @@ dir.create(outdir, recursive = TRUE, showWarnings = FALSE)
 # --------------------------------------------------
 # 4) Thresholds
 # --------------------------------------------------
-padj_cutoff <- 0.05
-lfc_cutoff  <- log2(1.5)
+padj_cutoff <- 0.01
+lfc_cutoff  <- log2(2)
 
 # --------------------------------------------------
 # 5) Function to make tables for one contrast

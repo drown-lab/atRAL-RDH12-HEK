@@ -1,5 +1,5 @@
 #File Needed
-#DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
+DEPresults_v2 <- read.csv("Proteomic_output_txts/data_results_w_missingclass_BH_readjusted.csv")
 
 # =========================================================
 # Batch standard volcano plots
@@ -25,10 +25,9 @@ library(stringr)
 # Assumes your main table is already in memory as:
 # DEPresults_v2
 
-favorite_IDs <- c("RDH12", "RDH11")
-
-padj_cutoff  <- 0.055
-lfc_cutoff   <- log2(1.45)
+favorite_IDs <- c("RDH12", "MOCS3", "PAN2", "ZDHHC18", "EIF3C", "JUNB", "ALG1", "GPAT4", "TUBA4A", "POLD4", "TXNIP")
+padj_cutoff  <- 0.01
+lfc_cutoff   <- log2(2)
 n_top_labels <- 3
 
 # output folder
@@ -213,7 +212,9 @@ plot_volcano_standard <- function(volcano_df,
     theme(
       legend.position = "bottom",
       plot.title = element_text(size = 12),
-      axis.title = element_text(size = 12)
+      axis.title = element_text(size = 12),
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank()
     )
 }
 
