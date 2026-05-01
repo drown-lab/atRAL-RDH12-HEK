@@ -1,0 +1,14 @@
+"Metric","Count"
+"100uM up",535
+"200uM up",664
+"Shared up",407
+"100uM down",1850
+"200uM down",823
+"Shared down",654
+"100uM up & 200uM down",1
+"100uM down & 200uM up",2
+"Any significant at 100uM",2385
+"Any significant at 200uM",1487
+"Shared significant regardless of direction",1064
+"All proteins in 100uM all-file",8049
+"All proteins in 200uM all-file",8049
