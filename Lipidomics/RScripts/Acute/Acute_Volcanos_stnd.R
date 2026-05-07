@@ -213,7 +213,9 @@ plot_volcano_standard <- function(volcano_df,
     theme(
       legend.position = "bottom",
       plot.title = element_text(size = 12),
-      axis.title = element_text(size = 12)
+      axis.title = element_text(size = 12),
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank()
     )
 }
 

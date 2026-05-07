@@ -15,8 +15,8 @@ library(paletteer)
 # =========================================================
 
 # Use your uploaded files directly
-up_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr_down.csv"
-all_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr_all.csv"
+up_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr_up.csv"
+all_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr_all.csv"
 
 # A short name for titles/output
 contrast_name <- tools::file_path_sans_ext(basename(up_file))
@@ -297,15 +297,15 @@ if (is.null(ego_bp) || nrow(as.data.frame(ego_bp)) == 0) {
   ggsave(
     filename = file.path(out_dir, "enrichGO_BP_simplified_dotplot.pdf"),
     plot = p_dot_simplified,
-    width = 10,
-    height = 10
+    width = 9,
+    height = 5
   )
   
   ggsave(
     filename = file.path(out_dir, "enrichGO_BP_simplified_dotplot.png"),
     plot = p_dot_simplified,
-    width = 10,
-    height = 10,
+    width = 9,
+    height = 5,
     dpi = 900
   )
   
@@ -336,14 +336,14 @@ if (is.null(ego_bp) || nrow(as.data.frame(ego_bp)) == 0) {
     ggsave(
       filename = file.path(out_dir, "enrichGO_BP_manual_filtered_dotplot.pdf"),
       plot = p_dot_manual,
-      width = 10,
+      width = 9,
       height = 5
     )
     
     ggsave(
       filename = file.path(out_dir, "enrichGO_BP_manual_filtered_dotplot.png"),
       plot = p_dot_manual,
-      width = 10,
+      width = 9,
       height = 5,
       dpi = 900
     )

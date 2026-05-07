@@ -28,8 +28,8 @@ library(stringr)
 favorite_IDs <- c( )
 
 padj_cutoff  <- 0.1
-lfc_cutoff   <- log2(1.45)
-n_top_labels <- 10
+lfc_cutoff   <- log2(1.3)
+n_top_labels <- 6
 
 # output folder
 out_dir <- "Lipidomics/Figures/Recovery/VolcanoPlots/StandardVolcano/"
@@ -81,13 +81,13 @@ format_ratio_display <- function(x) {
 make_volcano_df_standard <- function(df,
                                      contrast,
                                      padj_cutoff = 0.1,
-                                     lfc_cutoff = log2(1.5),
+                                     lfc_cutoff = log2(1.3),
                                      favorite_IDs = character(),
                                      n_top_labels = 10,
                                      include_values_in_labels = FALSE) {
   
   ratio_col <- paste0(contrast, "_ratio")
-  padj_col  <- paste0(contrast, "_p.adj")
+  padj_col  <- paste0(contrast, "_p.val")
   
   needed_cols <- c("name", ratio_col, padj_col)
   missing_cols <- setdiff(needed_cols, colnames(df))
@@ -154,7 +154,7 @@ make_volcano_df_standard <- function(df,
 plot_volcano_standard <- function(volcano_df,
                                   contrast,
                                   padj_cutoff = 0.1,
-                                  lfc_cutoff = log2(1.5)) {
+                                  lfc_cutoff = log2(1.3)) {
   
   ggplot(volcano_df, aes(x = ratio, y = -log10(padj_plot))) +
     geom_point(
@@ -213,7 +213,9 @@ plot_volcano_standard <- function(volcano_df,
     theme(
       legend.position = "bottom",
       plot.title = element_text(size = 12),
-      axis.title = element_text(size = 12)
+      axis.title = element_text(size = 12),
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank()
     )
 }
 

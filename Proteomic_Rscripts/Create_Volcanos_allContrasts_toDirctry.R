@@ -25,10 +25,11 @@ library(stringr)
 # Assumes your main table is already in memory as:
 # DEPresults_v2
 
-favorite_IDs <- c("RDH12", "MOCS3", "PAN2", "ZDHHC18", "EIF3C", "JUNB", "ALG1", "GPAT4", "TUBA4A", "POLD4", "TXNIP")
+favorite_IDs <- c("RDH12" , "CCN1", "USP46", "FOS", "SLC46A3", "NUDT8"
+ ) 
 padj_cutoff  <- 0.01
 lfc_cutoff   <- log2(2)
-n_top_labels <- 3
+n_top_labels <- 8
 
 # output folder
 out_dir <- "Proteomic_Figs/VolcanoPlots/StandardVolcano/"
@@ -79,8 +80,8 @@ format_ratio_display <- function(x) {
 
 make_volcano_df_standard <- function(df,
                                      contrast,
-                                     padj_cutoff = 0.05,
-                                     lfc_cutoff = log2(1.5),
+                                     padj_cutoff = 0.01,
+                                     lfc_cutoff = log2(2),
                                      favorite_IDs = character(),
                                      n_top_labels = 3,
                                      include_values_in_labels = FALSE) {
@@ -152,8 +153,8 @@ make_volcano_df_standard <- function(df,
 
 plot_volcano_standard <- function(volcano_df,
                                   contrast,
-                                  padj_cutoff = 0.05,
-                                  lfc_cutoff = log2(1.5)) {
+                                  padj_cutoff = 0.01,
+                                  lfc_cutoff = log2(2)) {
   
   ggplot(volcano_df, aes(x = ratio, y = -log10(padj_plot))) +
     geom_point(
@@ -225,8 +226,8 @@ plot_volcano_standard <- function(volcano_df,
 save_all_standard_volcanoes <- function(df,
                                         out_dir = "Proteomic_Figs/VolcanoPlots/StandardVolcano/",
                                         favorite_IDs = character(),
-                                        padj_cutoff = 0.05,
-                                        lfc_cutoff = log2(1.5),
+                                        padj_cutoff = 0.01,
+                                        lfc_cutoff = log2(2),
                                         n_top_labels = 3,
                                         width = 12,
                                         height = 10,

@@ -153,10 +153,10 @@ p <- ggplot(count_table, aes(x = contrast_label, y = n, fill = direction)) +
     breaks = scales::pretty_breaks(n = 10)
   )+
   labs(
-    title = "Lipids with Differential Expression",
+    title = "Lipids with Differential Abundance",
     subtitle =  "Fold Change >=1.3 (p.val<=0.1)",
     x = NULL,
-    y = "Number of Proteins",
+    y = "Number of Lipids",
     fill = NULL
   ) +
   theme_classic(base_size = 14) +

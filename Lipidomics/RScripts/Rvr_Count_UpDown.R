@@ -15,16 +15,16 @@ library(tidyr)
 DEPresults_v2 <- read.csv("Lipidomics/output_txts/Recovery_DEA_results_v1_corrected.csv")
 colnames(DEPresults_v2)
 padj_cutoff <- 0.1
-lfc_cutoff  <- log2(1.45)
+lfc_cutoff  <- log2(1.3)
 
 # Define labels in the EXACT order you want them plotted
 pretty_contrast_names <- c(
   
-  "RDH12._100_vs_RDH12._Veh" =
+  "RDH12_100_vs_RDH12_Veh" =
     "R:RDH12 100uM vs Veh",
-  "RDH12._200_vs_RDH12._Veh" =
+  "RDH12_200_vs_RDH12_Veh" =
     "R:RDH12 200uM vs Veh",
-  "RDH12._200_vs_RDH12._100" =
+  "RDH12_200_vs_RDH12_100" =
     "R:RDH12 200uM vs 100uM",
   
   "Control_100_vs_Control_Veh" =
@@ -34,11 +34,11 @@ pretty_contrast_names <- c(
   "Control_200_vs_Control_Veh" =
     "R:WT 200uM vs Veh",
   
-  "RDH12._100_vs_Control_100" =
+  "RDH12_100_vs_Control_100" =
     "R:RDH12 100uM vs WT 100uM",
-  "RDH12._200_vs_Control_200" =
+  "RDH12_200_vs_Control_200" =
     "R:RDH12 200uM vs WT 200uM",
-  "RDH12._Veh_vs_Control_Veh" =
+  "RDH12_Veh_vs_Control_Veh" =
     "R:RDH12 Veh vs WT Veh"
  
 )
@@ -58,7 +58,7 @@ get_all_contrasts <- function(df) {
 
 count_sig_by_contrast <- function(df, contrast, padj_cutoff = 0.1, lfc_cutoff = log2(1.5)) {
   ratio_col <- paste0(contrast, "_ratio")
-  padj_col  <- paste0(contrast, "_p.adj")
+  padj_col  <- paste0(contrast, "_p.val")
   
   needed_cols <- c(ratio_col, padj_col)
   missing_cols <- setdiff(needed_cols, colnames(df))
@@ -168,10 +168,10 @@ p <- ggplot(count_table, aes(x = contrast_label, y = n, fill = direction)) +
     breaks = scales::pretty_breaks(n = 10)
   )+
   labs(
-    title = "Lipids with Differential Expression",
-    subtitle =  "Fold Change >=1.5 (FDR<=0.1)",
+    title = "Lipids with Differential Abundance",
+    subtitle =  "Fold Change >=1.3 (pval<=0.1)",
     x = NULL,
-    y = "Number of Proteins",
+    y = "Number of Lipids",
     fill = NULL
   ) +
   theme_classic(base_size = 14) +
