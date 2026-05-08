@@ -58,6 +58,8 @@ if (length(missing_cols) > 0) {
 # Keep exact names where possible. Use regex patterns for representative classes.
 
 exact_targets <- c(
+  "[TG44:5] NL 20:0",
+  "[TG38:0] NL 20:0",
   "LPC 18:1",
   "PC 32:0",
   "PC 28:0",
@@ -65,7 +67,22 @@ exact_targets <- c(
   "DG 34:1",
   "PE 34:1",
   "PE 36:4",
-  "PE 40:5"
+  "PE 40:5",
+  "LPC 14:0",
+  "LPC 16:0",
+  "LPC 16:1",
+  "DG 38:0 NL 20:0",
+  
+  "Cer(d18:0/20:0(2OH))",
+  "Cer(d14:2/16:0)",
+  "Cer(d14:1/16:0)"
+ # "LPC 18:0",
+  #"LPC 20:1",
+  #"LPC 26:0",
+  #"LPC O-18:1",
+ # "LPE 22:5",
+ # "PC(16:0/8:0(COOH))"
+  
 )
 
 # Pattern-based additions for representative species if exact names differ

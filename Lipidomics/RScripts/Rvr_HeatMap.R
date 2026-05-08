@@ -165,8 +165,9 @@ exact_targets <- c(
   "PS 34:4",
   "PC(18:0/Aze)",
   "PC (18:0/Aze)",
-  "PC(16:0/8:(COOH))",
+  "PC(16:0/8:0(COOH))",
   "PC (16:0/8:(COOH))",
+  "PC(20:0/8:0(COOH))",
   "PC(Azelaoyl-PAF)"
 )
 
