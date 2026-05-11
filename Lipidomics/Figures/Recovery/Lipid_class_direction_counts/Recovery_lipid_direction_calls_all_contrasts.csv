@@ -1,6 +1,6 @@
 "name","Class","Contrast","UpGroup","DownGroup","Direction","EnrichedIn","p_value","ratio"
-"[CE 18:1 +NH4]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.009868737,-0.361
-"[DG 38:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","Down","WT Veh",0.004028075,-0.379
+"[CE 18:1 +NH4]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.009868737,-0.361
+"[DG 38:1","DG","WT 100 vs WT Veh","WT 100","WT Veh","Down","WT Veh",0.004028075,-0.379
 "DG 32:0 NL 16:0","DG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.145845523,-0.184
 "DG 34:0 NL 16:0","DG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.655917302,-0.0504
 "DG 40:6 NL 16:1","DG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.007403724,-0.26
@@ -19,19 +19,19 @@
 "PI 36:4","PI","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.00966408,-0.378
 "PI 38:3","PI","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.313782766,-0.17
 "PI 38:5","PI","WT 100 vs WT Veh","WT 100","WT Veh","Down","WT Veh",0.000506502,-0.636
-"[CE 14:0 +NH4]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.215257198,-0.128
-"[CE 16:0 +H]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.156378819,-0.258
-"[CE 16:0 +NH4]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.470918847,-0.0915
-"[CE 16:1 +NH4]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.22714764,-0.129
-"[CE 16:3 +K]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.015604046,-0.307
-"[CE 18:0 +Na]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.49435586,-0.209
-"[CE 18:0 +NH4]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.036935143,-0.26
-"[CE 18:3 +Na]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.300475016,-0.114
-"[CE 20:3 +Na]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.356058562,-0.0978
-"[CE 20:4 +NH4]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.813839394,-0.0233
-"[CE 22:2 +K]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.57542463,0.0519
-"[CE 22:6 +NH4]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.277538621,-0.107
-"[CE 24:1 +Na]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.488081252,0.186
+"[CE 14:0 +NH4]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.215257198,-0.128
+"[CE 16:0 +H]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.156378819,-0.258
+"[CE 16:0 +NH4]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.470918847,-0.0915
+"[CE 16:1 +NH4]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.22714764,-0.129
+"[CE 16:3 +K]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.015604046,-0.307
+"[CE 18:0 +Na]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.49435586,-0.209
+"[CE 18:0 +NH4]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.036935143,-0.26
+"[CE 18:3 +Na]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.300475016,-0.114
+"[CE 20:3 +Na]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.356058562,-0.0978
+"[CE 20:4 +NH4]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.813839394,-0.0233
+"[CE 22:2 +K]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.57542463,0.0519
+"[CE 22:6 +NH4]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.277538621,-0.107
+"[CE 24:1 +Na]","CE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.488081252,0.186
 "[TG34:2] NL 20:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.515306286,-0.0673
 "[TG36:0] NL 18:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.294668304,0.165
 "[TG38:0] NL 20:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.830703689,-0.083
@@ -45,16 +45,16 @@
 "[TG50:8.1","TG","WT 100 vs WT Veh","WT 100","WT Veh","Down","WT Veh",0.003929792,-0.388
 "[TG52:8","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.668603315,-0.0404
 "[TG52:8.1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.07045953,-0.18
-"Cer(d14:1/20:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.682704879,0.115
-"Cer(d14:1/24:0(2OH))","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.580593516,-0.104
-"Cer(d14:2/20:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.858085326,-0.0666
-"Cer(d18:0/20:0(2OH))","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.193714597,-0.431
-"Cer(d18:1/16:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.936092525,0.0172
-"Cer(d18:1/18:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.536798166,-0.0722
-"Cer(d18:1/22:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.362885351,0.187
-"Cer(d18:1/24:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.019018396,0.315
-"Cer(d18:1/24:1)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.152630719,0.25
-"Cer(d18:2/24:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.180115027,0.237
+"Cer(d14:1/20:0)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.682704879,0.115
+"Cer(d14:1/24:0(2OH))","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.580593516,-0.104
+"Cer(d14:2/20:0)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.858085326,-0.0666
+"Cer(d18:0/20:0(2OH))","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.193714597,-0.431
+"Cer(d18:1/16:0)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.936092525,0.0172
+"Cer(d18:1/18:0)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.536798166,-0.0722
+"Cer(d18:1/22:0)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.362885351,0.187
+"Cer(d18:1/24:0)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.019018396,0.315
+"Cer(d18:1/24:1)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.152630719,0.25
+"Cer(d18:2/24:0)","Cer","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.180115027,0.237
 "CerP(d18:1/24:1)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.32953402,0.13
 "DG 30:0 NL 14:0","DG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.021027427,-0.36
 "DG 30:1 NL 14:1","DG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.047152176,-0.238
@@ -222,11 +222,11 @@
 "PC O-42:7","PC ether","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.212461341,-0.128
 "PC O-44:2","PC ether","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.930613728,-0.00749
 "PC O-44:6","PC ether","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.946980043,-0.00655
-"PC(16:0)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.538702683,0.109
+"PC(16:0)","Oxidized PC","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.538702683,0.109
 "PC(16:0/8:0(COOH))","Oxidized PC","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.588280457,0.0759
-"PC(34:4)","Other","WT 100 vs WT Veh","WT 100","WT Veh","Down","WT Veh",0.021230382,-1.38
-"PC(O-40:1)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.724957191,-0.112
-"PC(P-30:1)","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.131399252,-0.173
+"PC(34:4)","Oxidized PC","WT 100 vs WT Veh","WT 100","WT Veh","Down","WT Veh",0.021230382,-1.38
+"PC(O-40:1)","Oxidized PC","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.724957191,-0.112
+"PC(P-30:1)","Oxidized PC","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.131399252,-0.173
 "PE 32:0","PE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.782703105,-0.0293
 "PE 32:2","PE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.121315241,-0.122
 "PE 34:0","PE","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.78938166,0.0381
@@ -315,52 +315,52 @@
 "PS 40:6","PS","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.870562044,-0.0242
 "PS 42:1","PS","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.552866349,0.0615
 "PS O-34:1","PS ether","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.318413483,0.0718
-"SM(32:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.647383495,-0.0933
-"SM(32:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.719467854,-0.13
-"SM(32:2","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.93247436,0.0139
-"SM(34:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.979820752,0.0146
-"SM(34:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.6312983,0.326
-"SM(34:1.1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.45825869,0.82
-"SM(34:2","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.662667843,-0.162
-"SM(36:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.931288833,-0.123
-"SM(36:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.978944429,-0.0278
-"SM(36:2","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.747142719,0.143
-"SM(38:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.935978308,-0.111
-"SM(38:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.969502204,-0.0471
-"SM(38:2","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.973797518,-0.0177
-"SM(38:3","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.738000813,-0.217
-"SM(40:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.284119106,0.65
-"SM(40:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.48414747,0.56
-"SM(40:2","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.981309402,0.0154
-"SM(40:3","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.878435564,0.0809
-"SM(42:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","Up","WT 100",0.066170498,0.563
-"SM(42:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","Up","WT 100",0.082255225,1.02
-"SM(42:2","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.177967869,0.808
-"SM(42:3","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.1825033,0.611
-"SM(44:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.829178127,0.0487
-"SM(44:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.244545724,0.242
-"SM(44:2","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.430152324,0.122
+"SM(32:0","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.647383495,-0.0933
+"SM(32:1","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.719467854,-0.13
+"SM(32:2","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.93247436,0.0139
+"SM(34:0","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.979820752,0.0146
+"SM(34:1","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.6312983,0.326
+"SM(34:1.1","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.45825869,0.82
+"SM(34:2","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.662667843,-0.162
+"SM(36:0","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.931288833,-0.123
+"SM(36:1","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.978944429,-0.0278
+"SM(36:2","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.747142719,0.143
+"SM(38:0","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.935978308,-0.111
+"SM(38:1","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.969502204,-0.0471
+"SM(38:2","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.973797518,-0.0177
+"SM(38:3","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.738000813,-0.217
+"SM(40:0","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.284119106,0.65
+"SM(40:1","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.48414747,0.56
+"SM(40:2","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.981309402,0.0154
+"SM(40:3","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.878435564,0.0809
+"SM(42:0","SM","WT 100 vs WT Veh","WT 100","WT Veh","Up","WT 100",0.066170498,0.563
+"SM(42:1","SM","WT 100 vs WT Veh","WT 100","WT Veh","Up","WT 100",0.082255225,1.02
+"SM(42:2","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.177967869,0.808
+"SM(42:3","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.1825033,0.611
+"SM(44:0","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.829178127,0.0487
+"SM(44:1","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.244545724,0.242
+"SM(44:2","SM","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.430152324,0.122
 "TG 32:0 NL 16:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.005737754,-0.294
 "TG 34:1 NL 16:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.708615941,-0.157
-"TG48:0] NL 16:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.071309924,-0.243
-"TG48:1] NL 14:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.853390242,-0.0162
-"TG48:1] NL 16:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.108799387,-0.227
-"TG50:1] NL 16:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.057297587,-0.25
-"TG50:1] NL 18:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.190678136,-0.154
-"TG50:2]","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.59876323,0.0603
-"TG50:2] NL 16:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.133526764,-0.16
-"TG50:2] NL 18:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.542592326,-0.0712
-"TG52:1] NL 16:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.062497441,-0.207
-"TG52:1] NL 18:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.275884236,-0.109
-"TG52:1] NL 18:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.188190116,-0.146
-"TG52:2] NL 16:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.854480702,0.0174
-"TG52:2] NL 18:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.292518378,-0.143
-"TG52:3] NL 18:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.463553002,-0.0929
-"TG54:1] NL 20:0","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.69912309,0.0506
-"TG54:2] NL 18:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.514733387,-0.0832
-"TG54:3] NL 18:1","Other","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.56763375,-0.0967
-"[CE 18:1 +NH4]","Other","WT 200 vs WT Veh","WT 200","WT Veh","Down","WT Veh",0.001372278,-0.481
-"[DG 38:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.004602954,-0.372
+"TG48:0] NL 16:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.071309924,-0.243
+"TG48:1] NL 14:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.853390242,-0.0162
+"TG48:1] NL 16:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.108799387,-0.227
+"TG50:1] NL 16:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.057297587,-0.25
+"TG50:1] NL 18:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.190678136,-0.154
+"TG50:2]","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.59876323,0.0603
+"TG50:2] NL 16:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.133526764,-0.16
+"TG50:2] NL 18:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.542592326,-0.0712
+"TG52:1] NL 16:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.062497441,-0.207
+"TG52:1] NL 18:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.275884236,-0.109
+"TG52:1] NL 18:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.188190116,-0.146
+"TG52:2] NL 16:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.854480702,0.0174
+"TG52:2] NL 18:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.292518378,-0.143
+"TG52:3] NL 18:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.463553002,-0.0929
+"TG54:1] NL 20:0","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.69912309,0.0506
+"TG54:2] NL 18:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.514733387,-0.0832
+"TG54:3] NL 18:1","TG","WT 100 vs WT Veh","WT 100","WT Veh","NS","NS",0.56763375,-0.0967
+"[CE 18:1 +NH4]","CE","WT 200 vs WT Veh","WT 200","WT Veh","Down","WT Veh",0.001372278,-0.481
+"[DG 38:1","DG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.004602954,-0.372
 "DG 32:0 NL 16:0","DG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.011594387,0.346
 "DG 34:0 NL 16:0","DG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.007527927,0.344
 "DG 40:6 NL 16:1","DG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.013297058,0.236
@@ -379,19 +379,19 @@
 "PI 36:4","PI","WT 200 vs WT Veh","WT 200","WT Veh","Down","WT Veh",0.00032014,-0.595
 "PI 38:3","PI","WT 200 vs WT Veh","WT 200","WT Veh","Down","WT Veh",0.000942547,-0.674
 "PI 38:5","PI","WT 200 vs WT Veh","WT 200","WT Veh","Down","WT Veh",0.006479589,-0.454
-"[CE 14:0 +NH4]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.996869299,-0.000395
-"[CE 16:0 +H]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.42715067,-0.141
-"[CE 16:0 +NH4]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.379380709,-0.112
-"[CE 16:1 +NH4]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.262911436,-0.119
-"[CE 16:3 +K]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.670386433,-0.0486
-"[CE 18:0 +Na]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.275672387,0.338
-"[CE 18:0 +NH4]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.496649352,-0.079
-"[CE 18:3 +Na]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.325877935,-0.108
-"[CE 20:3 +Na]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.034431634,0.24
-"[CE 20:4 +NH4]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.936796579,-0.00784
-"[CE 22:2 +K]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.439941341,0.0719
-"[CE 22:6 +NH4]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.713886801,0.0353
-"[CE 24:1 +Na]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.59793966,0.141
+"[CE 14:0 +NH4]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.996869299,-0.000395
+"[CE 16:0 +H]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.42715067,-0.141
+"[CE 16:0 +NH4]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.379380709,-0.112
+"[CE 16:1 +NH4]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.262911436,-0.119
+"[CE 16:3 +K]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.670386433,-0.0486
+"[CE 18:0 +Na]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.275672387,0.338
+"[CE 18:0 +NH4]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.496649352,-0.079
+"[CE 18:3 +Na]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.325877935,-0.108
+"[CE 20:3 +Na]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.034431634,0.24
+"[CE 20:4 +NH4]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.936796579,-0.00784
+"[CE 22:2 +K]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.439941341,0.0719
+"[CE 22:6 +NH4]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.713886801,0.0353
+"[CE 24:1 +Na]","CE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.59793966,0.141
 "[TG34:2] NL 20:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.009832502,0.3
 "[TG36:0] NL 18:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.676095713,0.0648
 "[TG38:0] NL 20:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.520009231,0.251
@@ -405,16 +405,16 @@
 "[TG50:8.1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.138313437,-0.177
 "[TG52:8","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.557514696,0.0555
 "[TG52:8.1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.855483881,-0.0171
-"Cer(d14:1/20:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.605976418,0.145
-"Cer(d14:1/24:0(2OH))","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.656571865,0.0838
-"Cer(d14:2/20:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.589685351,0.202
-"Cer(d18:0/20:0(2OH))","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.951920174,0.0194
-"Cer(d18:1/16:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","Down","WT Veh",0.043416399,-0.467
-"Cer(d18:1/18:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.680683316,-0.0479
-"Cer(d18:1/22:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.707139451,0.0762
-"Cer(d18:1/24:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.018136984,0.318
-"Cer(d18:1/24:1)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.445359076,0.13
-"Cer(d18:2/24:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.560405855,0.1
+"Cer(d14:1/20:0)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.605976418,0.145
+"Cer(d14:1/24:0(2OH))","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.656571865,0.0838
+"Cer(d14:2/20:0)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.589685351,0.202
+"Cer(d18:0/20:0(2OH))","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.951920174,0.0194
+"Cer(d18:1/16:0)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","Down","WT Veh",0.043416399,-0.467
+"Cer(d18:1/18:0)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.680683316,-0.0479
+"Cer(d18:1/22:0)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.707139451,0.0762
+"Cer(d18:1/24:0)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.018136984,0.318
+"Cer(d18:1/24:1)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.445359076,0.13
+"Cer(d18:2/24:0)","Cer","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.560405855,0.1
 "CerP(d18:1/24:1)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.5832578,-0.0721
 "DG 30:0 NL 14:0","DG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.366701734,-0.13
 "DG 30:1 NL 14:1","DG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.494266582,-0.0769
@@ -582,11 +582,11 @@
 "PC O-42:7","PC ether","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.214997218,-0.127
 "PC O-44:2","PC ether","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.356951327,0.0804
 "PC O-44:6","PC ether","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.273952042,0.11
-"PC(16:0)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.108587664,0.295
+"PC(16:0)","Oxidized PC","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.108587664,0.295
 "PC(16:0/8:0(COOH))","Oxidized PC","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.773678481,0.0402
-"PC(34:4)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.631798109,0.261
-"PC(O-40:1)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.908805496,0.0364
-"PC(P-30:1)","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.290480163,0.119
+"PC(34:4)","Oxidized PC","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.631798109,0.261
+"PC(O-40:1)","Oxidized PC","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.908805496,0.0364
+"PC(P-30:1)","Oxidized PC","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.290480163,0.119
 "PE 32:0","PE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.281486873,-0.117
 "PE 32:2","PE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.186165202,0.103
 "PE 34:0","PE","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.415676339,-0.117
@@ -675,52 +675,52 @@
 "PS 40:6","PS","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.933169305,-0.0124
 "PS 42:1","PS","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.243757045,0.123
 "PS O-34:1","PS ether","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.184659791,0.0968
-"SM(32:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.872432026,0.0327
-"SM(32:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.262016117,-0.414
-"SM(32:2","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.934597679,0.0135
-"SM(34:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.601667445,-0.302
-"SM(34:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.582779894,-0.373
-"SM(34:1.1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.933374767,0.0915
-"SM(34:2","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.48846753,0.259
-"SM(36:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.919653547,-0.144
-"SM(36:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.955151947,0.0592
-"SM(36:2","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.767481804,0.132
-"SM(38:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.399213013,-1.18
-"SM(38:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.77036403,-0.36
-"SM(38:2","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.829871248,-0.116
-"SM(38:3","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.896119022,-0.0847
-"SM(40:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.312983397,-0.611
-"SM(40:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.271323456,-0.893
-"SM(40:2","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.283502651,-0.719
-"SM(40:3","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.274686625,-0.59
-"SM(42:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.850705462,0.0543
-"SM(42:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.723278907,-0.197
-"SM(42:2","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.77125251,-0.169
-"SM(42:3","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.725780847,-0.156
-"SM(44:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.434965777,-0.178
-"SM(44:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.251914476,0.238
-"SM(44:2","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.743391301,-0.0501
+"SM(32:0","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.872432026,0.0327
+"SM(32:1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.262016117,-0.414
+"SM(32:2","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.934597679,0.0135
+"SM(34:0","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.601667445,-0.302
+"SM(34:1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.582779894,-0.373
+"SM(34:1.1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.933374767,0.0915
+"SM(34:2","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.48846753,0.259
+"SM(36:0","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.919653547,-0.144
+"SM(36:1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.955151947,0.0592
+"SM(36:2","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.767481804,0.132
+"SM(38:0","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.399213013,-1.18
+"SM(38:1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.77036403,-0.36
+"SM(38:2","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.829871248,-0.116
+"SM(38:3","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.896119022,-0.0847
+"SM(40:0","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.312983397,-0.611
+"SM(40:1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.271323456,-0.893
+"SM(40:2","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.283502651,-0.719
+"SM(40:3","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.274686625,-0.59
+"SM(42:0","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.850705462,0.0543
+"SM(42:1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.723278907,-0.197
+"SM(42:2","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.77125251,-0.169
+"SM(42:3","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.725780847,-0.156
+"SM(44:0","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.434965777,-0.178
+"SM(44:1","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.251914476,0.238
+"SM(44:2","SM","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.743391301,-0.0501
 "TG 32:0 NL 16:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.310571509,-0.0955
 "TG 34:1 NL 16:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.855179694,-0.0768
-"TG48:0] NL 16:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.088378437,-0.228
-"TG48:1] NL 14:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.152998679,0.13
-"TG48:1] NL 16:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.924388648,0.0128
-"TG50:1] NL 16:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.028259765,-0.294
-"TG50:1] NL 18:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.18830351,-0.154
-"TG50:2]","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.537207344,0.0708
-"TG50:2] NL 16:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.711163899,-0.0381
-"TG50:2] NL 18:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.173445539,0.163
-"TG52:1] NL 16:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.674936005,0.0439
-"TG52:1] NL 18:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.597460906,-0.052
-"TG52:1] NL 18:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.954843899,0.0061
-"TG52:2] NL 16:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.469914325,-0.0693
-"TG52:2] NL 18:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.482188328,0.0947
-"TG52:3] NL 18:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.412294649,0.104
-"TG54:1] NL 20:0","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.331377947,0.129
-"TG54:2] NL 18:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.085073991,0.23
-"TG54:3] NL 18:1","Other","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.981300684,-0.00394
-"[CE 18:1 +NH4]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","Down","RDH12 Veh",7.74e-06,-0.823
-"[DG 38:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","Down","RDH12 Veh",0.000414874,-0.506
+"TG48:0] NL 16:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.088378437,-0.228
+"TG48:1] NL 14:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.152998679,0.13
+"TG48:1] NL 16:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.924388648,0.0128
+"TG50:1] NL 16:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.028259765,-0.294
+"TG50:1] NL 18:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.18830351,-0.154
+"TG50:2]","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.537207344,0.0708
+"TG50:2] NL 16:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.711163899,-0.0381
+"TG50:2] NL 18:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.173445539,0.163
+"TG52:1] NL 16:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.674936005,0.0439
+"TG52:1] NL 18:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.597460906,-0.052
+"TG52:1] NL 18:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.954843899,0.0061
+"TG52:2] NL 16:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.469914325,-0.0693
+"TG52:2] NL 18:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.482188328,0.0947
+"TG52:3] NL 18:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.412294649,0.104
+"TG54:1] NL 20:0","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.331377947,0.129
+"TG54:2] NL 18:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.085073991,0.23
+"TG54:3] NL 18:1","TG","WT 200 vs WT Veh","WT 200","WT Veh","NS","NS",0.981300684,-0.00394
+"[CE 18:1 +NH4]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","Down","RDH12 Veh",7.74e-06,-0.823
+"[DG 38:1","DG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","Down","RDH12 Veh",0.000414874,-0.506
 "DG 32:0 NL 16:0","DG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.268685025,0.138
 "DG 34:0 NL 16:0","DG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.094782256,0.198
 "DG 40:6 NL 16:1","DG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.050593848,-0.178
@@ -739,19 +739,19 @@
 "PI 36:4","PI","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.499600521,0.0879
 "PI 38:3","PI","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.133351035,-0.259
 "PI 38:5","PI","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.541453749,-0.0893
-"[CE 14:0 +NH4]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.245904716,-0.12
-"[CE 16:0 +H]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.313485279,-0.181
-"[CE 16:0 +NH4]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.976942285,-0.00363
-"[CE 16:1 +NH4]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.161035671,-0.151
-"[CE 16:3 +K]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.95730341,-0.0061
-"[CE 18:0 +Na]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","Up","RDH12 100",0.026476636,0.738
-"[CE 18:0 +NH4]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.209077261,-0.149
-"[CE 18:3 +Na]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.430002759,-0.0866
-"[CE 20:3 +Na]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.187114378,-0.142
-"[CE 20:4 +NH4]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.12278591,-0.159
-"[CE 22:2 +K]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.545928003,0.056
-"[CE 22:6 +NH4]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.959050329,-0.00493
-"[CE 24:1 +Na]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.584561946,-0.146
+"[CE 14:0 +NH4]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.245904716,-0.12
+"[CE 16:0 +H]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.313485279,-0.181
+"[CE 16:0 +NH4]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.976942285,-0.00363
+"[CE 16:1 +NH4]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.161035671,-0.151
+"[CE 16:3 +K]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.95730341,-0.0061
+"[CE 18:0 +Na]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","Up","RDH12 100",0.026476636,0.738
+"[CE 18:0 +NH4]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.209077261,-0.149
+"[CE 18:3 +Na]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.430002759,-0.0866
+"[CE 20:3 +Na]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.187114378,-0.142
+"[CE 20:4 +NH4]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.12278591,-0.159
+"[CE 22:2 +K]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.545928003,0.056
+"[CE 22:6 +NH4]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.959050329,-0.00493
+"[CE 24:1 +Na]","CE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.584561946,-0.146
 "[TG34:2] NL 20:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.488374496,-0.0718
 "[TG36:0] NL 18:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.802901081,0.0387
 "[TG38:0] NL 20:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.871833318,0.0626
@@ -765,16 +765,16 @@
 "[TG50:8.1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.370816754,0.104
 "[TG52:8","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.477311745,0.0675
 "[TG52:8.1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.892702357,-0.0126
-"Cer(d14:1/20:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.362465744,0.258
-"Cer(d14:1/24:0(2OH))","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.648339454,0.086
-"Cer(d14:2/20:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.807903657,0.0906
-"Cer(d18:0/20:0(2OH))","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.227124699,0.399
-"Cer(d18:1/16:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.850541024,-0.0405
-"Cer(d18:1/18:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.54477109,-0.0708
-"Cer(d18:1/22:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.571439905,-0.115
-"Cer(d18:1/24:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.250533609,0.143
-"Cer(d18:1/24:1)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.416817478,-0.138
-"Cer(d18:2/24:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.739154754,-0.0572
+"Cer(d14:1/20:0)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.362465744,0.258
+"Cer(d14:1/24:0(2OH))","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.648339454,0.086
+"Cer(d14:2/20:0)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.807903657,0.0906
+"Cer(d18:0/20:0(2OH))","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.227124699,0.399
+"Cer(d18:1/16:0)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.850541024,-0.0405
+"Cer(d18:1/18:0)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.54477109,-0.0708
+"Cer(d18:1/22:0)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.571439905,-0.115
+"Cer(d18:1/24:0)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.250533609,0.143
+"Cer(d18:1/24:1)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.416817478,-0.138
+"Cer(d18:2/24:0)","Cer","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.739154754,-0.0572
 "CerP(d18:1/24:1)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.612298475,0.0666
 "DG 30:0 NL 14:0","DG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.739229695,-0.0472
 "DG 30:1 NL 14:1","DG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.808750582,0.027
@@ -942,11 +942,11 @@
 "PC O-42:7","PC ether","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","Up","RDH12 100",0.001583008,0.381
 "PC O-44:2","PC ether","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.874740459,-0.0136
 "PC O-44:6","PC ether","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.894549579,0.0131
-"PC(16:0)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.933985566,-0.0145
+"PC(16:0)","Oxidized PC","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.933985566,-0.0145
 "PC(16:0/8:0(COOH))","Oxidized PC","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.453086827,0.106
-"PC(34:4)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.331463636,0.535
-"PC(O-40:1)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.414070346,0.263
-"PC(P-30:1)","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.601836508,-0.0577
+"PC(34:4)","Oxidized PC","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.331463636,0.535
+"PC(O-40:1)","Oxidized PC","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.414070346,0.263
+"PC(P-30:1)","Oxidized PC","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.601836508,-0.0577
 "PE 32:0","PE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.065647236,0.208
 "PE 32:2","PE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.358841381,-0.0704
 "PE 34:0","PE","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.584236154,0.0783
@@ -1035,52 +1035,52 @@
 "PS 40:6","PS","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.74581611,0.0481
 "PS 42:1","PS","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.063699285,0.203
 "PS O-34:1","PS ether","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.845665582,0.0138
-"SM(32:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.542593627,0.125
-"SM(32:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.727452026,-0.126
-"SM(32:2","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.533148362,0.103
-"SM(34:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.317559082,0.586
-"SM(34:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.333073452,0.666
-"SM(34:1.1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.862218313,0.19
-"SM(34:2","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.373366555,0.335
-"SM(36:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.897353173,0.185
-"SM(36:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.93387023,0.0874
-"SM(36:2","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.870383189,-0.0725
-"SM(38:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.615313628,0.698
-"SM(38:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.59712609,0.654
-"SM(38:2","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.577845882,0.302
-"SM(38:3","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.811640321,0.155
-"SM(40:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.856825743,-0.107
-"SM(40:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.945961467,-0.0538
-"SM(40:2","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.676213957,-0.275
-"SM(40:3","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.547982675,-0.32
-"SM(42:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.572215,-0.164
-"SM(42:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.680621407,-0.23
-"SM(42:2","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.452786092,-0.44
-"SM(42:3","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.347866727,-0.423
-"SM(44:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.99654605,-0.000977
-"SM(44:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.906842537,0.0238
-"SM(44:2","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.653772099,-0.0687
+"SM(32:0","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.542593627,0.125
+"SM(32:1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.727452026,-0.126
+"SM(32:2","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.533148362,0.103
+"SM(34:0","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.317559082,0.586
+"SM(34:1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.333073452,0.666
+"SM(34:1.1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.862218313,0.19
+"SM(34:2","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.373366555,0.335
+"SM(36:0","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.897353173,0.185
+"SM(36:1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.93387023,0.0874
+"SM(36:2","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.870383189,-0.0725
+"SM(38:0","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.615313628,0.698
+"SM(38:1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.59712609,0.654
+"SM(38:2","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.577845882,0.302
+"SM(38:3","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.811640321,0.155
+"SM(40:0","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.856825743,-0.107
+"SM(40:1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.945961467,-0.0538
+"SM(40:2","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.676213957,-0.275
+"SM(40:3","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.547982675,-0.32
+"SM(42:0","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.572215,-0.164
+"SM(42:1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.680621407,-0.23
+"SM(42:2","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.452786092,-0.44
+"SM(42:3","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.347866727,-0.423
+"SM(44:0","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.99654605,-0.000977
+"SM(44:1","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.906842537,0.0238
+"SM(44:2","SM","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.653772099,-0.0687
 "TG 32:0 NL 16:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.18294231,0.127
 "TG 34:1 NL 16:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.982460223,0.00924
-"TG48:0] NL 16:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.042119972,0.278
-"TG48:1] NL 14:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.420368018,-0.0716
-"TG48:1] NL 16:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.871255889,-0.0219
-"TG50:1] NL 16:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.078032086,0.229
-"TG50:1] NL 18:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.034847078,0.261
-"TG50:2]","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.936879818,-0.00903
-"TG50:2] NL 16:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.799816582,-0.026
-"TG50:2] NL 18:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.633637126,-0.0556
-"TG52:1] NL 16:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.122536641,0.168
-"TG52:1] NL 18:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.294887017,0.105
-"TG52:1] NL 18:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.467529993,0.079
-"TG52:2] NL 16:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.837747941,0.0195
-"TG52:2] NL 18:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.906940569,0.0156
-"TG52:3] NL 18:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.031614113,-0.294
-"TG54:1] NL 20:0","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.80214836,-0.0327
-"TG54:2] NL 18:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.529091252,0.0803
-"TG54:3] NL 18:1","Other","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.287432475,-0.183
-"[CE 18:1 +NH4]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","Down","RDH12 Veh",1.83e-05,-0.761
-"[DG 38:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","Down","RDH12 Veh",6.05e-05,-0.619
+"TG48:0] NL 16:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.042119972,0.278
+"TG48:1] NL 14:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.420368018,-0.0716
+"TG48:1] NL 16:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.871255889,-0.0219
+"TG50:1] NL 16:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.078032086,0.229
+"TG50:1] NL 18:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.034847078,0.261
+"TG50:2]","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.936879818,-0.00903
+"TG50:2] NL 16:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.799816582,-0.026
+"TG50:2] NL 18:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.633637126,-0.0556
+"TG52:1] NL 16:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.122536641,0.168
+"TG52:1] NL 18:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.294887017,0.105
+"TG52:1] NL 18:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.467529993,0.079
+"TG52:2] NL 16:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.837747941,0.0195
+"TG52:2] NL 18:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.906940569,0.0156
+"TG52:3] NL 18:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.031614113,-0.294
+"TG54:1] NL 20:0","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.80214836,-0.0327
+"TG54:2] NL 18:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.529091252,0.0803
+"TG54:3] NL 18:1","TG","RDH12 100 vs RDH12 Veh","RDH12 100","RDH12 Veh","NS","NS",0.287432475,-0.183
+"[CE 18:1 +NH4]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","Down","RDH12 Veh",1.83e-05,-0.761
+"[DG 38:1","DG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","Down","RDH12 Veh",6.05e-05,-0.619
 "DG 32:0 NL 16:0","DG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.535618821,0.076
 "DG 34:0 NL 16:0","DG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.067177386,0.219
 "DG 40:6 NL 16:1","DG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.082365893,-0.156
@@ -1099,19 +1099,19 @@
 "PI 36:4","PI","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.018339397,0.337
 "PI 38:3","PI","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.315458267,-0.169
 "PI 38:5","PI","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.424062919,-0.117
-"[CE 14:0 +NH4]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.828085163,-0.0219
-"[CE 16:0 +H]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.221904384,-0.221
-"[CE 16:0 +NH4]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.291279923,-0.135
-"[CE 16:1 +NH4]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.839613584,-0.0211
-"[CE 16:3 +K]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.253514366,0.133
-"[CE 18:0 +Na]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.551378478,0.182
-"[CE 18:0 +NH4]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.520096233,-0.0746
-"[CE 18:3 +Na]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.300976974,-0.114
-"[CE 20:3 +Na]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.084407048,-0.19
-"[CE 20:4 +NH4]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.122373215,-0.159
-"[CE 22:2 +K]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.963419767,-0.00422
-"[CE 22:6 +NH4]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.710714715,-0.0357
-"[CE 24:1 +Na]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.578833756,-0.148
+"[CE 14:0 +NH4]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.828085163,-0.0219
+"[CE 16:0 +H]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.221904384,-0.221
+"[CE 16:0 +NH4]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.291279923,-0.135
+"[CE 16:1 +NH4]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.839613584,-0.0211
+"[CE 16:3 +K]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.253514366,0.133
+"[CE 18:0 +Na]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.551378478,0.182
+"[CE 18:0 +NH4]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.520096233,-0.0746
+"[CE 18:3 +Na]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.300976974,-0.114
+"[CE 20:3 +Na]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.084407048,-0.19
+"[CE 20:4 +NH4]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.122373215,-0.159
+"[CE 22:2 +K]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.963419767,-0.00422
+"[CE 22:6 +NH4]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.710714715,-0.0357
+"[CE 24:1 +Na]","CE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.578833756,-0.148
 "[TG34:2] NL 20:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.776386134,-0.0292
 "[TG36:0] NL 18:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.906260363,-0.0182
 "[TG38:0] NL 20:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.999529346,0.000229
@@ -1125,16 +1125,16 @@
 "[TG50:8.1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.049341407,-0.243
 "[TG52:8","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.821834887,0.0212
 "[TG52:8.1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.777938596,-0.0264
-"Cer(d14:1/20:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.381955505,0.248
-"Cer(d14:1/24:0(2OH))","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.486723672,0.132
-"Cer(d14:2/20:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.723495085,0.132
-"Cer(d18:0/20:0(2OH))","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.50623837,0.215
-"Cer(d18:1/16:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.985575192,-0.00388
-"Cer(d18:1/18:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.82607009,-0.0255
-"Cer(d18:1/22:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.376262479,0.182
-"Cer(d18:1/24:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.034261326,0.279
-"Cer(d18:1/24:1)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.462961724,-0.125
-"Cer(d18:2/24:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.872224445,-0.0276
+"Cer(d14:1/20:0)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.381955505,0.248
+"Cer(d14:1/24:0(2OH))","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.486723672,0.132
+"Cer(d14:2/20:0)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.723495085,0.132
+"Cer(d18:0/20:0(2OH))","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.50623837,0.215
+"Cer(d18:1/16:0)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.985575192,-0.00388
+"Cer(d18:1/18:0)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.82607009,-0.0255
+"Cer(d18:1/22:0)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.376262479,0.182
+"Cer(d18:1/24:0)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.034261326,0.279
+"Cer(d18:1/24:1)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.462961724,-0.125
+"Cer(d18:2/24:0)","Cer","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.872224445,-0.0276
 "CerP(d18:1/24:1)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.580234655,-0.0727
 "DG 30:0 NL 14:0","DG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.748499276,-0.0454
 "DG 30:1 NL 14:1","DG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.883661027,0.0163
@@ -1302,11 +1302,11 @@
 "PC O-42:7","PC ether","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","Up","RDH12 200",5.46e-05,0.553
 "PC O-44:2","PC ether","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.180809542,0.119
 "PC O-44:6","PC ether","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.297071145,0.105
-"PC(16:0)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.833577983,-0.0369
+"PC(16:0)","Oxidized PC","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.833577983,-0.0369
 "PC(16:0/8:0(COOH))","Oxidized PC","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.162504353,0.202
-"PC(34:4)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","Up","RDH12 200",0.019852744,1.39
-"PC(O-40:1)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.857988507,0.0569
-"PC(P-30:1)","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.433074671,0.0873
+"PC(34:4)","Oxidized PC","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","Up","RDH12 200",0.019852744,1.39
+"PC(O-40:1)","Oxidized PC","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.857988507,0.0569
+"PC(P-30:1)","Oxidized PC","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.433074671,0.0873
 "PE 32:0","PE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.080848167,0.196
 "PE 32:2","PE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.05995368,-0.152
 "PE 34:0","PE","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.223755762,0.178
@@ -1395,52 +1395,52 @@
 "PS 40:6","PS","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.574336478,0.0837
 "PS 42:1","PS","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.013663605,0.284
 "PS O-34:1","PS ether","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.473195585,-0.0512
-"SM(32:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.42592496,0.164
-"SM(32:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.894919457,-0.0477
-"SM(32:2","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.942347,0.0119
-"SM(34:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.62720088,0.281
-"SM(34:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.373778963,0.61
-"SM(34:1.1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.914672742,-0.117
-"SM(34:2","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.979700582,-0.00943
-"SM(36:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.633739446,-0.685
-"SM(36:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.484870448,-0.742
-"SM(36:2","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.403693078,-0.376
-"SM(38:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.198594041,-1.83
-"SM(38:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.221578116,-1.55
-"SM(38:2","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.385460891,-0.475
-"SM(38:3","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.296401765,-0.69
-"SM(40:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.479169541,-0.425
-"SM(40:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.252077289,-0.931
-"SM(40:2","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.427651918,-0.527
-"SM(40:3","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.525807589,-0.338
-"SM(42:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.598799717,-0.153
-"SM(42:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.588455947,-0.303
-"SM(42:2","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.514103234,-0.382
-"SM(42:3","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.480325456,-0.316
-"SM(44:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.947478923,0.0149
-"SM(44:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.888205421,-0.0285
-"SM(44:2","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.825637392,0.0337
+"SM(32:0","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.42592496,0.164
+"SM(32:1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.894919457,-0.0477
+"SM(32:2","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.942347,0.0119
+"SM(34:0","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.62720088,0.281
+"SM(34:1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.373778963,0.61
+"SM(34:1.1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.914672742,-0.117
+"SM(34:2","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.979700582,-0.00943
+"SM(36:0","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.633739446,-0.685
+"SM(36:1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.484870448,-0.742
+"SM(36:2","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.403693078,-0.376
+"SM(38:0","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.198594041,-1.83
+"SM(38:1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.221578116,-1.55
+"SM(38:2","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.385460891,-0.475
+"SM(38:3","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.296401765,-0.69
+"SM(40:0","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.479169541,-0.425
+"SM(40:1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.252077289,-0.931
+"SM(40:2","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.427651918,-0.527
+"SM(40:3","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.525807589,-0.338
+"SM(42:0","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.598799717,-0.153
+"SM(42:1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.588455947,-0.303
+"SM(42:2","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.514103234,-0.382
+"SM(42:3","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.480325456,-0.316
+"SM(44:0","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.947478923,0.0149
+"SM(44:1","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.888205421,-0.0285
+"SM(44:2","SM","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.825637392,0.0337
 "TG 32:0 NL 16:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.992302561,0.000892
 "TG 34:1 NL 16:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.162585196,-0.608
-"TG48:0] NL 16:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.02232959,0.319
-"TG48:1] NL 14:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.620547027,-0.0437
-"TG48:1] NL 16:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.677243888,-0.0565
-"TG50:1] NL 16:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.611436109,0.0627
-"TG50:1] NL 18:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.388178382,0.0995
-"TG50:2]","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.612023085,-0.0581
-"TG50:2] NL 16:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.463537675,-0.0759
-"TG50:2] NL 18:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.4890391,0.081
-"TG52:1] NL 16:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.084148757,0.19
-"TG52:1] NL 18:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.065570841,0.192
-"TG52:1] NL 18:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.16406152,0.155
-"TG52:2] NL 16:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.475195327,-0.0685
-"TG52:2] NL 18:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.286292053,-0.145
-"TG52:3] NL 18:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.07577455,-0.236
-"TG54:1] NL 20:0","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.57934616,0.0728
-"TG54:2] NL 18:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.805845736,0.0312
-"TG54:3] NL 18:1","Other","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.194063402,-0.225
-"[CE 18:1 +NH4]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.111730586,0.206
-"[DG 38:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.619179605,-0.0564
+"TG48:0] NL 16:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.02232959,0.319
+"TG48:1] NL 14:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.620547027,-0.0437
+"TG48:1] NL 16:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.677243888,-0.0565
+"TG50:1] NL 16:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.611436109,0.0627
+"TG50:1] NL 18:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.388178382,0.0995
+"TG50:2]","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.612023085,-0.0581
+"TG50:2] NL 16:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.463537675,-0.0759
+"TG50:2] NL 18:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.4890391,0.081
+"TG52:1] NL 16:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.084148757,0.19
+"TG52:1] NL 18:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.065570841,0.192
+"TG52:1] NL 18:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.16406152,0.155
+"TG52:2] NL 16:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.475195327,-0.0685
+"TG52:2] NL 18:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.286292053,-0.145
+"TG52:3] NL 18:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.07577455,-0.236
+"TG54:1] NL 20:0","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.57934616,0.0728
+"TG54:2] NL 18:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.805845736,0.0312
+"TG54:3] NL 18:1","TG","RDH12 200 vs RDH12 Veh","RDH12 200","RDH12 Veh","NS","NS",0.194063402,-0.225
+"[CE 18:1 +NH4]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.111730586,0.206
+"[DG 38:1","DG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.619179605,-0.0564
 "DG 32:0 NL 16:0","DG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",0.000221838,-0.585
 "DG 34:0 NL 16:0","DG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",4.42e-05,-0.638
 "DG 40:6 NL 16:1","DG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.002882162,-0.299
@@ -1459,19 +1459,19 @@
 "PI 36:4","PI","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",0.003430732,-0.443
 "PI 38:3","PI","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.600919743,0.087
 "PI 38:5","PI","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.056513807,-0.296
-"[CE 14:0 +NH4]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.890912716,-0.0138
-"[CE 16:0 +H]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.06004817,-0.353
-"[CE 16:0 +NH4]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.617538314,-0.0631
-"[CE 16:1 +NH4]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.133443592,-0.163
-"[CE 16:3 +K]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.092110744,-0.202
-"[CE 18:0 +Na]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.526298344,-0.194
-"[CE 18:0 +NH4]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.370261222,-0.105
-"[CE 18:3 +Na]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.174381584,-0.152
-"[CE 20:3 +Na]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.982099206,0.00234
-"[CE 20:4 +NH4]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.324297281,0.0992
-"[CE 22:2 +K]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.964963481,-0.00404
-"[CE 22:6 +NH4]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.40307109,-0.0814
-"[CE 24:1 +Na]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.436118268,-0.209
+"[CE 14:0 +NH4]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.890912716,-0.0138
+"[CE 16:0 +H]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.06004817,-0.353
+"[CE 16:0 +NH4]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.617538314,-0.0631
+"[CE 16:1 +NH4]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.133443592,-0.163
+"[CE 16:3 +K]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.092110744,-0.202
+"[CE 18:0 +Na]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.526298344,-0.194
+"[CE 18:0 +NH4]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.370261222,-0.105
+"[CE 18:3 +Na]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.174381584,-0.152
+"[CE 20:3 +Na]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.982099206,0.00234
+"[CE 20:4 +NH4]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.324297281,0.0992
+"[CE 22:2 +K]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.964963481,-0.00404
+"[CE 22:6 +NH4]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.40307109,-0.0814
+"[CE 24:1 +Na]","CE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.436118268,-0.209
 "[TG34:2] NL 20:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.384858685,-0.0905
 "[TG36:0] NL 18:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.93402317,0.0128
 "[TG38:0] NL 20:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.151037784,-0.578
@@ -1485,16 +1485,16 @@
 "[TG50:8.1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.522852986,-0.0741
 "[TG52:8","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.804165252,-0.0234
 "[TG52:8.1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.934140383,0.00774
-"Cer(d14:1/20:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.316521369,-0.285
-"Cer(d14:1/24:0(2OH))","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.630780885,-0.0906
-"Cer(d14:2/20:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.200553907,-0.49
-"Cer(d18:0/20:0(2OH))","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",0.027648225,-0.774
-"Cer(d18:1/16:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.519890562,-0.139
-"Cer(d18:1/18:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.355937629,0.109
-"Cer(d18:1/22:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.533146424,0.127
-"Cer(d18:1/24:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.371129375,0.11
-"Cer(d18:1/24:1)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.22979365,0.208
-"Cer(d18:2/24:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Up","RDH12 Veh",0.026090028,0.418
+"Cer(d14:1/20:0)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.316521369,-0.285
+"Cer(d14:1/24:0(2OH))","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.630780885,-0.0906
+"Cer(d14:2/20:0)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.200553907,-0.49
+"Cer(d18:0/20:0(2OH))","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",0.027648225,-0.774
+"Cer(d18:1/16:0)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.519890562,-0.139
+"Cer(d18:1/18:0)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.355937629,0.109
+"Cer(d18:1/22:0)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.533146424,0.127
+"Cer(d18:1/24:0)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.371129375,0.11
+"Cer(d18:1/24:1)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.22979365,0.208
+"Cer(d18:2/24:0)","Cer","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Up","RDH12 Veh",0.026090028,0.418
 "CerP(d18:1/24:1)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.076295332,0.245
 "DG 30:0 NL 14:0","DG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.100735343,-0.244
 "DG 30:1 NL 14:1","DG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.013729989,-0.308
@@ -1662,11 +1662,11 @@
 "PC O-42:7","PC ether","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.155520639,-0.147
 "PC O-44:2","PC ether","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.714517625,-0.0315
 "PC O-44:6","PC ether","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.75066985,-0.0314
-"PC(16:0)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.620273912,0.0874
+"PC(16:0)","Oxidized PC","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.620273912,0.0874
 "PC(16:0/8:0(COOH))","Oxidized PC","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.960601137,0.00689
-"PC(34:4)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",0.005826607,-1.72
-"PC(O-40:1)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.752069372,-0.101
-"PC(P-30:1)","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.920843163,-0.0109
+"PC(34:4)","Oxidized PC","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",0.005826607,-1.72
+"PC(O-40:1)","Oxidized PC","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.752069372,-0.101
+"PC(P-30:1)","Oxidized PC","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.920843163,-0.0109
 "PE 32:0","PE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.069364076,-0.205
 "PE 32:2","PE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.703519427,0.0288
 "PE 34:0","PE","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.677246681,-0.0594
@@ -1755,52 +1755,52 @@
 "PS 40:6","PS","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.140365062,-0.227
 "PS 42:1","PS","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.014687068,-0.28
 "PS O-34:1","PS ether","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.600602128,-0.0372
-"SM(32:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.489189575,0.142
-"SM(32:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.357895786,0.337
-"SM(32:2","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.29396748,0.176
-"SM(34:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.522745258,-0.371
-"SM(34:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.372309129,-0.612
-"SM(34:1.1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.782402533,0.303
-"SM(34:2","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.197609948,0.492
-"SM(36:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.896031094,0.187
-"SM(36:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.878061385,0.162
-"SM(36:2","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.431786428,0.353
-"SM(38:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.568456074,0.793
-"SM(38:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.743199045,0.404
-"SM(38:2","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.560446243,0.316
-"SM(38:3","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.640755115,0.304
-"SM(40:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.438434301,0.466
-"SM(40:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.707109693,0.299
-"SM(40:2","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.948691722,-0.0423
-"SM(40:3","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.946759878,0.0353
-"SM(42:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Up","RDH12 Veh",0.088576777,0.518
-"SM(42:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.39871023,0.476
-"SM(42:2","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.513903457,0.382
-"SM(42:3","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.279403386,0.49
-"SM(44:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.693901776,0.089
-"SM(44:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.177952661,0.283
-"SM(44:2","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.34542383,0.146
+"SM(32:0","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.489189575,0.142
+"SM(32:1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.357895786,0.337
+"SM(32:2","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.29396748,0.176
+"SM(34:0","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.522745258,-0.371
+"SM(34:1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.372309129,-0.612
+"SM(34:1.1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.782402533,0.303
+"SM(34:2","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.197609948,0.492
+"SM(36:0","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.896031094,0.187
+"SM(36:1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.878061385,0.162
+"SM(36:2","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.431786428,0.353
+"SM(38:0","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.568456074,0.793
+"SM(38:1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.743199045,0.404
+"SM(38:2","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.560446243,0.316
+"SM(38:3","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.640755115,0.304
+"SM(40:0","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.438434301,0.466
+"SM(40:1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.707109693,0.299
+"SM(40:2","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.948691722,-0.0423
+"SM(40:3","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.946759878,0.0353
+"SM(42:0","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Up","RDH12 Veh",0.088576777,0.518
+"SM(42:1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.39871023,0.476
+"SM(42:2","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.513903457,0.382
+"SM(42:3","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.279403386,0.49
+"SM(44:0","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.693901776,0.089
+"SM(44:1","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.177952661,0.283
+"SM(44:2","SM","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.34542383,0.146
 "TG 32:0 NL 16:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","Down","WT Veh",0.000223266,-0.443
 "TG 34:1 NL 16:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.445164791,-0.324
-"TG48:0] NL 16:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.032152614,-0.296
-"TG48:1] NL 14:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.090093559,0.157
-"TG48:1] NL 16:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.859781553,0.0239
-"TG50:1] NL 16:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.762207485,0.0372
-"TG50:1] NL 18:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.524115705,-0.073
-"TG50:2]","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.272770844,0.128
-"TG50:2] NL 16:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.94452611,0.00713
-"TG50:2] NL 18:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.91187671,0.0129
-"TG52:1] NL 16:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.811146661,0.025
-"TG52:1] NL 18:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.677943208,0.0408
-"TG52:1] NL 18:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.537141296,-0.067
-"TG52:2] NL 16:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.006703268,0.295
-"TG52:2] NL 18:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.058308868,0.27
-"TG52:3] NL 18:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.380358534,0.112
-"TG54:1] NL 20:0","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.970748178,-0.00479
-"TG54:2] NL 18:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.294482228,0.136
-"TG54:3] NL 18:1","Other","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.356440498,0.158
-"[CE 18:1 +NH4]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.053143423,-0.256
-"[DG 38:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.120299876,-0.183
+"TG48:0] NL 16:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.032152614,-0.296
+"TG48:1] NL 14:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.090093559,0.157
+"TG48:1] NL 16:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.859781553,0.0239
+"TG50:1] NL 16:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.762207485,0.0372
+"TG50:1] NL 18:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.524115705,-0.073
+"TG50:2]","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.272770844,0.128
+"TG50:2] NL 16:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.94452611,0.00713
+"TG50:2] NL 18:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.91187671,0.0129
+"TG52:1] NL 16:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.811146661,0.025
+"TG52:1] NL 18:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.677943208,0.0408
+"TG52:1] NL 18:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.537141296,-0.067
+"TG52:2] NL 16:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.006703268,0.295
+"TG52:2] NL 18:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.058308868,0.27
+"TG52:3] NL 18:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.380358534,0.112
+"TG54:1] NL 20:0","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.970748178,-0.00479
+"TG54:2] NL 18:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.294482228,0.136
+"TG54:3] NL 18:1","TG","RDH12 Veh vs WT Veh","RDH12 Veh","WT Veh","NS","NS",0.356440498,0.158
+"[CE 18:1 +NH4]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.053143423,-0.256
+"[DG 38:1","DG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.120299876,-0.183
 "DG 32:0 NL 16:0","DG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.044867354,-0.263
 "DG 34:0 NL 16:0","DG","RDH12 100 vs WT 100","RDH12 100","WT 100","Down","WT 100",0.003303914,-0.39
 "DG 40:6 NL 16:1","DG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.020555518,-0.217
@@ -1819,19 +1819,19 @@
 "PI 36:4","PI","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.861151977,0.0226
 "PI 38:3","PI","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.990472762,-0.00198
 "PI 38:5","PI","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.100020747,0.251
-"[CE 14:0 +NH4]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.958522645,-0.00523
-"[CE 16:0 +H]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.133609096,-0.275
-"[CE 16:0 +NH4]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.843739899,0.0248
-"[CE 16:1 +NH4]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.091775587,-0.185
-"[CE 16:3 +K]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.392378856,0.0987
-"[CE 18:0 +Na]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.023934132,0.753
-"[CE 18:0 +NH4]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.953619907,0.0067
-"[CE 18:3 +Na]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.262247216,-0.124
-"[CE 20:3 +Na]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.688785964,-0.0419
-"[CE 20:4 +NH4]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.710270205,-0.0368
-"[CE 22:2 +K]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.999468295,6.14e-05
-"[CE 22:6 +NH4]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.832957977,0.0203
-"[CE 24:1 +Na]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","Down","WT 100",0.056665075,-0.541
+"[CE 14:0 +NH4]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.958522645,-0.00523
+"[CE 16:0 +H]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.133609096,-0.275
+"[CE 16:0 +NH4]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.843739899,0.0248
+"[CE 16:1 +NH4]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.091775587,-0.185
+"[CE 16:3 +K]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.392378856,0.0987
+"[CE 18:0 +Na]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.023934132,0.753
+"[CE 18:0 +NH4]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.953619907,0.0067
+"[CE 18:3 +Na]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.262247216,-0.124
+"[CE 20:3 +Na]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.688785964,-0.0419
+"[CE 20:4 +NH4]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.710270205,-0.0368
+"[CE 22:2 +K]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.999468295,6.14e-05
+"[CE 22:6 +NH4]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.832957977,0.0203
+"[CE 24:1 +Na]","CE","RDH12 100 vs WT 100","RDH12 100","WT 100","Down","WT 100",0.056665075,-0.541
 "[TG34:2] NL 20:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.362550405,-0.0949
 "[TG36:0] NL 18:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.465899079,-0.114
 "[TG38:0] NL 20:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.275117053,-0.433
@@ -1845,16 +1845,16 @@
 "[TG50:8.1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.002287115,0.418
 "[TG52:8","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.375738502,0.0845
 "[TG52:8.1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.077593323,0.175
-"Cer(d14:1/20:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.614805404,-0.141
-"Cer(d14:1/24:0(2OH))","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.597460953,0.0997
-"Cer(d14:2/20:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.376933967,-0.333
-"Cer(d18:0/20:0(2OH))","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.863037675,0.0555
-"Cer(d18:1/16:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.366150351,-0.197
-"Cer(d18:1/18:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.349854738,0.11
-"Cer(d18:1/22:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.393168346,-0.175
-"Cer(d18:1/24:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.610899067,-0.0621
-"Cer(d18:1/24:1)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.292737641,-0.181
-"Cer(d18:2/24:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.476565482,0.123
+"Cer(d14:1/20:0)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.614805404,-0.141
+"Cer(d14:1/24:0(2OH))","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.597460953,0.0997
+"Cer(d14:2/20:0)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.376933967,-0.333
+"Cer(d18:0/20:0(2OH))","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.863037675,0.0555
+"Cer(d18:1/16:0)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.366150351,-0.197
+"Cer(d18:1/18:0)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.349854738,0.11
+"Cer(d18:1/22:0)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.393168346,-0.175
+"Cer(d18:1/24:0)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.610899067,-0.0621
+"Cer(d18:1/24:1)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.292737641,-0.181
+"Cer(d18:2/24:0)","Cer","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.476565482,0.123
 "CerP(d18:1/24:1)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.177327088,0.182
 "DG 30:0 NL 14:0","DG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.627025858,0.069
 "DG 30:1 NL 14:1","DG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.703538233,-0.0426
@@ -2022,11 +2022,11 @@
 "PC O-42:7","PC ether","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.002336115,0.362
 "PC O-44:2","PC ether","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.662970983,-0.0376
 "PC O-44:6","PC ether","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.905114313,-0.0117
-"PC(16:0)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.838357494,-0.0358
+"PC(16:0)","Oxidized PC","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.838357494,-0.0358
 "PC(16:0/8:0(COOH))","Oxidized PC","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.792718032,0.0367
-"PC(34:4)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.72620759,0.19
-"PC(O-40:1)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.394449116,0.274
-"PC(P-30:1)","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.350523862,0.104
+"PC(34:4)","Oxidized PC","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.72620759,0.19
+"PC(O-40:1)","Oxidized PC","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.394449116,0.274
+"PC(P-30:1)","Oxidized PC","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.350523862,0.104
 "PE 32:0","PE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.760163289,0.0324
 "PE 32:2","PE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.294990765,0.0807
 "PE 34:0","PE","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.892786375,-0.0192
@@ -2115,52 +2115,52 @@
 "PS 40:6","PS","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.304830815,-0.155
 "PS 42:1","PS","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.191592377,-0.139
 "PS O-34:1","PS ether","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.191470066,-0.0952
-"SM(32:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.09272826,0.36
-"SM(32:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.352563681,0.341
-"SM(32:2","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.122335814,0.265
-"SM(34:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.728053228,0.201
-"SM(34:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.688162058,-0.272
-"SM(34:1.1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.765418559,-0.327
-"SM(34:2","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.016420898,0.989
-"SM(36:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.729899195,0.495
-"SM(36:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.792899179,0.277
-"SM(36:2","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.758000923,0.137
-"SM(38:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.257483423,1.6
-"SM(38:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.376077489,1.11
-"SM(38:2","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.249946822,0.636
-"SM(38:3","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.306404373,0.676
-"SM(40:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.625102224,-0.292
-"SM(40:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.692260297,-0.315
-"SM(40:2","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.613965192,-0.333
-"SM(40:3","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.493260372,-0.365
-"SM(42:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.471534422,-0.21
-"SM(42:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.177400983,-0.775
-"SM(42:2","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.150496136,-0.866
-"SM(42:3","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.232289854,-0.544
-"SM(44:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.861631797,0.0393
-"SM(44:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.752009191,0.0643
-"SM(44:2","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.772735614,-0.0442
+"SM(32:0","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.09272826,0.36
+"SM(32:1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.352563681,0.341
+"SM(32:2","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.122335814,0.265
+"SM(34:0","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.728053228,0.201
+"SM(34:1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.688162058,-0.272
+"SM(34:1.1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.765418559,-0.327
+"SM(34:2","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.016420898,0.989
+"SM(36:0","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.729899195,0.495
+"SM(36:1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.792899179,0.277
+"SM(36:2","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.758000923,0.137
+"SM(38:0","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.257483423,1.6
+"SM(38:1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.376077489,1.11
+"SM(38:2","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.249946822,0.636
+"SM(38:3","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.306404373,0.676
+"SM(40:0","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.625102224,-0.292
+"SM(40:1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.692260297,-0.315
+"SM(40:2","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.613965192,-0.333
+"SM(40:3","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.493260372,-0.365
+"SM(42:0","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.471534422,-0.21
+"SM(42:1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.177400983,-0.775
+"SM(42:2","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.150496136,-0.866
+"SM(42:3","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.232289854,-0.544
+"SM(44:0","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.861631797,0.0393
+"SM(44:1","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.752009191,0.0643
+"SM(44:2","SM","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.772735614,-0.0442
 "TG 32:0 NL 16:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.812246578,-0.022
 "TG 34:1 NL 16:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.708447092,-0.158
-"TG48:0] NL 16:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.091905706,0.225
-"TG48:1] NL 14:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.258856098,0.101
-"TG48:1] NL 16:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.106020538,0.229
-"TG50:1] NL 16:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.000728059,0.516
-"TG50:1] NL 18:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.0084166,0.341
-"TG50:2]","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.609846769,0.0585
-"TG50:2] NL 16:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.18194487,0.141
-"TG50:2] NL 18:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.806588467,0.0285
-"TG52:1] NL 16:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.001513464,0.4
-"TG52:1] NL 18:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.018909093,0.254
-"TG52:1] NL 18:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.156375261,0.158
-"TG52:2] NL 16:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.006415609,0.297
-"TG52:2] NL 18:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.005424208,0.429
-"TG52:3] NL 18:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.481866542,-0.0891
-"TG54:1] NL 20:0","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.503073083,-0.0881
-"TG54:2] NL 18:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.030367417,0.299
-"TG54:3] NL 18:1","Other","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.67138564,0.0716
-"[CE 18:1 +NH4]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.548853111,-0.0747
-"[DG 38:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.015567765,-0.304
+"TG48:0] NL 16:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.091905706,0.225
+"TG48:1] NL 14:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.258856098,0.101
+"TG48:1] NL 16:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.106020538,0.229
+"TG50:1] NL 16:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.000728059,0.516
+"TG50:1] NL 18:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.0084166,0.341
+"TG50:2]","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.609846769,0.0585
+"TG50:2] NL 16:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.18194487,0.141
+"TG50:2] NL 18:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.806588467,0.0285
+"TG52:1] NL 16:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.001513464,0.4
+"TG52:1] NL 18:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.018909093,0.254
+"TG52:1] NL 18:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.156375261,0.158
+"TG52:2] NL 16:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.006415609,0.297
+"TG52:2] NL 18:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","Up","RDH12 100",0.005424208,0.429
+"TG52:3] NL 18:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.481866542,-0.0891
+"TG54:1] NL 20:0","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.503073083,-0.0881
+"TG54:2] NL 18:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.030367417,0.299
+"TG54:3] NL 18:1","TG","RDH12 100 vs WT 100","RDH12 100","WT 100","NS","NS",0.67138564,0.0716
+"[CE 18:1 +NH4]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.548853111,-0.0747
+"[DG 38:1","DG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.015567765,-0.304
 "DG 32:0 NL 16:0","DG","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",4.25e-06,-0.856
 "DG 34:0 NL 16:0","DG","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",6.44e-06,-0.763
 "DG 40:6 NL 16:1","DG","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",7.56e-07,-0.691
@@ -2179,19 +2179,19 @@
 "PI 36:4","PI","RDH12 200 vs WT 200","RDH12 200","WT 200","Up","RDH12 200",0.001659825,0.489
 "PI 38:3","PI","RDH12 200 vs WT 200","RDH12 200","WT 200","Up","RDH12 200",0.002586743,0.592
 "PI 38:5","PI","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.780708156,0.0405
-"[CE 14:0 +NH4]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.726453399,-0.0353
-"[CE 16:0 +H]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.025043778,-0.432
-"[CE 16:0 +NH4]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.495724195,-0.0864
-"[CE 16:1 +NH4]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.537694695,-0.0646
-"[CE 16:3 +K]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.859292728,-0.0202
-"[CE 18:0 +Na]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.260004857,-0.35
-"[CE 18:0 +NH4]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.389758613,-0.1
-"[CE 18:3 +Na]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.159209679,-0.158
-"[CE 20:3 +Na]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.000896228,-0.427
-"[CE 20:4 +NH4]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.597424004,-0.0525
-"[CE 22:2 +K]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.390371318,-0.0801
-"[CE 22:6 +NH4]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.128251091,-0.152
-"[CE 24:1 +Na]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.076480807,-0.499
+"[CE 14:0 +NH4]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.726453399,-0.0353
+"[CE 16:0 +H]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.025043778,-0.432
+"[CE 16:0 +NH4]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.495724195,-0.0864
+"[CE 16:1 +NH4]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.537694695,-0.0646
+"[CE 16:3 +K]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.859292728,-0.0202
+"[CE 18:0 +Na]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.260004857,-0.35
+"[CE 18:0 +NH4]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.389758613,-0.1
+"[CE 18:3 +Na]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.159209679,-0.158
+"[CE 20:3 +Na]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.000896228,-0.427
+"[CE 20:4 +NH4]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.597424004,-0.0525
+"[CE 22:2 +K]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.390371318,-0.0801
+"[CE 22:6 +NH4]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.128251091,-0.152
+"[CE 24:1 +Na]","CE","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.076480807,-0.499
 "[TG34:2] NL 20:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.000911183,-0.42
 "[TG36:0] NL 18:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.650955244,-0.0703
 "[TG38:0] NL 20:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.04670821,-0.83
@@ -2205,16 +2205,16 @@
 "[TG50:8.1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.237715405,-0.139
 "[TG52:8","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.542559268,-0.0577
 "[TG52:8.1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.986016711,-0.00164
-"Cer(d14:1/20:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.517699779,-0.182
-"Cer(d14:1/24:0(2OH))","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.820380818,-0.0427
-"Cer(d14:2/20:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.147130611,-0.56
-"Cer(d18:0/20:0(2OH))","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.088173952,-0.578
-"Cer(d18:1/16:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.146210269,0.324
-"Cer(d18:1/18:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.26888442,0.131
-"Cer(d18:1/22:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.261649588,0.232
-"Cer(d18:1/24:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.559902065,0.0713
-"Cer(d18:1/24:1)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.779925479,-0.0471
-"Cer(d18:2/24:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.106940078,0.29
+"Cer(d14:1/20:0)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.517699779,-0.182
+"Cer(d14:1/24:0(2OH))","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.820380818,-0.0427
+"Cer(d14:2/20:0)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.147130611,-0.56
+"Cer(d18:0/20:0(2OH))","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.088173952,-0.578
+"Cer(d18:1/16:0)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.146210269,0.324
+"Cer(d18:1/18:0)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.26888442,0.131
+"Cer(d18:1/22:0)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.261649588,0.232
+"Cer(d18:1/24:0)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.559902065,0.0713
+"Cer(d18:1/24:1)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.779925479,-0.0471
+"Cer(d18:2/24:0)","Cer","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.106940078,0.29
 "CerP(d18:1/24:1)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.076926535,0.245
 "DG 30:0 NL 14:0","DG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.269502018,-0.16
 "DG 30:1 NL 14:1","DG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.07029707,-0.214
@@ -2382,11 +2382,11 @@
 "PC O-42:7","PC ether","RDH12 200 vs WT 200","RDH12 200","WT 200","Up","RDH12 200",7.88e-05,0.534
 "PC O-44:2","PC ether","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.936086557,0.00689
 "PC O-44:6","PC ether","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.709963943,-0.0367
-"PC(16:0)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.177394909,-0.245
+"PC(16:0)","Oxidized PC","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.177394909,-0.245
 "PC(16:0/8:0(COOH))","Oxidized PC","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.238656826,0.169
-"PC(34:4)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.287941102,-0.588
-"PC(O-40:1)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.801253607,-0.0801
-"PC(P-30:1)","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.700789749,-0.0424
+"PC(34:4)","Oxidized PC","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.287941102,-0.588
+"PC(O-40:1)","Oxidized PC","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.801253607,-0.0801
+"PC(P-30:1)","Oxidized PC","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.700789749,-0.0424
 "PE 32:0","PE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.318048548,0.108
 "PE 32:2","PE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.008557806,-0.226
 "PE 34:0","PE","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.113595514,0.236
@@ -2475,47 +2475,47 @@
 "PS 40:6","PS","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.382781295,-0.131
 "PS 42:1","PS","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.257477923,-0.119
 "PS O-34:1","PS ether","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.018115267,-0.185
-"SM(32:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.192982404,0.273
-"SM(32:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","Up","RDH12 200",0.06679491,0.703
-"SM(32:2","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.298216717,0.174
-"SM(34:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.713186265,0.212
-"SM(34:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.584711076,0.371
-"SM(34:1.1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.931644442,0.0939
-"SM(34:2","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.548859189,0.224
-"SM(36:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.805268696,-0.353
-"SM(36:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.546226986,-0.64
-"SM(36:2","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.729308431,-0.154
-"SM(38:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.917926052,0.143
-"SM(38:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.528323069,-0.782
-"SM(38:2","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.937109536,-0.0426
-"SM(38:3","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.642669105,-0.302
-"SM(40:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.282692631,0.652
-"SM(40:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.743207178,0.261
-"SM(40:2","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.819566711,0.15
-"SM(40:3","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.588544354,0.288
-"SM(42:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.29074314,0.311
-"SM(42:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.508901416,0.37
-"SM(42:2","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.771011198,0.169
-"SM(42:3","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.461209914,0.33
-"SM(44:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.223622252,0.282
-"SM(44:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.937680329,0.0159
-"SM(44:2","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.146796792,0.23
+"SM(32:0","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.192982404,0.273
+"SM(32:1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","Up","RDH12 200",0.06679491,0.703
+"SM(32:2","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.298216717,0.174
+"SM(34:0","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.713186265,0.212
+"SM(34:1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.584711076,0.371
+"SM(34:1.1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.931644442,0.0939
+"SM(34:2","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.548859189,0.224
+"SM(36:0","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.805268696,-0.353
+"SM(36:1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.546226986,-0.64
+"SM(36:2","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.729308431,-0.154
+"SM(38:0","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.917926052,0.143
+"SM(38:1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.528323069,-0.782
+"SM(38:2","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.937109536,-0.0426
+"SM(38:3","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.642669105,-0.302
+"SM(40:0","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.282692631,0.652
+"SM(40:1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.743207178,0.261
+"SM(40:2","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.819566711,0.15
+"SM(40:3","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.588544354,0.288
+"SM(42:0","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.29074314,0.311
+"SM(42:1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.508901416,0.37
+"SM(42:2","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.771011198,0.169
+"SM(42:3","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.461209914,0.33
+"SM(44:0","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.223622252,0.282
+"SM(44:1","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.937680329,0.0159
+"SM(44:2","SM","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.146796792,0.23
 "TG 32:0 NL 16:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.001784952,-0.347
 "TG 34:1 NL 16:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","Down","WT 200",0.056767039,-0.856
-"TG48:0] NL 16:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.062925176,0.251
-"TG48:1] NL 14:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.845992317,-0.0171
-"TG48:1] NL 16:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.73761255,-0.0454
-"TG50:1] NL 16:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","Up","RDH12 200",0.005449769,0.394
-"TG50:1] NL 18:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.12733409,0.181
-"TG50:2]","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.991926771,-0.00115
-"TG50:2] NL 16:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.765053006,-0.0307
-"TG50:2] NL 18:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.551705111,-0.0695
-"TG52:1] NL 16:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.116402552,0.171
-"TG52:1] NL 18:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.010143885,0.285
-"TG52:1] NL 18:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.450080547,0.0822
-"TG52:2] NL 16:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.006583448,0.296
-"TG52:2] NL 18:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.823062779,0.0299
-"TG52:3] NL 18:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.084511946,-0.229
-"TG54:1] NL 20:0","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.641646631,-0.061
-"TG54:2] NL 18:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.617308545,-0.0636
-"TG54:3] NL 18:1","Other","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.705446944,-0.0637
+"TG48:0] NL 16:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.062925176,0.251
+"TG48:1] NL 14:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.845992317,-0.0171
+"TG48:1] NL 16:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.73761255,-0.0454
+"TG50:1] NL 16:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","Up","RDH12 200",0.005449769,0.394
+"TG50:1] NL 18:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.12733409,0.181
+"TG50:2]","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.991926771,-0.00115
+"TG50:2] NL 16:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.765053006,-0.0307
+"TG50:2] NL 18:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.551705111,-0.0695
+"TG52:1] NL 16:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.116402552,0.171
+"TG52:1] NL 18:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.010143885,0.285
+"TG52:1] NL 18:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.450080547,0.0822
+"TG52:2] NL 16:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.006583448,0.296
+"TG52:2] NL 18:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.823062779,0.0299
+"TG52:3] NL 18:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.084511946,-0.229
+"TG54:1] NL 20:0","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.641646631,-0.061
+"TG54:2] NL 18:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.617308545,-0.0636
+"TG54:3] NL 18:1","TG","RDH12 200 vs WT 200","RDH12 200","WT 200","NS","NS",0.705446944,-0.0637

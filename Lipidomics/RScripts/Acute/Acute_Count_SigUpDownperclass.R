@@ -65,29 +65,58 @@ if (length(missing_cols) > 0) {
 # ---------------------------------------------------------
 # 3. ASSIGN LIPID CLASS
 # ---------------------------------------------------------
+# ---------------------------------------------------------
+# 3. ASSIGN LIPID CLASS
+# ---------------------------------------------------------
 get_lipid_class <- function(x) {
+  x <- str_trim(x)
+  
   case_when(
-    str_detect(x, "^LPC\\s")   ~ "LPC",
-    str_detect(x, "^PC O-")    ~ "PC ether",
-    str_detect(x, "^PC P-")    ~ "PC plasmalogen",
-    str_detect(x, "^PC\\s")    ~ "PC",
-    str_detect(x, "^LPE\\s")   ~ "LPE",
-    str_detect(x, "^PE O-")    ~ "PE ether",
-    str_detect(x, "^PE P-")    ~ "PE plasmalogen",
-    str_detect(x, "^PE\\s")    ~ "PE",
-    str_detect(x, "^PI O-")    ~ "PI ether",
-    str_detect(x, "^PI\\s")    ~ "PI",
-    str_detect(x, "^PS O-")    ~ "PS ether",
-    str_detect(x, "^PS\\s")    ~ "PS",
-    str_detect(x, "^PG\\s")    ~ "PG",
-    str_detect(x, "^DG O-")    ~ "DG ether",
-    str_detect(x, "^DG\\s")    ~ "DG",
-    str_detect(x, "^TG\\s")    ~ "TG",
-    str_detect(x, "^Cer\\s")   ~ "Cer",
+    # Oxidized PCs / truncated oxidized phospholipids
+    str_detect(x, regex("^PC\\(|Aze|COOH|Azelaoyl", ignore_case = TRUE)) ~ "Oxidized PC",
+    
+    # Cholesteryl esters, including [CE 18:1 +NH4]
+    str_detect(x, "^\\[?CE\\s") ~ "CE",
+    
+    # TG, including [TG44:5] NL 20:0 and TG52:2] NL 18:1
+    str_detect(x, "^\\[?TG") ~ "TG",
+    
+    # DG, including [DG 38:1
+    str_detect(x, "^\\[?DG\\s") ~ "DG",
+    str_detect(x, "^DG O-") ~ "DG ether",
+    
+    # LPC / PC
+    str_detect(x, "^LPC\\s") ~ "LPC",
+    str_detect(x, "^PC O-") ~ "PC ether",
+    str_detect(x, "^PC P-") ~ "PC plasmalogen",
+    str_detect(x, "^PC\\s") ~ "PC",
+    
+    # LPE / PE
+    str_detect(x, "^LPE\\s") ~ "LPE",
+    str_detect(x, "^PE O-") ~ "PE ether",
+    str_detect(x, "^PE P-") ~ "PE plasmalogen",
+    str_detect(x, "^PE\\s") ~ "PE",
+    
+    # PI / PS / PG
+    str_detect(x, "^PI O-") ~ "PI ether",
+    str_detect(x, "^PI\\s") ~ "PI",
+    str_detect(x, "^PS O-") ~ "PS ether",
+    str_detect(x, "^PS\\s") ~ "PS",
+    str_detect(x, "^PG\\s") ~ "PG",
+    
+    # Ceramides, including Cer(d14:1/16:0)
+    str_detect(x, "^Cer\\(") ~ "Cer",
+    str_detect(x, "^Cer\\s") ~ "Cer",
+    str_detect(x, "^dhCer\\(") ~ "dhCer",
     str_detect(x, "^dhCer\\s") ~ "dhCer",
-    str_detect(x, "^SM\\s")    ~ "SM",
-    str_detect(x, "^CE\\s")    ~ "CE",
-    str_detect(x, "^CAR\\s")   ~ "CAR",
+    
+    # Sphingomyelins, including SM(34:1
+    str_detect(x, "^SM\\(") ~ "SM",
+    str_detect(x, "^SM\\s") ~ "SM",
+    
+    # Acyl-carnitines
+    str_detect(x, "^CAR\\s") ~ "CAR",
+    
     TRUE ~ "Other"
   )
 }

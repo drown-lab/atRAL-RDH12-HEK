@@ -1,16 +1,18 @@
 "Contrast","Class","Direction","Count","SignedCount"
 "100 vs Veh","CAR","Down",0,0
 "100 vs Veh","CAR","Up",0,0
+"100 vs Veh","CE","Down",0,0
+"100 vs Veh","CE","Up",2,2
+"100 vs Veh","Cer","Down",0,0
+"100 vs Veh","Cer","Up",4,4
 "100 vs Veh","DG","Down",2,-2
 "100 vs Veh","DG","Up",1,1
-"100 vs Veh","DG ether","Down",0,0
-"100 vs Veh","DG ether","Up",0,0
 "100 vs Veh","LPC","Down",0,0
 "100 vs Veh","LPC","Up",0,0
 "100 vs Veh","LPE","Down",0,0
 "100 vs Veh","LPE","Up",0,0
-"100 vs Veh","Other","Down",0,0
-"100 vs Veh","Other","Up",6,6
+"100 vs Veh","Oxidized PC","Down",0,0
+"100 vs Veh","Oxidized PC","Up",0,0
 "100 vs Veh","PC","Down",2,-2
 "100 vs Veh","PC","Up",1,1
 "100 vs Veh","PC ether","Down",0,0
@@ -27,20 +29,24 @@
 "100 vs Veh","PI ether","Up",0,0
 "100 vs Veh","PS","Down",0,0
 "100 vs Veh","PS","Up",0,0
+"100 vs Veh","SM","Down",0,0
+"100 vs Veh","SM","Up",0,0
 "100 vs Veh","TG","Down",0,0
 "100 vs Veh","TG","Up",0,0
 "200 vs Veh","CAR","Down",0,0
 "200 vs Veh","CAR","Up",0,0
+"200 vs Veh","CE","Down",0,0
+"200 vs Veh","CE","Up",0,0
+"200 vs Veh","Cer","Down",0,0
+"200 vs Veh","Cer","Up",0,0
 "200 vs Veh","DG","Down",6,-6
 "200 vs Veh","DG","Up",1,1
-"200 vs Veh","DG ether","Down",0,0
-"200 vs Veh","DG ether","Up",0,0
 "200 vs Veh","LPC","Down",0,0
 "200 vs Veh","LPC","Up",2,2
 "200 vs Veh","LPE","Down",0,0
 "200 vs Veh","LPE","Up",0,0
-"200 vs Veh","Other","Down",0,0
-"200 vs Veh","Other","Up",1,1
+"200 vs Veh","Oxidized PC","Down",0,0
+"200 vs Veh","Oxidized PC","Up",0,0
 "200 vs Veh","PC","Down",1,-1
 "200 vs Veh","PC","Up",1,1
 "200 vs Veh","PC ether","Down",0,0
@@ -57,5 +63,7 @@
 "200 vs Veh","PI ether","Up",0,0
 "200 vs Veh","PS","Down",0,0
 "200 vs Veh","PS","Up",0,0
+"200 vs Veh","SM","Down",0,0
+"200 vs Veh","SM","Up",0,0
 "200 vs Veh","TG","Down",0,0
-"200 vs Veh","TG","Up",0,0
+"200 vs Veh","TG","Up",1,1
