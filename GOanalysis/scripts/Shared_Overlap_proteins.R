@@ -15,10 +15,10 @@ library(paletteer)
 # 1. USER INPUTS
 # =========================================================
 
-up_file  <- "Proteomic_Figs/Overlap_100uM_vs_200uM/down_100uM_only.csv"
+up_file  <- "Proteomic_Figs/Overlap_100uM_vs_200uM/shared_down_100uM_200uM.csv"
 all_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr_all.csv"
 
-contrast_name <- "down_100uM_only"
+contrast_name <- "shared_down_100uM_200uM"
 
 out_dir <- file.path(
   "GOanalysis/output/clusterProfiler/OverlapSharedproteins/",

@@ -15,8 +15,8 @@ library(paletteer)
 # =========================================================
 
 # Use your uploaded files directly
-up_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr_up.csv"
-all_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr_all.csv"
+up_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_200_atRAL5hr_down.csv"
+all_file <- "Proteomic_output_txts/PANGEA_exports/RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_200_atRAL5hr_all.csv"
 
 # A short name for titles/output
 contrast_name <- tools::file_path_sans_ext(basename(up_file))
@@ -30,11 +30,11 @@ dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 # Enrichment settings
 pvalue_cutoff <- 0.3
 qvalue_cutoff <- 0.3
-min_gs_size <- 10
+min_gs_size <- 3
 max_gs_size <- 700
 
 # Simplify settings
-simplify_cutoff <- 0.7
+simplify_cutoff <- 0.9
 
 # Optional manual filtering of enriched terms for a cleaner plot
 use_manual_filter <- TRUE

@@ -247,6 +247,7 @@ p_upset_all <- ComplexUpset::upset(
   min_size = 1,
   n_intersections = 10,
   width_ratio = 0.18,
+  
   base_annotations = list(
     "Intersection size" = ComplexUpset::intersection_size(
       counts = TRUE
@@ -433,7 +434,7 @@ p_cv_box <- ggplot(
     color = "grey45",
     linewidth = 0.35
   ) +
-  theme_bw() +
+  theme_bw(base_size=16) +
   theme(
     panel.grid.major.x = element_blank(),
     panel.grid.minor = element_blank(),
@@ -491,7 +492,7 @@ p_cv_violin <- ggplot(
     color = "grey45",
     linewidth = 0.35
   ) +
-  theme_bw() +
+  theme_bw(base_size=16) +
   theme(
     panel.grid.major.x = element_blank(),
     panel.grid.minor = element_blank(),
@@ -541,7 +542,7 @@ p_cv_density <- ggplot(
     color = "grey45",
     linewidth = 0.35
   ) +
-  theme_bw() +
+  theme_bw(base_size = 14) +
   theme(
     panel.grid.minor = element_blank(),
     plot.title = element_text(face = "bold", hjust = 0.5)
@@ -595,7 +596,7 @@ p_detection_counts <- ggplot(
   aes(x = Condition, y = n_proteins_detected)
 ) +
   geom_col(width = 0.7) +
-  theme_bw() +
+  theme_bw(base_size=16) +
   theme(
     panel.grid.major.x = element_blank(),
     panel.grid.minor = element_blank(),
