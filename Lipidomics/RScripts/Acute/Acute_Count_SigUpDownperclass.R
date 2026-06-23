@@ -37,6 +37,9 @@ out_grouped_png <- file.path(out_dir, "Acute_lipid_class_up_down_grouped_bar.png
 out_lollipop_pdf <- file.path(out_dir, "Acute_lipid_class_up_down_lollipop.pdf")
 out_lollipop_png <- file.path(out_dir, "Acute_lipid_class_up_down_lollipop.png")
 
+out_main_pdf <- file.path(out_dir, "Acute_lipid_class_direction_counts_main_text.pdf")
+out_main_png <- file.path(out_dir, "Acute_lipid_class_direction_counts_main_text.png")
+
 # ---------------------------------------------------------
 # 2. READ DATA
 # ---------------------------------------------------------
@@ -295,7 +298,70 @@ ggsave(out_lollipop_pdf, p_lollipop, width = 9, height = 7)
 ggsave(out_lollipop_png, p_lollipop, width = 9, height = 7, dpi = 300)
 
 # ---------------------------------------------------------
-# 10. CONSOLE SUMMARY
+# 10. MAIN TEXT FIGURE
+# ---------------------------------------------------------
+# This version removes zero-count classes and uses signed horizontal bars,
+# which makes direction, dose, and lipid class readable in a compact panel.
+count_main <- count_long %>%
+  group_by(Class) %>%
+  mutate(ClassTotal = sum(Count)) %>%
+  ungroup() %>%
+  filter(ClassTotal > 0, Count > 0) %>%
+  mutate(
+    Contrast = factor(Contrast, levels = c("100 vs Veh", "200 vs Veh")),
+    Class = fct_reorder(Class, ClassTotal, .desc = FALSE)
+  )
+
+main_x_limit <- max(abs(count_main$SignedCount), na.rm = TRUE) + 0.8
+
+p_main <- ggplot(count_main, aes(x = SignedCount, y = Class, fill = Direction)) +
+  geom_vline(xintercept = 0, color = "grey35", linewidth = 0.45) +
+  geom_col(width = 0.62, color = "white", linewidth = 0.25) +
+  geom_text(
+    aes(
+      x = SignedCount + if_else(SignedCount > 0, 0.18, -0.18),
+      label = Count,
+      hjust = if_else(SignedCount > 0, 0, 1)
+    ),
+    size = 3.1,
+    color = "grey15"
+  ) +
+  facet_wrap(~ Contrast, nrow = 1) +
+  scale_fill_manual(values = direction_colors) +
+  scale_x_continuous(
+    limits = c(-main_x_limit, main_x_limit),
+    breaks = seq(-floor(main_x_limit), floor(main_x_limit), by = 2),
+    labels = function(x) abs(x),
+    expand = expansion(mult = c(0, 0))
+  ) +
+  coord_cartesian(clip = "off") +
+  theme_classic(base_size = 14) +
+  theme(
+    legend.position = "top",
+    legend.title = element_blank(),
+    strip.background = element_blank(),
+    strip.text = element_text(face = "bold", size = 14),
+    axis.line.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_text(color = "grey15"),
+    axis.text.x = element_text(color = "grey20"),
+    panel.spacing.x = unit(0.7, "lines"),
+    plot.title = element_text(face = "bold", size = 12, hjust = 0),
+    plot.margin = margin(6, 16, 6, 6)
+  ) +
+  labs(
+    title = "Significantly changed lipid classes after acute atRAL treatment",
+    x = "Number of significant lipids",
+    y = NULL
+  )
+
+print(p_main)
+
+ggsave(out_main_pdf, p_main, width = 6.8, height = 3.8, useDingbats = FALSE)
+ggsave(out_main_png, p_main, width = 6.8, height = 3.8, dpi = 900)
+
+# ---------------------------------------------------------
+# 11. CONSOLE SUMMARY
 # ---------------------------------------------------------
 cat("\nSaved files:\n")
 cat(out_counts_csv, "\n")
@@ -306,3 +372,5 @@ cat(out_grouped_pdf, "\n")
 cat(out_grouped_png, "\n")
 cat(out_lollipop_pdf, "\n")
 cat(out_lollipop_png, "\n")
+cat(out_main_pdf, "\n")
+cat(out_main_png, "\n")
