@@ -31,6 +31,7 @@ group_sample_cols <- list(
 )
 
 key_lipid_classes <- c("TG", "DG", "CE", "Cer", "PE", "PC", "PS")
+dbe_heatmap_lipid_classes <- c("TG", "DG", "CE", "PE", "PC", "PS")
 all_lipid_classes <- c("CAR", "CE", "Cer", "DG", "LPC", "LPE", "PC", "PE", "PG", "PI", "PS", "SM", "TG")
 
 out_long_csv <- file.path(out_dir, "Recovery_DBE_composition_distinct_precursors_long.csv")
@@ -296,7 +297,7 @@ make_delta_heatmap <- function(delta_df, title, subtitle) {
       legend.text = element_text(size = 8),
       axis.title = element_blank(),
       axis.text.x = element_text(color = "grey15"),
-      axis.text.y = element_text(color = "grey15"),
+      axis.text.y = element_text(color = "black"),
       panel.grid = element_blank(),
       panel.spacing.x = unit(0.6, "lines"),
       strip.background = element_rect(fill = "grey92", color = NA),
@@ -339,27 +340,27 @@ genotype_comparisons <- tibble::tribble(
 
 all_comparisons <- bind_rows(within_comparisons, genotype_comparisons)
 
-fisher_results <- run_fisher_tests(dbe_summary, all_comparisons, key_lipid_classes)
+fisher_results <- run_fisher_tests(dbe_summary, all_comparisons, dbe_heatmap_lipid_classes)
 write.csv(fisher_results, out_fisher_csv, row.names = FALSE)
 
-within_delta <- build_delta_table(dbe_summary, within_comparisons, key_lipid_classes) |>
+within_delta <- build_delta_table(dbe_summary, within_comparisons, dbe_heatmap_lipid_classes) |>
   left_join(
     fisher_results |> select(Comparison, lipid_class, p_value, p_adj_BH, significance),
     by = c("Comparison", "lipid_class")
   ) |>
   mutate(
-    lipid_class = factor(lipid_class, levels = rev(key_lipid_classes)),
+    lipid_class = factor(lipid_class, levels = rev(dbe_heatmap_lipid_classes)),
     unsat_class = factor(unsat_class, levels = c("SFA", "MUFA", "PUFA")),
     Comparison = factor(Comparison, levels = within_comparisons$Comparison)
   )
 
-genotype_delta <- build_delta_table(dbe_summary, genotype_comparisons, key_lipid_classes) |>
+genotype_delta <- build_delta_table(dbe_summary, genotype_comparisons, dbe_heatmap_lipid_classes) |>
   left_join(
     fisher_results |> select(Comparison, lipid_class, p_value, p_adj_BH, significance),
     by = c("Comparison", "lipid_class")
   ) |>
   mutate(
-    lipid_class = factor(lipid_class, levels = rev(key_lipid_classes)),
+    lipid_class = factor(lipid_class, levels = rev(dbe_heatmap_lipid_classes)),
     unsat_class = factor(unsat_class, levels = c("SFA", "MUFA", "PUFA")),
     Comparison = factor(Comparison, levels = genotype_comparisons$Comparison)
   )

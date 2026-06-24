@@ -1,253 +1,325 @@
-"Contrast","Class","Direction","EnrichedIn","Count","UpGroup","DownGroup","UpLabel","DownLabel","SignedCount"
-"RDH12 100 vs RDH12 Veh","CE","Down","RDH12 Veh",1,"RDH12 100","RDH12 Veh","RDH12 100","RDH12 Veh",-1
-"RDH12 100 vs RDH12 Veh","CE","Up","RDH12 100",1,"RDH12 100","RDH12 Veh","RDH12 100","RDH12 Veh",1
-"RDH12 100 vs RDH12 Veh","Cer","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","Cer","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","DG","Down","RDH12 Veh",1,"RDH12 100","RDH12 Veh","RDH12 100","RDH12 Veh",-1
-"RDH12 100 vs RDH12 Veh","DG","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","LPC","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","LPC","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","LPE","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","LPE","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","Other","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","Other","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","Oxidized PC","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","Oxidized PC","Up","RDH12 100",1,"RDH12 100","RDH12 Veh","RDH12 100","RDH12 Veh",1
-"RDH12 100 vs RDH12 Veh","PC","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PC","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PC ether","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PC ether","Up","RDH12 100",2,"RDH12 100","RDH12 Veh","RDH12 100","RDH12 Veh",2
-"RDH12 100 vs RDH12 Veh","PE","Down","RDH12 Veh",2,"RDH12 100","RDH12 Veh","RDH12 100","RDH12 Veh",-2
-"RDH12 100 vs RDH12 Veh","PE","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PE ether","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PE ether","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PG","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PG","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PI","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PI","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PI ether","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PI ether","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PS","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PS","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PS ether","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","PS ether","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","SM","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","SM","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","TG","Down","RDH12 Veh",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs RDH12 Veh","TG","Up","RDH12 100",0,NA,NA,"RDH12 100","RDH12 Veh",0
-"RDH12 100 vs WT 100","CE","Down","WT 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",-1
-"RDH12 100 vs WT 100","CE","Up","RDH12 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",1
-"RDH12 100 vs WT 100","Cer","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","Cer","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","DG","Down","WT 100",5,"RDH12 100","WT 100","RDH12 100","WT 100",-5
-"RDH12 100 vs WT 100","DG","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","LPC","Down","WT 100",2,"RDH12 100","WT 100","RDH12 100","WT 100",-2
-"RDH12 100 vs WT 100","LPC","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","LPE","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","LPE","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","Other","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","Other","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","Oxidized PC","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","Oxidized PC","Up","RDH12 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",1
-"RDH12 100 vs WT 100","PC","Down","WT 100",5,"RDH12 100","WT 100","RDH12 100","WT 100",-5
-"RDH12 100 vs WT 100","PC","Up","RDH12 100",8,"RDH12 100","WT 100","RDH12 100","WT 100",8
-"RDH12 100 vs WT 100","PC ether","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PC ether","Up","RDH12 100",14,"RDH12 100","WT 100","RDH12 100","WT 100",14
-"RDH12 100 vs WT 100","PE","Down","WT 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",-1
-"RDH12 100 vs WT 100","PE","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PE ether","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PE ether","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PG","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PG","Up","RDH12 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",1
-"RDH12 100 vs WT 100","PI","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PI","Up","RDH12 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",1
-"RDH12 100 vs WT 100","PI ether","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PI ether","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PS","Down","WT 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",-1
-"RDH12 100 vs WT 100","PS","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PS ether","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","PS ether","Up","RDH12 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","SM","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","SM","Up","RDH12 100",1,"RDH12 100","WT 100","RDH12 100","WT 100",1
-"RDH12 100 vs WT 100","TG","Down","WT 100",0,NA,NA,"RDH12 100","WT 100",0
-"RDH12 100 vs WT 100","TG","Up","RDH12 100",4,"RDH12 100","WT 100","RDH12 100","WT 100",4
-"RDH12 200 vs RDH12 Veh","CE","Down","RDH12 Veh",1,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",-1
-"RDH12 200 vs RDH12 Veh","CE","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","Cer","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","Cer","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","DG","Down","RDH12 Veh",10,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",-10
-"RDH12 200 vs RDH12 Veh","DG","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","LPC","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","LPC","Up","RDH12 200",2,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",2
-"RDH12 200 vs RDH12 Veh","LPE","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","LPE","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","Other","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","Other","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","Oxidized PC","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","Oxidized PC","Up","RDH12 200",2,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",2
-"RDH12 200 vs RDH12 Veh","PC","Down","RDH12 Veh",1,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",-1
-"RDH12 200 vs RDH12 Veh","PC","Up","RDH12 200",11,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",11
-"RDH12 200 vs RDH12 Veh","PC ether","Down","RDH12 Veh",1,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",-1
-"RDH12 200 vs RDH12 Veh","PC ether","Up","RDH12 200",10,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",10
-"RDH12 200 vs RDH12 Veh","PE","Down","RDH12 Veh",2,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",-2
-"RDH12 200 vs RDH12 Veh","PE","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PE ether","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PE ether","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PG","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PG","Up","RDH12 200",1,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",1
-"RDH12 200 vs RDH12 Veh","PI","Down","RDH12 Veh",2,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",-2
-"RDH12 200 vs RDH12 Veh","PI","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PI ether","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PI ether","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PS","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PS","Up","RDH12 200",1,"RDH12 200","RDH12 Veh","RDH12 200","RDH12 Veh",1
-"RDH12 200 vs RDH12 Veh","PS ether","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","PS ether","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","SM","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","SM","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","TG","Down","RDH12 Veh",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs RDH12 Veh","TG","Up","RDH12 200",0,NA,NA,"RDH12 200","RDH12 Veh",0
-"RDH12 200 vs WT 200","CE","Down","WT 200",3,"RDH12 200","WT 200","RDH12 200","WT 200",-3
-"RDH12 200 vs WT 200","CE","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","Cer","Down","WT 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",-1
-"RDH12 200 vs WT 200","Cer","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","DG","Down","WT 200",30,"RDH12 200","WT 200","RDH12 200","WT 200",-30
-"RDH12 200 vs WT 200","DG","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","LPC","Down","WT 200",6,"RDH12 200","WT 200","RDH12 200","WT 200",-6
-"RDH12 200 vs WT 200","LPC","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","LPE","Down","WT 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","LPE","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","Other","Down","WT 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",-1
-"RDH12 200 vs WT 200","Other","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","Oxidized PC","Down","WT 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","Oxidized PC","Up","RDH12 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",1
-"RDH12 200 vs WT 200","PC","Down","WT 200",2,"RDH12 200","WT 200","RDH12 200","WT 200",-2
-"RDH12 200 vs WT 200","PC","Up","RDH12 200",16,"RDH12 200","WT 200","RDH12 200","WT 200",16
-"RDH12 200 vs WT 200","PC ether","Down","WT 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",-1
-"RDH12 200 vs WT 200","PC ether","Up","RDH12 200",24,"RDH12 200","WT 200","RDH12 200","WT 200",24
-"RDH12 200 vs WT 200","PE","Down","WT 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",-1
-"RDH12 200 vs WT 200","PE","Up","RDH12 200",7,"RDH12 200","WT 200","RDH12 200","WT 200",7
-"RDH12 200 vs WT 200","PE ether","Down","WT 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","PE ether","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","PG","Down","WT 200",2,"RDH12 200","WT 200","RDH12 200","WT 200",-2
-"RDH12 200 vs WT 200","PG","Up","RDH12 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",1
-"RDH12 200 vs WT 200","PI","Down","WT 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","PI","Up","RDH12 200",4,"RDH12 200","WT 200","RDH12 200","WT 200",4
-"RDH12 200 vs WT 200","PI ether","Down","WT 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","PI ether","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","PS","Down","WT 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",-1
-"RDH12 200 vs WT 200","PS","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","PS ether","Down","WT 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","PS ether","Up","RDH12 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","SM","Down","WT 200",0,NA,NA,"RDH12 200","WT 200",0
-"RDH12 200 vs WT 200","SM","Up","RDH12 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",1
-"RDH12 200 vs WT 200","TG","Down","WT 200",5,"RDH12 200","WT 200","RDH12 200","WT 200",-5
-"RDH12 200 vs WT 200","TG","Up","RDH12 200",1,"RDH12 200","WT 200","RDH12 200","WT 200",1
-"RDH12 Veh vs WT Veh","CE","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","CE","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","Cer","Down","WT Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-1
-"RDH12 Veh vs WT Veh","Cer","Up","RDH12 Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",1
-"RDH12 Veh vs WT Veh","DG","Down","WT Veh",13,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-13
-"RDH12 Veh vs WT Veh","DG","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","LPC","Down","WT Veh",2,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-2
-"RDH12 Veh vs WT Veh","LPC","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","LPE","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","LPE","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","Other","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","Other","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","Oxidized PC","Down","WT Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-1
-"RDH12 Veh vs WT Veh","Oxidized PC","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PC","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PC","Up","RDH12 Veh",13,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",13
-"RDH12 Veh vs WT Veh","PC ether","Down","WT Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-1
-"RDH12 Veh vs WT Veh","PC ether","Up","RDH12 Veh",22,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",22
-"RDH12 Veh vs WT Veh","PE","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PE","Up","RDH12 Veh",4,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",4
-"RDH12 Veh vs WT Veh","PE ether","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PE ether","Up","RDH12 Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",1
-"RDH12 Veh vs WT Veh","PG","Down","WT Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-1
-"RDH12 Veh vs WT Veh","PG","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PI","Down","WT Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-1
-"RDH12 Veh vs WT Veh","PI","Up","RDH12 Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",1
-"RDH12 Veh vs WT Veh","PI ether","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PI ether","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PS","Down","WT Veh",4,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-4
-"RDH12 Veh vs WT Veh","PS","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PS ether","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","PS ether","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","SM","Down","WT Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"RDH12 Veh vs WT Veh","SM","Up","RDH12 Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",1
-"RDH12 Veh vs WT Veh","TG","Down","WT Veh",1,"RDH12 Veh","WT Veh","RDH12 Veh","WT Veh",-1
-"RDH12 Veh vs WT Veh","TG","Up","RDH12 Veh",0,NA,NA,"RDH12 Veh","WT Veh",0
-"WT 100 vs WT Veh","CE","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","CE","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","Cer","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","Cer","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","DG","Down","WT Veh",4,"WT 100","WT Veh","WT 100","WT Veh",-4
-"WT 100 vs WT Veh","DG","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","LPC","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","LPC","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","LPE","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","LPE","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","Other","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","Other","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","Oxidized PC","Down","WT Veh",2,"WT 100","WT Veh","WT 100","WT Veh",-2
-"WT 100 vs WT Veh","Oxidized PC","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PC","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PC","Up","WT 100",3,"WT 100","WT Veh","WT 100","WT Veh",3
-"WT 100 vs WT Veh","PC ether","Down","WT Veh",1,"WT 100","WT Veh","WT 100","WT Veh",-1
-"WT 100 vs WT Veh","PC ether","Up","WT 100",8,"WT 100","WT Veh","WT 100","WT Veh",8
-"WT 100 vs WT Veh","PE","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PE","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PE ether","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PE ether","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PG","Down","WT Veh",2,"WT 100","WT Veh","WT 100","WT Veh",-2
-"WT 100 vs WT Veh","PG","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PI","Down","WT Veh",1,"WT 100","WT Veh","WT 100","WT Veh",-1
-"WT 100 vs WT Veh","PI","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PI ether","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PI ether","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PS","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PS","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PS ether","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","PS ether","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","SM","Down","WT Veh",0,NA,NA,"WT 100","WT Veh",0
-"WT 100 vs WT Veh","SM","Up","WT 100",2,"WT 100","WT Veh","WT 100","WT Veh",2
-"WT 100 vs WT Veh","TG","Down","WT Veh",1,"WT 100","WT Veh","WT 100","WT Veh",-1
-"WT 100 vs WT Veh","TG","Up","WT 100",0,NA,NA,"WT 100","WT Veh",0
-"WT 200 vs WT Veh","CE","Down","WT Veh",1,"WT 200","WT Veh","WT 200","WT Veh",-1
-"WT 200 vs WT Veh","CE","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","Cer","Down","WT Veh",1,"WT 200","WT Veh","WT 200","WT Veh",-1
-"WT 200 vs WT Veh","Cer","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","DG","Down","WT Veh",2,"WT 200","WT Veh","WT 200","WT Veh",-2
-"WT 200 vs WT Veh","DG","Up","WT 200",1,"WT 200","WT Veh","WT 200","WT Veh",1
-"WT 200 vs WT Veh","LPC","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","LPC","Up","WT 200",4,"WT 200","WT Veh","WT 200","WT Veh",4
-"WT 200 vs WT Veh","LPE","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","LPE","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","Other","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","Other","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","Oxidized PC","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","Oxidized PC","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PC","Down","WT Veh",1,"WT 200","WT Veh","WT 200","WT Veh",-1
-"WT 200 vs WT Veh","PC","Up","WT 200",3,"WT 200","WT Veh","WT 200","WT Veh",3
-"WT 200 vs WT Veh","PC ether","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PC ether","Up","WT 200",2,"WT 200","WT Veh","WT 200","WT Veh",2
-"WT 200 vs WT Veh","PE","Down","WT Veh",4,"WT 200","WT Veh","WT 200","WT Veh",-4
-"WT 200 vs WT Veh","PE","Up","WT 200",1,"WT 200","WT Veh","WT 200","WT Veh",1
-"WT 200 vs WT Veh","PE ether","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PE ether","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PG","Down","WT Veh",1,"WT 200","WT Veh","WT 200","WT Veh",-1
-"WT 200 vs WT Veh","PG","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PI","Down","WT Veh",7,"WT 200","WT Veh","WT 200","WT Veh",-7
-"WT 200 vs WT Veh","PI","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PI ether","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PI ether","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PS","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PS","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PS ether","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","PS ether","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","SM","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","SM","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","TG","Down","WT Veh",0,NA,NA,"WT 200","WT Veh",0
-"WT 200 vs WT Veh","TG","Up","WT 200",0,NA,NA,"WT 200","WT Veh",0
+"ContrastID","Contrast","ComparisonType","Class","Direction","EnrichedIn","Count","SignedCount"
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","CE","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","CE","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","Cer","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","Cer","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","DG","Down","WT EtOH",4,-4
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","DG","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","LPC","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","LPC","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","LPE","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","LPE","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","Other","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","Other","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","Oxidized PC","Down","WT EtOH",2,-2
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","Oxidized PC","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PC","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PC","Up","WT 100",3,3
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PC ether","Down","WT EtOH",1,-1
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PC ether","Up","WT 100",8,8
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PE","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PE","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PE ether","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PE ether","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PG","Down","WT EtOH",2,-2
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PG","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PI","Down","WT EtOH",1,-1
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PI","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PI ether","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PI ether","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PS","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PS","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PS ether","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","PS ether","Up","WT 100",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","SM","Down","WT EtOH",0,0
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","SM","Up","WT 100",2,2
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","TG","Down","WT EtOH",1,-1
+"Control_100_vs_Control_Veh","WT 100 vs WT EtOH","Within genotype","TG","Up","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","CE","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","CE","Up","WT 200",1,1
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","Cer","Down","WT 100",1,-1
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","Cer","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","DG","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","DG","Up","WT 200",6,6
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","LPC","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","LPC","Up","WT 200",2,2
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","LPE","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","LPE","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","Other","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","Other","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","Oxidized PC","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","Oxidized PC","Up","WT 200",2,2
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PC","Down","WT 100",4,-4
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PC","Up","WT 200",3,3
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PC ether","Down","WT 100",7,-7
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PC ether","Up","WT 200",4,4
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PE","Down","WT 100",7,-7
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PE","Up","WT 200",1,1
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PE ether","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PE ether","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PG","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PG","Up","WT 200",2,2
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PI","Down","WT 100",4,-4
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PI","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PI ether","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PI ether","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PS","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PS","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PS ether","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","PS ether","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","SM","Down","WT 100",5,-5
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","SM","Up","WT 200",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","TG","Down","WT 100",0,0
+"Control_200_vs_Control_100","WT 200 vs WT 100","Dose-to-dose context","TG","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","CE","Down","WT EtOH",1,-1
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","CE","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","Cer","Down","WT EtOH",1,-1
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","Cer","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","DG","Down","WT EtOH",2,-2
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","DG","Up","WT 200",1,1
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","LPC","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","LPC","Up","WT 200",4,4
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","LPE","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","LPE","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","Other","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","Other","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","Oxidized PC","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","Oxidized PC","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PC","Down","WT EtOH",1,-1
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PC","Up","WT 200",3,3
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PC ether","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PC ether","Up","WT 200",2,2
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PE","Down","WT EtOH",4,-4
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PE","Up","WT 200",1,1
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PE ether","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PE ether","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PG","Down","WT EtOH",1,-1
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PG","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PI","Down","WT EtOH",7,-7
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PI","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PI ether","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PI ether","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PS","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PS","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PS ether","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","PS ether","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","SM","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","SM","Up","WT 200",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","TG","Down","WT EtOH",0,0
+"Control_200_vs_Control_Veh","WT 200 vs WT EtOH","Within genotype","TG","Up","WT 200",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","CE","Down","WT 100",1,-1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","CE","Up","RDH12 100",1,1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","Cer","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","Cer","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","DG","Down","WT 100",5,-5
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","DG","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","LPC","Down","WT 100",2,-2
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","LPC","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","LPE","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","LPE","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","Other","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","Other","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","Oxidized PC","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","Oxidized PC","Up","RDH12 100",1,1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PC","Down","WT 100",5,-5
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PC","Up","RDH12 100",8,8
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PC ether","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PC ether","Up","RDH12 100",14,14
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PE","Down","WT 100",1,-1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PE","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PE ether","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PE ether","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PG","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PG","Up","RDH12 100",1,1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PI","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PI","Up","RDH12 100",1,1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PI ether","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PI ether","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PS","Down","WT 100",1,-1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PS","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PS ether","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","PS ether","Up","RDH12 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","SM","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","SM","Up","RDH12 100",1,1
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","TG","Down","WT 100",0,0
+"RDH12_100_vs_Control_100","RDH12 100 vs WT 100","RDH12 vs WT matched dose","TG","Up","RDH12 100",4,4
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","CE","Down","RDH12 EtOH",1,-1
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","CE","Up","RDH12 100",1,1
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","Cer","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","Cer","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","DG","Down","RDH12 EtOH",1,-1
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","DG","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","LPC","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","LPC","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","LPE","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","LPE","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","Other","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","Other","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","Oxidized PC","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","Oxidized PC","Up","RDH12 100",1,1
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PC","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PC","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PC ether","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PC ether","Up","RDH12 100",2,2
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PE","Down","RDH12 EtOH",2,-2
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PE","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PE ether","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PE ether","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PG","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PG","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PI","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PI","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PI ether","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PI ether","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PS","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PS","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PS ether","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","PS ether","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","SM","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","SM","Up","RDH12 100",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","TG","Down","RDH12 EtOH",0,0
+"RDH12_100_vs_RDH12_Veh","RDH12 100 vs RDH12 EtOH","Within genotype","TG","Up","RDH12 100",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","CE","Down","WT 200",3,-3
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","CE","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","Cer","Down","WT 200",1,-1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","Cer","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","DG","Down","WT 200",30,-30
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","DG","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","LPC","Down","WT 200",6,-6
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","LPC","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","LPE","Down","WT 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","LPE","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","Other","Down","WT 200",1,-1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","Other","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","Oxidized PC","Down","WT 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","Oxidized PC","Up","RDH12 200",1,1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PC","Down","WT 200",2,-2
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PC","Up","RDH12 200",16,16
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PC ether","Down","WT 200",1,-1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PC ether","Up","RDH12 200",24,24
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PE","Down","WT 200",1,-1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PE","Up","RDH12 200",7,7
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PE ether","Down","WT 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PE ether","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PG","Down","WT 200",2,-2
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PG","Up","RDH12 200",1,1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PI","Down","WT 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PI","Up","RDH12 200",4,4
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PI ether","Down","WT 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PI ether","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PS","Down","WT 200",1,-1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PS","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PS ether","Down","WT 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","PS ether","Up","RDH12 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","SM","Down","WT 200",0,0
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","SM","Up","RDH12 200",1,1
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","TG","Down","WT 200",5,-5
+"RDH12_200_vs_Control_200","RDH12 200 vs WT 200","RDH12 vs WT matched dose","TG","Up","RDH12 200",1,1
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","CE","Down","RDH12 100",1,-1
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","CE","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","Cer","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","Cer","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","DG","Down","RDH12 100",2,-2
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","DG","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","LPC","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","LPC","Up","RDH12 200",1,1
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","LPE","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","LPE","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","Other","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","Other","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","Oxidized PC","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","Oxidized PC","Up","RDH12 200",1,1
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PC","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PC","Up","RDH12 200",7,7
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PC ether","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PC ether","Up","RDH12 200",5,5
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PE","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PE","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PE ether","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PE ether","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PG","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PG","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PI","Down","RDH12 100",1,-1
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PI","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PI ether","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PI ether","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PS","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PS","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PS ether","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","PS ether","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","SM","Down","RDH12 100",2,-2
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","SM","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","TG","Down","RDH12 100",0,0
+"RDH12_200_vs_RDH12_100","RDH12 200 vs RDH12 100","Dose-to-dose context","TG","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","CE","Down","RDH12 EtOH",1,-1
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","CE","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","Cer","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","Cer","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","DG","Down","RDH12 EtOH",10,-10
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","DG","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","LPC","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","LPC","Up","RDH12 200",2,2
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","LPE","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","LPE","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","Other","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","Other","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","Oxidized PC","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","Oxidized PC","Up","RDH12 200",2,2
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PC","Down","RDH12 EtOH",1,-1
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PC","Up","RDH12 200",11,11
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PC ether","Down","RDH12 EtOH",1,-1
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PC ether","Up","RDH12 200",10,10
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PE","Down","RDH12 EtOH",2,-2
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PE","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PE ether","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PE ether","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PG","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PG","Up","RDH12 200",1,1
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PI","Down","RDH12 EtOH",2,-2
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PI","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PI ether","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PI ether","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PS","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PS","Up","RDH12 200",1,1
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PS ether","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","PS ether","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","SM","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","SM","Up","RDH12 200",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","TG","Down","RDH12 EtOH",0,0
+"RDH12_200_vs_RDH12_Veh","RDH12 200 vs RDH12 EtOH","Within genotype","TG","Up","RDH12 200",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","CE","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","CE","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","Cer","Down","WT EtOH",1,-1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","Cer","Up","RDH12 EtOH",1,1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","DG","Down","WT EtOH",13,-13
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","DG","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","LPC","Down","WT EtOH",2,-2
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","LPC","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","LPE","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","LPE","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","Other","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","Other","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","Oxidized PC","Down","WT EtOH",1,-1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","Oxidized PC","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PC","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PC","Up","RDH12 EtOH",13,13
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PC ether","Down","WT EtOH",1,-1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PC ether","Up","RDH12 EtOH",22,22
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PE","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PE","Up","RDH12 EtOH",4,4
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PE ether","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PE ether","Up","RDH12 EtOH",1,1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PG","Down","WT EtOH",1,-1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PG","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PI","Down","WT EtOH",1,-1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PI","Up","RDH12 EtOH",1,1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PI ether","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PI ether","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PS","Down","WT EtOH",4,-4
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PS","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PS ether","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","PS ether","Up","RDH12 EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","SM","Down","WT EtOH",0,0
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","SM","Up","RDH12 EtOH",1,1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","TG","Down","WT EtOH",1,-1
+"RDH12_Veh_vs_Control_Veh","RDH12 EtOH vs WT EtOH","RDH12 vs WT matched dose","TG","Up","RDH12 EtOH",0,0

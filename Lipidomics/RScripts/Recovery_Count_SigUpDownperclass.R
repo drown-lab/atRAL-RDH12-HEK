@@ -157,7 +157,7 @@ make_diverging_plot <- function(count_df, title, subtitle = NULL, ncol = 2) {
         label = Count,
         hjust = if_else(SignedCount > 0, 0, 1)
       ),
-      size = 2.9,
+      size = 4,
       color = "grey15"
     ) +
     facet_wrap(~ Contrast, ncol = ncol) +
@@ -168,7 +168,7 @@ make_diverging_plot <- function(count_df, title, subtitle = NULL, ncol = 2) {
       expand = expansion(mult = c(0, 0))
     ) +
     coord_cartesian(clip = "off") +
-    theme_classic(base_size = 11) +
+    theme_classic(base_size = 14) +
     theme(
       legend.position = "top",
       legend.title = element_blank(),
@@ -176,7 +176,7 @@ make_diverging_plot <- function(count_df, title, subtitle = NULL, ncol = 2) {
       strip.text = element_text(face = "bold", size = 10),
       axis.line.y = element_blank(),
       axis.ticks.y = element_blank(),
-      axis.text.y = element_text(color = "grey15"),
+      axis.text.y = element_text(color = "black"),
       axis.text.x = element_text(color = "grey20"),
       panel.spacing = unit(0.7, "lines"),
       plot.title = element_text(face = "bold", size = 12, hjust = 0),
@@ -260,8 +260,8 @@ p_supp <- make_diverging_plot(
   ncol = 3
 )
 
-ggsave(out_main_pdf, p_main, width = 7.2, height = 4.4, useDingbats = FALSE)
-ggsave(out_main_png, p_main, width = 7.2, height = 4.4, dpi = 900)
+ggsave(out_main_pdf, p_main, width = 8, height = 6, useDingbats = FALSE)
+ggsave(out_main_png, p_main, width = 8, height = 6, dpi = 900)
 ggsave(out_supp_pdf, p_supp, width = 9.2, height = 7.0, useDingbats = FALSE)
 ggsave(out_supp_png, p_supp, width = 9.2, height = 7.0, dpi = 600)
 
