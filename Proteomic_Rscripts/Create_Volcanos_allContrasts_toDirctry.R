@@ -25,14 +25,23 @@ library(stringr)
 # Assumes your main table is already in memory as:
 # DEPresults_v2
 
-favorite_IDs <- c("RDH12" , "CCN1", "USP46", "FOS", "SLC46A3", "NUDT8"
- ) 
+favorite_IDs <- c("MOCS3", "PAN2", "ZDHHC18", "HIF1AN", "POLD4")
 padj_cutoff  <- 0.01
 lfc_cutoff   <- log2(2)
-n_top_labels <- 8
+n_top_labels <- 5
+shared_x_axis_groups <- list(
+  acute_RDH12_vs_vehicle = c(
+    "RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr",
+    "RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr"
+  ),
+  recovery_RDH12_vs_vehicle = c(
+    "RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr",
+    "RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr"
+  )
+)
 
 # output folder
-out_dir <- "Proteomic_Figs/VolcanoPlots/StandardVolcano/"
+out_dir <- "Proteomic_Figs/VolcanoPlots/StandardVolcano2/"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 # optional png output too
@@ -72,6 +81,30 @@ format_padj_display <- function(x) {
 
 format_ratio_display <- function(x) {
   ifelse(is.na(x), NA_character_, sprintf("%.1f", round(x, 1)))
+}
+
+get_shared_x_limits <- function(df, contrasts, pad_fraction = 0.05) {
+  ratio_cols <- paste0(contrasts, "_ratio")
+  missing_cols <- setdiff(ratio_cols, colnames(df))
+  
+  if (length(missing_cols) > 0) {
+    stop(
+      "These required ratio columns are missing for shared x-axis limits:\n",
+      paste(missing_cols, collapse = "\n")
+    )
+  }
+  
+  ratios <- unlist(df[ratio_cols], use.names = FALSE)
+  ratios <- ratios[is.finite(ratios)]
+  
+  if (length(ratios) == 0) {
+    return(NULL)
+  }
+  
+  max_abs_ratio <- max(abs(ratios), na.rm = TRUE)
+  padded_limit <- max_abs_ratio * (1 + pad_fraction)
+  
+  c(-padded_limit, padded_limit)
 }
 
 # =========================================================
@@ -125,15 +158,27 @@ make_volcano_df_standard <- function(df,
       )
     )
   
-  top_hits <- out %>%
-    filter(!is.na(padj)) %>%
+  top_up_hits <- out %>%
+    filter(direction == "Up") %>%
     arrange(padj) %>%
     slice_head(n = n_top_labels) %>%
     pull(Gene)
   
+  top_down_hits <- out %>%
+    filter(direction == "Down") %>%
+    arrange(padj) %>%
+    slice_head(n = n_top_labels) %>%
+    pull(Gene)
+  
+  favorite_hits <- out %>%
+    filter(direction %in% c("Up", "Down"), Gene %in% favorite_IDs) %>%
+    pull(Gene)
+  
+  label_hits <- unique(c(top_up_hits, top_down_hits, favorite_hits))
+  
   out <- out %>%
     mutate(
-      label_base = if_else(Gene %in% c(top_hits, favorite_IDs), Gene, NA_character_),
+      label_base = if_else(Gene %in% label_hits, Gene, NA_character_),
       label = case_when(
         is.na(label_base) ~ NA_character_,
         include_values_in_labels ~ paste0(
@@ -154,9 +199,10 @@ make_volcano_df_standard <- function(df,
 plot_volcano_standard <- function(volcano_df,
                                   contrast,
                                   padj_cutoff = 0.01,
-                                  lfc_cutoff = log2(2)) {
+                                  lfc_cutoff = log2(2),
+                                  x_limits = NULL) {
   
-  ggplot(volcano_df, aes(x = ratio, y = -log10(padj_plot))) +
+  p <- ggplot(volcano_df, aes(x = ratio, y = -log10(padj_plot))) +
     geom_point(
       aes(color = direction),
       alpha = 0.75,
@@ -204,8 +250,8 @@ plot_volcano_standard <- function(volcano_df,
     ) +
     scale_color_manual(
       values = c(
-        "Up" = "purple",
-        "Down" = "#00B8B8",
+        "Up" = "red",
+        "Down" = "blue",
         "NS" = "grey70"
       ),
       drop = FALSE
@@ -217,6 +263,12 @@ plot_volcano_standard <- function(volcano_df,
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank()
     )
+  
+  if (!is.null(x_limits)) {
+    p <- p + coord_cartesian(xlim = x_limits)
+  }
+  
+  p
 }
 
 # =========================================================
@@ -232,7 +284,8 @@ save_all_standard_volcanoes <- function(df,
                                         width = 12,
                                         height = 10,
                                         save_png = FALSE,
-                                        include_values_in_labels = FALSE) {
+                                        include_values_in_labels = FALSE,
+                                        shared_x_axis_groups = list()) {
   
   dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
   
@@ -243,6 +296,30 @@ save_all_standard_volcanoes <- function(df,
   }
   
   message("Found ", length(contrasts), " contrasts.")
+  
+  shared_x_limits_by_contrast <- list()
+  
+  if (length(shared_x_axis_groups) > 0) {
+    for (group_name in names(shared_x_axis_groups)) {
+      group_contrasts <- shared_x_axis_groups[[group_name]]
+      group_x_limits <- get_shared_x_limits(df, group_contrasts)
+    
+      if (!is.null(group_x_limits)) {
+        message(
+          "Using shared x-axis limits for ",
+          group_name,
+          " (",
+          paste(group_contrasts, collapse = " and "),
+          "): ",
+          paste(round(group_x_limits, 3), collapse = " to ")
+        )
+        
+        for (group_contrast in group_contrasts) {
+          shared_x_limits_by_contrast[[group_contrast]] <- group_x_limits
+        }
+      }
+    }
+  }
   
   summary_tbl <- vector("list", length(contrasts))
   
@@ -265,7 +342,8 @@ save_all_standard_volcanoes <- function(df,
         volcano_df = volcano_df,
         contrast = contrast,
         padj_cutoff = padj_cutoff,
-        lfc_cutoff = lfc_cutoff
+        lfc_cutoff = lfc_cutoff,
+        x_limits = shared_x_limits_by_contrast[[contrast]]
       )
       
       base_name <- sanitize_filename(paste0("volcano_", contrast))
@@ -352,7 +430,8 @@ volcano_export_summary <- save_all_standard_volcanoes(
   width = plot_width,
   height = plot_height,
   save_png = save_png,
-  include_values_in_labels = include_values_in_labels
+  include_values_in_labels = include_values_in_labels,
+  shared_x_axis_groups = shared_x_axis_groups
 )
 
 print(volcano_export_summary)
