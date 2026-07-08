@@ -20,6 +20,11 @@ out_dir <- "Lipidomics/Figures/Recovery/VolcanoPlots/StandardVolcano/"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 favorite_IDs <- c()
+focal_label_contrasts <- c(
+  "RDH12_Veh_vs_Control_Veh",
+  "RDH12_100_vs_Control_100",
+  "RDH12_200_vs_Control_200"
+)
 
 padj_cutoff <- 0.1
 lfc_cutoff <- log2(1.3)
@@ -72,6 +77,14 @@ format_ratio_display <- function(x) {
   ifelse(is.na(x), NA_character_, sprintf("%.1f", round(x, 1)))
 }
 
+is_story_relevant_lipid <- function(x) {
+  str_detect(x, "^PC\\s") |
+    str_detect(x, "^PC O-") |
+    str_detect(x, "^PC P-") |
+    str_detect(x, regex("^PC\\(|Aze|COOH|Azelaoyl", ignore_case = TRUE)) |
+    str_detect(x, "^\\[?DG\\s")
+}
+
 get_symmetric_x_limits <- function(df, contrasts) {
   ratio_cols <- paste0(contrasts, "_ratio")
   missing_cols <- setdiff(ratio_cols, colnames(df))
@@ -111,7 +124,8 @@ make_volcano_df_standard <- function(df,
                                      lfc_cutoff = log2(1.3),
                                      favorite_IDs = character(),
                                      n_top_labels = 10,
-                                     include_values_in_labels = FALSE) {
+                                     include_values_in_labels = FALSE,
+                                     focal_label_contrasts = character()) {
   ratio_col <- paste0(contrast, "_ratio")
   padj_col <- paste0(contrast, "_p.val")
   
@@ -138,7 +152,8 @@ make_volcano_df_standard <- function(df,
         !is.na(ratio) & ratio >= lfc_cutoff & sig ~ "Up",
         !is.na(ratio) & ratio <= -lfc_cutoff & sig ~ "Down",
         TRUE ~ "NS"
-      )
+      ),
+      story_relevant_lipid = is_story_relevant_lipid(name)
     )
   
   top_hits <- out |>
@@ -154,7 +169,15 @@ make_volcano_df_standard <- function(df,
   out |>
     mutate(
       can_label = direction %in% c("Up", "Down") & !is.na(padj) & !is.na(ratio),
-      label_base = if_else(can_label & name %in% c(top_hits, favorite_IDs), name, NA_character_),
+      label_base = if_else(
+        can_label &
+          (
+            name %in% c(top_hits, favorite_IDs) |
+              (contrast %in% focal_label_contrasts & story_relevant_lipid)
+          ),
+        name,
+        NA_character_
+      ),
       label = case_when(
         is.na(label_base) ~ NA_character_,
         include_values_in_labels ~ paste0(
@@ -170,7 +193,12 @@ plot_volcano_standard <- function(volcano_df,
                                   contrast,
                                   padj_cutoff = 0.1,
                                   lfc_cutoff = log2(1.3),
-                                  x_limits = NULL) {
+                                  x_limits = NULL,
+                                  focal_label_contrasts = character()) {
+  is_focal_label_plot <- contrast %in% focal_label_contrasts
+  label_size <- if (is_focal_label_plot) 3 else 3.6
+  label_max_overlaps <- if (is_focal_label_plot) Inf else 25
+  
   p <- ggplot(volcano_df, aes(x = ratio, y = -log10(padj_plot))) +
     geom_point(aes(color = direction), alpha = 0.75, size = 2.6) +
     geom_point(
@@ -187,8 +215,8 @@ plot_volcano_standard <- function(volcano_df,
     geom_hline(yintercept = -log10(padj_cutoff), linetype = "dashed", color = "grey40") +
     geom_text_repel(
       aes(label = label),
-      max.overlaps = 25,
-      size = 3.6,
+      max.overlaps = label_max_overlaps,
+      size = label_size,
       color = "black",
       segment.color = "grey20",
       segment.size = 0.3,
@@ -199,7 +227,7 @@ plot_volcano_standard <- function(volcano_df,
       na.rm = TRUE
     ) +
     scale_color_manual(
-      values = c("Up" = "purple", "Down" = "#00B8B8", "NS" = "grey70"),
+      values = c("Up" = "#D73027", "Down" = "#4575B4", "NS" = "grey70"),
       drop = FALSE
     ) +
     theme_bw() +
@@ -235,7 +263,8 @@ save_all_standard_volcanoes <- function(df,
                                         height = 7,
                                         save_png = FALSE,
                                         include_values_in_labels = FALSE,
-                                        shared_axis_families = list()) {
+                                        shared_axis_families = list(),
+                                        focal_label_contrasts = character()) {
   contrasts <- get_all_contrasts(df)
   if (length(contrasts) == 0) {
     stop("No contrast columns ending in '_ratio' were found.")
@@ -258,7 +287,8 @@ save_all_standard_volcanoes <- function(df,
         lfc_cutoff = lfc_cutoff,
         favorite_IDs = favorite_IDs,
         n_top_labels = n_top_labels,
-        include_values_in_labels = include_values_in_labels
+        include_values_in_labels = include_values_in_labels,
+        focal_label_contrasts = focal_label_contrasts
       )
       
       p <- plot_volcano_standard(
@@ -266,7 +296,8 @@ save_all_standard_volcanoes <- function(df,
         contrast = contrast,
         padj_cutoff = padj_cutoff,
         lfc_cutoff = lfc_cutoff,
-        x_limits = x_limit_lookup[[contrast]]
+        x_limits = x_limit_lookup[[contrast]],
+        focal_label_contrasts = focal_label_contrasts
       )
       
       base_name <- sanitize_filename(paste0("volcano_", contrast))
@@ -281,7 +312,7 @@ save_all_standard_volcanoes <- function(df,
       
       write.csv(
         volcano_df |>
-          select(name, ratio, padj, ratio_round, padj_round, ratio_display, padj_display, direction, label),
+          select(name, ratio, padj, ratio_round, padj_round, ratio_display, padj_display, direction, story_relevant_lipid, label),
         table_file,
         row.names = FALSE
       )
@@ -331,7 +362,8 @@ volcano_export_summary <- save_all_standard_volcanoes(
   height = plot_height,
   save_png = save_png,
   include_values_in_labels = include_values_in_labels,
-  shared_axis_families = shared_axis_families
+  shared_axis_families = shared_axis_families,
+  focal_label_contrasts = focal_label_contrasts
 )
 
 print(volcano_export_summary)
