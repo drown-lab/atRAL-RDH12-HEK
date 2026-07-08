@@ -1,0 +1,2 @@
+"ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count"
+"R-HSA-6783310","Fanconi Anemia Pathway","5/117","25/5359",0.2,9.16068376068376,6.10964286295021,0.000170542584426537,0.0975503582919793,0.0975503582919793,"CENPX/FANCE/UBE2T/USP1/FAAP20",5

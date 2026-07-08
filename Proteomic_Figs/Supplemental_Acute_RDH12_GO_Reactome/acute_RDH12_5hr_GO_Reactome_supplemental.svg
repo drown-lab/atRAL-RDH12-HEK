@@ -1,0 +1,628 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1420' height='1920' viewBox='0 0 1420 1920'>
+<defs>
+<linearGradient id='plasma_adjust_gradient' x1='0%' y1='0%' x2='0%' y2='100%'>
+<stop offset='0%' stop-color='#F0F921'/>
+<stop offset='20%' stop-color='#FCA636'/>
+<stop offset='40%' stop-color='#E16462'/>
+<stop offset='60%' stop-color='#B12A90'/>
+<stop offset='80%' stop-color='#6A00A8'/>
+<stop offset='100%' stop-color='#0D0887'/>
+</linearGradient>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#000}
+.panelLetter{font-weight:700;font-size:28px}
+.axis{font-size:13px}
+.term{font-size:11.5px}
+.legend{font-size:12px}
+</style>
+<g id='panel_A'>
+<text class='panelLetter' x='24' y='42'>A</text>
+<line x1='384' y1='546' x2='604' y2='546' stroke='#000' stroke-width='1'/>
+<line x1='384' y1='90' x2='384' y2='546' stroke='#000' stroke-width='1'/>
+<line x1='384' y1='546' x2='384' y2='550' stroke='#000'/>
+<text class='axis' x='384' y='566' text-anchor='middle'>0</text>
+<line x1='494' y1='546' x2='494' y2='550' stroke='#000'/>
+<text class='axis' x='494' y='566' text-anchor='middle'>2.5</text>
+<line x1='604' y1='546' x2='604' y2='550' stroke='#000'/>
+<text class='axis' x='604' y='566' text-anchor='middle'>5</text>
+<text class='axis' x='494' y='588' text-anchor='middle'>Fold enrichment</text>
+<line x1='378' y1='125.5333333333333' x2='384' y2='125.5333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='125.5333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>methylglyoxal metabolic process</tspan>
+</text>
+<circle cx='580.154838709677' cy='125.5333333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='152.6' x2='384' y2='152.6' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='152.6' text-anchor='end'>
+<tspan x='374' dy='0'>protein-RNA complex organization</tspan>
+</text>
+<circle cx='453.293828892006' cy='152.6' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='179.6666666666666' x2='384' y2='179.6666666666666' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='179.6666666666666' text-anchor='end'>
+<tspan x='374' dy='0'>regulation of DNA binding</tspan>
+</text>
+<circle cx='486.981290322581' cy='179.6666666666666' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='206.7333333333333' x2='384' y2='206.7333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='200.7333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>positive regulation of signal transduction by</tspan>
+<tspan x='374' dy='12'>p53 class mediator</tspan>
+</text>
+<circle cx='518.211205432937' cy='206.7333333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='233.8' x2='384' y2='233.8' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='233.8' text-anchor='end'>
+<tspan x='374' dy='0'>non-lytic viral release</tspan>
+</text>
+<circle cx='538.121658986175' cy='233.8' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='260.866666666667' x2='384' y2='260.866666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='260.866666666667' text-anchor='end'>
+<tspan x='374' dy='0'>vacuole fusion</tspan>
+</text>
+<circle cx='547.462365591398' cy='260.866666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='287.933333333333' x2='384' y2='287.933333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='287.933333333333' text-anchor='end'>
+<tspan x='374' dy='0'>protein peptidyl-prolyl isomerization</tspan>
+</text>
+<circle cx='525.667383512545' cy='287.933333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='315' x2='384' y2='315' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='315' text-anchor='end'>
+<tspan x='374' dy='0'>ribonucleoprotein complex biogenesis</tspan>
+</text>
+<circle cx='445.992331101643' cy='315' r='12' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='342.066666666667' x2='384' y2='342.066666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='342.066666666667' text-anchor='end'>
+<tspan x='374' dy='0'>vesicle fusion with vacuole</tspan>
+</text>
+<circle cx='562.322580645161' cy='342.066666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='369.133333333333' x2='384' y2='369.133333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='369.133333333333' text-anchor='end'>
+<tspan x='374' dy='0'>multivesicular body-lysosome fusion</tspan>
+</text>
+<circle cx='562.322580645161' cy='369.133333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='396.2' x2='384' y2='396.2' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='390.2' text-anchor='end'>
+<tspan x='374' dy='0'>negative regulation of DNA-templated</tspan>
+<tspan x='374' dy='12'>transcription</tspan>
+</text>
+<circle cx='442.33915461624' cy='396.2' r='12' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='423.266666666667' x2='384' y2='423.266666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='423.266666666667' text-anchor='end'>
+<tspan x='374' dy='0'>lysosomal membrane organization</tspan>
+</text>
+<circle cx='563.808602150538' cy='423.266666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='450.333333333333' x2='384' y2='450.333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='450.333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>mitochondrial gene expression</tspan>
+</text>
+<circle cx='470.613824884793' cy='450.333333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='477.4' x2='384' y2='477.4' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='477.4' text-anchor='end'>
+<tspan x='374' dy='0'>RNA splicing</tspan>
+</text>
+<circle cx='455.509612086566' cy='477.4' r='12' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='504.466666666667' x2='384' y2='504.466666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='504.466666666667' text-anchor='end'>
+<tspan x='374' dy='0'>translation</tspan>
+</text>
+<circle cx='456.476328273245' cy='504.466666666667' r='12' fill='#F0F921' stroke='none'/>
+<text class='legend' x='646' y='126' font-weight='700'>p.adjust</text>
+<rect x='646' y='142' width='17' height='132' fill='url(#plasma_adjust_gradient)'/>
+<text class='legend' x='670' y='147'>0</text>
+<text class='legend' x='670' y='273'>0.028</text>
+<text class='legend' x='646' y='320' font-weight='700'>Count</text>
+<circle cx='655' cy='346' r='3' fill='#333'/>
+<text class='legend' x='674' y='350'>6</text>
+<circle cx='655' cy='381' r='3' fill='#333'/>
+<text class='legend' x='674' y='385'>106</text>
+<circle cx='655' cy='416' r='12' fill='#333'/>
+<text class='legend' x='674' y='420'>207</text>
+</g>
+<g id='panel_B'>
+<text class='panelLetter' x='724' y='42'>B</text>
+<line x1='1084' y1='546' x2='1304' y2='546' stroke='#000' stroke-width='1'/>
+<line x1='1084' y1='90' x2='1084' y2='546' stroke='#000' stroke-width='1'/>
+<line x1='1084' y1='546' x2='1084' y2='550' stroke='#000'/>
+<text class='axis' x='1084' y='566' text-anchor='middle'>0</text>
+<line x1='1194' y1='546' x2='1194' y2='550' stroke='#000'/>
+<text class='axis' x='1194' y='566' text-anchor='middle'>4</text>
+<line x1='1304' y1='546' x2='1304' y2='550' stroke='#000'/>
+<text class='axis' x='1304' y='566' text-anchor='middle'>8</text>
+<text class='axis' x='1194' y='588' text-anchor='middle'>Fold enrichment</text>
+<line x1='1078' y1='125.533333333333' x2='1084' y2='125.533333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='125.533333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>GTP biosynthetic process</tspan>
+</text>
+<circle cx='1237.20104075051' cy='125.533333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='152.6' x2='1084' y2='152.6' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='152.6' text-anchor='end'>
+<tspan x='1074' dy='0'>regulation of actin filament-based process</tspan>
+</text>
+<circle cx='1131.67845473824' cy='152.6' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='179.666666666667' x2='1084' y2='179.666666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='179.666666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>NAD metabolic process</tspan>
+</text>
+<circle cx='1168.26057241278' cy='179.666666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='206.733333333333' x2='1084' y2='206.733333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='206.733333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>regulation of lysosome size</tspan>
+</text>
+<circle cx='1280.97276667923' cy='206.733333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='233.8' x2='1084' y2='233.8' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='233.8' text-anchor='end'>
+<tspan x='1074' dy='0'>vesicle cytoskeletal trafficking</tspan>
+</text>
+<circle cx='1166.14183461517' cy='233.8' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='260.866666666667' x2='1084' y2='260.866666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='254.866666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>pyridine-containing compound biosynthetic</tspan>
+<tspan x='1074' dy='12'>process</tspan>
+</text>
+<circle cx='1232.48716257357' cy='260.866666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='287.933333333333' x2='1084' y2='287.933333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='287.933333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>positive regulation of cytoskeleton organization</tspan>
+</text>
+<circle cx='1144.25049333718' cy='287.933333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='315' x2='1084' y2='315' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='315' text-anchor='end'>
+<tspan x='1074' dy='0'>cell projection assembly</tspan>
+</text>
+<circle cx='1132.21011771869' cy='315' r='12' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='342.066666666667' x2='1084' y2='342.066666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='336.066666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>regulation of plasma membrane bounded cell</tspan>
+<tspan x='1074' dy='12'>projection assembly</tspan>
+</text>
+<circle cx='1146.89305883442' cy='342.066666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='369.133333333333' x2='1084' y2='369.133333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='363.133333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>positive regulation of supramolecular fiber</tspan>
+<tspan x='1074' dy='12'>organization</tspan>
+</text>
+<circle cx='1149.89000513695' cy='369.133333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='396.2' x2='1084' y2='396.2' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='396.2' text-anchor='end'>
+<tspan x='1074' dy='0'>regulation of actin filament polymerization</tspan>
+</text>
+<circle cx='1157.98489285025' cy='396.2' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='423.266666666667' x2='1084' y2='423.266666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='423.266666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>supramolecular fiber organization</tspan>
+</text>
+<circle cx='1132.03593922887' cy='423.266666666667' r='12' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='450.333333333333' x2='1084' y2='450.333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='450.333333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>actin filament-based process</tspan>
+</text>
+<circle cx='1134.42867591371' cy='450.333333333333' r='12' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='477.4' x2='1084' y2='477.4' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='477.4' text-anchor='end'>
+<tspan x='1074' dy='0'>protein polymerization</tspan>
+</text>
+<circle cx='1148.63168906662' cy='477.4' r='12' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='504.466666666667' x2='1084' y2='504.466666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='504.466666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>actin filament organization</tspan>
+</text>
+<circle cx='1144.58404793316' cy='504.466666666667' r='12' fill='#F0F921' stroke='none'/>
+<text class='legend' x='1346' y='126' font-weight='700'>p.adjust</text>
+<rect x='1346' y='142' width='17' height='132' fill='url(#plasma_adjust_gradient)'/>
+<text class='legend' x='1370' y='147'>0</text>
+<text class='legend' x='1370' y='273'>0.113</text>
+<text class='legend' x='1346' y='320' font-weight='700'>Count</text>
+<circle cx='1355' cy='346' r='3' fill='#333'/>
+<text class='legend' x='1374' y='350'>5</text>
+<circle cx='1355' cy='381' r='3' fill='#333'/>
+<text class='legend' x='1374' y='385'>43</text>
+<circle cx='1355' cy='416' r='12' fill='#333'/>
+<text class='legend' x='1374' y='420'>81</text>
+</g>
+<g id='panel_C'>
+<text class='panelLetter' x='24' y='662'>C</text>
+<line x1='384' y1='1166' x2='604' y2='1166' stroke='#000' stroke-width='1'/>
+<line x1='384' y1='710' x2='384' y2='1166' stroke='#000' stroke-width='1'/>
+<line x1='384' y1='1166' x2='384' y2='1170' stroke='#000'/>
+<text class='axis' x='384' y='1186' text-anchor='middle'>0</text>
+<line x1='494' y1='1166' x2='494' y2='1170' stroke='#000'/>
+<text class='axis' x='494' y='1186' text-anchor='middle'>8</text>
+<line x1='604' y1='1166' x2='604' y2='1170' stroke='#000'/>
+<text class='axis' x='604' y='1186' text-anchor='middle'>16</text>
+<text class='axis' x='494' y='1208' text-anchor='middle'>Fold enrichment</text>
+<line x1='378' y1='745.5333333333333' x2='384' y2='745.5333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='745.5333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>Regulation of insulin secretion</tspan>
+</text>
+<circle cx='434.608688186813' cy='745.5333333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='772.6' x2='384' y2='772.6' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='766.6' text-anchor='end'>
+<tspan x='374' dy='0'>Vasopressin regulates renal water homeostasis</tspan>
+<tspan x='374' dy='12'>via Aquaporins</tspan>
+</text>
+<circle cx='455.447559793148' cy='772.6' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='799.6666666666666' x2='384' y2='799.6666666666666' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='799.6666666666666' text-anchor='end'>
+<tspan x='374' dy='0'>SLC-mediated transmembrane transport</tspan>
+</text>
+<circle cx='423.873511904762' cy='799.6666666666666' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='826.7333333333333' x2='384' y2='826.7333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='826.7333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>LDL clearance</tspan>
+</text>
+<circle cx='459.91303228022' cy='826.7333333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='853.8' x2='384' y2='853.8' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='853.8' text-anchor='end'>
+<tspan x='374' dy='0'>Metabolism of lipids</tspan>
+</text>
+<circle cx='407.784762072132' cy='853.8' r='12' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='880.866666666667' x2='384' y2='880.866666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='880.866666666667' text-anchor='end'>
+<tspan x='374' dy='0'>Leishmania parasite growth and survival</tspan>
+</text>
+<circle cx='437.585669844861' cy='880.866666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='907.933333333333' x2='384' y2='907.933333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='901.933333333333' text-anchor='end'>
+<tspan x='374' dy='0'>Anti-inflammatory response favouring Leishmania</tspan>
+<tspan x='374' dy='12'>parasite infection</tspan>
+</text>
+<circle cx='437.585669844861' cy='907.933333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='935' x2='384' y2='935' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='929' text-anchor='end'>
+<tspan x='374' dy='0'>Cooperation of PDCL (PhLP1) and TRiC/CCT in</tspan>
+<tspan x='374' dy='12'>G-protein beta folding</tspan>
+</text>
+<circle cx='451.478250915751' cy='935' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='962.066666666667' x2='384' y2='962.066666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='956.066666666667' text-anchor='end'>
+<tspan x='374' dy='0'>ADORA2B mediated anti-inflammatory cytokines</tspan>
+<tspan x='374' dy='12'>production</tspan>
+</text>
+<circle cx='454.852163461538' cy='962.066666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='989.133333333333' x2='384' y2='989.133333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='989.133333333333' text-anchor='end'>
+<tspan x='374' dy='0'>Glucagon signaling in metabolic regulation</tspan>
+</text>
+<circle cx='464.973901098901' cy='989.133333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='1016.2' x2='384' y2='1016.2' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1010.2' text-anchor='end'>
+<tspan x='374' dy='0'>PKA-mediated phosphorylation of key metabolic</tspan>
+<tspan x='374' dy='12'>factors</tspan>
+</text>
+<circle cx='586.434752747253' cy='1016.2' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='1043.266666666667' x2='384' y2='1043.266666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1037.266666666667' text-anchor='end'>
+<tspan x='374' dy='0'>Plasma lipoprotein assembly, remodeling, and</tspan>
+<tspan x='374' dy='12'>clearance</tspan>
+</text>
+<circle cx='443.539633160957' cy='1043.266666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1070.333333333333' x2='384' y2='1070.333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1070.333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>Metabolism of vitamins and cofactors</tspan>
+</text>
+<circle cx='420.806318681319' cy='1070.333333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1097.4' x2='384' y2='1097.4' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1091.4' text-anchor='end'>
+<tspan x='374' dy='0'>Metabolism of water-soluble vitamins and</tspan>
+<tspan x='374' dy='12'>cofactors</tspan>
+</text>
+<circle cx='426.617842683632' cy='1097.4' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1124.466666666667' x2='384' y2='1124.466666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1124.466666666667' text-anchor='end'>
+<tspan x='374' dy='0'>Transport of small molecules</tspan>
+</text>
+<circle cx='418.456979191022' cy='1124.466666666667' r='12' fill='#F0F921' stroke='none'/>
+<text class='legend' x='646' y='746' font-weight='700'>p.adjust</text>
+<rect x='646' y='762' width='17' height='132' fill='url(#plasma_adjust_gradient)'/>
+<text class='legend' x='670' y='767'>0</text>
+<text class='legend' x='670' y='893'>0.041</text>
+<text class='legend' x='646' y='940' font-weight='700'>Count</text>
+<circle cx='655' cy='966' r='3' fill='#333'/>
+<text class='legend' x='674' y='970'>3</text>
+<circle cx='655' cy='1001' r='12' fill='#333'/>
+<text class='legend' x='674' y='1005'>26</text>
+<circle cx='655' cy='1036' r='12' fill='#333'/>
+<text class='legend' x='674' y='1040'>48</text>
+</g>
+<g id='panel_D'>
+<text class='panelLetter' x='724' y='662'>D</text>
+<line x1='1084' y1='1166' x2='1304' y2='1166' stroke='#000' stroke-width='1'/>
+<line x1='1084' y1='710' x2='1084' y2='1166' stroke='#000' stroke-width='1'/>
+<line x1='1084' y1='1166' x2='1084' y2='1170' stroke='#000'/>
+<text class='axis' x='1084' y='1186' text-anchor='middle'>0</text>
+<line x1='1194' y1='1166' x2='1194' y2='1170' stroke='#000'/>
+<text class='axis' x='1194' y='1186' text-anchor='middle'>7</text>
+<line x1='1304' y1='1166' x2='1304' y2='1170' stroke='#000'/>
+<text class='axis' x='1304' y='1186' text-anchor='middle'>14</text>
+<text class='axis' x='1194' y='1208' text-anchor='middle'>Fold enrichment</text>
+<line x1='1078' y1='745.533333333333' x2='1084' y2='745.533333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='745.533333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Protein localization</tspan>
+</text>
+<circle cx='1117.30605934532' cy='745.533333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='772.6' x2='1084' y2='772.6' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='772.6' text-anchor='end'>
+<tspan x='1074' dy='0'>Mitochondrial protein import</tspan>
+</text>
+<circle cx='1127.85032215241' cy='772.6' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='799.666666666667' x2='1084' y2='799.666666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='799.666666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>Mitochondrial calcium ion transport</tspan>
+</text>
+<circle cx='1154.83513578467' cy='799.666666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='826.733333333333' x2='1084' y2='826.733333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='826.733333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Regulation of signaling by NODAL</tspan>
+</text>
+<circle cx='1276.26679712981' cy='826.733333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='853.8' x2='1084' y2='853.8' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='847.8' text-anchor='end'>
+<tspan x='1074' dy='0'>Diseases associated with N-glycosylation of</tspan>
+<tspan x='1074' dy='12'>proteins</tspan>
+</text>
+<circle cx='1158.77042110604' cy='853.8' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='880.866666666667' x2='1084' y2='880.866666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='874.866666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>STING mediated induction of host immune</tspan>
+<tspan x='1074' dy='12'>responses</tspan>
+</text>
+<circle cx='1190.81488729434' cy='880.866666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='907.933333333333' x2='1084' y2='907.933333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='907.933333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Phospholipid metabolism</tspan>
+</text>
+<circle cx='1120.37479945699' cy='907.933333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='935' x2='1084' y2='935' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='935' text-anchor='end'>
+<tspan x='1074' dy='0'>Synthesis of PA</tspan>
+</text>
+<circle cx='1164.95444089676' cy='935' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='962.066666666667' x2='1084' y2='962.066666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='962.066666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>Glycerophospholipid biosynthesis</tspan>
+</text>
+<circle cx='1133.7241716715' cy='962.066666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='989.133333333333' x2='1084' y2='989.133333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='983.133333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Transport of bile salts and organic acids, metal</tspan>
+<tspan x='1074' dy='12'>ions and amine compounds</tspan>
+</text>
+<circle cx='1169.45190983547' cy='989.133333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1016.2' x2='1084' y2='1016.2' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1016.2' text-anchor='end'>
+<tspan x='1074' dy='0'>Processing of SMDT1</tspan>
+</text>
+<circle cx='1180.13339856491' cy='1016.2' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1043.26666666667' x2='1084' y2='1043.26666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1043.26666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>Metabolism of lipids</tspan>
+</text>
+<circle cx='1111.61011447034' cy='1043.26666666667' r='12' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1070.33333333333' x2='1084' y2='1070.33333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1070.33333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Metal ion SLC transporters</tspan>
+</text>
+<circle cx='1212.17786475321' cy='1070.33333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1097.4' x2='1084' y2='1097.4' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1097.4' text-anchor='end'>
+<tspan x='1074' dy='0'>SLC-mediated transmembrane transport</tspan>
+</text>
+<circle cx='1139.34953250707' cy='1097.4' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1124.46666666667' x2='1084' y2='1124.46666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1124.46666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>Transport of small molecules</tspan>
+</text>
+<circle cx='1120.8170462589' cy='1124.46666666667' r='12' fill='#F0F921' stroke='none'/>
+<text class='legend' x='1346' y='746' font-weight='700'>p.adjust</text>
+<rect x='1346' y='762' width='17' height='132' fill='url(#plasma_adjust_gradient)'/>
+<text class='legend' x='1370' y='767'>0</text>
+<text class='legend' x='1370' y='893'>0.037</text>
+<text class='legend' x='1346' y='940' font-weight='700'>Count</text>
+<circle cx='1355' cy='966' r='3' fill='#333'/>
+<text class='legend' x='1374' y='970'>3</text>
+<circle cx='1355' cy='1001' r='3' fill='#333'/>
+<text class='legend' x='1374' y='1005'>29</text>
+<circle cx='1355' cy='1036' r='12' fill='#333'/>
+<text class='legend' x='1374' y='1040'>55</text>
+</g>
+<g id='panel_E'>
+<text class='panelLetter' x='24' y='1282'>E</text>
+<line x1='384' y1='1786' x2='604' y2='1786' stroke='#000' stroke-width='1'/>
+<line x1='384' y1='1330' x2='384' y2='1786' stroke='#000' stroke-width='1'/>
+<line x1='384' y1='1786' x2='384' y2='1790' stroke='#000'/>
+<text class='axis' x='384' y='1806' text-anchor='middle'>0</text>
+<line x1='494' y1='1786' x2='494' y2='1790' stroke='#000'/>
+<text class='axis' x='494' y='1806' text-anchor='middle'>2</text>
+<line x1='604' y1='1786' x2='604' y2='1790' stroke='#000'/>
+<text class='axis' x='604' y='1806' text-anchor='middle'>4</text>
+<text class='axis' x='494' y='1828' text-anchor='middle'>Fold enrichment</text>
+<line x1='378' y1='1365.5333333333333' x2='384' y2='1365.5333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1365.5333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>Formation of a pool of free 40S subunits</tspan>
+</text>
+<circle cx='530.571590949455' cy='1365.5333333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='378' y1='1392.6' x2='384' y2='1392.6' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1392.6' text-anchor='end'>
+<tspan x='374' dy='0'>Eukaryotic Translation Elongation</tspan>
+</text>
+<circle cx='537.407492880291' cy='1392.6' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1419.6666666666666' x2='384' y2='1419.6666666666666' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1413.6666666666666' text-anchor='end'>
+<tspan x='374' dy='0'>Response of EIF2AK4 (GCN2) to amino acid</tspan>
+<tspan x='374' dy='12'>deficiency</tspan>
+</text>
+<circle cx='533.757929883139' cy='1419.6666666666666' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1446.7333333333333' x2='384' y2='1446.7333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1446.7333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>SARS-CoV-2 modulates host translation machinery</tspan>
+</text>
+<circle cx='576.545909849749' cy='1446.7333333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1473.8' x2='384' y2='1473.8' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1473.8' text-anchor='end'>
+<tspan x='374' dy='0'>mRNA Splicing - Major Pathway</tspan>
+</text>
+<circle cx='501.994403938537' cy='1473.8' r='12' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1500.866666666667' x2='384' y2='1500.866666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1500.866666666667' text-anchor='end'>
+<tspan x='374' dy='0'>Selenocysteine synthesis</tspan>
+</text>
+<circle cx='540.301973878032' cy='1500.866666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1527.933333333333' x2='384' y2='1527.933333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1527.933333333333' text-anchor='end'>
+<tspan x='374' dy='0'>Eukaryotic Translation Termination</tspan>
+</text>
+<circle cx='540.301973878032' cy='1527.933333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1555' x2='384' y2='1555' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1555' text-anchor='end'>
+<tspan x='374' dy='0'>Viral mRNA Translation</tspan>
+</text>
+<circle cx='543.019962132008' cy='1555' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1582.066666666667' x2='384' y2='1582.066666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1582.066666666667' text-anchor='end'>
+<tspan x='374' dy='0'>Peptide chain elongation</tspan>
+</text>
+<circle cx='544.983171541046' cy='1582.066666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1609.133333333333' x2='384' y2='1609.133333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1609.133333333333' text-anchor='end'>
+<tspan x='374' dy='0'>mRNA Splicing</tspan>
+</text>
+<circle cx='503.39734115683' cy='1609.133333333333' r='12' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1636.2' x2='384' y2='1636.2' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1636.2' text-anchor='end'>
+<tspan x='374' dy='0'>Translation</tspan>
+</text>
+<circle cx='496.874384428049' cy='1636.2' r='12' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1663.266666666667' x2='384' y2='1663.266666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1663.266666666667' text-anchor='end'>
+<tspan x='374' dy='0'>Mitochondrial translation</tspan>
+</text>
+<circle cx='547.129173622704' cy='1663.266666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1690.333333333333' x2='384' y2='1690.333333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1690.333333333333' text-anchor='end'>
+<tspan x='374' dy='0'>Mitochondrial translation elongation</tspan>
+</text>
+<circle cx='552.788630275265' cy='1690.333333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1717.4' x2='384' y2='1717.4' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1717.4' text-anchor='end'>
+<tspan x='374' dy='0'>Mitochondrial translation initiation</tspan>
+</text>
+<circle cx='555.649454517219' cy='1717.4' r='3' fill='#F0F921' stroke='none'/>
+<line x1='378' y1='1744.466666666667' x2='384' y2='1744.466666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='374' y='1744.466666666667' text-anchor='end'>
+<tspan x='374' dy='0'>Mitochondrial translation termination</tspan>
+</text>
+<circle cx='555.649454517219' cy='1744.466666666667' r='3' fill='#F0F921' stroke='none'/>
+<text class='legend' x='646' y='1366' font-weight='700'>p.adjust</text>
+<rect x='646' y='1382' width='17' height='132' fill='url(#plasma_adjust_gradient)'/>
+<text class='legend' x='670' y='1387'>0</text>
+<text class='legend' x='670' y='1513'>0</text>
+<text class='legend' x='646' y='1560' font-weight='700'>Count</text>
+<circle cx='655' cy='1586' r='3' fill='#333'/>
+<text class='legend' x='674' y='1590'>36</text>
+<circle cx='655' cy='1621' r='3' fill='#333'/>
+<text class='legend' x='674' y='1625'>82</text>
+<circle cx='655' cy='1656' r='12' fill='#333'/>
+<text class='legend' x='674' y='1660'>128</text>
+</g>
+<g id='panel_F'>
+<text class='panelLetter' x='724' y='1282'>F</text>
+<line x1='1084' y1='1786' x2='1304' y2='1786' stroke='#000' stroke-width='1'/>
+<line x1='1084' y1='1330' x2='1084' y2='1786' stroke='#000' stroke-width='1'/>
+<line x1='1084' y1='1786' x2='1084' y2='1790' stroke='#000'/>
+<text class='axis' x='1084' y='1806' text-anchor='middle'>0</text>
+<line x1='1194' y1='1786' x2='1194' y2='1790' stroke='#000'/>
+<text class='axis' x='1194' y='1806' text-anchor='middle'>3</text>
+<line x1='1304' y1='1786' x2='1304' y2='1790' stroke='#000'/>
+<text class='axis' x='1304' y='1806' text-anchor='middle'>6</text>
+<text class='axis' x='1194' y='1828' text-anchor='middle'>Fold enrichment</text>
+<line x1='1078' y1='1365.53333333333' x2='1084' y2='1365.53333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1365.53333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Signaling by ROBO receptors</tspan>
+</text>
+<circle cx='1149.08379888268' cy='1365.53333333333' r='12' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1392.6' x2='1084' y2='1392.6' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1392.6' text-anchor='end'>
+<tspan x='1074' dy='0'>TCR signaling</tspan>
+</text>
+<circle cx='1167.96396396396' cy='1392.6' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1419.66666666667' x2='1084' y2='1419.66666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1419.66666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>Metabolism of nucleotides</tspan>
+</text>
+<circle cx='1169.66176470588' cy='1419.66666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1446.73333333333' x2='1084' y2='1446.73333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1446.73333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>MAPK6/MAPK4 signaling</tspan>
+</text>
+<circle cx='1171.68817204301' cy='1446.73333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1473.8' x2='1084' y2='1473.8' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1467.8' text-anchor='end'>
+<tspan x='1074' dy='0'>RUNX1 regulates transcription of genes involved</tspan>
+<tspan x='1074' dy='12'>in differentiation of HSCs</tspan>
+</text>
+<circle cx='1175.78787878788' cy='1473.8' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1500.86666666667' x2='1084' y2='1500.86666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1500.86666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>p53-Dependent G1/S DNA damage checkpoint</tspan>
+</text>
+<circle cx='1179.10204081633' cy='1500.86666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1527.93333333333' x2='1084' y2='1527.93333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1527.93333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>p53-Dependent G1 DNA Damage Response</tspan>
+</text>
+<circle cx='1179.10204081633' cy='1527.93333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1555' x2='1084' y2='1555' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1555' text-anchor='end'>
+<tspan x='1074' dy='0'>SCF(Skp2)-mediated degradation of p27/p21</tspan>
+</text>
+<circle cx='1183.14893617021' cy='1555' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1582.06666666667' x2='1084' y2='1582.06666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1582.06666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>SARS-CoV-2 modulates host translation machinery</tspan>
+</text>
+<circle cx='1185.30434782609' cy='1582.06666666667' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1609.13333333333' x2='1084' y2='1609.13333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1609.13333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Interleukin-12 family signaling</tspan>
+</text>
+<circle cx='1191.87037037037' cy='1609.13333333333' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1636.2' x2='1084' y2='1636.2' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1636.2' text-anchor='end'>
+<tspan x='1074' dy='0'>Interleukin-12 signaling</tspan>
+</text>
+<circle cx='1205.35416666667' cy='1636.2' r='3' fill='#0D0887' stroke='none'/>
+<line x1='1078' y1='1663.26666666667' x2='1084' y2='1663.26666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1663.26666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>Gluconeogenesis</tspan>
+</text>
+<circle cx='1265.22222222222' cy='1663.26666666667' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1690.33333333333' x2='1084' y2='1690.33333333333' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1684.33333333333' text-anchor='end'>
+<tspan x='1074' dy='0'>Gene and protein expression by JAK-STAT</tspan>
+<tspan x='1074' dy='12'>signaling after Interleukin-12 stimulation</tspan>
+</text>
+<circle cx='1222.69047619048' cy='1690.33333333333' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1717.4' x2='1084' y2='1717.4' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1711.4' text-anchor='end'>
+<tspan x='1074' dy='0'>Interconversion of nucleotide di- and</tspan>
+<tspan x='1074' dy='12'>triphosphates</tspan>
+</text>
+<circle cx='1235.95652173913' cy='1717.4' r='3' fill='#F0F921' stroke='none'/>
+<line x1='1078' y1='1744.46666666667' x2='1084' y2='1744.46666666667' stroke='#000' stroke-width='0.8'/>
+<text class='term' x='1074' y='1744.46666666667' text-anchor='end'>
+<tspan x='1074' dy='0'>Metabolism of amino acids and derivatives</tspan>
+</text>
+<circle cx='1152.81856540084' cy='1744.46666666667' r='12' fill='#F0F921' stroke='none'/>
+<text class='legend' x='1346' y='1366' font-weight='700'>p.adjust</text>
+<rect x='1346' y='1382' width='17' height='132' fill='url(#plasma_adjust_gradient)'/>
+<text class='legend' x='1370' y='1387'>0.043</text>
+<text class='legend' x='1370' y='1513'>0.097</text>
+<text class='legend' x='1346' y='1560' font-weight='700'>Count</text>
+<circle cx='1355' cy='1586' r='3' fill='#333'/>
+<text class='legend' x='1374' y='1590'>7</text>
+<circle cx='1355' cy='1621' r='3' fill='#333'/>
+<text class='legend' x='1374' y='1625'>24</text>
+<circle cx='1355' cy='1656' r='12' fill='#333'/>
+<text class='legend' x='1374' y='1660'>42</text>
+</g>
+</svg>
+

@@ -1,0 +1,31 @@
+"database","contrast","status","n_sig_ids","n_universe_ids","n_sig_entrez","n_universe_entrez","n_raw_terms","n_manual_terms"
+"Reactome","GFP_100_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr_down","OK",50,8043,50,8018,84,6
+"Reactome","GFP_100_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr_up","OK",25,8043,25,8018,56,0
+"Reactome","GFP_200_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr_down","OK",239,8043,239,8018,1,1
+"Reactome","GFP_200_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr_up","OK",77,8043,77,8018,24,15
+"Reactome","GFP_200_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr_down","OK",620,8043,619,8018,40,15
+"Reactome","GFP_200_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr_up","OK",127,8043,127,8018,20,7
+"Reactome","RDH12_100_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr_down","No enrichment",35,8043,35,8018,NA,NA
+"Reactome","RDH12_100_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr_up","OK",47,8043,45,8018,126,2
+"Reactome","RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr_down","OK",284,8043,283,8018,54,15
+"Reactome","RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr_up","OK",541,8043,535,8018,25,10
+"Reactome","RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr_down","OK",32,8043,32,8018,22,0
+"Reactome","RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr_up","OK",30,8043,29,8018,60,0
+"Reactome","RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr_down","OK",1846,8043,1837,8018,73,15
+"Reactome","RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr_up","OK",535,8043,534,8018,93,15
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_GFP_200_atRAL5hr.24h_recvr_down","OK",118,8043,118,8018,6,4
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_GFP_200_atRAL5hr.24h_recvr_up","OK",988,8043,985,8018,41,15
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr.24h_recvr_down","OK",52,8043,52,8018,99,0
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr.24h_recvr_up","No enrichment",33,8043,33,8018,NA,NA
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_200_atRAL5hr_down","OK",522,8043,520,8018,86,15
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_200_atRAL5hr_up","OK",560,8043,558,8018,70,15
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr_down","OK",49,8043,49,8018,79,0
+"Reactome","RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr_up","OK",28,8043,27,8018,55,1
+"Reactome","RDH12_200_atRAL5hr_vs_RDH12_100_atRAL5hr_down","No enrichment",22,8043,22,8018,NA,NA
+"Reactome","RDH12_200_atRAL5hr_vs_RDH12_100_atRAL5hr_up","No enrichment",52,8043,51,8018,NA,NA
+"Reactome","RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr_down","OK",823,8043,823,8018,51,15
+"Reactome","RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr_up","OK",664,8043,662,8018,28,15
+"Reactome","RDH12_control_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr_down","OK",41,8043,41,8018,51,0
+"Reactome","RDH12_control_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr_up","OK",36,8043,36,8018,4,1
+"Reactome","RDH12_control_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr_down","OK",1200,8043,1195,8018,236,15
+"Reactome","RDH12_control_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr_up","OK",847,8043,844,8018,9,2

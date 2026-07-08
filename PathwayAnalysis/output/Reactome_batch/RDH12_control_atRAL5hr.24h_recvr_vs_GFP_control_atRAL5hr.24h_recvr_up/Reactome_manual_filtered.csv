@@ -1,0 +1,2 @@
+"ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count","Description_lower","GeneRatio_num","FoldEnrichment_num"
+"R-HSA-2151201","Transcriptional activation of mitochondrial biogenesis","3/22","42/5359",0.0714285714285714,17.3993506493506,6.84986576305942,0.000621597073266303,0.0375030234204003,0.0324975311988348,"POLRMT/SIRT3/TFB2M",3,"transcriptional activation of mitochondrial biogenesis",0.136363636363636,17.3993506493506

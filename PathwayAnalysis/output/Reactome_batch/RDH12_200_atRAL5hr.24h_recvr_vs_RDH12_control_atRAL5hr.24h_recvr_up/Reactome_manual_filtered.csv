@@ -1,0 +1,2 @@
+"ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count","Description_lower","GeneRatio_num","FoldEnrichment_num"
+"R-HSA-382551","Transport of small molecules","3/10","282/5359",0.0106382978723404,5.70106382978723,3.50656728039008,0.0131250302488675,0.0535748744577391,0.0292416468775184,"HMOX1/SLC26A11/SLC39A7",3,"transport of small molecules",0.3,5.70106382978723

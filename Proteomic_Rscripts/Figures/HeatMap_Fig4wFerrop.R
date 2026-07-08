@@ -236,9 +236,9 @@ if (length(missing_cols) > 0) {
 # ---------------------------------------------------------
 
 Synthesis_PA <- c(
-  "LPCAT1", "PLA2G4A", "LPCAT4", "AGPAT3", "DDHD1", "GNPAT", "MIGA1",
-  "AGPAT4", "GPD2", "GPAT4", "AGPAT5", "DGAT1", "PTDSS1", "DGKE",
-  "CHKA", "ETNK1"
+    
+  "AGPAT4", "GPAT4", "AGPAT5",  "DGKE",
+  "CHKA"
 )
 
 Heme_related <- c(
@@ -246,29 +246,38 @@ Heme_related <- c(
 )
 
 CCT_TriC_genes <- c(
-  "TUBB4B", "TUBA1C", "TCP1", "CCT2", "TUBB2A", "TUBAL3", "CCT7",
-  "CCT3", "CCT8", "TUBB4A", "TUBB6", "CCT6A", "CCT4", "TUBA4A", "CCT5"
+  "CLIP1", "FLNA"
 )
 
 ERK_MAPK <- c(
-  "CCN1", "CCN2", "FN1", "WNT5A", "ERBB2", "FGFR2", "SPRY2", "ATF3"
+  "FN1", "WNT5A", "ERBB2", "FGFR2", "SPRY2", "ATF3"
 )
 
 KEAP1Nrf2 <- c(
-  "NFE2L2", "NRF2", "HMOX1", "SLC39A7", "PIDD1", "BCL2L12",
-  "TXNIP","CYBA","BACH2","ATP7A","TBL1X","NFE2L2","ATOX1","COX19",
-  "BACH1","CREBBP","PRDX6","COX7A2","ACY1","COX16","SMARCD3","ABCC1",
-  "CYP2S1","CHD9","GSTCD","TXN2","COX20","HMOX2","COX6C","ACOX1",
-  "SOD2","PRDX2","COX14","BLVRB","CHAC2","GSTO1","PRDX5","AKR1A1",
-  "CCS","CYP20A1","MT-CO2","STAT3","TGS1","CYP51A1","HM13","COX15",
-  "HIGD1A","HMOX1","MGST2","KEAP1","MGST3","GCLC","BLVRA","CARM1",
-  "GPX4","AKR1B1","GSTZ1","TXNRD1","GSR","GSS","COX5B","COX6B1",
-  "TXNRD2","GPX1","PRDX3","MAFK","RXRA","NCOR1","NCOR2","COX17",
-  "NCOA6","FTH1","FTL","TFRC",
-  "SLC39A14","SLC7A11","ACSL1","TFRC","TF","SLC11A2", "GCLC","HMOX1","ACSL3","ATG7",
-  "SCL3A2", "TP53", "GCLM","GSS", "GPX4","CP", "SLC40A1", "SLC39A8", "PRNP",
-  "PCBP2", "PCBP1", "FTH1" , "FTL", "STEAP3", "VDAC2", "VDAC3", "CYBB",
-  "FTMT", "ACSL4", "ACSL5", "ACSL6","LPCAT3", "SAT1", "SAT2", "ALOX15"
+  "HMOX1",
+  "GCLC", "GCLM", "GSS",
+  "TXNRD1", "GSR",
+  "ABCC1",
+  "MGST2", "MGST3",
+  "GSTO1", "GSTZ1",
+  "AKR1A1",
+  "BLVRB",
+  "NFE2L2", "HMOX1",
+  "GCLC", "GCLM",
+  "TXNRD1", "ABCC1",
+  "BACH1",
+  "CREBBP",
+  "BACH2",
+  "RXRA",
+  "SLC39A7",
+  "FTH1", "FTL", "TF", "CP",
+  "SLC11A2", "SLC40A1", "STEAP3",
+  "PCBP1", "PCBP2", "FTMT",
+  "GPX4", "ACSL4", "ACSL5", "ACSL6",
+  "LPCAT3", "ALOX15",
+  "SAT1", "SAT2",
+  "VDAC2", "VDAC3",
+  "CYBB", "SLC3A2"
   
 )
 
@@ -361,7 +370,7 @@ if (nrow(plot_df) == 0) {
 # ---------------------------------------------------------
 
 heat_df <- plot_df %>%
-  select(
+  dplyr::select(
     Gene,
     Pathway,
     all_of(display_centered_cols)
@@ -377,7 +386,7 @@ if (nrow(heat_df) == 0) {
 }
 
 heat_mat <- heat_df %>%
-  select(all_of(display_centered_cols)) %>%
+  dplyr::select(all_of(display_centered_cols)) %>%
   as.data.frame()
 
 rownames(heat_mat) <- heat_df$Gene
@@ -386,7 +395,7 @@ heat_mat <- as.matrix(heat_mat)
 colnames(heat_mat) <- unname(display_col_labels[colnames(heat_mat)])
 
 row_annot_df <- heat_df %>%
-  select(
+  dplyr::select(
     Gene,
     Pathway
   ) %>%

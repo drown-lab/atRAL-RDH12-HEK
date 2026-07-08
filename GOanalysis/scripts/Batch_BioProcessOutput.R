@@ -27,7 +27,7 @@ min_gs_size <- 3
 max_gs_size <- 700
 
 # Simplify settings
-simplify_cutoff <- 0.9
+simplify_cutoff <- 0.66
 
 # Optional manual filtering
 use_manual_filter <- TRUE
@@ -93,7 +93,8 @@ make_manual_table <- function(ego_df) {
     ego_df2 <- ego_df2 %>%
       mutate(
         Description_lower = str_to_lower(Description),
-        GeneRatio_num = sapply(strsplit(GeneRatio, "/"), function(x) as.numeric(x[1]) / as.numeric(x[2]))
+        GeneRatio_num = sapply(strsplit(GeneRatio, "/"), function(x) as.numeric(x[1]) / as.numeric(x[2])),
+        FoldEnrichment_num = as.numeric(FoldEnrichment)
       ) %>%
       filter(Count >= min_count_keep) %>%
       filter(p.adjust <= max_padj_keep) %>%
@@ -106,22 +107,35 @@ make_manual_table <- function(ego_df) {
     }
     
     ego_df2 <- ego_df2 %>%
-      arrange(p.adjust, desc(Count), desc(GeneRatio_num)) %>%
+      arrange(p.adjust, desc(Count), desc(FoldEnrichment_num)) %>%
       slice_head(n = max_terms_to_plot) %>%
       mutate(
-        Description = fct_reorder(Description, GeneRatio_num)
+        Description = fct_reorder(Description, FoldEnrichment_num)
       )
   } else {
     ego_df2 <- ego_df2 %>%
       mutate(
         GeneRatio_num = sapply(strsplit(GeneRatio, "/"), function(x) as.numeric(x[1]) / as.numeric(x[2])),
-        Description = fct_reorder(Description, GeneRatio_num)
+        FoldEnrichment_num = as.numeric(FoldEnrichment),
+        Description = fct_reorder(Description, FoldEnrichment_num)
       ) %>%
-      arrange(p.adjust, desc(Count), desc(GeneRatio_num)) %>%
+      arrange(p.adjust, desc(Count), desc(FoldEnrichment_num)) %>%
       slice_head(n = max_terms_to_plot)
   }
   
   ego_df2
+}
+
+make_fold_enrichment_plot_table <- function(ego_df, n_terms) {
+  ego_df %>%
+    mutate(
+      FoldEnrichment_num = as.numeric(FoldEnrichment)
+    ) %>%
+    arrange(p.adjust, desc(Count), desc(FoldEnrichment_num)) %>%
+    slice_head(n = n_terms) %>%
+    mutate(
+      Description = fct_reorder(Description, FoldEnrichment_num)
+    )
 }
 
 run_one_enrichment <- function(sig_file, all_file, output_root) {
@@ -234,7 +248,12 @@ run_one_enrichment <- function(sig_file, all_file, output_root) {
         n_sig_ids = length(sig_ids),
         n_universe_ids = length(universe_ids),
         n_sig_entrez = length(sig_entrez),
-        n_universe_entrez = length(universe_entrez)
+        n_universe_entrez = length(universe_entrez),
+        n_raw_terms = NA_integer_,
+        n_simplified_terms = NA_integer_,
+        n_semantic_removed_terms = NA_integer_,
+        pct_semantic_removed = NA_real_,
+        n_manual_terms = NA_integer_
       )
     )
   }
@@ -257,18 +276,41 @@ run_one_enrichment <- function(sig_file, all_file, output_root) {
   
   ego_bp_df <- as.data.frame(ego_bp)
   ego_bp_s_df <- as.data.frame(ego_bp_s)
+  semantic_removed_df <- ego_bp_df %>%
+    filter(!ID %in% ego_bp_s_df$ID)
   ego_bp_manual_df <- make_manual_table(as.data.frame(ego_bp_for_manual))
+  ego_bp_s_plot_df <- make_fold_enrichment_plot_table(ego_bp_s_df, terms_to_plot)
+  
+  n_semantic_removed <- nrow(semantic_removed_df)
+  pct_semantic_removed <- if (nrow(ego_bp_df) > 0) {
+    round(100 * n_semantic_removed / nrow(ego_bp_df), 1)
+  } else {
+    NA_real_
+  }
   
   write.csv(ego_bp_df, file.path(out_dir, "enrichGO_BP_raw.csv"), row.names = FALSE)
   write.csv(ego_bp_s_df, file.path(out_dir, "enrichGO_BP_simplified.csv"), row.names = FALSE)
+  write.csv(semantic_removed_df, file.path(out_dir, "enrichGO_BP_semantic_removed.csv"), row.names = FALSE)
   write.csv(ego_bp_manual_df, file.path(out_dir, "enrichGO_BP_manual_filtered.csv"), row.names = FALSE)
   
-  p_dot_simplified <- dotplot(ego_bp_s, showCategory = terms_to_plot) +
-    ggtitle(paste0(contrast_name, ": GO BP (simplified)")) +
+  p_dot_simplified <- ggplot(
+    ego_bp_s_plot_df,
+    aes(x = FoldEnrichment_num, y = Description, size = Count, color = p.adjust)
+  ) +
+    geom_point() +
+    theme_bw() +
     theme(
       panel.grid.major = element_blank(),
-      panel.grid.minor = element_blank()
-    )
+      panel.grid.minor = element_blank(),
+      axis.text.y = element_text(size = 14)
+    ) +
+    labs(
+      title = paste0(contrast_name, ": GO BP (simplified)"),
+      x = "Fold enrichment",
+      y = NULL,
+      color = "p.adjust"
+    ) +
+    scale_color_paletteer_c("grDevices::Plasma", direction = -1)
   
   ggsave(
     filename = file.path(out_dir, "enrichGO_BP_simplified_dotplot.pdf"),
@@ -288,7 +330,7 @@ run_one_enrichment <- function(sig_file, all_file, output_root) {
   if (nrow(ego_bp_manual_df) > 0) {
     p_dot_manual <- ggplot(
       ego_bp_manual_df,
-      aes(x = GeneRatio_num, y = Description, size = Count, color = p.adjust)
+      aes(x = FoldEnrichment_num, y = Description, size = Count, color = p.adjust)
     ) +
       geom_point() +
       theme_bw() +
@@ -299,11 +341,10 @@ run_one_enrichment <- function(sig_file, all_file, output_root) {
       ) +
       labs(
         title = paste0(contrast_name, ": GO BP (manual filtered)"),
-        x = "GeneRatio",
+        x = "Fold enrichment",
         y = NULL,
         color = "p.adjust"
       ) +
-      scale_x_continuous(labels = percent_format(accuracy = 1)) +
       scale_color_paletteer_c("grDevices::Plasma", direction = -1)
     
     ggsave(
@@ -333,6 +374,8 @@ run_one_enrichment <- function(sig_file, all_file, output_root) {
     n_universe_entrez = length(universe_entrez),
     n_raw_terms = nrow(ego_bp_df),
     n_simplified_terms = nrow(ego_bp_s_df),
+    n_semantic_removed_terms = n_semantic_removed,
+    pct_semantic_removed = pct_semantic_removed,
     n_manual_terms = nrow(ego_bp_manual_df)
   )
 }
