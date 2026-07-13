@@ -1,37 +1,65 @@
 # Characterizing Response to atRAL Toxicity
 
-This is a working repo for proteomic and lipidomic data that was generated in the atRAL toxicity experiments in the Rams collab. Experimental approach: Cell model expressing RDH12. Dose-response was performed by treatment with atRAL to induce toxicity. Cells were collected at 5hrs post-treatment, or 24hrs post-treatment with a media switch.
+This repository contains proteomic and lipidomic analysis code for atRAL toxicity experiments from the Rams-Drown-Ferreira collaboration. The cell model is HEK293T cells that are either WT or overexpress RDH12. Cells were treated with atRAL and collected either 5 hours after treatment or after a 24 hour recovery period with a media switch.
+
+The repo is a working analysis project, but the manuscript-facing pieces are now documented separately from exploratory, deprecated, and quality-control scripts.
+
+## Manuscript Analysis Map
+
+Use [MANUSCRIPT_OUTPUTS.md](MANUSCRIPT_OUTPUTS.md) as the detailed map of scripts, figure/table outputs, and manuscript status.
+
+Core manuscript-facing analysis paths:
+
+-   `Proteomic_Rscripts/DEP_analysis/` - canonical proteomics DEP workflow. Start with `00_Setup_Input_Files_and_Output_paths.R`, then run `99_RunAll_Scripts_working.R`.
+-   `Proteomic_Rscripts/Figures/` - proteomics figure-generating scripts, including inferred main-text and supplemental figure candidates.
+-   `Proteomic_Figs/` - proteomics figures and figure input tables. Manuscript-ready pathway heatmaps are grouped in `Proteomic_Figs/enriched/1_Maintext_version/`.
+-   `Proteomic_output_txts/` - proteomics tables, SI tables, DEA outputs, PANGEA exports, and enrichment-ready outputs.
+-   `Proteomic_Figs/Proteomic_PCAs/` - proteomics PCA figure exports.
+-   `Lipidomics/RScripts/` - recovery lipidomics processing, DEA, summaries, and figure scripts.
+-   `Lipidomics/RScripts/Acute/` - acute lipidomics processing, DEA, summaries, and figure scripts.
+-   `Lipidomics/Figures/` - lipidomics figure outputs.
+-   `Lipidomics/output_txts/` - lipidomics DEA, abundance, and summary tables.
+-   `GOanalysis/scripts/` and `PathwayAnalysis/` - GO and Reactome enrichment analysis scripts and output folders. Outputs moved into `GOanalysis/output/clusterProfiler_Not for manuscript/` and `PathwayAnalysis/output/Reactome_not for manuscript/` are retained for provenance but are not manuscript-facing.
+-   `PPF_datasets/` - PPF-specific proteomics comparison scripts and outputs.
 
 ## Organization
 
 This workflow is for differential expression analysis of proteomic and lipidomic datasets.
 
-#### Description of Folders
+### Folder Guide
 
--   Folder `Proteomic_Rscripts`- contains scripts used to generate DEP analysis
+-   `quant_DIANN_outputs/` - DIA-NN quantification output used as proteomics input.
+-   `Proteomic_Rscripts/` - proteomics analysis and figure scripts.
+-   `Proteomic_Rscripts/DEP_analysis/` - canonical proteomics DEP pipeline.
+-   `Proteomic_Figs/` - proteomics figures, QC plots, heatmaps, volcano plots, and figure source tables.
+-   `Proteomic_output_txts/` - proteomics tables and text-like outputs.
+-   `Proteomic_Figs/Proteomic_PCAs/` - proteomics PCA exports.
+-   `Lipidomics/` - lipidomics scripts, figures, metadata, and output tables.
+-   `GOanalysis/` - GO enrichment scripts and clusterProfiler outputs.
+-   `PathwayAnalysis/` - Reactome pathway outputs.
+-   `PPF_datasets/` - PPF dataset- basal condition of HEK293T WT and RDH12 cells- preprocessing and comparison outputs.
+-   `RData/` - serialized intermediate R objects.
+-   `Environments/` - dependency/environment helper script.
 
--   Folder `Proteomic_Figs` - contains figures related to proteomic data
+## Differential Expression Analysis
 
--   Folder `Proteomic_output_txts` - contains key output txt-like files
+-   Proteomics DEP workflow: `Proteomic_Rscripts/DEP_analysis/README.md`
+-   Proteomics run-all script: `Proteomic_Rscripts/DEP_analysis/99_RunAll_Scripts_working.R`
+-   Lipidomics recovery workflow: `Lipidomics/RScripts/`
+-   Lipidomics acute workflow: `Lipidomics/RScripts/Acute/`
 
--   Folder `PCAs` - contains visualizations of proteomic data
+## Noncanonical And Exploratory Code
 
--   Folder `quant_DIANN_outputs`- contains the filtered excel worksheet of protein IDs and intensity
+The cleanup policy for this repository is conservative: preserve old scripts and document their status instead of deleting them. See [ARCHIVE_NOTES.md](ARCHIVE_NOTES.md) for the current list of deprecated, test, exploratory, or stale files.
 
--   Folder `Lipidomics`- contains scripts, figures, output_txts from lipidomics datasets
+Known noncanonical locations include:
 
-#### Differential Expression Analysis:
-
--   Differential expression of proteins workflow (DEP): is found in `Proteomic_Rscripts/DEP_analysis`: comes with own Readme file for detailed explanation
--   Differential Expression of lipids: scripts to perform this is found in `Lipidomics/RScripts`
-
-#### More Lipid scripts To be added
-
-## Updates
-
--   As of 3/13/26: this repo only contains R scripts for proteomics and lipidomics analysis
-    -   Currently assessing if can perform lipidomics DEA on the combined datasets-as there could be batch effect from both instrument collection date and a experiment-type
+-   `test/`
+-   `Lipidomics/test/`
+-   `not sure if used/`
+-   `Proteomic_Rscripts/Depracated/`
+-   `Proteomic_Rscripts/Other_QCscripts/`
 
 ## Version, Dependencies, Packages
 
-Information on what is required/used to run scripts can be found in `dependciesAndPackages_info.txt`
+Package and dependency notes are in `dependciesAndPackages_info.txt`. Additional R session information is stored in output folders such as `Proteomic_output_txts/sessionInfo.txt`.
