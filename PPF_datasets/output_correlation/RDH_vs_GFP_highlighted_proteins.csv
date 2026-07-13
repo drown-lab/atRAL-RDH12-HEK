@@ -1,0 +1,2 @@
+Protein.Group,Genes,mean_log2_abundance_RDH,mean_log2_abundance_GFP,n_replicates_RDH,n_replicates_GFP,highlight_gene,is_highlight,abundance_difference_RDH_minus_GFP
+P20226,TBP,16.230070019908943,16.22879724148471,3,3,TBP,TRUE,0.0012727784242336782

@@ -1,0 +1,2 @@
+comparison,n_shared_proteins,pearson_r,pearson_p_value,spearman_rho,spearman_p_value
+RDH_vs_GFP,8328,0.9895675121856493,0,0.9901919131838209,0
