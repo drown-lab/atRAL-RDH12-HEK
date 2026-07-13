@@ -30,6 +30,7 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 
 -   `quant_DIANN_outputs/` - DIA-NN quantification output used as proteomics input.
 -   `Proteomic_Rscripts/` - proteomics analysis and figure scripts.
+-   `Proteomic_Rscripts/Figures/depracated/` - older proteomics figure scripts retained for provenance but no longer treated as active manuscript figure drivers.
 -   `Proteomic_Rscripts/DEP_analysis/` - canonical proteomics DEP pipeline.
 -   `Proteomic_Figs/` - proteomics figures, QC plots, heatmaps, volcano plots, and figure source tables.
 -   `Proteomic_output_txts/` - proteomics tables and text-like outputs.
@@ -58,6 +59,7 @@ Known noncanonical locations include:
 -   `Lipidomics/test/`
 -   `not sure if used/`
 -   `Proteomic_Rscripts/Depracated/`
+-   `Proteomic_Rscripts/Figures/depracated/`
 -   `Proteomic_Rscripts/Other_QCscripts/`
 
 ## Version, Dependencies, Packages
