@@ -15,7 +15,7 @@ library(readr)
 contrast_name <- "RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr_down"
 
 out_dir <- file.path(
-  "GOanalysis/output/clusterProfiler",
+  "GOanalysis/output/clusterProfiler_batch",
   contrast_name
 )
 

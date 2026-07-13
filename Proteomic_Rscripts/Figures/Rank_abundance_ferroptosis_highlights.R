@@ -33,7 +33,7 @@ out_dir <- "Proteomic_Figs/rank_abundance_ferroptosis_highlights"
 highlight_genes <- c(
   "CYBA", "GSTA4", "NFE2L2", "GSTZ1", "TXNRD1", "GSS", "GSR", "FTL",
   "GPX1", "TXNRD2", "HMOX1", "FTH1", "GCLM", "PRDX6", "ACSL4", "ACSL3",
-  "GCLC", "MGST2", "KEAP1", "MGST3", "SLC7A11", "TFRC", "SLC11A2"
+  "GCLC", "MGST2", "KEAP1", "MGST3", "SLC7A11", "TFRC", "SLC11A2", "GPX4"
 )
 
 condition_order <- c(
