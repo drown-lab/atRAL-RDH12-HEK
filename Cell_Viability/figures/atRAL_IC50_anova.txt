@@ -1,0 +1,43 @@
+Two-factor ANOVA on log10(IC50)
+Model: log10(IC50) ~ genotype * ferrostatin-1
+n = 3 biological replicates per group; IC50 from per-biorep log-logistic
+fits (variable slope, Top = 100, Bottom = 0; Prism 'log(inhibitor) vs.
+normalized response -- variable slope' equivalent)
+
+              Df Sum Sq Mean Sq F value   Pr(>F)    
+genotype       1 0.3391  0.3391  369.85 5.54e-08 ***
+fer1           1 0.0213  0.0213   23.28 0.001313 ** 
+genotype:fer1  1 0.0424  0.0424   46.26 0.000138 ***
+Residuals      8 0.0073  0.0009                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Group means (IC50, uM; geometric mean across bioreps):
+  genotype          fer1 geomean_IC50
+1       WT       Vehicle     133.5080
+2       WT Fer-1 (30 µM)     123.2990
+3    RDH12       Vehicle     220.1996
+4    RDH12 Fer-1 (30 µM)     351.6148
+
+Tukey HSD on genotype:fer1 cell means (log10 scale):
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = log10(IC50) ~ genotype * fer1, data = biorep_ic50)
+
+$`genotype:fer1`
+                                            diff        lwr         upr
+RDH12:Vehicle-WT:Vehicle              0.21730910  0.1381354  0.29648281
+WT:Fer-1 (30 µM)-WT:Vehicle          -0.03454788 -0.1137216  0.04462583
+RDH12:Fer-1 (30 µM)-WT:Vehicle        0.42055973  0.3413860  0.49973344
+WT:Fer-1 (30 µM)-RDH12:Vehicle       -0.25185698 -0.3310307 -0.17268327
+RDH12:Fer-1 (30 µM)-RDH12:Vehicle     0.20325063  0.1240769  0.28242434
+RDH12:Fer-1 (30 µM)-WT:Fer-1 (30 µM)  0.45510761  0.3759339  0.53428132
+                                         p adj
+RDH12:Vehicle-WT:Vehicle             0.0001021
+WT:Fer-1 (30 µM)-WT:Vehicle          0.5343160
+RDH12:Fer-1 (30 µM)-WT:Vehicle       0.0000007
+WT:Fer-1 (30 µM)-RDH12:Vehicle       0.0000345
+RDH12:Fer-1 (30 µM)-RDH12:Vehicle    0.0001656
+RDH12:Fer-1 (30 µM)-WT:Fer-1 (30 µM) 0.0000003
+
