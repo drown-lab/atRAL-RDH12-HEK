@@ -8295,18 +8295,21 @@
 <circle cx='619.61' cy='289.14' r='4.09' style='stroke-width: 1.13;' />
 <circle cx='820.82' cy='49.51' r='4.09' style='stroke-width: 1.13;' />
 <circle cx='681.49' cy='289.14' r='4.09' style='stroke-width: 1.13;' />
+<circle cx='439.63' cy='581.01' r='4.09' style='stroke-width: 1.13;' />
 <circle cx='436.47' cy='572.31' r='4.09' style='stroke-width: 1.13;' />
 <line x1='398.05' y1='625.62' x2='398.05' y2='22.08' style='stroke-width: 1.07; stroke: #666666; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
 <line x1='438.75' y1='625.62' x2='438.75' y2='22.08' style='stroke-width: 1.07; stroke: #666666; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
 <line x1='29.16' y1='534.41' x2='858.52' y2='534.41' style='stroke-width: 1.07; stroke: #666666; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
-<line x1='626.11' y1='283.84' x2='621.95' y2='287.23' style='stroke-width: 0.64; stroke: #333333;' />
-<line x1='814.54' y1='54.60' x2='818.47' y2='51.41' style='stroke-width: 0.64; stroke: #333333;' />
-<line x1='687.80' y1='284.01' x2='683.84' y2='287.24' style='stroke-width: 0.64; stroke: #333333;' />
-<line x1='430.06' y1='577.51' x2='434.13' y2='574.21' style='stroke-width: 0.64; stroke: #333333;' />
-<text x='633.97' y='282.04' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='42.03px' lengthAdjust='spacingAndGlyphs'>PRKACG</text>
-<text x='806.49' y='63.53' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='32.62px' lengthAdjust='spacingAndGlyphs'>RDH12</text>
-<text x='695.65' y='282.21' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='40.17px' lengthAdjust='spacingAndGlyphs'>TANGO2</text>
-<text x='421.93' y='586.44' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='31.89px' lengthAdjust='spacingAndGlyphs'>RDH11</text>
+<line x1='613.23' y1='294.34' x2='615.44' y2='292.54' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='814.47' y1='54.64' x2='816.63' y2='52.89' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='675.02' y1='294.42' x2='677.32' y2='292.55' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='446.26' y1='586.43' x2='443.80' y2='584.42' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='429.90' y1='566.95' x2='432.30' y2='568.91' style='stroke-width: 0.64; stroke: #333333;' />
+<text x='605.40' y='303.27' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='42.03px' lengthAdjust='spacingAndGlyphs'>PRKACG</text>
+<text x='806.11' y='63.57' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='32.62px' lengthAdjust='spacingAndGlyphs'>RDH12</text>
+<text x='667.14' y='303.35' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='40.17px' lengthAdjust='spacingAndGlyphs'>TANGO2</text>
+<text x='454.27' y='595.36' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='38.17px' lengthAdjust='spacingAndGlyphs'>PNPLA6</text>
+<text x='421.83' y='565.15' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='31.89px' lengthAdjust='spacingAndGlyphs'>RDH11</text>
 <rect x='29.16' y='22.08' width='829.36' height='603.55' style='stroke-width: 1.07; stroke: #333333;' />
 </g>
 <g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw3MjAuMDA=)'>

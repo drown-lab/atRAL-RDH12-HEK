@@ -84,7 +84,8 @@ Prefoldin <- c("PFDN1", "PFDN2", "VBP1", "PFDN4", "PFDN5", "PFDN6")
 
 Synthesis_PA <- c(
   "LPCAT1", "PLA2G4A", "LPCAT4", "AGPAT3", "DDHD1", "GNPAT",
-  "MIGA1", "AGPAT4", "GPD2", "GPAT4", "AGPAT5", "DGAT1"
+  "MIGA1", "AGPAT4", "GPD2", "GPAT4", "AGPAT5", "DGAT1",
+  "PNPLA6"
 )
 
 pathway_tbl_all <- bind_rows(

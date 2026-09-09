@@ -8312,20 +8312,23 @@
 <circle cx='280.52' cy='230.72' r='4.09' style='stroke-width: 1.13;' />
 <circle cx='410.82' cy='521.96' r='4.09' style='stroke-width: 1.13;' />
 <circle cx='308.50' cy='49.51' r='4.09' style='stroke-width: 1.13;' />
+<circle cx='516.98' cy='598.18' r='4.09' style='stroke-width: 1.13;' />
 <circle cx='516.41' cy='598.18' r='4.09' style='stroke-width: 1.13;' />
 <line x1='477.89' y1='625.62' x2='477.89' y2='22.08' style='stroke-width: 1.07; stroke: #666666; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
 <line x1='524.76' y1='625.62' x2='524.76' y2='22.08' style='stroke-width: 1.07; stroke: #666666; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
 <line x1='41.38' y1='532.66' x2='858.52' y2='532.66' style='stroke-width: 1.07; stroke: #666666; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
-<line x1='827.38' y1='229.98' x2='823.61' y2='233.35' style='stroke-width: 0.64; stroke: #333333;' />
-<line x1='283.39' y1='222.96' x2='281.45' y2='228.23' style='stroke-width: 0.64; stroke: #333333;' />
-<line x1='404.67' y1='527.03' x2='408.48' y2='523.89' style='stroke-width: 0.64; stroke: #333333;' />
-<line x1='302.36' y1='54.55' x2='306.16' y2='51.43' style='stroke-width: 0.64; stroke: #333333;' />
-<line x1='523.04' y1='592.67' x2='518.74' y2='596.25' style='stroke-width: 0.64; stroke: #333333;' />
-<text x='832.02' y='228.18' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='41.48px' lengthAdjust='spacingAndGlyphs'>BCL2L12</text>
-<text x='294.59' y='223.92' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='18.80px' lengthAdjust='spacingAndGlyphs'>FN1</text>
-<text x='396.99' y='535.96' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='32.62px' lengthAdjust='spacingAndGlyphs'>RDH12</text>
-<text x='294.43' y='63.48' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='26.91px' lengthAdjust='spacingAndGlyphs'>RTKN</text>
-<text x='530.83' y='590.87' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='31.89px' lengthAdjust='spacingAndGlyphs'>RDH11</text>
+<line x1='815.14' y1='240.49' x2='817.22' y2='238.78' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='283.70' y1='222.66' x2='282.50' y2='225.71' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='417.26' y1='516.62' x2='414.96' y2='518.52' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='314.73' y1='44.37' x2='312.66' y2='46.08' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='522.25' y1='601.36' x2='521.59' y2='600.96' style='stroke-width: 0.64; stroke: #333333;' />
+<line x1='510.92' y1='594.84' x2='511.81' y2='595.38' style='stroke-width: 0.64; stroke: #333333;' />
+<text x='807.37' y='249.42' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='41.48px' lengthAdjust='spacingAndGlyphs'>BCL2L12</text>
+<text x='294.90' y='223.70' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='18.80px' lengthAdjust='spacingAndGlyphs'>FN1</text>
+<text x='424.99' y='514.82' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='32.62px' lengthAdjust='spacingAndGlyphs'>RDH12</text>
+<text x='322.43' y='42.57' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='26.91px' lengthAdjust='spacingAndGlyphs'>RTKN</text>
+<text x='543.14' y='607.14' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='38.17px' lengthAdjust='spacingAndGlyphs'>PNPLA6</text>
+<text x='493.18' y='596.22' text-anchor='middle' style='font-size: 9.96px; font-family: "Arial";' textLength='31.89px' lengthAdjust='spacingAndGlyphs'>RDH11</text>
 <rect x='41.38' y='22.08' width='817.14' height='603.55' style='stroke-width: 1.07; stroke: #333333;' />
 </g>
 <g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw3MjAuMDA=)'>

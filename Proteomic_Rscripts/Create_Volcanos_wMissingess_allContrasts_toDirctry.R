@@ -27,7 +27,7 @@ library(stringr)
 # Assumes your main table is already in memory as:
 # DEPresults_v2
 
-favorite_IDs <- c("RDH12", "RDH11")
+favorite_IDs <- c("RDH12", "RDH11", "PNPLA6")
 
 padj_cutoff  <- 0.055
 lfc_cutoff   <- log2(1.45)

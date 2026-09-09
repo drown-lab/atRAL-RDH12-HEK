@@ -5310,7 +5310,7 @@
 "PNN",0.634,0.180662256973405,0.6,0.18,"0.6","0.18","NS","Present_3of3","Present_3of3","Present vs Present",NA
 "PNO1",-0.386,0.13976426644699,-0.4,0.14,"-0.4","0.14","NS","Present_3of3","Present_3of3","Present vs Present",NA
 "PNP",-0.018,0.967096818545895,0,0.97,"-0.0","0.97","NS","Present_3of3","Present_3of3","Present vs Present",NA
-"PNPLA6",-0.834,0.0564619165975931,-0.8,0.06,"-0.8","0.06","NS","Present_3of3","Present_3of3","Present vs Present",NA
+"PNPLA6",-0.834,0.0564619165975931,-0.8,0.06,"-0.8","0.06","NS","Present_3of3","Present_3of3","Present vs Present","PNPLA6"
 "PNPLA8",-0.634,0.652200592208313,-0.6,0.65,"-0.6","0.65","NS","Present_3of3","Present_3of3","Present vs Present",NA
 "PNPO",1.63,0.00532007111629591,1.6,0.01,"1.6","<0.01","Up","Present_3of3","Present_3of3","Present vs Present",NA
 "PNPT1",-0.49,0.0121083067243237,-0.5,0.01,"-0.5","0.01","NS","Present_3of3","Present_3of3","Present vs Present",NA
