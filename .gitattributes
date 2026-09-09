@@ -1,3 +1,9 @@
 *.skyd filter=lfs diff=lfs merge=lfs -text
 *.parquet filter=lfs diff=lfs merge=lfs -text
 quant_DIANN_outputs/*.csv filter=lfs diff=lfs merge=lfs -text
+
+# Binary artifacts: no textual diff, no line merges, no line-ending rewriting.
+# SVG is deliberately excluded — it is XML, and readable diffs are worth keeping there.
+*.pdf binary
+*.png binary
+*.zip binary
