@@ -181,11 +181,17 @@ dose_response_plot <- function(pred, summ, ic50, by_pretreatment = TRUE,
     theme(legend.position = "right")
 }
 
-# Shared presentation layers: viability pinned to 0-100, and the legend pulled
-# back against the panel (legend.box.spacing otherwise scales with base_size).
+# Near-baseline doses sit above 100% viability, so the view has to clear the
+# tallest mean + SEM or those error bars get cut off at the panel edge. Breaks
+# stay on the quarter points, keeping a labelled tick at 100.
+VIABILITY_CEILING <- ceiling(max(summ$mean + summ$sem))
+
+# Shared presentation layers: one viability range across both figures, and the
+# legend pulled back against the panel (legend.box.spacing otherwise scales
+# with base_size).
 presentation_layers <- list(
   scale_y_continuous(breaks = seq(0, 100, by = 25)),
-  coord_cartesian(ylim = c(0, 100)),
+  coord_cartesian(ylim = c(0, VIABILITY_CEILING)),
   theme(legend.box.spacing = grid::unit(4, "pt"))
 )
 
