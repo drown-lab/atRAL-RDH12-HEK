@@ -30,6 +30,8 @@ colnames(Protmcs_HekatRALexps_v1)
 #IMPORTANT: Do NOT change the table names that are being created for each file path
 #The scripts require those table names for the Run ALL to work
 
+dir.create("RData", showWarnings = FALSE)
+
 # 1) Setup output path where want Figures to go 
 path_figures <- "Proteomic_Figs/"
 

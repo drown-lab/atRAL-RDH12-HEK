@@ -1,0 +1,16 @@
+"contrast","n_measured","n_num_imputed","n_den_imputed","n_both_imputed_removed"
+"GFP_100_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr",7635,135,72,207
+"GFP_200_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr",7501,206,130,212
+"GFP_200_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr",7523,247,108,171
+"RDH12_100_atRAL5hr.24h_recvr_vs_GFP_100_atRAL5hr.24h_recvr",7595,112,125,217
+"RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr",7550,305,170,24
+"RDH12_100_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr",7646,104,74,225
+"RDH12_100_atRAL5hr_vs_RDH12_control_atRAL5hr",7101,55,754,139
+"RDH12_200_atRAL5hr.24h_recvr_vs_GFP_200_atRAL5hr.24h_recvr",7444,187,216,202
+"RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_100_atRAL5hr.24h_recvr",7576,144,84,245
+"RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_200_atRAL5hr",7492,362,168,27
+"RDH12_200_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr.24h_recvr",7590,160,70,229
+"RDH12_200_atRAL5hr_vs_RDH12_100_atRAL5hr",7777,78,77,117
+"RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr",7103,53,751,142
+"RDH12_control_atRAL5hr.24h_recvr_vs_GFP_control_atRAL5hr.24h_recvr",7662,108,88,191
+"RDH12_control_atRAL5hr.24h_recvr_vs_RDH12_control_atRAL5hr",6987,169,763,130
