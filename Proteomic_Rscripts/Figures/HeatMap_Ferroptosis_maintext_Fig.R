@@ -22,6 +22,9 @@
 #
 # Optional: set keep_only_significant <- TRUE to keep only proteins
 # significant in at least one acute contrast.
+#
+# Proteins that failed XIC curation (xic_curated_exclusions.R) are dropped and
+# single-peptide protein groups are marked with "*" in the row label.
 # =========================================================
 
 suppressPackageStartupMessages({
@@ -31,6 +34,9 @@ suppressPackageStartupMessages({
   library(tibble)
   library(pheatmap)
 })
+
+source("Proteomic_Rscripts/Figures/xic_curated_exclusions.R")
+mark_single_peptide <- TRUE
 
 # ---------------------------------------------------------
 # 1. USER INPUTS
@@ -139,7 +145,8 @@ if (length(missing_cols) > 0) {
 
 keap1_nrf2_axis <- c(
   # NRF2 / electrophilic-stress response
-  "NFE2L2", "KEAP1", "HMOX1",
+  # (NFE2L2 itself is removed by XIC curation; SRXN1 added as a multi-peptide NRF2 target)
+  "NFE2L2", "KEAP1", "HMOX1", "SRXN1",
   
   # Cystine uptake and glutathione synthesis / recycling
   "SLC7A11", "GCLC", "GCLM", "GSS", "GSR",
@@ -228,7 +235,8 @@ if (nrow(dup_genes) > 0) {
 }
 
 process_tbl <- process_tbl_all %>%
-  distinct(Gene, .keep_all = TRUE)
+  distinct(Gene, .keep_all = TRUE) %>%
+  apply_xic_curation(gene_col = "Gene", label = "Fig 6A")
 
 process_order <- c(
   "KEAP1-NRF2 oxidative stress axis",
@@ -316,12 +324,18 @@ if (nrow(plot_df) == 0) {
 heat_df <- plot_df %>%
   dplyr::select(
     Gene,
+    ID,
     Process,
     SigIn,
     all_of(display_centered_cols),
     all_of(sigflag_cols),
     all_of(sig_required_cols)
   )
+
+if (mark_single_peptide) {
+  heat_df <- heat_df %>%
+    mutate(Gene = label_single_peptide(Gene, ID))
+}
 
 if (remove_all_na_rows) {
   heat_df <- heat_df %>%
@@ -566,6 +580,9 @@ print(colnames(heat_mat))
 cat("\nProteins per functional process shown:\n")
 print(table(row_annot$Process))
 
+cat("\nSingle-peptide protein groups (marked *):",
+    paste(grep("\\*$", rownames(heat_mat), value = TRUE), collapse = ", "), "\n")
+
 cat("\nProteins shown and functional assignments:\n")
 heat_df %>%
   dplyr::select(Gene, Process, SigIn) %>%
@@ -576,4 +593,4 @@ cat("\nSaved files:\n")
 cat(out_file_pdf, "\n")
 cat(out_file_svg, "\n")
 cat(out_file_png, "\n")
-cat(out_file_csv, "\n")
+cat(out_file_csv, "\n")

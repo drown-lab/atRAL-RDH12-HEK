@@ -4,6 +4,8 @@
 # - Proteins are columns, labeled by gene ID
 # - Protein pathway/group is shown as a column annotation strip
 # - Keeps proteins significant in at least one acute contrast
+# - Drops proteins that failed XIC curation (xic_curated_exclusions.R) and
+#   marks single-peptide protein groups with "*" in the column label
 # =========================================================
 
 suppressPackageStartupMessages({
@@ -12,6 +14,9 @@ suppressPackageStartupMessages({
   library(tibble)
   library(pheatmap)
 })
+
+source("Proteomic_Rscripts/Figures/xic_curated_exclusions.R")
+mark_single_peptide <- TRUE
 
 # ---------------------------------------------------------
 # 1. User inputs
@@ -108,6 +113,7 @@ pathway_order <- c(
 
 pathway_tbl <- pathway_tbl_all %>%
   distinct(Gene, .keep_all = TRUE) %>%
+  apply_xic_curation(gene_col = "Gene", label = "Fig 3H") %>%
   mutate(
     Pathway = factor(Pathway, levels = pathway_order),
     DisplayGene = if_else(Gene == "VBP1", "VBP1/PFDN3", Gene)
@@ -198,6 +204,11 @@ plot_df <- pathway_tbl %>%
 
 if (nrow(plot_df) == 0) {
   stop("No proteins from the pathway lists passed the acute significance filter.")
+}
+
+if (mark_single_peptide) {
+  plot_df <- plot_df %>%
+    mutate(DisplayGene = label_single_peptide(DisplayGene, ID))
 }
 
 # ---------------------------------------------------------
@@ -360,7 +371,9 @@ write.csv(plot_df_export, file = out_file_csv, row.names = FALSE)
 cat("Proteins requested in pathway table:", nrow(pathway_tbl), "\n")
 cat("Proteins plotted:", ncol(heat_mat), "\n")
 cat("Heatmap rows:", paste(rownames(heat_mat), collapse = ", "), "\n")
-cat("Heatmap columns include VBP1/PFDN3:", "VBP1/PFDN3" %in% colnames(heat_mat), "\n")
+cat("Heatmap columns include VBP1/PFDN3:", any(grepl("^VBP1/PFDN3", colnames(heat_mat))), "\n")
+cat("Single-peptide protein groups (marked *):",
+    paste(grep("\\*$", colnames(heat_mat), value = TRUE), collapse = ", "), "\n")
 cat("PDF written to:", out_file_pdf, "\n")
 cat("SVG written to:", out_file_svg, "\n")
 cat("CSV written to:", out_file_csv, "\n\n")
