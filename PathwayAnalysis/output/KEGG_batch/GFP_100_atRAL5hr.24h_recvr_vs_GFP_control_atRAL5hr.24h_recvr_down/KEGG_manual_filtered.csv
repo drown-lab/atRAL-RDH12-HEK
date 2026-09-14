@@ -1,0 +1,2 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count","Description_lower","GeneRatio_num","FoldEnrichment_num"
+"Environmental Information Processing","Signaling molecules and interaction","hsa04060","Cytokine-cytokine receptor interaction","3/23","31/3974",0.0967741935483871,16.7208976157083,6.7036986512263,0.000685104914512206,0.0541232882464643,0.0526449039572538,"BMPR2/LIFR/TNFRSF1A",3,"cytokine-cytokine receptor interaction",0.130434782608696,16.7208976157083

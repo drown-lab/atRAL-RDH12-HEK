@@ -1,0 +1,2 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count"
+"Organismal Systems","Immune system","hsa04610","Complement and coagulation cascades","3/21","19/3974",0.157894736842105,29.8796992481203,9.19605892655878,0.000116764949222612,0.0102753155315899,0.0102753155315899,"F5/F10/PLAUR",3

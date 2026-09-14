@@ -1,0 +1,2 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count","Description_lower","GeneRatio_num","FoldEnrichment_num"
+"Cellular Processes","Transport and catabolism","hsa04140","Autophagy - animal","3/8","126/3974",0.0238095238095238,11.827380952381,5.54650079153316,0.00155109443361101,0.073676985596523,0.0571455843961951,"BNIP3/MAPK8/UVRAG",3,"autophagy - animal",0.375,11.827380952381
