@@ -641,4 +641,4 @@ cat("\nSingle-peptide protein groups (marked *):",
 cat("\nSaved files:\n")
 cat(out_file_pdf, "\n")
 cat(out_file_svg, "\n")
-cat(out_file_csv, "\n")
+cat(out_file_csv, "\n")
