@@ -7,3 +7,14 @@ quant_DIANN_outputs/*.csv filter=lfs diff=lfs merge=lfs -text
 *.pdf binary
 *.png binary
 *.zip binary
+
+# Source files: stored LF in the repository and checked out LF, regardless of
+# core.autocrlf. Without this, a CRLF blob plus core.autocrlf=true means the
+# first edit to a file rewrites every line as a spurious whitespace diff.
+# Data artifacts (*.csv, *.svg, *.txt) are deliberately left alone so this rule
+# does not renormalize ~1100 generated files.
+*.R        text eol=lf
+*.Rmd      text eol=lf
+*.md       text eol=lf
+*.Rprofile text eol=lf
+*.ps1      text eol=crlf
