@@ -38,7 +38,8 @@ xic_excluded_genes <- c(
   GSTA4   = "two peptides, both noise-level (Evidence 2.9 / 2.5); recovery 'surge' is imputed floor",
   CHKA    = "two peptides, Evidence 2.0 / 2.7, single dominant fragment only; ETNK1 (3 peptides) carries the Kennedy-pathway claim",
   BCL2L12 = "single peptide, Evidence 2.6, noise",
-  PIDD1   = "single peptide, Evidence 2.0, noise"
+  PIDD1   = "single peptide, Evidence 2.0, noise",
+  CYBA    = "MNAR_0of3 in all three acute conditions (0 of 3 replicates observed); acute depletion is a QRILC imputed-floor draw, and because those imputed values enter the per-protein centering they also inflate the observed recovery cells by ~1.2 log2"
 )
 
 support_table_file <- "manuscript/SI_materials/SI_Tables/SI_Table_Protein_Support.csv"
