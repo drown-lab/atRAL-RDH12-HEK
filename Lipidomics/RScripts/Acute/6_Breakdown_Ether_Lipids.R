@@ -1,5 +1,8 @@
 
 ##Get Ether Lipids
+library(dplyr)
+library(stringr)
+library(ggplot2)
 
 df<-read.csv("Lipidomics/output_txts/Acute_filteredlipidtable.csv")
 
@@ -50,7 +53,6 @@ Acute100_filtered_summary <- Acute100_v4  %>%
 Acute100_filtered_summary2 <- Acute100_v4  %>%
   group_by( lipid_class_ether) %>%
   summarise(distinct_precursor = n_distinct(precursor))
-colnames(Acute_filtered_summary2)
 
 Acute100_filtered_summary2 <- Acute100_filtered_summary2 %>%
   arrange(desc(distinct_precursor)) %>%

@@ -1,4 +1,18 @@
+library(dplyr)
+library(tidyr)
+library(stringr)
+
 df<-read.csv("Lipidomics/output_txts/Recovery_filteredlipidtable.csv")
+# Saturation class, used by the unsat summaries below (previously added by 5_Recovery_Breakdown_Lipid_Unsatlevels.R)
+df <- df %>%
+  mutate(
+    unsat_class = case_when(
+      DB_total == 0 ~ "SFA",
+      DB_total == 1 ~ "MUFA",
+      DB_total >= 2 ~ "PUFA",
+      TRUE ~ NA_character_
+    )
+  )
 df <- df %>%
   mutate(
     ether = str_extract(

@@ -66,4 +66,7 @@ HekatRAL_combndDIANN_dinj_v4 <- HekatRAL_combndDIANN_dinj_v4 %>%
   )
 
 
-write.csv(HekatRAL_combndDIANN_dinj_v4, "quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv")
+# Writes to the repo root, not quant_DIANN_outputs/: the tracked copy there also has Rundscrp,
+# Protein.Name, Description and Sequence columns (Rundscrp is required by 01_Datasetup_for_DEPanalysis.R)
+# that this script does not produce, so writing over it would break the DEP pipeline.
+write.csv(HekatRAL_combndDIANN_dinj_v4, "HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv")
