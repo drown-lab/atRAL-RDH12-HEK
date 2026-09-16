@@ -61,9 +61,15 @@ newr <- read_parquet(report_new,  col_select = all_of(cols)) |> mutate(Run = bas
 # the same filter the DEP pipeline applied, so the page shows exactly the evidence that was quantified.
 # Shared (non-proteotypic) peptides that DIA-NN lists under the group are deliberately excluded.
 # The full V12 filter chain (00_Process_DIANNparquetfile.R) is applied so peptide counts match SI_Table_Protein_Support.csv.
-pr_map <- orig |>
+# orig_pass is the single definition of "this precursor-run was quantified". Both the protein-group
+# map and the per-run identification status below are derived from it, so a precursor-run that
+# cleared Q.Value but failed one of the other filters can no longer be shaded and labelled as
+# identified evidence while the DEP pipeline excluded it from quantification.
+orig_pass <- orig |>
   filter(Q.Value <= 0.01, PG.Q.Value <= 0.05, Lib.Q.Value <= 0.01, Lib.PG.Q.Value <= 0.01, Channel.Q.Value <= 0.05,
-         Proteotypic == 1, !grepl("cRAP", Protein.Ids, ignore.case = TRUE)) |>
+         Proteotypic == 1, !grepl("cRAP", Protein.Ids, ignore.case = TRUE))
+
+pr_map <- orig_pass |>
   distinct(Precursor.Id, Stripped.Sequence, Protein.Group, Genes)
 
 # ---- core: fetch XICs for a set of precursors across all runs ---------------
@@ -85,12 +91,17 @@ plot_precursor_page <- function(pg, pr_id, xic, k, n, npep_note = "") {
   # per-run status of this precursor
   st <- runs |> select(run, condition, rep) |>
     mutate(Precursor.Id = pr_id) |>
-    left_join(orig |> select(Run, Precursor.Id, q_orig = Q.Value, s0 = RT.Start, e0 = RT.Stop), by = c(run = "Run", "Precursor.Id")) |>
+    left_join(orig_pass |> select(Run, Precursor.Id, q_orig = Q.Value, s0 = RT.Start, e0 = RT.Stop), by = c(run = "Run", "Precursor.Id")) |>
+    left_join(orig |> select(Run, Precursor.Id, q_any = Q.Value), by = c(run = "Run", "Precursor.Id")) |>
     left_join(newr |> select(Run, Precursor.Id, q_new = Q.Value, s1 = RT.Start, e1 = RT.Stop),  by = c(run = "Run", "Precursor.Id")) |>
-    mutate(identified = !is.na(q_orig),
+    mutate(identified = !is.na(q_orig),                # quantified: cleared the full V12 filter chain
+           filtered   = !identified & !is.na(q_any),   # DIA-NN reported it; the ID filters excluded it
            start = ifelse(identified, s0, s1), stop = ifelse(identified, e0, e1),
-           label = ifelse(identified, sprintf("q = %.1e", q_orig),
-                          ifelse(is.na(q_new), "no candidate", sprintf("not ID'd (q = %.2f)", q_new))))
+           label = case_when(
+             identified    ~ sprintf("q = %.1e", q_orig),
+             filtered      ~ sprintf("excluded by ID filters (q = %.1e)", q_any),
+             !is.na(q_new) ~ sprintf("not ID'd (q = %.2f)", q_new),
+             TRUE          ~ "no candidate"))
   # y-scale each panel to the fragment maximum INSIDE the DIA-NN peak boundaries (+/- 0.1 min), so the scored peak
   # is legible even when a single interfering fragment dominates elsewhere in the window (common for weak IDs).
   # Traces above the limit are clipped; absent runs therefore show baseline noise at the candidate position.
@@ -112,13 +123,14 @@ plot_precursor_page <- function(pg, pr_id, xic, k, n, npep_note = "") {
     geom_line(data = ms1, aes(rt, value), colour = "grey55", linetype = "22", linewidth = 0.3) +
     geom_line(data = frag, aes(rt, value, colour = feature), linewidth = 0.35) +
     geom_text(data = st, aes(x = -Inf, y = Inf, label = label), hjust = -0.05, vjust = 1.4, size = 2.3,
-              colour = ifelse(st$identified, "black", "firebrick")) +
+              colour = case_when(st$identified ~ "black", st$filtered ~ "darkorange3", TRUE ~ "firebrick")) +
     facet_grid(condition ~ rep, scales = "free", labeller = labeller(rep = function(x) paste("rep", x))) +
     scale_fill_manual(values = c(`TRUE` = "steelblue", `FALSE` = "firebrick"), guide = "none") +
     scale_y_continuous(labels = scales::label_scientific(digits = 1), expand = expansion(mult = c(0, 0.25))) +
     labs(title = sprintf("%s (%s)  -  precursor %d of %d: %s", gene, pg, k, n, pr_id),
          subtitle = str_wrap(paste0("Fragment XICs (coloured; y-axis scaled to the in-boundary maximum, off-peak interference clipped); MS1 (grey dashed, rescaled). ",
-                           "Shaded = DIA-NN peak boundaries: blue, identified at 1% FDR in the deposited report; red, best candidate in a run where it was not identified. ", npep_note), width = 150),
+                           "Shaded = DIA-NN peak boundaries: blue, quantified in the deposited report (full ID filter chain); red, best candidate in a run where it was not quantified. ",
+                           "Run labels: black, quantified; orange, reported by DIA-NN but excluded by the ID filters, so not used for quantification; red, not identified. ", npep_note), width = 150),
          x = "Retention time (min)", y = "Intensity", colour = "Fragment") +
     theme_minimal(base_size = 8) +
     theme(legend.position = "bottom", legend.key.size = unit(0.3, "cm"),
