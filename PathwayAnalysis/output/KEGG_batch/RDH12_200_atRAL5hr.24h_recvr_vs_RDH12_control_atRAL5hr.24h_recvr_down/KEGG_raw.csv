@@ -1,0 +1,3 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count"
+"Human Diseases","Cancer: overview","hsa05205","Proteoglycans in cancer","4/17","116/3974",0.0344827586206897,8.06085192697769,5.05831306743629,0.00122231758134448,0.103896994414281,0.0964987564219327,"ERBB2/FN1/SDC4/WNT5A",4
+NA,NA,"hsa04519","Cadherin signaling","4/17","140/3974",0.0285714285714286,6.67899159663866,4.48342498496187,0.00245543138574793,0.104355833894287,0.0969249231216287,"ERBB2/FAT1/PCDHGA11/WNT5A",4

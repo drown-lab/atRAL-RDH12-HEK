@@ -97,7 +97,13 @@ plot_volcano(dep, contrast = "RDH12_200_atRAL5hr_vs_RDH12_control_atRAL5hr", lab
 data_results <- get_results(dep)
 
 
-data_results <- add_response_contrasts(data_results, data_imp_mixed)
+# add_response_contrasts() is not defined in the repository and nothing downstream
+# needs it. Call it only if the session happens to provide it.
+if (exists("add_response_contrasts")) {
+  data_results <- add_response_contrasts(data_results, data_imp_mixed)
+} else {
+  message("add_response_contrasts() not found - skipping (no downstream script depends on it)")
+}
 
 
 # Plot the first and second principal components

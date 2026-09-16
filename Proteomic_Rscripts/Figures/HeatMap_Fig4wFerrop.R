@@ -14,6 +14,8 @@
 # WT recovery columns are placed at the far right
 # Column labels are rotated 90 degrees at the bottom
 # Exports PDF, SVG, and CSV of plotted data
+# Drops proteins that failed XIC curation (xic_curated_exclusions.R) and
+# marks single-peptide protein groups with "*" in the row label
 # =========================================================
 
 suppressPackageStartupMessages({
@@ -25,6 +27,9 @@ suppressPackageStartupMessages({
   library(circlize)
   library(grid)
 })
+
+source("Proteomic_Rscripts/Figures/xic_curated_exclusions.R")
+mark_single_peptide <- TRUE
 
 # ---------------------------------------------------------
 # 1. USER INPUTS
@@ -303,7 +308,8 @@ if (nrow(dup_genes) > 0) {
 }
 
 pathway_tbl <- pathway_tbl_all %>%
-  distinct(Gene, .keep_all = TRUE)
+  distinct(Gene, .keep_all = TRUE) %>%
+  apply_xic_curation(gene_col = "Gene", label = "Fig 5E")
 
 pathway_order <- c(
   "Lipid synthesis",
@@ -372,9 +378,15 @@ if (nrow(plot_df) == 0) {
 heat_df <- plot_df %>%
   dplyr::select(
     Gene,
+    ID,
     Pathway,
     all_of(display_centered_cols)
   )
+
+if (mark_single_peptide) {
+  heat_df <- heat_df %>%
+    mutate(Gene = label_single_peptide(Gene, ID))
+}
 
 if (remove_all_na_rows) {
   heat_df <- heat_df %>%
@@ -622,6 +634,9 @@ print(colnames(heat_mat))
 
 cat("\nProteins per pathway shown:\n")
 print(table(pathway_split))
+
+cat("\nSingle-peptide protein groups (marked *):",
+    paste(grep("\\*$", rownames(heat_mat), value = TRUE), collapse = ", "), "\n")
 
 cat("\nSaved files:\n")
 cat(out_file_pdf, "\n")

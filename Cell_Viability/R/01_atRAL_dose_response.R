@@ -3,6 +3,7 @@
 # Input:  Cell_Viability/data/atRAL_cell_viability.csv
 # Output: Cell_Viability/figures/
 #   - atRAL_dose_response_curves.pdf/.png  (fitted curves, mean +/- SEM)
+#   - atRAL_dose_response_curves_no_fer1.pdf/.png  (vehicle arm only)
 #   - atRAL_IC50_by_group.pdf/.png         (per-biorep IC50s with group means)
 #   - atRAL_IC50_estimates.csv             (IC50 per biorep and per group w/ 95% CI)
 #   - atRAL_IC50_anova.txt                 (two-way ANOVA on log10(IC50) + Tukey HSD)
@@ -101,6 +102,19 @@ sink()
 
 pal <- c(WT = "#0072B2", RDH12 = "#D55E00")  # Okabe-Ito, CVD-safe
 
+DOSE_MIN <- 25   # µM, lowest dose tested
+DOSE_MAX <- 400  # µM, highest dose tested
+
+# Annotation geometry, tuned at BASE_FONT_SIZE and scaled with it.
+BASE_FONT_SIZE <- 12   # ggplot base_size
+ANNOT_SIZE     <- 3.2  # geom_text size for the IC50 lines
+LABEL_TOP_Y    <- 26   # y position of the IC50 annotation header
+LABEL_STEP_Y   <- 6.5  # vertical spacing between IC50 annotation lines
+
+# Log10 scale labelled in log10 units, as in Prism's
+# "log(inhibitor) vs. normalized response" display.
+log10_breaks <- seq(1.4, 2.6, by = 0.2)
+
 # Mean +/- SEM per dose within each group
 summ <- viab |>
   group_by(genotype, fer1, atRAL) |>
@@ -110,46 +124,107 @@ summ <- viab |>
 
 # Smooth prediction curves from the pooled group fits
 pred <- bind_rows(lapply(group_fits, \(g) {
-  doses <- exp(seq(log(25), log(400), length.out = 200))
+  doses <- exp(seq(log(DOSE_MIN), log(DOSE_MAX), length.out = 200))
   tibble(genotype = g$key$genotype, fer1 = g$key$fer1, atRAL = doses,
          viability = predict(g$fit, newdata = data.frame(atRAL = doses)))
 }))
 
-# IC50 (95% CI) annotation, bottom left under the curves
-ic50_lab <- group_ic50 |>
-  dplyr::mutate(
-    label = sprintf("%s + %s: %.0f (%.0f–%.0f)",
-                    genotype,
-                    ifelse(fer1 == "Vehicle", "Vehicle", "Fer-1"),
+# Curve panel builder. by_pretreatment = FALSE drops the linetype/shape mapping
+# and the arm suffix, for single-arm figures.
+dose_response_plot <- function(pred, summ, ic50, by_pretreatment = TRUE,
+                               base_size = BASE_FONT_SIZE) {
+  text_scale <- base_size / BASE_FONT_SIZE
+  annot_size <- ANNOT_SIZE * text_scale
+  top_y      <- LABEL_TOP_Y * text_scale
+  step_y     <- LABEL_STEP_Y * text_scale
+
+  # IC50 (95% CI) annotation text, bottom left under the curves. Vehicle is the
+  # unmarked case; only Fer-1 rows get a suffix.
+  ic50_lab <- dplyr::mutate(
+    ic50,
+    label = sprintf("%s%s: %.0f (%.0f–%.0f)",
+                    genotype, ifelse(fer1 == "Vehicle", "", " + Fer-1"),
                     IC50, CI_lower, CI_upper),
-    x = 25,
-    y = 26 - 6.5 * dplyr::row_number()
+    x = DOSE_MIN,
+    y = top_y - step_y * dplyr::row_number()
   )
 
-p_curves <- ggplot(mapping = aes(atRAL, color = genotype, linetype = fer1)) +
-  geom_line(data = pred, aes(y = viability), linewidth = 0.7) +
-  geom_errorbar(data = summ,
-                aes(ymin = mean - sem, ymax = mean + sem, group = group),
-                width = 0.03, linewidth = 0.4, linetype = "solid",
-                show.legend = FALSE) +
-  geom_point(data = summ, aes(y = mean, shape = fer1), size = 2) +
-  annotate("text", x = 25, y = 26, hjust = 0, size = 3.2, fontface = "bold",
-           label = "IC[50]*', µM (95% CI)'", parse = TRUE) +
-  geom_text(data = ic50_lab,
-            aes(x = x, y = y, label = label, colour = genotype),
-            inherit.aes = FALSE, hjust = 0, size = 3.2, show.legend = FALSE) +
-  scale_x_log10(breaks = c(25, 50, 100, 200, 400)) +
-  scale_color_manual(values = pal) +
-  scale_shape_manual(values = c(16, 17)) +
-  labs(x = "atRAL (µM)", y = "Percent Viability",
-       color = "Genotype", shape = "Pretreatment", linetype = "Pretreatment") +
-  theme_classic(base_size = 12) +
-  theme(legend.position = "right")
+  base_aes  <- if (by_pretreatment) {
+    aes(atRAL, color = genotype, linetype = fer1)
+  } else {
+    aes(atRAL, color = genotype)
+  }
+  point_aes <- if (by_pretreatment) aes(y = mean, shape = fer1) else aes(y = mean)
+
+  ggplot(mapping = base_aes) +
+    geom_line(data = pred, mapping = aes(y = viability), linewidth = 0.7) +
+    geom_errorbar(data = summ,
+                  mapping = aes(ymin = mean - sem, ymax = mean + sem,
+                                group = group),
+                  width = 0.03, linewidth = 0.4, linetype = "solid",
+                  show.legend = FALSE) +
+    geom_point(data = summ, mapping = point_aes, size = 2) +
+    annotate("text", x = DOSE_MIN, y = top_y, hjust = 0, size = annot_size,
+             fontface = "bold", label = "IC[50]*', µM (95% CI)'", parse = TRUE) +
+    geom_text(data = ic50_lab,
+              mapping = aes(x = x, y = y, label = label, colour = genotype),
+              inherit.aes = FALSE, hjust = 0, size = annot_size,
+              show.legend = FALSE) +
+    scale_x_log10(breaks = 10^log10_breaks,
+                  labels = sprintf("%.1f", log10_breaks)) +
+    scale_color_manual(values = pal) +
+    scale_shape_manual(values = c(16, 17)) +
+    labs(x = expression(log[10]*"[atRAL (µM)]"), y = "Percent Viability",
+         color = "Genotype", shape = "Pretreatment", linetype = "Pretreatment") +
+    theme_classic(base_size = base_size) +
+    theme(legend.position = "right")
+}
+
+# Near-baseline doses sit above 100% viability, so the view must clear the
+# tallest mean + SEM. na.rm guards against sd() = NA from an n = 1 cell.
+VIABILITY_CEILING <- ceiling(max(summ$mean + summ$sem, na.rm = TRUE))
+
+# Shared layers: one viability range across both figures, and a fixed legend gap
+# (legend.box.spacing otherwise scales with base_size).
+presentation_layers <- list(
+  scale_y_continuous(breaks = seq(0, 100, by = 25)),
+  coord_cartesian(ylim = c(0, VIABILITY_CEILING)),
+  theme(legend.box.spacing = grid::unit(4, "pt"))
+)
+
+p_curves <- dose_response_plot(pred, summ, group_ic50,
+                               base_size = 1.8 * BASE_FONT_SIZE) +
+  presentation_layers +
+  theme(aspect.ratio = 1)
+
+# Canvas sized to fit the square panel plus both legend blocks
+CURVES_WIDTH  <- 8.75
+CURVES_HEIGHT <- 6
 
 ggsave(file.path(fig_dir, "atRAL_dose_response_curves.pdf"), p_curves,
-       width = 6.5, height = 4.5)
+       width = CURVES_WIDTH, height = CURVES_HEIGHT)
 ggsave(file.path(fig_dir, "atRAL_dose_response_curves.png"), p_curves,
-       width = 6.5, height = 4.5, dpi = 300)
+       width = CURVES_WIDTH, height = CURVES_HEIGHT, dpi = 300)
+
+# ---- Dose-response figure, vehicle (minus ferrostatin-1) arm only ------------
+
+keep_vehicle <- \(d) dplyr::filter(d, fer1 == "Vehicle")
+
+p_curves_no_fer1 <- dose_response_plot(
+  keep_vehicle(pred), keep_vehicle(summ), keep_vehicle(group_ic50),
+  by_pretreatment = FALSE,
+  base_size = 1.8 * BASE_FONT_SIZE
+) +
+  presentation_layers
+
+# 16:9 canvas, for slide and figure-panel reuse
+NO_FER1_WIDTH  <- 8
+NO_FER1_HEIGHT <- NO_FER1_WIDTH * 9 / 16
+
+ggsave(file.path(fig_dir, "atRAL_dose_response_curves_no_fer1.pdf"),
+       p_curves_no_fer1, width = NO_FER1_WIDTH, height = NO_FER1_HEIGHT)
+ggsave(file.path(fig_dir, "atRAL_dose_response_curves_no_fer1.png"),
+       p_curves_no_fer1, width = NO_FER1_WIDTH, height = NO_FER1_HEIGHT, dpi = 300)
 
 # ---- IC50 figure -------------------------------------------------------------
 

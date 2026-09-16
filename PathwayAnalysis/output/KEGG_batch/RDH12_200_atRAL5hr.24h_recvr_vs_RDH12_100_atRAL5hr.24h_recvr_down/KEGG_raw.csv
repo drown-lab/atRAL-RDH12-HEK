@@ -1,0 +1,4 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count"
+"Human Diseases","Cancer: overview","hsa05205","Proteoglycans in cancer","4/19","116/3974",0.0344827586206897,7.21234119782214,4.70615278409758,0.00190272740547015,0.177803250229958,0.153669291057471,"ERBB2/FN1/SDC4/WNT5A",4
+"Human Diseases","Cancer: overview","hsa05200","Pathways in cancer","5/19","250/3974",0.02,4.18315789473684,3.60318191307657,0.00530407562007008,0.177803250229958,0.153669291057471,"ERBB2/FGFR3/FN1/IFNGR1/WNT5A",5
+"Human Diseases","Cancer: specific types","hsa05219","Bladder cancer","2/19","24/3974",0.0833333333333333,17.4298245614035,5.59503539353216,0.00561483948094606,0.177803250229958,0.153669291057471,"ERBB2/FGFR3",2

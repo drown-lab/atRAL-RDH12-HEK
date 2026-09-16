@@ -25,7 +25,7 @@ library(stringr)
 # Assumes your main table is already in memory as:
 # DEPresults_v2
 
-favorite_IDs <- c("MOCS3", "PAN2", "ZDHHC18", "HIF1AN", "POLD4")
+favorite_IDs <- c("MOCS3", "PAN2", "ZDHHC18", "HIF1AN", "POLD4", "PNPLA6")
 padj_cutoff  <- 0.01
 lfc_cutoff   <- log2(2)
 n_top_labels <- 5
@@ -170,9 +170,20 @@ make_volcano_df_standard <- function(df,
     slice_head(n = n_top_labels) %>%
     pull(Gene)
   
+  # Favorites are labeled whether or not they clear the significance cutoffs
   favorite_hits <- out %>%
-    filter(direction %in% c("Up", "Down"), Gene %in% favorite_IDs) %>%
+    filter(Gene %in% favorite_IDs) %>%
     pull(Gene)
+
+  # Favourites in a both_imputed-masked contrast have padj = NA and are silently
+  # dropped by the downstream na.rm = TRUE. Report them instead.
+  favorite_unplottable <- out %>%
+    filter(Gene %in% favorite_IDs, is.na(padj)) %>%
+    pull(Gene)
+  if (length(favorite_unplottable) > 0) {
+    message(sprintf("%s: favourite gene(s) not plotted, contrast masked (padj = NA): %s",
+                    contrast, paste(sort(unique(favorite_unplottable)), collapse = ", ")))
+  }
   
   label_hits <- unique(c(top_up_hits, top_down_hits, favorite_hits))
   

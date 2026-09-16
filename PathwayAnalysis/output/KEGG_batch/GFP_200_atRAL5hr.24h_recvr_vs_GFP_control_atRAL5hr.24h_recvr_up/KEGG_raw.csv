@@ -1,0 +1,4 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count"
+"Human Diseases","Substance dependence","hsa05031","Amphetamine addiction","4/69","24/3974",0.166666666666667,9.59903381642512,5.61603801254512,0.00068070626226878,0.0523814002737645,0.0477865406006272,"FOS/PRKACG/JUN/PRKCA",4
+"Environmental Information Processing","Membrane transport","hsa02010","ABC transporters","3/69","11/3974",0.272727272727273,15.7075098814229,6.49227285696162,0.000748305718196635,0.0523814002737645,0.0477865406006272,"ABCA3/ABCB10/ABCD3",3
+"Organismal Systems","Digestive system","hsa04977","Vitamin digestion and absorption","3/69","11/3974",0.272727272727273,15.7075098814229,6.49227285696162,0.000748305718196635,0.0523814002737645,0.0477865406006272,"SLC46A1/SLC19A1/SLC19A2",3
