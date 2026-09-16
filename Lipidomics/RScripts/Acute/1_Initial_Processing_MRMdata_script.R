@@ -203,7 +203,7 @@ dups3 <- Acute_lipidsall_v7v2 %>%
 df <- Acute_lipidsall_v7v2
 
 #run script 1a_Filtering_Score_script.R
-source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 
 #this will output a parsed table: has a scoring value for lipid candidates when multiple options are present in lipid_name cell
 #output-also separately break out cer_parsed table
@@ -319,7 +319,7 @@ df<-df|>
   select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
 
 #run script 1a_Filtering_Score_script.R
-source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 #this reupdates the columns after replacement of likely IDs
 #current table is titled df_with_unsat_updated
 
@@ -363,7 +363,7 @@ df_with_unsat_updated <- df_with_unsat_updated %>%
 df<-df_with_unsat_updated
 df<-df|>
   select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
-source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 
 
 dups5 <- df_with_unsat_updated %>%

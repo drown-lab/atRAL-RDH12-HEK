@@ -1,3 +1,0 @@
-"ID","Description","GeneRatio","BgRatio","RichFactor","FoldEnrichment","zScore","pvalue","p.adjust","qvalue","geneID","Count","Description_lower","GeneRatio_num"
-"GO:0097707","ferroptosis","3/25","9/7628",0.333333333333333,101.706666666667,17.3334443917778,2.57900916687182e-06,0.000907811226738881,0.000781846989535879,"HMOX1/NFE2L2/SLC39A7",3,"ferroptosis",0.12
-"GO:0110075","regulation of ferroptosis","3/25","9/7628",0.333333333333333,101.706666666667,17.3334443917778,2.57900916687182e-06,0.000907811226738881,0.000781846989535879,"HMOX1/NFE2L2/SLC39A7",3,"regulation of ferroptosis",0.12

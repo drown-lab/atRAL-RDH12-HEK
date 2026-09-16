@@ -2,7 +2,7 @@
 # Run from the project root; safe to re-run if interrupted.
 
 # Pin Bioconductor to 3.20 — the release matching R 4.4.1 and the versions
-# in dependciesAndPackages_info.txt (Biobase 2.66 / GenomeInfoDb 1.42).
+# in renv.lock (Biobase 2.66 / GenomeInfoDb 1.42).
 renv::settings$bioconductor.version("3.20")
 
 renv::install("BiocManager", prompt = FALSE)
