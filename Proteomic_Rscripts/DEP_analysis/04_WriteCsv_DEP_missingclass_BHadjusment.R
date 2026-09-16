@@ -2,6 +2,12 @@ library(dplyr)
 
 # --------------------------------------------
 # user-defined thresholds
+#
+# These drive the `<contrast>_significant` columns recomputed below, and nothing else: no figure
+# or analysis script reads those columns, and 05_make_SI_Table_Protein_DEA.R drops them from the
+# SI table. The counts quoted in the Results text use the stricter RESULTS_ALPHA = 0.01 /
+# RESULTS_MIN_ABS_LOG2FC = 1 defined in that script, so `_significant` here will NOT reproduce
+# them. Anything derived from these flags must say which definition it used.
 # --------------------------------------------
 alpha_cutoff <- 0.05
 lfc_cutoff   <- log2(1.5)

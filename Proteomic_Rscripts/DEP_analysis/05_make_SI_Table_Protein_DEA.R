@@ -39,9 +39,21 @@ for (f in out_files) {
 }
 message("Wrote SI Table 2: ", nrow(si), " protein groups x ", ncol(si), " columns")
 
+# Thresholds for the counts quoted in the Results text. These are deliberately stricter than the
+# alpha_cutoff = 0.05 / lfc_cutoff = log2(1.5) that 04_WriteCsv_DEP_missingclass_BHadjusment.R uses
+# for its `<contrast>_significant` columns. Those columns are read by no downstream script and are
+# dropped from the SI table above, so the Results counts are defined here and only here -- but the
+# stale flags do still ship inside data_results_w_missingclass_BH_readjusted.csv, where they will
+# not reproduce these numbers. Keep the two in view of each other when either is changed.
+RESULTS_ALPHA          <- 0.01
+RESULTS_MIN_ABS_LOG2FC <- 1        # 2-fold
+
 # summary of what the both-imputed rule changed, at the thresholds used in the Results text
+cat(sprintf("\nSignificance for the counts below: p.adj < %g and |log2 FC| >= %g (%.3g-fold)\n",
+            RESULTS_ALPHA, RESULTS_MIN_ABS_LOG2FC, 2^RESULTS_MIN_ABS_LOG2FC))
 for (ct in str_remove(str_subset(names(si), "_p\\.adj$"), "_p\\.adj$")) {
-  sig <- !is.na(si[[paste0(ct, "_p.adj")]]) & si[[paste0(ct, "_p.adj")]] < 0.01 & abs(si[[paste0(ct, "_ratio")]]) >= 1
+  sig <- !is.na(si[[paste0(ct, "_p.adj")]]) & si[[paste0(ct, "_p.adj")]] < RESULTS_ALPHA &
+    abs(si[[paste0(ct, "_ratio")]]) >= RESULTS_MIN_ABS_LOG2FC
   cat(sprintf("%-70s up %4d  down %4d  (both-imputed removed: %d)\n", ct,
               sum(sig & si[[paste0(ct, "_ratio")]] > 0), sum(sig & si[[paste0(ct, "_ratio")]] < 0),
               sum(si[[paste0(ct, "_basis")]] == "both_imputed", na.rm = TRUE)))
