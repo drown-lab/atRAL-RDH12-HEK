@@ -175,9 +175,8 @@ make_volcano_df_standard <- function(df,
     filter(Gene %in% favorite_IDs) %>%
     pull(Gene)
 
-  # A contrast masked as both_imputed by 04_WriteCsv_DEP_missingclass_BHadjusment.R has padj = NA,
-  # so padj_plot is NA and the downstream na.rm = TRUE drops the point and its label together --
-  # a requested favourite would disappear from the plot with no indication. Say so instead.
+  # Favourites in a both_imputed-masked contrast have padj = NA and are silently
+  # dropped by the downstream na.rm = TRUE. Report them instead.
   favorite_unplottable <- out %>%
     filter(Gene %in% favorite_IDs, is.na(padj)) %>%
     pull(Gene)

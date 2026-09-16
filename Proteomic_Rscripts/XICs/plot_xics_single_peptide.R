@@ -57,14 +57,10 @@ cols <- c("Run", "Precursor.Id", "Stripped.Sequence", "Proteotypic", "Protein.Gr
 orig <- read_parquet(report_orig, col_select = all_of(cols)) |> mutate(Run = basename(Run) |> str_remove("\\.raw$"))
 newr <- read_parquet(report_new,  col_select = all_of(cols)) |> mutate(Run = basename(Run) |> str_remove("\\.raw$"))
 
-# precursor -> protein group map (from the original report), PROTEOTYPIC precursors only -
-# the same filter the DEP pipeline applied, so the page shows exactly the evidence that was quantified.
-# Shared (non-proteotypic) peptides that DIA-NN lists under the group are deliberately excluded.
-# The full V12 filter chain (00_Process_DIANNparquetfile.R) is applied so peptide counts match SI_Table_Protein_Support.csv.
-# orig_pass is the single definition of "this precursor-run was quantified". Both the protein-group
-# map and the per-run identification status below are derived from it, so a precursor-run that
-# cleared Q.Value but failed one of the other filters can no longer be shaded and labelled as
-# identified evidence while the DEP pipeline excluded it from quantification.
+# orig_pass is the single definition of "this precursor-run was quantified": the full V12 filter
+# chain (00_Process_DIANNparquetfile.R), proteotypic precursors only, so the pages show exactly
+# the evidence the DEP pipeline used and peptide counts match SI_Table_Protein_Support.csv.
+# The protein-group map and the per-run status below both derive from it.
 orig_pass <- orig |>
   filter(Q.Value <= 0.01, PG.Q.Value <= 0.05, Lib.Q.Value <= 0.01, Lib.PG.Q.Value <= 0.01, Channel.Q.Value <= 0.05,
          Proteotypic == 1, !grepl("cRAP", Protein.Ids, ignore.case = TRUE))
@@ -102,17 +98,15 @@ plot_precursor_page <- function(pg, pr_id, xic, k, n, npep_note = "") {
              filtered      ~ sprintf("excluded by ID filters (q = %.1e)", q_any),
              !is.na(q_new) ~ sprintf("not ID'd (q = %.2f)", q_new),
              TRUE          ~ "no candidate"))
-  # y-scale each panel to the fragment maximum INSIDE the DIA-NN peak boundaries (+/- 0.1 min), so the scored peak
-  # is legible even when a single interfering fragment dominates elsewhere in the window (common for weak IDs).
-  # Traces above the limit are clipped; absent runs therefore show baseline noise at the candidate position.
+  # y-scale each panel to the fragment maximum inside the DIA-NN peak boundaries (+/- 0.1 min)
+  # so the scored peak stays legible under off-peak interference. Traces above it are clipped.
   d <- d |> mutate(ms1 = feature == "ms1")
   frag <- d |> filter(!ms1)
   win  <- st |> select(run, start, stop)
   ymax <- frag |> left_join(win, by = "run") |>
     group_by(run) |>
-    # Both boundaries must be present: DIA-NN can report a start with a truncated stop, and a bare
-    # !is.na(start) guard leaves NAs in `inw`, making any(inw) return NA and aborting the PDF loop
-    # with "missing value where TRUE/FALSE needed".
+    # Check both boundaries: DIA-NN can report a start with a truncated stop, which would
+    # leave NAs in `inw` and make any(inw) return NA.
     summarise(ymax = { inw <- !is.na(start) & !is.na(stop) & rt >= start - 0.1 & rt <= stop + 0.1
                        m <- if (any(inw)) max(value[inw]) else max(value); max(m, 1) * 1.15 }, .groups = "drop")
   frag <- frag |> left_join(ymax, by = "run") |> mutate(value = pmin(value, ymax))

@@ -105,15 +105,14 @@ pal <- c(WT = "#0072B2", RDH12 = "#D55E00")  # Okabe-Ito, CVD-safe
 DOSE_MIN <- 25   # µM, lowest dose tested
 DOSE_MAX <- 400  # µM, highest dose tested
 
-# Annotation geometry, tuned at BASE_FONT_SIZE and scaled with it so the IC50
-# block keeps the same proportions when the figure is set in larger type.
+# Annotation geometry, tuned at BASE_FONT_SIZE and scaled with it.
 BASE_FONT_SIZE <- 12   # ggplot base_size
 ANNOT_SIZE     <- 3.2  # geom_text size for the IC50 lines
 LABEL_TOP_Y    <- 26   # y position of the IC50 annotation header
 LABEL_STEP_Y   <- 6.5  # vertical spacing between IC50 annotation lines
 
-# X axis is drawn on the log10 scale but labelled in log10 units, matching
-# Prism's "log(inhibitor) vs. normalized response" display.
+# Log10 scale labelled in log10 units, as in Prism's
+# "log(inhibitor) vs. normalized response" display.
 log10_breaks <- seq(1.4, 2.6, by = 0.2)
 
 # Mean +/- SEM per dose within each group
@@ -130,8 +129,8 @@ pred <- bind_rows(lapply(group_fits, \(g) {
          viability = predict(g$fit, newdata = data.frame(atRAL = doses)))
 }))
 
-# Curve panel builder. Set by_pretreatment = FALSE for single-arm figures, where
-# linetype/shape carry no information and the arm needs no naming.
+# Curve panel builder. by_pretreatment = FALSE drops the linetype/shape mapping
+# and the arm suffix, for single-arm figures.
 dose_response_plot <- function(pred, summ, ic50, by_pretreatment = TRUE,
                                base_size = BASE_FONT_SIZE) {
   text_scale <- base_size / BASE_FONT_SIZE
@@ -140,7 +139,7 @@ dose_response_plot <- function(pred, summ, ic50, by_pretreatment = TRUE,
   step_y     <- LABEL_STEP_Y * text_scale
 
   # IC50 (95% CI) annotation text, bottom left under the curves. Vehicle is the
-  # unmarked case, so only the Fer-1 rows carry a pretreatment suffix.
+  # unmarked case; only Fer-1 rows get a suffix.
   ic50_lab <- dplyr::mutate(
     ic50,
     label = sprintf("%s%s: %.0f (%.0f–%.0f)",
@@ -181,17 +180,12 @@ dose_response_plot <- function(pred, summ, ic50, by_pretreatment = TRUE,
     theme(legend.position = "right")
 }
 
-# Near-baseline doses sit above 100% viability, so the view has to clear the
-# tallest mean + SEM or those error bars get cut off at the panel edge. Breaks
-# stay on the quarter points, keeping a labelled tick at 100.
-# na.rm matters: sd() of a single well is NA, so one n = 1 genotype/fer1/atRAL cell would make the
-# ceiling NA and coord_cartesian(ylim = c(0, NA)) would silently fall back to each panel's own data
-# range -- defeating the shared range that keeps the two figures comparable.
+# Near-baseline doses sit above 100% viability, so the view must clear the
+# tallest mean + SEM. na.rm guards against sd() = NA from an n = 1 cell.
 VIABILITY_CEILING <- ceiling(max(summ$mean + summ$sem, na.rm = TRUE))
 
-# Shared presentation layers: one viability range across both figures, and the
-# legend pulled back against the panel (legend.box.spacing otherwise scales
-# with base_size).
+# Shared layers: one viability range across both figures, and a fixed legend gap
+# (legend.box.spacing otherwise scales with base_size).
 presentation_layers <- list(
   scale_y_continuous(breaks = seq(0, 100, by = 25)),
   coord_cartesian(ylim = c(0, VIABILITY_CEILING)),
@@ -203,8 +197,7 @@ p_curves <- dose_response_plot(pred, summ, group_ic50,
   presentation_layers +
   theme(aspect.ratio = 1)
 
-# Canvas sized so the square panel, the axis furniture and the two legend
-# blocks fill it without leaving a gap beside the panel.
+# Canvas sized to fit the square panel plus both legend blocks
 CURVES_WIDTH  <- 8.75
 CURVES_HEIGHT <- 6
 

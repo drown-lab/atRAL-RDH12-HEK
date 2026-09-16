@@ -5,28 +5,21 @@
 # Source this file from a figure script (working directory = repo root):
 #   source("Proteomic_Rscripts/Figures/xic_curated_exclusions.R")
 #
-# Why this exists
-#   The DIA-NN re-search with --xic 90 (Proteomic_Rscripts/XICs/plot_xics_single_peptide.R;
-#   manuscript/SI_materials/XICs/XIC_curated_named_proteins.pdf) showed that several proteins
-#   named in the manuscript are supported only by noise-level chromatograms or by entirely
-#   imputed values. The verdicts are recorded in
-#   manuscript/SI_materials/Revision_plan_single_peptide_XICs.docx. Proteins with a REMOVE
-#   verdict (or a SOFTEN verdict that drops them from a figure) are listed here ONCE, with
-#   the reason, so every heatmap script applies the same curation and the pathway gene
-#   lists in those scripts remain the original, uncurated membership lists.
+# The --xic 90 re-search (plot_xics_single_peptide.R;
+# manuscript/SI_materials/XICs/XIC_curated_named_proteins.pdf) showed several named proteins
+# resting on noise-level chromatograms or entirely imputed values. Verdicts are recorded in
+# manuscript/SI_materials/Revision_plan_single_peptide_XICs.docx; the REMOVE set is listed
+# here once so every heatmap applies the same curation without editing its pathway gene lists.
+# An explicit list, not a Support_tier filter: GSTA4, SLC31A1 and CHKA are tier A on peptide
+# count but noise-level in the XICs.
 #
-#   Note that this is deliberately an explicit list rather than a Support_tier filter:
-#   GSTA4, SLC31A1 and CHKA have two peptides (tier A by the automatic rule) but both
-#   peptides are noise-level in the XICs, so a tier filter alone would not remove them.
-#
-# What it provides
-#   xic_excluded_genes     named character vector: gene symbol -> one-line reason
+# Provides
+#   xic_excluded_genes     named character vector: gene symbol -> reason
 #   apply_xic_curation()   drops excluded genes from a data frame and reports what was removed
-#   single_peptide_ids()   Uniprot IDs (Protein.Group) of single-peptide protein groups, read from
-#                          Proteomic_output_txts/SI_Table_Protein_Support.csv (tracked), falling back
-#                          to the manuscript/ working copy; errors if neither is present
-#                          (built by Proteomic_Rscripts/XICs/build_SI_support_table.R)
-#   label_single_peptide() appends "*" to the display label of single-peptide protein groups
+#   single_peptide_ids()   Uniprot IDs of single-peptide protein groups, read from
+#                          Proteomic_output_txts/SI_Table_Protein_Support.csv (tracked), else the
+#                          manuscript/ copy (built by XICs/build_SI_support_table.R)
+#   label_single_peptide() appends "*" to single-peptide protein group labels
 #                          (figure legend: "* single-peptide protein group; see SI XIC data")
 # =========================================================
 
@@ -40,12 +33,11 @@ xic_excluded_genes <- c(
   CHKA    = "two peptides, Evidence 2.0 / 2.7, single dominant fragment only; ETNK1 (3 peptides) carries the Kennedy-pathway claim",
   BCL2L12 = "single peptide, Evidence 2.6, noise",
   PIDD1   = "single peptide, Evidence 2.0, noise",
-  CYBA    = "MNAR_0of3 in all three acute conditions (0 of 3 replicates observed); acute depletion is a QRILC imputed-floor draw, and because those imputed values enter the per-protein centering they also inflate the observed recovery cells by ~1.2 log2"
+  CYBA    = "MNAR_0of3 in all three acute conditions; acute depletion is a QRILC imputed-floor draw, which also inflates the recovery cells by ~1.2 log2 through the per-protein centering"
 )
 
-# Tracked copy first, manuscript working copy second. The tracked copy is what makes the "*"
-# markers reproducible on a fresh clone: manuscript/ is gitignored, so relying on it alone meant
-# the heatmaps rendered with no markers at all while the legend still explained them.
+# Tracked copy first, manuscript working copy second. manuscript/ is gitignored, so only the
+# tracked copy makes the "*" markers reproducible on a fresh clone.
 support_table_candidates <- c(
   "Proteomic_output_txts/SI_Table_Protein_Support.csv",
   "manuscript/SI_materials/SI_Tables/SI_Table_Protein_Support.csv"
@@ -73,9 +65,8 @@ single_peptide_ids <- function(path = support_table_file) {
   if (!file.exists(path)) {
     stop("Support table not found. Looked for:\n  ",
          paste(support_table_candidates, collapse = "\n  "),
-         "\nRun Proteomic_Rscripts/XICs/build_SI_support_table.R first.\n",
-         "This is a hard error on purpose: continuing would emit main-text figures with no ",
-         "single-peptide '*' markers while the legend still claims them.")
+         "\nRun Proteomic_Rscripts/XICs/build_SI_support_table.R first. Without it the ",
+         "figures would ship with no single-peptide '*' markers but a legend claiming them.")
   }
   sup <- utils::read.csv(path, check.names = FALSE, stringsAsFactors = FALSE)
   stopifnot(all(c("Protein.Group", "Single_peptide_protein_group") %in% names(sup)))

@@ -25,8 +25,7 @@ scripts <- c(
   "03_DEP_performDEA.R",
   "04_Data_results_with_missing_class_output.R",
   "04_WriteCsv_DEP_missingclass_BHadjusment.R",
-  # SI Table 2 is derived from 04's output; leaving it out of this vector meant a full pipeline
-  # rerun regenerated the DEA results but shipped a stale SI_Table_Protein_DEA.csv alongside them.
+  # SI Table 2 is derived from 04's output, so it must be rebuilt with it
   "05_make_SI_Table_Protein_DEA.R"
 )
 

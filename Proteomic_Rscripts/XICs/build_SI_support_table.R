@@ -25,13 +25,11 @@
 # convincing fragment coelution scored >= 4.3 and every noise-level one <= 3.1 (see Revision_plan_single_peptide_XICs.docx).
 
 suppressPackageStartupMessages({ library(arrow); library(dplyr); library(tidyr); library(stringr); library(readr) })
-# Bioconductor packages loaded by the DEP pipeline (matrixStats, S4Vectors, IRanges, BiocGenerics) mask several
-# dplyr verbs (count, first, rename, desc, slice, ...). The masked ones used here are called with dplyr:: explicitly,
-# so the script behaves the same in a fresh session and after 99_RunAll_Scripts_working.R.
+# The DEP pipeline's Bioconductor packages mask several dplyr verbs (count, first, rename, ...),
+# so those are called with dplyr:: below and the script runs the same in a fresh session.
 
-# The DIA-NN reports are large and live outside the repository. Point at them with the
-# ATRAL_REPORT_DIR environment variable or options(atral.report_dir = "..."); the default is
-# the authoring machine's staging directory.
+# The DIA-NN reports live outside the repository. Point at them with the ATRAL_REPORT_DIR
+# environment variable or options(atral.report_dir = "..."); the default is the authoring machine.
 report_dir  <- Sys.getenv("ATRAL_REPORT_DIR",
                           getOption("atral.report_dir", "F:/MS_Temp/atRAL_manuscript/proteomics"))
 report_orig <- file.path(report_dir, "report.parquet")
@@ -44,9 +42,8 @@ if (length(absent)) {
        "report.parquet and report_lib.parquet.")
 }
 
-# Canonical outputs go to the tracked repo directory (working directory = repo root) so the
-# heatmap scripts can find the support table on a fresh clone; manuscript/ is gitignored and is
-# mirrored only as a convenience for assembling the SI.
+# Canonical outputs go to the tracked repo directory (working directory = repo root); the
+# gitignored manuscript/ copy is a convenience for SI assembly.
 si_dir      <- "Proteomic_output_txts"
 mirror_dir  <- "manuscript/SI_materials/SI_Tables"
 dea_file    <- file.path(si_dir, "SI_Table_Protein_DEA.csv")
@@ -111,8 +108,7 @@ lib <- read_parquet(report_lib, col_select = c("Precursor.Id", "Stripped.Sequenc
 
 support <- pg_summary |>
   left_join(lib, by = "Protein.Group") |>
-  # If the refined library ever groups proteins differently, this join yields NA counts that would be
-  # written into the SI table without complaint. Currently 0 of 8,116 groups are unmatched.
+  # A differently grouped refined library would yield NA counts here (currently 0 of 8,116).
   (\(d) { stopifnot(!any(is.na(d$Library_proteotypic_peptides))); d })() |>
   left_join(per_cond, by = "Protein.Group") |>
   mutate(Single_peptide_protein_group = Distinct_proteotypic_peptides == 1,

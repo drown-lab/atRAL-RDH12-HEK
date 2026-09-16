@@ -3,11 +3,10 @@ library(dplyr)
 # --------------------------------------------
 # user-defined thresholds
 #
-# These drive the `<contrast>_significant` columns recomputed below, and nothing else: no figure
-# or analysis script reads those columns, and 05_make_SI_Table_Protein_DEA.R drops them from the
-# SI table. The counts quoted in the Results text use the stricter RESULTS_ALPHA = 0.01 /
-# RESULTS_MIN_ABS_LOG2FC = 1 defined in that script, so `_significant` here will NOT reproduce
-# them. Anything derived from these flags must say which definition it used.
+# These drive only the `<contrast>_significant` columns below, which nothing reads and
+# 05_make_SI_Table_Protein_DEA.R drops from the SI table. The Results-text counts use the
+# stricter RESULTS_ALPHA / RESULTS_MIN_ABS_LOG2FC defined there, so these flags will not
+# reproduce them.
 # --------------------------------------------
 alpha_cutoff <- 0.05
 lfc_cutoff   <- log2(1.5)
@@ -16,18 +15,15 @@ lfc_cutoff   <- log2(1.5)
 # Quantification basis per contrast (added 12 Sep 2026)
 #
 # Each contrast "A_vs_B" is classified from the per-condition missingness classes
-# (missclass_A / missclass_B; MNAR_0of3 = no observed value in any replicate, all three
-# values QRILC-imputed):
+# (missclass_A / missclass_B; MNAR_0of3 = all three values QRILC-imputed):
 #   measured      both conditions have >= 1 observed value
 #   num_imputed   A entirely imputed (protein absent in A, present in B)
 #   den_imputed   B entirely imputed (protein present in A, absent in B)
-#   both_imputed  neither condition has an observed value -> the test compares two random
-#                 QRILC draws and carries no information. These contrasts are REMOVED from
-#                 testing: p.val and p.adj are set to NA before BH adjustment, so every
-#                 downstream script (which already treats NA p.adj as not significant) drops
-#                 them and the BH universe excludes them. The ratio is kept for transparency.
-# One-side-imputed contrasts remain tested but are flagged; they are presence/absence calls,
-# not quantitative fold changes, and should be described as such in the text.
+#   both_imputed  neither condition observed, so the test compares two QRILC draws.
+#                 p.val and p.adj are set to NA before BH adjustment, removing them from
+#                 testing and from the BH universe. The ratio is kept for transparency.
+# One-side-imputed contrasts stay tested but are flagged: they are presence/absence calls,
+# not fold changes.
 # --------------------------------------------
 basis_of <- function(num_class, den_class) {
   ni <- num_class == "MNAR_0of3"; di <- den_class == "MNAR_0of3"
@@ -42,9 +38,8 @@ add_basis_and_mask <- function(df) {
   for (p_col in pval_cols) {
     contrast_base <- sub("_p\\.val$", "", p_col)
     parts <- strsplit(contrast_base, "_vs_", fixed = TRUE)[[1]]
-    # A condition name containing "_vs_" would split into more than two parts and silently yield the
-    # wrong missclass lookup, leaving that contrast unmasked -- the exact failure this function exists
-    # to prevent. Refuse to guess.
+    # A condition name containing "_vs_" would split into more than two parts and give
+    # the wrong missclass lookup, leaving the contrast unmasked. Don't guess.
     if (length(parts) != 2) {
       warning("Cannot split contrast '", contrast_base, "' into exactly two conditions - basis not assigned"); next
     }
