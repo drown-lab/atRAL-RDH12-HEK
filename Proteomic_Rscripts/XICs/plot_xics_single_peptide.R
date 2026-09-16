@@ -110,7 +110,10 @@ plot_precursor_page <- function(pg, pr_id, xic, k, n, npep_note = "") {
   win  <- st |> select(run, start, stop)
   ymax <- frag |> left_join(win, by = "run") |>
     group_by(run) |>
-    summarise(ymax = { inw <- !is.na(start) & rt >= start - 0.1 & rt <= stop + 0.1
+    # Both boundaries must be present: DIA-NN can report a start with a truncated stop, and a bare
+    # !is.na(start) guard leaves NAs in `inw`, making any(inw) return NA and aborting the PDF loop
+    # with "missing value where TRUE/FALSE needed".
+    summarise(ymax = { inw <- !is.na(start) & !is.na(stop) & rt >= start - 0.1 & rt <= stop + 0.1
                        m <- if (any(inw)) max(value[inw]) else max(value); max(m, 1) * 1.15 }, .groups = "drop")
   frag <- frag |> left_join(ymax, by = "run") |> mutate(value = pmin(value, ymax))
   ms1  <- d |> filter(ms1) |> left_join(ymax, by = "run") |> group_by(run) |>

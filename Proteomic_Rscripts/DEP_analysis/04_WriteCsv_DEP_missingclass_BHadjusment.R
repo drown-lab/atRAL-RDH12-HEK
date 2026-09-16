@@ -37,11 +37,17 @@ basis_of <- function(num_class, den_class) {
 }
 
 add_basis_and_mask <- function(df) {
-  pval_cols <- grep("_p.val$", colnames(df), value = TRUE)
+  pval_cols <- grep("_p\\.val$", colnames(df), value = TRUE)
   summary_rows <- list()
   for (p_col in pval_cols) {
-    contrast_base <- sub("_p.val$", "", p_col)
-    parts   <- strsplit(contrast_base, "_vs_", fixed = TRUE)[[1]]
+    contrast_base <- sub("_p\\.val$", "", p_col)
+    parts <- strsplit(contrast_base, "_vs_", fixed = TRUE)[[1]]
+    # A condition name containing "_vs_" would split into more than two parts and silently yield the
+    # wrong missclass lookup, leaving that contrast unmasked -- the exact failure this function exists
+    # to prevent. Refuse to guess.
+    if (length(parts) != 2) {
+      warning("Cannot split contrast '", contrast_base, "' into exactly two conditions - basis not assigned"); next
+    }
     num_col <- paste0("missclass_", parts[1]); den_col <- paste0("missclass_", parts[2])
     if (!all(c(num_col, den_col) %in% colnames(df))) {
       warning("No missclass columns for ", contrast_base, " - basis not assigned"); next

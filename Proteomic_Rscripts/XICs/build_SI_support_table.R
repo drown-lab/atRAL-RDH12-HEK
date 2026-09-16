@@ -111,6 +111,9 @@ lib <- read_parquet(report_lib, col_select = c("Precursor.Id", "Stripped.Sequenc
 
 support <- pg_summary |>
   left_join(lib, by = "Protein.Group") |>
+  # If the refined library ever groups proteins differently, this join yields NA counts that would be
+  # written into the SI table without complaint. Currently 0 of 8,116 groups are unmatched.
+  (\(d) { stopifnot(!any(is.na(d$Library_proteotypic_peptides))); d })() |>
   left_join(per_cond, by = "Protein.Group") |>
   mutate(Single_peptide_protein_group = Distinct_proteotypic_peptides == 1,
          Support_tier = case_when(

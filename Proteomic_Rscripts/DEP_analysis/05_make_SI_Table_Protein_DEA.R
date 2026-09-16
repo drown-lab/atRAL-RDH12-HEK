@@ -4,7 +4,8 @@
 # with the condition labels used in the manuscript (GFP -> WT, control -> Veh), and now also carries
 # the <contrast>_basis columns written by 04_WriteCsv_DEP_missingclass_BHadjusment.R.
 #
-# Run after 99_RunAll_Scripts_working.R; then run Proteomic_Rscripts/XICs/build_SI_support_table.R.
+# Runs as the last step of 99_RunAll_Scripts_working.R (it is in that script's `scripts` vector);
+# afterwards run Proteomic_Rscripts/XICs/build_SI_support_table.R.
 
 suppressPackageStartupMessages({ library(dplyr); library(readr); library(stringr) })
 

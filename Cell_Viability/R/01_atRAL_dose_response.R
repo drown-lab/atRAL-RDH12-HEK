@@ -184,7 +184,10 @@ dose_response_plot <- function(pred, summ, ic50, by_pretreatment = TRUE,
 # Near-baseline doses sit above 100% viability, so the view has to clear the
 # tallest mean + SEM or those error bars get cut off at the panel edge. Breaks
 # stay on the quarter points, keeping a labelled tick at 100.
-VIABILITY_CEILING <- ceiling(max(summ$mean + summ$sem))
+# na.rm matters: sd() of a single well is NA, so one n = 1 genotype/fer1/atRAL cell would make the
+# ceiling NA and coord_cartesian(ylim = c(0, NA)) would silently fall back to each panel's own data
+# range -- defeating the shared range that keeps the two figures comparable.
+VIABILITY_CEILING <- ceiling(max(summ$mean + summ$sem, na.rm = TRUE))
 
 # Shared presentation layers: one viability range across both figures, and the
 # legend pulled back against the panel (legend.box.spacing otherwise scales
