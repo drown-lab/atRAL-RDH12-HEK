@@ -28,17 +28,15 @@ suppressPackageStartupMessages({ library(arrow); library(dplyr); library(tidyr);
 # The DEP pipeline's Bioconductor packages mask several dplyr verbs (count, first, rename, ...),
 # so those are called with dplyr:: below and the script runs the same in a fresh session.
 
-# The DIA-NN reports live outside the repository. Point at them with the ATRAL_REPORT_DIR
-# environment variable or options(atral.report_dir = "..."); the default is the authoring machine.
-report_dir  <- Sys.getenv("ATRAL_REPORT_DIR",
-                          getOption("atral.report_dir", "F:/MS_Temp/atRAL_manuscript/proteomics"))
+# The DIA-NN reports live outside the repository: set ATRAL_REPORT_DIR, or place them under raw_data/diann/.
+report_dir  <- Sys.getenv("ATRAL_REPORT_DIR", "raw_data/diann")
 report_orig <- file.path(report_dir, "report.parquet")
 report_lib  <- file.path(report_dir, "report_lib.parquet")
 
 absent <- c(report_orig, report_lib)[!file.exists(c(report_orig, report_lib))]
 if (length(absent)) {
   stop("DIA-NN report(s) not found:\n  ", paste(absent, collapse = "\n  "),
-       "\nSet ATRAL_REPORT_DIR (or options(atral.report_dir = ...)) to the directory holding ",
+       "\nSet ATRAL_REPORT_DIR to the directory holding ",
        "report.parquet and report_lib.parquet.")
 }
 

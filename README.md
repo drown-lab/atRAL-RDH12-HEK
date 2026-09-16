@@ -48,6 +48,44 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 -   Lipidomics recovery workflow: `Lipidomics/RScripts/`
 -   Lipidomics acute workflow: `Lipidomics/RScripts/Acute/`
 
+## Raw Data Locations
+
+Run scripts with the repo root as the working directory (open `atRALExps.Rproj`); paths inside the repo are relative to it. Raw inputs too large for git are read from `raw_data/` (gitignored), or from the folder named by an environment variable:
+
+| Input | Environment variable | Default | Used by |
+|----|----|----|----|
+| DIA-NN `report.parquet`, `report_lib.parquet`, `DIANN_xic_rerun/` | `ATRAL_REPORT_DIR` | `raw_data/diann` | `Proteomic_Rscripts/00_Process_DIANNparquetfile.R`; `Proteomic_Rscripts/XICs/` |
+| Acute lipid MRM exports (`Absolute_intensity.csv` folders) | `ATRAL_LIPID_ACUTE_DIR` | `raw_data/lipids/acute` | `Lipidomics/RScripts/Acute/1_Initial_Processing_MRMdata_script.R` |
+| Recovery lipid MRM exports | `ATRAL_LIPID_RECOVERY_DIR` | `raw_data/lipids/recovery` | `Lipidomics/RScripts/1_Initial_Processing_MRMdata_script.R` |
+
+You only need the variables for the inputs you rerun, and none if you copy the data into the default folders above.
+
+### Setting the variables
+
+1.  Open your user-level `.Renviron` from the R console. On Windows it is usually `C:/Users/<you>/Documents/.Renviron`; `path.expand("~/.Renviron")` prints the exact location.
+
+    ``` r
+    file.edit(path.expand("~/.Renviron"))
+    ```
+
+2.  Add one line per variable, pointing at the folder on this machine (the paths below are examples). Use forward slashes; spaces in paths are fine without quotes:
+
+    ```
+    ATRAL_REPORT_DIR=F:/MS_Temp/atRAL_manuscript/proteomics
+    ATRAL_LIPID_ACUTE_DIR=D:/lipidomics/20250702_HekCells_atRALtreated_rams/Life Sciences Native LIpids
+    ATRAL_LIPID_RECOVERY_DIR=D:/lipidomics/Hek_5hrw24hrrecvr_Miranda18samples
+    ```
+
+3.  Save, restart R (RStudio: *Session > Restart R*), and check:
+
+    ``` r
+    Sys.getenv("ATRAL_REPORT_DIR")
+    ```
+
+To set a variable for the current session only, run `Sys.setenv(ATRAL_REPORT_DIR = "F:/MS_Temp/atRAL_manuscript/proteomics")` before sourcing the script.
+
+Put these in `~/.Renviron`, not in a `.Renviron` inside the project: R reads only one `.Renviron` at startup, so a project-level file would hide your user-level settings.
+
 ## Noncanonical And Exploratory Code
 
 Scripts and outputs not used by the manuscript were pruned in September 2026 and remain recoverable from git history. See [ARCHIVE_NOTES.md](ARCHIVE_NOTES.md) for what was removed and for the working analyses kept for review.

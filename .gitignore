@@ -82,3 +82,6 @@ RetinaOrgnoids/**.RData
 *.RData
 
 manuscript/
+
+# Raw data kept outside git (see README: Raw Data Locations)
+raw_data/

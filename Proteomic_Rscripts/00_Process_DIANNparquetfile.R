@@ -2,7 +2,9 @@
 ##read parquet
 library(arrow)
 
-HekatRAL_combndDIANN_dinj_v1<- read_parquet("/report.parquet")
+# DIA-NN report lives outside the repo: set ATRAL_REPORT_DIR, or place it under raw_data/diann/.
+report_dir <- Sys.getenv("ATRAL_REPORT_DIR", "raw_data/diann")
+HekatRAL_combndDIANN_dinj_v1<- read_parquet(file.path(report_dir, "report.parquet"))
 HekatRAL_combndDIANN_dinj_v2 <-HekatRAL_combndDIANN_dinj_v1
 
 
@@ -64,4 +66,4 @@ HekatRAL_combndDIANN_dinj_v4 <- HekatRAL_combndDIANN_dinj_v4 %>%
   )
 
 
-write.csv(HekatRAL_combndDIANN_dinj_v4, "HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv")
+write.csv(HekatRAL_combndDIANN_dinj_v4, "quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv")

@@ -9,10 +9,11 @@
 #                  pr = Precursor.Id, feature = "ms1" | "y6^1" | "b3^1" | "index", rt (min), value)
 #   report_orig  : original report.parquet (analysis of record, 1% FDR filtered)
 #   report_new   : DIANN_xic_rerun/report.parquet (--qvalue 1 -> every precursor's best candidate, q-value, RT.Start/Stop)
-#   peptide_tbl  : SI_Table_Protein_PeptideCounts_Exploris.csv (to pick single-peptide protein groups)
+#   support_tbl  : Proteomic_output_txts/SI_Table_Protein_Support.csv (to pick single-peptide protein groups)
 #
-# Usage: edit the paths, then
-#   source("plot_xics_single_peptide.R")
+# The DIA-NN reports live outside the repo: set ATRAL_REPORT_DIR to the folder holding report.parquet
+# and DIANN_xic_rerun/, or place them under raw_data/diann/. Run from the repo root:
+#   source("Proteomic_Rscripts/XICs/plot_xics_single_peptide.R")
 #   plot_curated()   # 13 single-peptide + 4 two-peptide named proteins -> XIC_curated.pdf
 #   plot_bulk()      # all single-peptide protein groups -> XIC_all_single_peptide_PGs.pdf (479 pages)
 
@@ -21,11 +22,19 @@ suppressPackageStartupMessages({
   library(ggplot2); library(purrr)
 })
 
-xic_dir     <- "F:/MS_Temp/atRAL_manuscript/proteomics/DIANN_xic_rerun/report_xic"
-report_orig <- "F:/MS_Temp/atRAL_manuscript/proteomics/report.parquet"
-report_new  <- "F:/MS_Temp/atRAL_manuscript/proteomics/DIANN_xic_rerun/report.parquet"
-peptide_tbl <- "C:/Users/bryon/atRAL-Stress-Rams-Collab/manuscript/SI_materials/SI_Tables/SI_Table_Protein_PeptideCounts_Exploris.csv"
-out_dir     <- "C:/Users/bryon/atRAL-Stress-Rams-Collab/manuscript/SI_materials/XICs"
+report_dir  <- Sys.getenv("ATRAL_REPORT_DIR", "raw_data/diann")
+xic_dir     <- file.path(report_dir, "DIANN_xic_rerun", "report_xic")
+report_orig <- file.path(report_dir, "report.parquet")
+report_new  <- file.path(report_dir, "DIANN_xic_rerun", "report.parquet")
+support_tbl <- "Proteomic_output_txts/SI_Table_Protein_Support.csv"
+out_dir     <- "manuscript/SI_materials/XICs"
+
+absent <- c(xic_dir, report_orig, report_new, support_tbl)[!file.exists(c(xic_dir, report_orig, report_new, support_tbl))]
+if (length(absent)) {
+  stop("Input(s) not found:\n  ", paste(absent, collapse = "\n  "),
+       "\nSet ATRAL_REPORT_DIR to the folder holding report.parquet and DIANN_xic_rerun/, ",
+       "and run from the repo root.")
+}
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 # ---- sample annotation from run names ---------------------------------------
@@ -171,10 +180,10 @@ curated <- c(
 
 plot_curated <- function() render_pages(unname(curated), "XIC_curated_named_proteins.pdf")
 
-# ---- bulk set: every single-peptide protein group in the peptide-count table
+# ---- bulk set: every single-peptide protein group in the support table
 plot_bulk <- function() {
-  pc  <- read.csv(peptide_tbl)
-  pgs <- pc$Protein_Group[pc$Single_peptide_protein_group %in% c(TRUE, "TRUE", "true")]
+  sup <- read.csv(support_tbl)
+  pgs <- sup$Protein.Group[sup$Single_peptide_protein_group %in% c(TRUE, "TRUE", "true")]
   # chunk so each fetch stays modest in memory
   chunks <- split(pgs, ceiling(seq_along(pgs) / 60))
   pdf(file.path(out_dir, "XIC_all_single_peptide_PGs.pdf"), width = 11, height = 14)

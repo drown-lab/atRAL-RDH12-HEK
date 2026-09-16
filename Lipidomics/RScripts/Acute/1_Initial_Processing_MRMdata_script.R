@@ -18,7 +18,9 @@ acute_expdesign<-read.csv("Lipidomics/metadata/Sample_description guide_5hratral
 #This script will take that csv file and add each csv into one bit data table called "combined_data"
 #==============
 #Step 1:  Define the initial folder path
-initial_folder <- "C:/Users/LabUser/Desktop/StemCells/lipidomic/20250702_HekCells_atRALtreated_rams/Life Sciences Native LIpids"
+# Raw MRM exports live outside the repo: set ATRAL_LIPID_ACUTE_DIR, or place them under raw_data/lipids/acute/.
+initial_folder <- Sys.getenv("ATRAL_LIPID_ACUTE_DIR", "raw_data/lipids/acute")
+if (!dir.exists(initial_folder)) stop("Raw acute lipid folder not found: ", initial_folder)
 
 ###run the next set of code togeter
 # Create a list of all subfolders within the initial folder
