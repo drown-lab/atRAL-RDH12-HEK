@@ -31,7 +31,12 @@ ord <- c("Gene name", "Uniprot ID",
 stopifnot(setequal(ord, names(si)))
 si <- si[, ord]
 
-for (f in out_files) write_csv(si, f, na = "NA")
+# write_csv() does not create directories, and the manuscript/ target is gitignored, so on any
+# machine without it the run used to abort here with the first file already written.
+for (f in out_files) {
+  dir.create(dirname(f), recursive = TRUE, showWarnings = FALSE)
+  write_csv(si, f, na = "NA")
+}
 message("Wrote SI Table 2: ", nrow(si), " protein groups x ", ncol(si), " columns")
 
 # summary of what the both-imputed rule changed, at the thresholds used in the Results text

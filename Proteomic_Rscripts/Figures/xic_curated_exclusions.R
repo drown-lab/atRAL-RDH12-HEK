@@ -23,7 +23,8 @@
 #   xic_excluded_genes     named character vector: gene symbol -> one-line reason
 #   apply_xic_curation()   drops excluded genes from a data frame and reports what was removed
 #   single_peptide_ids()   Uniprot IDs (Protein.Group) of single-peptide protein groups, read from
-#                          manuscript/SI_materials/SI_Tables/SI_Table_Protein_Support.csv
+#                          Proteomic_output_txts/SI_Table_Protein_Support.csv (tracked), falling back
+#                          to the manuscript/ working copy; errors if neither is present
 #                          (built by Proteomic_Rscripts/XICs/build_SI_support_table.R)
 #   label_single_peptide() appends "*" to the display label of single-peptide protein groups
 #                          (figure legend: "* single-peptide protein group; see SI XIC data")
@@ -42,7 +43,17 @@ xic_excluded_genes <- c(
   CYBA    = "MNAR_0of3 in all three acute conditions (0 of 3 replicates observed); acute depletion is a QRILC imputed-floor draw, and because those imputed values enter the per-protein centering they also inflate the observed recovery cells by ~1.2 log2"
 )
 
-support_table_file <- "manuscript/SI_materials/SI_Tables/SI_Table_Protein_Support.csv"
+# Tracked copy first, manuscript working copy second. The tracked copy is what makes the "*"
+# markers reproducible on a fresh clone: manuscript/ is gitignored, so relying on it alone meant
+# the heatmaps rendered with no markers at all while the legend still explained them.
+support_table_candidates <- c(
+  "Proteomic_output_txts/SI_Table_Protein_Support.csv",
+  "manuscript/SI_materials/SI_Tables/SI_Table_Protein_Support.csv"
+)
+support_table_file <- {
+  found <- support_table_candidates[file.exists(support_table_candidates)]
+  if (length(found)) found[1] else support_table_candidates[1]
+}
 
 # Remove excluded genes from a data frame; `gene_col` is the column holding gene symbols.
 apply_xic_curation <- function(df, gene_col = "Gene", label = "") {
@@ -60,9 +71,11 @@ apply_xic_curation <- function(df, gene_col = "Gene", label = "") {
 # Uniprot IDs (Protein.Group strings, as in the DEP table `ID` column) of single-peptide groups.
 single_peptide_ids <- function(path = support_table_file) {
   if (!file.exists(path)) {
-    warning("Support table not found (", path, "); single-peptide labels will not be applied. ",
-            "Run Proteomic_Rscripts/XICs/build_SI_support_table.R first.")
-    return(character(0))
+    stop("Support table not found. Looked for:\n  ",
+         paste(support_table_candidates, collapse = "\n  "),
+         "\nRun Proteomic_Rscripts/XICs/build_SI_support_table.R first.\n",
+         "This is a hard error on purpose: continuing would emit main-text figures with no ",
+         "single-peptide '*' markers while the legend still claims them.")
   }
   sup <- utils::read.csv(path, check.names = FALSE, stringsAsFactors = FALSE)
   stopifnot(all(c("Protein.Group", "Single_peptide_protein_group") %in% names(sup)))

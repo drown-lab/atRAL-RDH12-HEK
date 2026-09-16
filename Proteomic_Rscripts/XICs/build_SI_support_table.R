@@ -1,7 +1,8 @@
 # Build per-protein-group evidence/support columns from the deposited DIA-NN report and
 # append them to the protein DEA supplementary table.
 #
-# Outputs (in si_dir):
+# Outputs, both written to Proteomic_output_txts/ (tracked; the heatmap scripts read the support
+# table from there) and mirrored to manuscript/SI_materials/SI_Tables/ for SI assembly:
 #   SI_Table_Protein_Support.csv           - one row per protein group (8,116 after the V12 filter chain)
 #   SI_Table_Protein_DEA_with_support.csv  - SI Table 2 + support columns + per-contrast quantification basis
 #
@@ -28,11 +29,36 @@ suppressPackageStartupMessages({ library(arrow); library(dplyr); library(tidyr);
 # dplyr verbs (count, first, rename, desc, slice, ...). The masked ones used here are called with dplyr:: explicitly,
 # so the script behaves the same in a fresh session and after 99_RunAll_Scripts_working.R.
 
-report_orig <- "F:/MS_Temp/atRAL_manuscript/proteomics/report.parquet"
-report_lib  <- "F:/MS_Temp/atRAL_manuscript/proteomics/report_lib.parquet"
-si_dir      <- "C:/Users/bryon/atRAL-Stress-Rams-Collab/manuscript/SI_materials/SI_Tables"
+# The DIA-NN reports are large and live outside the repository. Point at them with the
+# ATRAL_REPORT_DIR environment variable or options(atral.report_dir = "..."); the default is
+# the authoring machine's staging directory.
+report_dir  <- Sys.getenv("ATRAL_REPORT_DIR",
+                          getOption("atral.report_dir", "F:/MS_Temp/atRAL_manuscript/proteomics"))
+report_orig <- file.path(report_dir, "report.parquet")
+report_lib  <- file.path(report_dir, "report_lib.parquet")
+
+absent <- c(report_orig, report_lib)[!file.exists(c(report_orig, report_lib))]
+if (length(absent)) {
+  stop("DIA-NN report(s) not found:\n  ", paste(absent, collapse = "\n  "),
+       "\nSet ATRAL_REPORT_DIR (or options(atral.report_dir = ...)) to the directory holding ",
+       "report.parquet and report_lib.parquet.")
+}
+
+# Canonical outputs go to the tracked repo directory (working directory = repo root) so the
+# heatmap scripts can find the support table on a fresh clone; manuscript/ is gitignored and is
+# mirrored only as a convenience for assembling the SI.
+si_dir      <- "Proteomic_output_txts"
+mirror_dir  <- "manuscript/SI_materials/SI_Tables"
 dea_file    <- file.path(si_dir, "SI_Table_Protein_DEA.csv")
 evidence_threshold <- 4
+
+write_si <- function(df, filename, dirs = c(si_dir, mirror_dir)) {
+  for (d in dirs) {
+    dir.create(d, recursive = TRUE, showWarnings = FALSE)
+    write_csv(df, file.path(d, filename))
+  }
+  message("Wrote ", filename, " to ", paste(dirs, collapse = " and "))
+}
 
 # ---- 1. precursor-level rows, filtered exactly as in 00_Process_DIANNparquetfile.R ----------------------
 cols <- c("Run", "Precursor.Id", "Stripped.Sequence", "Proteotypic", "Protein.Group", "Protein.Ids", "Genes",
@@ -94,7 +120,7 @@ support <- pg_summary |>
   relocate(Library_proteotypic_peptides, .after = Distinct_precursors) |>
   arrange(Protein.Group)
 
-write_csv(support, file.path(si_dir, "SI_Table_Protein_Support.csv"))
+write_si(support, "SI_Table_Protein_Support.csv")
 message(sprintf("Support table: %d protein groups; single-peptide %d (tier B %d, tier C %d)",
                 nrow(support), sum(support$Single_peptide_protein_group),
                 sum(support$Support_tier == "B"), sum(support$Support_tier == "C")))
@@ -124,8 +150,7 @@ dea_out <- dea |>
            .after = `Uniprot ID`)
 stopifnot(!any(is.na(dea_out$Distinct_proteotypic_peptides)))   # every DEA row must be found in the report
 
-write_csv(dea_out, file.path(si_dir, "SI_Table_Protein_DEA_with_support.csv"))
-message("Wrote ", file.path(si_dir, "SI_Table_Protein_DEA_with_support.csv"))
+write_si(dea_out, "SI_Table_Protein_DEA_with_support.csv")
 
 # quick sanity report for the proteins discussed in the revision plan
 named <- c("MGST2","SLC11A2","TUBB2A","TUBB4B","ALG3","AGPAT3","SLC7A11","CYBA","CHKA",
