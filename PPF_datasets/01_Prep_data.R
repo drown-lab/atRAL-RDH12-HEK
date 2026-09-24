@@ -11,10 +11,26 @@ library(dplyr)
 input_dir <- if (dir.exists("PPF_datasets")) "PPF_datasets" else "."
 report_path <- file.path(input_dir, "report.parquet")
 metadata_path <- file.path(input_dir, "metadata.txt")
+filtered_path <- file.path(input_dir, "Protein_filtered.csv")
 
+# report.parquet is not in git; it is deposited on PRIDE (PXD080689). Without it,
+# load PPFtable_v4 from Protein_filtered.csv, the tracked output of the steps below.
 if (!file.exists(report_path)) {
-  stop("Could not find report parquet file: ", report_path)
-}
+  if (!file.exists(filtered_path)) {
+    stop("Could not find ", report_path, " or ", filtered_path,
+         ". Download the timsTOF basal-set report.parquet from PRIDE PXD080689 into ", input_dir, ".")
+  }
+  message("report.parquet not found; loading PPFtable_v4 from ", filtered_path,
+          ". To rebuild it, download report.parquet from PRIDE PXD080689 into ", input_dir, ".")
+  # na = "NA" keeps the empty Genes strings as "" rather than NA, matching the parquet build
+  PPFtable_v4 <- read_csv(
+    filtered_path,
+    col_types = cols(.default = col_character(), PG.MaxLFQ = col_double()),
+    na = "NA",
+    name_repair = "unique_quiet"
+  ) |>
+    select(-1)
+} else {
 
 if (!file.exists(metadata_path)) {
   stop("Could not find metadata file: ", metadata_path)
@@ -97,4 +113,6 @@ PPFtable_v4 <- PPFtable_v4 |>
   select(sample_name, sample_run_name, Run, run_number, Protein.Group, Genes, PG.MaxLFQ) |>
   unique()
 
-write.csv(PPFtable_v4, "PPF_datasets/Protein_filtered.csv")
+write.csv(PPFtable_v4, filtered_path)
+
+} # end rebuild from report.parquet

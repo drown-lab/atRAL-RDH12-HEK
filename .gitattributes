@@ -1,12 +1,13 @@
-*.skyd filter=lfs diff=lfs merge=lfs -text
-*.parquet filter=lfs diff=lfs merge=lfs -text
-quant_DIANN_outputs/*.csv filter=lfs diff=lfs merge=lfs -text
+# No Git LFS: GitHub release archives (and so the Zenodo snapshot) contain LFS
+# pointer stubs, not the data. Large inputs are either gzipped under GitHub's
+# 100 MB limit (quant_DIANN_outputs/*.csv.gz) or live on PRIDE (DIA-NN reports).
 
 # Binary artifacts: no textual diff, no line merges, no line-ending rewriting.
 # SVG is deliberately excluded — it is XML, and readable diffs are worth keeping there.
 *.pdf binary
 *.png binary
 *.zip binary
+*.gz  binary
 
 # Source files: stored LF in the repository and checked out LF, regardless of
 # core.autocrlf. Without this, a CRLF blob plus core.autocrlf=true means the
