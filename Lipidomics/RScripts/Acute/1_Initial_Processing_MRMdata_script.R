@@ -18,7 +18,9 @@ acute_expdesign<-read.csv("Lipidomics/metadata/Sample_description guide_5hratral
 #This script will take that csv file and add each csv into one bit data table called "combined_data"
 #==============
 #Step 1:  Define the initial folder path
-initial_folder <- "C:/Users/LabUser/Desktop/StemCells/lipidomic/20250702_HekCells_atRALtreated_rams/Life Sciences Native LIpids"
+# Raw MRM exports live outside the repo: set ATRAL_LIPID_ACUTE_DIR, or place them under raw_data/lipids/acute/.
+initial_folder <- Sys.getenv("ATRAL_LIPID_ACUTE_DIR", "raw_data/lipids/acute")
+if (!dir.exists(initial_folder)) stop("Raw acute lipid folder not found: ", initial_folder)
 
 ###run the next set of code togeter
 # Create a list of all subfolders within the initial folder
@@ -203,7 +205,7 @@ dups3 <- Acute_lipidsall_v7v2 %>%
 df <- Acute_lipidsall_v7v2
 
 #run script 1a_Filtering_Score_script.R
-source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 
 #this will output a parsed table: has a scoring value for lipid candidates when multiple options are present in lipid_name cell
 #output-also separately break out cer_parsed table
@@ -319,7 +321,7 @@ df<-df|>
   select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
 
 #run script 1a_Filtering_Score_script.R
-source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 #this reupdates the columns after replacement of likely IDs
 #current table is titled df_with_unsat_updated
 
@@ -363,7 +365,7 @@ df_with_unsat_updated <- df_with_unsat_updated %>%
 df<-df_with_unsat_updated
 df<-df|>
   select(-picked_candidate, -C_total, -DB_total, -NL_C, -NL_DB, -cand_score)
-source("Lipidomics/RScripts/Acute/1a_Filtering_Score_script.R")
+source("Lipidomics/RScripts/1a_Filtering_Score_script.R")
 
 
 dups5 <- df_with_unsat_updated %>%

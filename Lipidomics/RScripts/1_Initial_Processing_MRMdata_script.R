@@ -18,7 +18,9 @@ recovery_expdesign<-read.csv("Lipidomics/metadata/Sample_description guide_recov
 #This script will take that csv file and add each csv into one bit data table called "combined_data"
 #==============
 #Step 1:  Define the initial folder path
-initial_folder <- "C:/Users/LabUser/Desktop/StemCells/lipidomic/Hek_5hrw24hrrecvr_Miranda18samples"
+# Raw MRM exports live outside the repo: set ATRAL_LIPID_RECOVERY_DIR, or place them under raw_data/lipids/recovery/.
+initial_folder <- Sys.getenv("ATRAL_LIPID_RECOVERY_DIR", "raw_data/lipids/recovery")
+if (!dir.exists(initial_folder)) stop("Raw recovery lipid folder not found: ", initial_folder)
 
 ###run the next set of code togeter
 # Create a list of all subfolders within the initial folder
