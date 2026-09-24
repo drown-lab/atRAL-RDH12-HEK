@@ -10,7 +10,7 @@ library(paletteer)
 
 ##Get table from file
 
-#Protmcs_HekatRALexps_v1<-read_csv("quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv")
+#Protmcs_HekatRALexps_v1<-read_csv("quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv.gz")
 colnames(Protmcs_HekatRALexps_v1)
 
 

@@ -85,3 +85,7 @@ manuscript/
 
 # Raw data kept outside git (see README: Raw Data Locations)
 raw_data/
+# DIA-NN reports are deposited on PRIDE (PXD080689), not tracked here
+*.parquet
+# Tracked gzipped; the uncompressed copy is a local convenience only
+quant_DIANN_outputs/*.csv

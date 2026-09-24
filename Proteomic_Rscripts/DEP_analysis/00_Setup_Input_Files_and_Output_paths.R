@@ -13,7 +13,8 @@
 #Lib.PG.Q.Value <= 0.01, Channel.Q.Value <= 0.05, Proteotypic == 1,!grepl("cRAP", Protein.Ids, ignore.case = TRUE)
 #Find csv file
 #DO not change "Protmcs_HekatRALexps_v1" or scripts will not work
-Protmcs_HekatRALexps_v1 <-  read_csv("quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv")
+#Stored gzipped to stay under GitHub's file size limit; read_csv decompresses it directly
+Protmcs_HekatRALexps_v1 <-  read_csv("quant_DIANN_outputs/HekRDH12andGFP_combinedDatasets_atRAL5hr_with24hrRecvry_rawdata.csv.gz")
 
  
 exists("Protmcs_HekatRALexps_v1")

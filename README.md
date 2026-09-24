@@ -28,7 +28,7 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 
 ### Folder Guide
 
--   `quant_DIANN_outputs/` - DIA-NN quantification output used as proteomics input.
+-   `quant_DIANN_outputs/` - filtered DIA-NN precursor table (gzipped) used as the proteomics DEP input.
 -   `Proteomic_Rscripts/` - proteomics analysis and figure scripts.
 -   `Proteomic_Rscripts/DEP_analysis/` - canonical proteomics DEP pipeline.
 -   `Proteomic_Figs/` - proteomics figures, QC plots, heatmaps, volcano plots, and figure source tables.
@@ -48,6 +48,22 @@ This workflow is for differential expression analysis of proteomic and lipidomic
 -   Lipidomics recovery workflow: `Lipidomics/RScripts/`
 -   Lipidomics acute workflow: `Lipidomics/RScripts/Acute/`
 
+## Data Availability
+
+Raw MS files and the DIA-NN reports (`report.parquet`, `report_lib.parquet`) for both the atRAL experiments (Exploris) and the basal PPF comparison (timsTOF) are deposited in PRIDE under **PXD080689**. They are not in this repository.
+
+The repository does not use Git LFS, so a clone or a release archive holds every tracked file in full. What that covers:
+
+| Analysis | Runs from this repository alone? | Input |
+|----|----|----|
+| Proteomics DEP pipeline and downstream figures | Yes | `quant_DIANN_outputs/…_rawdata.csv.gz`, the filtered DIA-NN table the analysis used. It is gzipped to stay under GitHub's 100 MB file limit, and `read_csv()` reads it directly. |
+| PPF basal comparison (`PPF_datasets/02`–`06`) | Yes | `PPF_datasets/Protein_filtered.csv`. `01_Prep_data.R` rebuilds it from `PPF_datasets/report.parquet` when that file is present and otherwise loads the saved copy. |
+| Lipidomics BH correction (`04_…`, `Acute/4b_…`), ether-lipid breakdown (`6_…`), and figure / summary scripts | Yes | DEA and filtered lipid tables in `Lipidomics/output_txts/` |
+| GO / Reactome enrichment | Yes | DEA exports in `Proteomic_output_txts/PANGEA_exports/` |
+| Rebuilding the DIA-NN table (`Proteomic_Rscripts/00_Process_DIANNparquetfile.R`) and the XIC support table (`Proteomic_Rscripts/XICs/build_SI_support_table.R`) | No, needs PRIDE files | `report.parquet` and `report_lib.parquet` from PXD080689 (see below) |
+| XIC plots (`Proteomic_Rscripts/XICs/plot_xics_single_peptide.R`) | No, needs a DIA-NN re-run | The PRIDE reports plus `DIANN_xic_rerun/report.parquet`: DIA-NN rerun on the same raw files with `--qvalue 1`, so every precursor reports its best candidate with RT bounds |
+| Lipid processing and DEA (steps `1`–`3`, acute and recovery; step 2 uses the table step 1 builds in memory) | No, needs raw exports | Instrument MRM exports (see below) |
+
 ## Raw Data Locations
 
 Run scripts with the repo root as the working directory (open `atRALExps.Rproj`); paths inside the repo are relative to it. Raw inputs too large for git are read from `raw_data/` (gitignored), or from the folder named by an environment variable:
@@ -58,7 +74,7 @@ Run scripts with the repo root as the working directory (open `atRALExps.Rproj`)
 | Acute lipid MRM exports (`Absolute_intensity.csv` folders) | `ATRAL_LIPID_ACUTE_DIR` | `raw_data/lipids/acute` | `Lipidomics/RScripts/Acute/1_Initial_Processing_MRMdata_script.R` |
 | Recovery lipid MRM exports | `ATRAL_LIPID_RECOVERY_DIR` | `raw_data/lipids/recovery` | `Lipidomics/RScripts/1_Initial_Processing_MRMdata_script.R` |
 
-You only need the variables for the inputs you rerun, and none if you copy the data into the default folders above.
+You only need the variables for the inputs you rerun, and none if you copy the data into the default folders above. The basal PPF `report.parquet` from PRIDE goes directly in `PPF_datasets/`.
 
 ### Setting the variables
 
